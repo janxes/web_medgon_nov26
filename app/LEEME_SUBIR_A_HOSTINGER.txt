@@ -1,0 +1,17 @@
+================================================================================
+MEDGÓN PASSIVHAUS - SUBIDA DIRECTA A SUBDIRECTORIO /app/
+================================================================================
+
+¡Esta carpeta 'app' YA VIENE COMPLETAMENTE LISTA PARA USAR!
+
+INSTRUCCIONES DE 1 PASO:
+1. Conéctate a tu hosting (Hostinger, cPanel, FileZilla, etc.).
+2. Abre la carpeta principal donde está instalado WordPress (habitualmente 'public_html').
+3. Simplemente arrastra esta carpeta 'app' completa dentro de 'public_html'.
+
+¡Y listo!
+Tu aplicación estará inmediatamente activa en:
+https://medgon.com/app/
+
+Todo está configurado para convivir con WordPress sin interferir en su base de datos ni en sus enlaces.
+================================================================================

@@ -1,0 +1,8 @@
+{
+  "name": "Medgón Passivhaus webNov-13",
+  "description": "Fabricante líder en España de catalogo de viviendas Passivhaus industrializadas en Carrión de los Condes (Palencia). Modelos cerrados de 87 a 165 m².",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

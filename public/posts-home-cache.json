@@ -1,0 +1,3614 @@
+[
+  {
+    "id": 12516,
+    "date": "2026-11-10T14:45:35",
+    "slug": "construccion-industrializada-viviendas-en-seis-meses",
+    "title": {
+      "rendered": "La construcción industrializada reduce los plazos: la visión de nuestra CEO al frente de Aeice"
+    },
+    "excerpt": {
+      "rendered": "<p>La construcción industrializada puede cambiar la manera de construir viviendas en España: pasar de procesos que habitualmente necesitan dos o tres años a plazos próximos a seis meses es uno de los grandes objetivos de esta transformación. Así lo explica Estíbaliz González, CEO de Medgón y presidenta del Clúster de Hábitat Eficiente de Castilla y [&hellip;]</p>\n",
+      "protected": false
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.medgon.com/wp-json/wp/v2/posts/12516",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.medgon.com/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.medgon.com/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://www.medgon.com/wp-json/wp/v2/users/5"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://www.medgon.com/wp-json/wp/v2/comments?post=12516"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 4,
+          "href": "https://www.medgon.com/wp-json/wp/v2/posts/12516/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 12521,
+          "href": "https://www.medgon.com/wp-json/wp/v2/posts/12516/revisions/12521"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://www.medgon.com/wp-json/wp/v2/media/12517"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://www.medgon.com/wp-json/wp/v2/media?parent=12516"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://www.medgon.com/wp-json/wp/v2/categories?post=12516"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://www.medgon.com/wp-json/wp/v2/tags?post=12516"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "code": "rest_user_invalid_id",
+          "message": "ID de usuario no válido.",
+          "data": {
+            "status": 404
+          }
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "id": 12517,
+          "date": "2026-11-10T14:39:17",
+          "slug": "estibaliz_gonzalez-_ceo_medgon",
+          "type": "attachment",
+          "link": "https://www.medgon.com/construccion-industrializada-viviendas-en-seis-meses/estibaliz_gonzalez-_ceo_medgon/",
+          "title": {
+            "rendered": "Estibaliz_Gonzalez _Ceo_medgon"
+          },
+          "author": 5,
+          "featured_media": 0,
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "Estíbaliz González, CEO de Medgón y presidenta de Aeice, impulsora de la construcción industrializada en Palencia.",
+          "media_type": "image",
+          "mime_type": "image/jpeg",
+          "media_details": {
+            "width": 2400,
+            "height": 1792,
+            "file": "2026/11/Estibaliz_Gonzalez-_Ceo_medgon.jpeg",
+            "filesize": 3284610,
+            "sizes": {
+              "medium": {
+                "file": "Estibaliz_Gonzalez-_Ceo_medgon-300x224.jpeg",
+                "width": 300,
+                "height": 224,
+                "filesize": 21074,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon-300x224.jpeg"
+              },
+              "large": {
+                "file": "Estibaliz_Gonzalez-_Ceo_medgon-1024x765.jpeg",
+                "width": 1024,
+                "height": 765,
+                "filesize": 155345,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon-1024x765.jpeg"
+              },
+              "thumbnail": {
+                "file": "Estibaliz_Gonzalez-_Ceo_medgon-150x150.jpeg",
+                "width": 150,
+                "height": 150,
+                "filesize": 7835,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon-150x150.jpeg"
+              },
+              "medium_large": {
+                "file": "Estibaliz_Gonzalez-_Ceo_medgon-768x573.jpeg",
+                "width": 768,
+                "height": 573,
+                "filesize": 97493,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon-768x573.jpeg"
+              },
+              "1536x1536": {
+                "file": "Estibaliz_Gonzalez-_Ceo_medgon-1536x1147.jpeg",
+                "width": 1536,
+                "height": 1147,
+                "filesize": 315747,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon-1536x1147.jpeg"
+              },
+              "2048x2048": {
+                "file": "Estibaliz_Gonzalez-_Ceo_medgon-2048x1529.jpeg",
+                "width": 2048,
+                "height": 1529,
+                "filesize": 539076,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon-2048x1529.jpeg"
+              },
+              "blog-large": {
+                "file": "Estibaliz_Gonzalez-_Ceo_medgon-1140x445.jpeg",
+                "width": 1140,
+                "height": 445,
+                "filesize": 93461,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon-1140x445.jpeg"
+              },
+              "blog-medium": {
+                "file": "Estibaliz_Gonzalez-_Ceo_medgon-463x348.jpeg",
+                "width": 463,
+                "height": 348,
+                "filesize": 43498,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon-463x348.jpeg"
+              },
+              "blog-masonry": {
+                "file": "Estibaliz_Gonzalez-_Ceo_medgon-640x478.jpeg",
+                "width": 640,
+                "height": 478,
+                "filesize": 72608,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon-640x478.jpeg"
+              },
+              "blog-masonry-small": {
+                "file": "Estibaliz_Gonzalez-_Ceo_medgon-400x299.jpeg",
+                "width": 400,
+                "height": 299,
+                "filesize": 33870,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon-400x299.jpeg"
+              },
+              "blog-grid": {
+                "file": "Estibaliz_Gonzalez-_Ceo_medgon-640x480.jpeg",
+                "width": 640,
+                "height": 480,
+                "filesize": 72576,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon-640x480.jpeg"
+              },
+              "blog-grid-small": {
+                "file": "Estibaliz_Gonzalez-_Ceo_medgon-400x300.jpeg",
+                "width": 400,
+                "height": 300,
+                "filesize": 34004,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon-400x300.jpeg"
+              },
+              "related-post": {
+                "file": "Estibaliz_Gonzalez-_Ceo_medgon-450x231.jpeg",
+                "width": 450,
+                "height": 231,
+                "filesize": 28115,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon-450x231.jpeg"
+              },
+              "portfolio-grid-one": {
+                "file": "Estibaliz_Gonzalez-_Ceo_medgon-1140x595.jpeg",
+                "width": 1140,
+                "height": 595,
+                "filesize": 129564,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon-1140x595.jpeg"
+              },
+              "portfolio-grid-two": {
+                "file": "Estibaliz_Gonzalez-_Ceo_medgon-560x560.jpeg",
+                "width": 560,
+                "height": 560,
+                "filesize": 69275,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon-560x560.jpeg"
+              },
+              "portfolio-grid": {
+                "file": "Estibaliz_Gonzalez-_Ceo_medgon-367x367.jpeg",
+                "width": 367,
+                "height": 367,
+                "filesize": 35059,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon-367x367.jpeg"
+              },
+              "portfolio-masonry": {
+                "file": "Estibaliz_Gonzalez-_Ceo_medgon-367x274.jpeg",
+                "width": 367,
+                "height": 274,
+                "filesize": 29755,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon-367x274.jpeg"
+              },
+              "portfolio-full": {
+                "file": "Estibaliz_Gonzalez-_Ceo_medgon-1140x595.jpeg",
+                "width": 1140,
+                "height": 595,
+                "filesize": 129564,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon-1140x595.jpeg"
+              },
+              "portfolio-large": {
+                "file": "Estibaliz_Gonzalez-_Ceo_medgon-560x367.jpeg",
+                "width": 560,
+                "height": 367,
+                "filesize": 51177,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon-560x367.jpeg"
+              },
+              "portfolio-medium": {
+                "file": "Estibaliz_Gonzalez-_Ceo_medgon-367x367.jpeg",
+                "width": 367,
+                "height": 367,
+                "filesize": 35059,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon-367x367.jpeg"
+              },
+              "portfolio-timeline": {
+                "file": "Estibaliz_Gonzalez-_Ceo_medgon-560x560.jpeg",
+                "width": 560,
+                "height": 560,
+                "filesize": 69275,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon-560x560.jpeg"
+              },
+              "related-portfolio": {
+                "file": "Estibaliz_Gonzalez-_Ceo_medgon-367x367.jpeg",
+                "width": 367,
+                "height": 367,
+                "filesize": 35059,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon-367x367.jpeg"
+              },
+              "portfolio-cat-stripes": {
+                "file": "Estibaliz_Gonzalez-_Ceo_medgon-494x1080.jpeg",
+                "width": 494,
+                "height": 1080,
+                "filesize": 98443,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon-494x1080.jpeg"
+              },
+              "portfolio-cat-parallax": {
+                "file": "Estibaliz_Gonzalez-_Ceo_medgon-1970x627.jpeg",
+                "width": 1970,
+                "height": 627,
+                "filesize": 211221,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon-1970x627.jpeg"
+              },
+              "portfolio-thumbnail": {
+                "file": "Estibaliz_Gonzalez-_Ceo_medgon-200x150.jpeg",
+                "width": 200,
+                "height": 150,
+                "filesize": 10415,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon-200x150.jpeg"
+              },
+              "widget-thumb-medium": {
+                "file": "Estibaliz_Gonzalez-_Ceo_medgon-85x85.jpeg",
+                "width": 85,
+                "height": 85,
+                "filesize": 3035,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon-85x85.jpeg"
+              },
+              "cmplz_banner_image": {
+                "file": "Estibaliz_Gonzalez-_Ceo_medgon-350x100.jpeg",
+                "width": 350,
+                "height": 100,
+                "filesize": 10018,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon-350x100.jpeg"
+              },
+              "full": {
+                "file": "Estibaliz_Gonzalez-_Ceo_medgon.jpeg",
+                "width": 2400,
+                "height": 1792,
+                "mime_type": "image/jpeg",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon.jpeg"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": [],
+              "alt": ""
+            }
+          },
+          "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/Estibaliz_Gonzalez-_Ceo_medgon.jpeg",
+          "_links": {
+            "self": [
+              {
+                "href": "https://www.medgon.com/wp-json/wp/v2/media/12517",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://www.medgon.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://www.medgon.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://www.medgon.com/wp-json/wp/v2/users/5"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://www.medgon.com/wp-json/wp/v2/comments?post=12517"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "post",
+                "id": 12516,
+                "href": "https://www.medgon.com/wp-json/wp/v2/posts/12516"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 28,
+            "link": "https://www.medgon.com/categoria/construccion/",
+            "name": "Construcción",
+            "slug": "construccion",
+            "taxonomy": "category",
+            "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v22.8 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Construcción archivos | Medgon</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.medgon.com/categoria/construccion/\" />\n<meta property=\"og:locale\" content=\"es_ES\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Construcción archivos | Medgon\" />\n<meta property=\"og:url\" content=\"https://www.medgon.com/categoria/construccion/\" />\n<meta property=\"og:site_name\" content=\"Medgon\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@medgon_passiv\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.medgon.com/categoria/construccion/\",\"url\":\"https://www.medgon.com/categoria/construccion/\",\"name\":\"Construcción archivos | Medgon\",\"isPartOf\":{\"@id\":\"https://www.medgon.com/#website\"},\"breadcrumb\":{\"@id\":\"https://www.medgon.com/categoria/construccion/#breadcrumb\"},\"inLanguage\":\"es\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.medgon.com/categoria/construccion/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Portada\",\"item\":\"https://www.medgon.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Construcción\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.medgon.com/#website\",\"url\":\"https://www.medgon.com/\",\"name\":\"Medgon\",\"description\":\"Fabricación de Edificios Passivhaus y Casas Pasivas\",\"publisher\":{\"@id\":\"https://www.medgon.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.medgon.com/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"es\"},{\"@type\":\"Organization\",\"@id\":\"https://www.medgon.com/#organization\",\"name\":\"Medgon\",\"url\":\"https://www.medgon.com/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"es\",\"@id\":\"https://www.medgon.com/#/schema/logo/image/\",\"url\":\"https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg\",\"contentUrl\":\"https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg\",\"width\":1000,\"height\":689,\"caption\":\"Medgon\"},\"image\":{\"@id\":\"https://www.medgon.com/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/MedgonPassivHaus/\",\"https://x.com/medgon_passiv\",\"https://www.instagram.com/medgon_passivhaus/\",\"https://www.youtube.com/channel/UCrXA5xjYqq_d2P4n6YQsqkA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+            "yoast_head_json": {
+              "title": "Construcción archivos | Medgon",
+              "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+              },
+              "canonical": "https://www.medgon.com/categoria/construccion/",
+              "og_locale": "es_ES",
+              "og_type": "article",
+              "og_title": "Construcción archivos | Medgon",
+              "og_url": "https://www.medgon.com/categoria/construccion/",
+              "og_site_name": "Medgon",
+              "twitter_card": "summary_large_image",
+              "twitter_site": "@medgon_passiv",
+              "schema": {
+                "@context": "https://schema.org",
+                "@graph": [
+                  {
+                    "@type": "CollectionPage",
+                    "@id": "https://www.medgon.com/categoria/construccion/",
+                    "url": "https://www.medgon.com/categoria/construccion/",
+                    "name": "Construcción archivos | Medgon",
+                    "isPartOf": {
+                      "@id": "https://www.medgon.com/#website"
+                    },
+                    "breadcrumb": {
+                      "@id": "https://www.medgon.com/categoria/construccion/#breadcrumb"
+                    },
+                    "inLanguage": "es"
+                  },
+                  {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://www.medgon.com/categoria/construccion/#breadcrumb",
+                    "itemListElement": [
+                      {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Portada",
+                        "item": "https://www.medgon.com/"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Construcción"
+                      }
+                    ]
+                  },
+                  {
+                    "@type": "WebSite",
+                    "@id": "https://www.medgon.com/#website",
+                    "url": "https://www.medgon.com/",
+                    "name": "Medgon",
+                    "description": "Fabricación de Edificios Passivhaus y Casas Pasivas",
+                    "publisher": {
+                      "@id": "https://www.medgon.com/#organization"
+                    },
+                    "potentialAction": [
+                      {
+                        "@type": "SearchAction",
+                        "target": {
+                          "@type": "EntryPoint",
+                          "urlTemplate": "https://www.medgon.com/?s={search_term_string}"
+                        },
+                        "query-input": "required name=search_term_string"
+                      }
+                    ],
+                    "inLanguage": "es"
+                  },
+                  {
+                    "@type": "Organization",
+                    "@id": "https://www.medgon.com/#organization",
+                    "name": "Medgon",
+                    "url": "https://www.medgon.com/",
+                    "logo": {
+                      "@type": "ImageObject",
+                      "inLanguage": "es",
+                      "@id": "https://www.medgon.com/#/schema/logo/image/",
+                      "url": "https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg",
+                      "contentUrl": "https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg",
+                      "width": 1000,
+                      "height": 689,
+                      "caption": "Medgon"
+                    },
+                    "image": {
+                      "@id": "https://www.medgon.com/#/schema/logo/image/"
+                    },
+                    "sameAs": [
+                      "https://www.facebook.com/MedgonPassivHaus/",
+                      "https://x.com/medgon_passiv",
+                      "https://www.instagram.com/medgon_passivhaus/",
+                      "https://www.youtube.com/channel/UCrXA5xjYqq_d2P4n6YQsqkA"
+                    ]
+                  }
+                ]
+              }
+            },
+            "_links": {
+              "self": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/categories/28",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/posts?categories=28"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 123,
+            "link": "https://www.medgon.com/categoria/industrializacion/",
+            "name": "Industrialización",
+            "slug": "industrializacion",
+            "taxonomy": "category",
+            "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v22.8 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Industrialización archivos | Medgon</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.medgon.com/categoria/industrializacion/\" />\n<meta property=\"og:locale\" content=\"es_ES\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Industrialización archivos | Medgon\" />\n<meta property=\"og:url\" content=\"https://www.medgon.com/categoria/industrializacion/\" />\n<meta property=\"og:site_name\" content=\"Medgon\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@medgon_passiv\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.medgon.com/categoria/industrializacion/\",\"url\":\"https://www.medgon.com/categoria/industrializacion/\",\"name\":\"Industrialización archivos | Medgon\",\"isPartOf\":{\"@id\":\"https://www.medgon.com/#website\"},\"breadcrumb\":{\"@id\":\"https://www.medgon.com/categoria/industrializacion/#breadcrumb\"},\"inLanguage\":\"es\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.medgon.com/categoria/industrializacion/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Portada\",\"item\":\"https://www.medgon.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Industrialización\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.medgon.com/#website\",\"url\":\"https://www.medgon.com/\",\"name\":\"Medgon\",\"description\":\"Fabricación de Edificios Passivhaus y Casas Pasivas\",\"publisher\":{\"@id\":\"https://www.medgon.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.medgon.com/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"es\"},{\"@type\":\"Organization\",\"@id\":\"https://www.medgon.com/#organization\",\"name\":\"Medgon\",\"url\":\"https://www.medgon.com/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"es\",\"@id\":\"https://www.medgon.com/#/schema/logo/image/\",\"url\":\"https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg\",\"contentUrl\":\"https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg\",\"width\":1000,\"height\":689,\"caption\":\"Medgon\"},\"image\":{\"@id\":\"https://www.medgon.com/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/MedgonPassivHaus/\",\"https://x.com/medgon_passiv\",\"https://www.instagram.com/medgon_passivhaus/\",\"https://www.youtube.com/channel/UCrXA5xjYqq_d2P4n6YQsqkA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+            "yoast_head_json": {
+              "title": "Industrialización archivos | Medgon",
+              "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+              },
+              "canonical": "https://www.medgon.com/categoria/industrializacion/",
+              "og_locale": "es_ES",
+              "og_type": "article",
+              "og_title": "Industrialización archivos | Medgon",
+              "og_url": "https://www.medgon.com/categoria/industrializacion/",
+              "og_site_name": "Medgon",
+              "twitter_card": "summary_large_image",
+              "twitter_site": "@medgon_passiv",
+              "schema": {
+                "@context": "https://schema.org",
+                "@graph": [
+                  {
+                    "@type": "CollectionPage",
+                    "@id": "https://www.medgon.com/categoria/industrializacion/",
+                    "url": "https://www.medgon.com/categoria/industrializacion/",
+                    "name": "Industrialización archivos | Medgon",
+                    "isPartOf": {
+                      "@id": "https://www.medgon.com/#website"
+                    },
+                    "breadcrumb": {
+                      "@id": "https://www.medgon.com/categoria/industrializacion/#breadcrumb"
+                    },
+                    "inLanguage": "es"
+                  },
+                  {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://www.medgon.com/categoria/industrializacion/#breadcrumb",
+                    "itemListElement": [
+                      {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Portada",
+                        "item": "https://www.medgon.com/"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Industrialización"
+                      }
+                    ]
+                  },
+                  {
+                    "@type": "WebSite",
+                    "@id": "https://www.medgon.com/#website",
+                    "url": "https://www.medgon.com/",
+                    "name": "Medgon",
+                    "description": "Fabricación de Edificios Passivhaus y Casas Pasivas",
+                    "publisher": {
+                      "@id": "https://www.medgon.com/#organization"
+                    },
+                    "potentialAction": [
+                      {
+                        "@type": "SearchAction",
+                        "target": {
+                          "@type": "EntryPoint",
+                          "urlTemplate": "https://www.medgon.com/?s={search_term_string}"
+                        },
+                        "query-input": "required name=search_term_string"
+                      }
+                    ],
+                    "inLanguage": "es"
+                  },
+                  {
+                    "@type": "Organization",
+                    "@id": "https://www.medgon.com/#organization",
+                    "name": "Medgon",
+                    "url": "https://www.medgon.com/",
+                    "logo": {
+                      "@type": "ImageObject",
+                      "inLanguage": "es",
+                      "@id": "https://www.medgon.com/#/schema/logo/image/",
+                      "url": "https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg",
+                      "contentUrl": "https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg",
+                      "width": 1000,
+                      "height": 689,
+                      "caption": "Medgon"
+                    },
+                    "image": {
+                      "@id": "https://www.medgon.com/#/schema/logo/image/"
+                    },
+                    "sameAs": [
+                      "https://www.facebook.com/MedgonPassivHaus/",
+                      "https://x.com/medgon_passiv",
+                      "https://www.instagram.com/medgon_passivhaus/",
+                      "https://www.youtube.com/channel/UCrXA5xjYqq_d2P4n6YQsqkA"
+                    ]
+                  }
+                ]
+              }
+            },
+            "_links": {
+              "self": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/categories/123",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/posts?categories=123"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 259,
+            "link": "https://www.medgon.com/categoria/innovacion/",
+            "name": "innovación",
+            "slug": "innovacion",
+            "taxonomy": "category",
+            "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v22.8 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>innovación archivos | Medgon</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.medgon.com/categoria/innovacion/\" />\n<meta property=\"og:locale\" content=\"es_ES\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"innovación archivos | Medgon\" />\n<meta property=\"og:url\" content=\"https://www.medgon.com/categoria/innovacion/\" />\n<meta property=\"og:site_name\" content=\"Medgon\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@medgon_passiv\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.medgon.com/categoria/innovacion/\",\"url\":\"https://www.medgon.com/categoria/innovacion/\",\"name\":\"innovación archivos | Medgon\",\"isPartOf\":{\"@id\":\"https://www.medgon.com/#website\"},\"breadcrumb\":{\"@id\":\"https://www.medgon.com/categoria/innovacion/#breadcrumb\"},\"inLanguage\":\"es\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.medgon.com/categoria/innovacion/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Portada\",\"item\":\"https://www.medgon.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"innovación\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.medgon.com/#website\",\"url\":\"https://www.medgon.com/\",\"name\":\"Medgon\",\"description\":\"Fabricación de Edificios Passivhaus y Casas Pasivas\",\"publisher\":{\"@id\":\"https://www.medgon.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.medgon.com/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"es\"},{\"@type\":\"Organization\",\"@id\":\"https://www.medgon.com/#organization\",\"name\":\"Medgon\",\"url\":\"https://www.medgon.com/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"es\",\"@id\":\"https://www.medgon.com/#/schema/logo/image/\",\"url\":\"https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg\",\"contentUrl\":\"https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg\",\"width\":1000,\"height\":689,\"caption\":\"Medgon\"},\"image\":{\"@id\":\"https://www.medgon.com/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/MedgonPassivHaus/\",\"https://x.com/medgon_passiv\",\"https://www.instagram.com/medgon_passivhaus/\",\"https://www.youtube.com/channel/UCrXA5xjYqq_d2P4n6YQsqkA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+            "yoast_head_json": {
+              "title": "innovación archivos | Medgon",
+              "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+              },
+              "canonical": "https://www.medgon.com/categoria/innovacion/",
+              "og_locale": "es_ES",
+              "og_type": "article",
+              "og_title": "innovación archivos | Medgon",
+              "og_url": "https://www.medgon.com/categoria/innovacion/",
+              "og_site_name": "Medgon",
+              "twitter_card": "summary_large_image",
+              "twitter_site": "@medgon_passiv",
+              "schema": {
+                "@context": "https://schema.org",
+                "@graph": [
+                  {
+                    "@type": "CollectionPage",
+                    "@id": "https://www.medgon.com/categoria/innovacion/",
+                    "url": "https://www.medgon.com/categoria/innovacion/",
+                    "name": "innovación archivos | Medgon",
+                    "isPartOf": {
+                      "@id": "https://www.medgon.com/#website"
+                    },
+                    "breadcrumb": {
+                      "@id": "https://www.medgon.com/categoria/innovacion/#breadcrumb"
+                    },
+                    "inLanguage": "es"
+                  },
+                  {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://www.medgon.com/categoria/innovacion/#breadcrumb",
+                    "itemListElement": [
+                      {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Portada",
+                        "item": "https://www.medgon.com/"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "innovación"
+                      }
+                    ]
+                  },
+                  {
+                    "@type": "WebSite",
+                    "@id": "https://www.medgon.com/#website",
+                    "url": "https://www.medgon.com/",
+                    "name": "Medgon",
+                    "description": "Fabricación de Edificios Passivhaus y Casas Pasivas",
+                    "publisher": {
+                      "@id": "https://www.medgon.com/#organization"
+                    },
+                    "potentialAction": [
+                      {
+                        "@type": "SearchAction",
+                        "target": {
+                          "@type": "EntryPoint",
+                          "urlTemplate": "https://www.medgon.com/?s={search_term_string}"
+                        },
+                        "query-input": "required name=search_term_string"
+                      }
+                    ],
+                    "inLanguage": "es"
+                  },
+                  {
+                    "@type": "Organization",
+                    "@id": "https://www.medgon.com/#organization",
+                    "name": "Medgon",
+                    "url": "https://www.medgon.com/",
+                    "logo": {
+                      "@type": "ImageObject",
+                      "inLanguage": "es",
+                      "@id": "https://www.medgon.com/#/schema/logo/image/",
+                      "url": "https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg",
+                      "contentUrl": "https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg",
+                      "width": 1000,
+                      "height": 689,
+                      "caption": "Medgon"
+                    },
+                    "image": {
+                      "@id": "https://www.medgon.com/#/schema/logo/image/"
+                    },
+                    "sameAs": [
+                      "https://www.facebook.com/MedgonPassivHaus/",
+                      "https://x.com/medgon_passiv",
+                      "https://www.instagram.com/medgon_passivhaus/",
+                      "https://www.youtube.com/channel/UCrXA5xjYqq_d2P4n6YQsqkA"
+                    ]
+                  }
+                ]
+              }
+            },
+            "_links": {
+              "self": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/categories/259",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/posts?categories=259"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 43,
+            "link": "https://www.medgon.com/categoria/noticias/",
+            "name": "Noticias",
+            "slug": "noticias",
+            "taxonomy": "category",
+            "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v22.8 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Noticias archivos | Medgon</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.medgon.com/categoria/noticias/\" />\n<meta property=\"og:locale\" content=\"es_ES\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Noticias archivos | Medgon\" />\n<meta property=\"og:url\" content=\"https://www.medgon.com/categoria/noticias/\" />\n<meta property=\"og:site_name\" content=\"Medgon\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@medgon_passiv\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.medgon.com/categoria/noticias/\",\"url\":\"https://www.medgon.com/categoria/noticias/\",\"name\":\"Noticias archivos | Medgon\",\"isPartOf\":{\"@id\":\"https://www.medgon.com/#website\"},\"breadcrumb\":{\"@id\":\"https://www.medgon.com/categoria/noticias/#breadcrumb\"},\"inLanguage\":\"es\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.medgon.com/categoria/noticias/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Portada\",\"item\":\"https://www.medgon.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Noticias\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.medgon.com/#website\",\"url\":\"https://www.medgon.com/\",\"name\":\"Medgon\",\"description\":\"Fabricación de Edificios Passivhaus y Casas Pasivas\",\"publisher\":{\"@id\":\"https://www.medgon.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.medgon.com/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"es\"},{\"@type\":\"Organization\",\"@id\":\"https://www.medgon.com/#organization\",\"name\":\"Medgon\",\"url\":\"https://www.medgon.com/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"es\",\"@id\":\"https://www.medgon.com/#/schema/logo/image/\",\"url\":\"https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg\",\"contentUrl\":\"https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg\",\"width\":1000,\"height\":689,\"caption\":\"Medgon\"},\"image\":{\"@id\":\"https://www.medgon.com/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/MedgonPassivHaus/\",\"https://x.com/medgon_passiv\",\"https://www.instagram.com/medgon_passivhaus/\",\"https://www.youtube.com/channel/UCrXA5xjYqq_d2P4n6YQsqkA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+            "yoast_head_json": {
+              "title": "Noticias archivos | Medgon",
+              "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+              },
+              "canonical": "https://www.medgon.com/categoria/noticias/",
+              "og_locale": "es_ES",
+              "og_type": "article",
+              "og_title": "Noticias archivos | Medgon",
+              "og_url": "https://www.medgon.com/categoria/noticias/",
+              "og_site_name": "Medgon",
+              "twitter_card": "summary_large_image",
+              "twitter_site": "@medgon_passiv",
+              "schema": {
+                "@context": "https://schema.org",
+                "@graph": [
+                  {
+                    "@type": "CollectionPage",
+                    "@id": "https://www.medgon.com/categoria/noticias/",
+                    "url": "https://www.medgon.com/categoria/noticias/",
+                    "name": "Noticias archivos | Medgon",
+                    "isPartOf": {
+                      "@id": "https://www.medgon.com/#website"
+                    },
+                    "breadcrumb": {
+                      "@id": "https://www.medgon.com/categoria/noticias/#breadcrumb"
+                    },
+                    "inLanguage": "es"
+                  },
+                  {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://www.medgon.com/categoria/noticias/#breadcrumb",
+                    "itemListElement": [
+                      {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Portada",
+                        "item": "https://www.medgon.com/"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Noticias"
+                      }
+                    ]
+                  },
+                  {
+                    "@type": "WebSite",
+                    "@id": "https://www.medgon.com/#website",
+                    "url": "https://www.medgon.com/",
+                    "name": "Medgon",
+                    "description": "Fabricación de Edificios Passivhaus y Casas Pasivas",
+                    "publisher": {
+                      "@id": "https://www.medgon.com/#organization"
+                    },
+                    "potentialAction": [
+                      {
+                        "@type": "SearchAction",
+                        "target": {
+                          "@type": "EntryPoint",
+                          "urlTemplate": "https://www.medgon.com/?s={search_term_string}"
+                        },
+                        "query-input": "required name=search_term_string"
+                      }
+                    ],
+                    "inLanguage": "es"
+                  },
+                  {
+                    "@type": "Organization",
+                    "@id": "https://www.medgon.com/#organization",
+                    "name": "Medgon",
+                    "url": "https://www.medgon.com/",
+                    "logo": {
+                      "@type": "ImageObject",
+                      "inLanguage": "es",
+                      "@id": "https://www.medgon.com/#/schema/logo/image/",
+                      "url": "https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg",
+                      "contentUrl": "https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg",
+                      "width": 1000,
+                      "height": 689,
+                      "caption": "Medgon"
+                    },
+                    "image": {
+                      "@id": "https://www.medgon.com/#/schema/logo/image/"
+                    },
+                    "sameAs": [
+                      "https://www.facebook.com/MedgonPassivHaus/",
+                      "https://x.com/medgon_passiv",
+                      "https://www.instagram.com/medgon_passivhaus/",
+                      "https://www.youtube.com/channel/UCrXA5xjYqq_d2P4n6YQsqkA"
+                    ]
+                  }
+                ]
+              }
+            },
+            "_links": {
+              "self": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/categories/43",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/posts?categories=43"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        [
+          {
+            "id": 41,
+            "link": "https://www.medgon.com/etiqueta/industrializacion/",
+            "name": "industrializacion",
+            "slug": "industrializacion",
+            "taxonomy": "post_tag",
+            "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v22.8 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>industrializacion archivos | Medgon</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.medgon.com/etiqueta/industrializacion/\" />\n<meta property=\"og:locale\" content=\"es_ES\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"industrializacion archivos | Medgon\" />\n<meta property=\"og:url\" content=\"https://www.medgon.com/etiqueta/industrializacion/\" />\n<meta property=\"og:site_name\" content=\"Medgon\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@medgon_passiv\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.medgon.com/etiqueta/industrializacion/\",\"url\":\"https://www.medgon.com/etiqueta/industrializacion/\",\"name\":\"industrializacion archivos | Medgon\",\"isPartOf\":{\"@id\":\"https://www.medgon.com/#website\"},\"breadcrumb\":{\"@id\":\"https://www.medgon.com/etiqueta/industrializacion/#breadcrumb\"},\"inLanguage\":\"es\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.medgon.com/etiqueta/industrializacion/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Portada\",\"item\":\"https://www.medgon.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"industrializacion\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.medgon.com/#website\",\"url\":\"https://www.medgon.com/\",\"name\":\"Medgon\",\"description\":\"Fabricación de Edificios Passivhaus y Casas Pasivas\",\"publisher\":{\"@id\":\"https://www.medgon.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.medgon.com/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"es\"},{\"@type\":\"Organization\",\"@id\":\"https://www.medgon.com/#organization\",\"name\":\"Medgon\",\"url\":\"https://www.medgon.com/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"es\",\"@id\":\"https://www.medgon.com/#/schema/logo/image/\",\"url\":\"https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg\",\"contentUrl\":\"https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg\",\"width\":1000,\"height\":689,\"caption\":\"Medgon\"},\"image\":{\"@id\":\"https://www.medgon.com/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/MedgonPassivHaus/\",\"https://x.com/medgon_passiv\",\"https://www.instagram.com/medgon_passivhaus/\",\"https://www.youtube.com/channel/UCrXA5xjYqq_d2P4n6YQsqkA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+            "yoast_head_json": {
+              "title": "industrializacion archivos | Medgon",
+              "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+              },
+              "canonical": "https://www.medgon.com/etiqueta/industrializacion/",
+              "og_locale": "es_ES",
+              "og_type": "article",
+              "og_title": "industrializacion archivos | Medgon",
+              "og_url": "https://www.medgon.com/etiqueta/industrializacion/",
+              "og_site_name": "Medgon",
+              "twitter_card": "summary_large_image",
+              "twitter_site": "@medgon_passiv",
+              "schema": {
+                "@context": "https://schema.org",
+                "@graph": [
+                  {
+                    "@type": "CollectionPage",
+                    "@id": "https://www.medgon.com/etiqueta/industrializacion/",
+                    "url": "https://www.medgon.com/etiqueta/industrializacion/",
+                    "name": "industrializacion archivos | Medgon",
+                    "isPartOf": {
+                      "@id": "https://www.medgon.com/#website"
+                    },
+                    "breadcrumb": {
+                      "@id": "https://www.medgon.com/etiqueta/industrializacion/#breadcrumb"
+                    },
+                    "inLanguage": "es"
+                  },
+                  {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://www.medgon.com/etiqueta/industrializacion/#breadcrumb",
+                    "itemListElement": [
+                      {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Portada",
+                        "item": "https://www.medgon.com/"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "industrializacion"
+                      }
+                    ]
+                  },
+                  {
+                    "@type": "WebSite",
+                    "@id": "https://www.medgon.com/#website",
+                    "url": "https://www.medgon.com/",
+                    "name": "Medgon",
+                    "description": "Fabricación de Edificios Passivhaus y Casas Pasivas",
+                    "publisher": {
+                      "@id": "https://www.medgon.com/#organization"
+                    },
+                    "potentialAction": [
+                      {
+                        "@type": "SearchAction",
+                        "target": {
+                          "@type": "EntryPoint",
+                          "urlTemplate": "https://www.medgon.com/?s={search_term_string}"
+                        },
+                        "query-input": "required name=search_term_string"
+                      }
+                    ],
+                    "inLanguage": "es"
+                  },
+                  {
+                    "@type": "Organization",
+                    "@id": "https://www.medgon.com/#organization",
+                    "name": "Medgon",
+                    "url": "https://www.medgon.com/",
+                    "logo": {
+                      "@type": "ImageObject",
+                      "inLanguage": "es",
+                      "@id": "https://www.medgon.com/#/schema/logo/image/",
+                      "url": "https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg",
+                      "contentUrl": "https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg",
+                      "width": 1000,
+                      "height": 689,
+                      "caption": "Medgon"
+                    },
+                    "image": {
+                      "@id": "https://www.medgon.com/#/schema/logo/image/"
+                    },
+                    "sameAs": [
+                      "https://www.facebook.com/MedgonPassivHaus/",
+                      "https://x.com/medgon_passiv",
+                      "https://www.instagram.com/medgon_passivhaus/",
+                      "https://www.youtube.com/channel/UCrXA5xjYqq_d2P4n6YQsqkA"
+                    ]
+                  }
+                ]
+              }
+            },
+            "_links": {
+              "self": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/tags/41",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/tags"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/taxonomies/post_tag"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/posts?tags=41"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ]
+      ]
+    }
+  },
+  {
+    "id": 12504,
+    "date": "2026-11-03T17:25:07",
+    "slug": "prestaciones-vivienda-passivhaus",
+    "title": {
+      "rendered": "El precio de tu casa no lo cuenta todo: qué valorar al construir una casa Passivhaus"
+    },
+    "excerpt": {
+      "rendered": "<p>Construir una casa Passivhaus es una decisión que va mucho más allá de comparar presupuestos y precios por metro cuadrado. Cuando recibes varias propuestas, es lógico que quieras saber cuánto vas a invertir y qué incluye cada una. Pero hay algo que puede cambiar tu decisión: no todas las viviendas que cuestan lo mismo ofrecen [&hellip;]</p>\n",
+      "protected": false
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.medgon.com/wp-json/wp/v2/posts/12504",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.medgon.com/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.medgon.com/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://www.medgon.com/wp-json/wp/v2/users/5"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://www.medgon.com/wp-json/wp/v2/comments?post=12504"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 5,
+          "href": "https://www.medgon.com/wp-json/wp/v2/posts/12504/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 12511,
+          "href": "https://www.medgon.com/wp-json/wp/v2/posts/12504/revisions/12511"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://www.medgon.com/wp-json/wp/v2/media/12509"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://www.medgon.com/wp-json/wp/v2/media?parent=12504"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://www.medgon.com/wp-json/wp/v2/categories?post=12504"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://www.medgon.com/wp-json/wp/v2/tags?post=12504"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "code": "rest_user_invalid_id",
+          "message": "ID de usuario no válido.",
+          "data": {
+            "status": 404
+          }
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "id": 12509,
+          "date": "2026-11-03T17:43:28",
+          "slug": "comparar-2-casas-b-2",
+          "type": "attachment",
+          "link": "https://www.medgon.com/prestaciones-vivienda-passivhaus/comparar-2-casas-b-2/",
+          "title": {
+            "rendered": "EL PRECIO NO LO CUENTA TODO"
+          },
+          "author": 5,
+          "featured_media": 0,
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "Vivienda contemporánea de altas prestaciones energéticas con envolvente térmica y estructura de madera técnica integrada.",
+          "media_type": "image",
+          "mime_type": "image/webp",
+          "media_details": {
+            "width": 1792,
+            "height": 1344,
+            "file": "2026/11/comparar-2-casas-b-1.webp",
+            "filesize": 1369458,
+            "sizes": {
+              "medium": {
+                "file": "comparar-2-casas-b-1-300x225.webp",
+                "width": 300,
+                "height": 225,
+                "filesize": 15824,
+                "mime_type": "image/webp",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/comparar-2-casas-b-1-300x225.webp"
+              },
+              "large": {
+                "file": "comparar-2-casas-b-1-1024x768.webp",
+                "width": 1024,
+                "height": 768,
+                "filesize": 104540,
+                "mime_type": "image/webp",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/comparar-2-casas-b-1-1024x768.webp"
+              },
+              "thumbnail": {
+                "file": "comparar-2-casas-b-1-150x150.webp",
+                "width": 150,
+                "height": 150,
+                "filesize": 6872,
+                "mime_type": "image/webp",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/comparar-2-casas-b-1-150x150.webp"
+              },
+              "medium_large": {
+                "file": "comparar-2-casas-b-1-768x576.webp",
+                "width": 768,
+                "height": 576,
+                "filesize": 66306,
+                "mime_type": "image/webp",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/comparar-2-casas-b-1-768x576.webp"
+              },
+              "1536x1536": {
+                "file": "comparar-2-casas-b-1-1536x1152.webp",
+                "width": 1536,
+                "height": 1152,
+                "filesize": 182074,
+                "mime_type": "image/webp",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/comparar-2-casas-b-1-1536x1152.webp"
+              },
+              "blog-large": {
+                "file": "comparar-2-casas-b-1-1140x445.webp",
+                "width": 1140,
+                "height": 445,
+                "filesize": 53324,
+                "mime_type": "image/webp",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/comparar-2-casas-b-1-1140x445.webp"
+              },
+              "blog-medium": {
+                "file": "comparar-2-casas-b-1-463x348.webp",
+                "width": 463,
+                "height": 348,
+                "filesize": 30182,
+                "mime_type": "image/webp",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/comparar-2-casas-b-1-463x348.webp"
+              },
+              "blog-masonry": {
+                "file": "comparar-2-casas-b-1-640x480.webp",
+                "width": 640,
+                "height": 480,
+                "filesize": 49830,
+                "mime_type": "image/webp",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/comparar-2-casas-b-1-640x480.webp"
+              },
+              "blog-masonry-small": {
+                "file": "comparar-2-casas-b-1-400x300.webp",
+                "width": 400,
+                "height": 300,
+                "filesize": 24138,
+                "mime_type": "image/webp",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/comparar-2-casas-b-1-400x300.webp"
+              },
+              "blog-grid": {
+                "file": "comparar-2-casas-b-1-640x480.webp",
+                "width": 640,
+                "height": 480,
+                "filesize": 49830,
+                "mime_type": "image/webp",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/comparar-2-casas-b-1-640x480.webp"
+              },
+              "blog-grid-small": {
+                "file": "comparar-2-casas-b-1-400x300.webp",
+                "width": 400,
+                "height": 300,
+                "filesize": 24138,
+                "mime_type": "image/webp",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/comparar-2-casas-b-1-400x300.webp"
+              },
+              "related-post": {
+                "file": "comparar-2-casas-b-1-450x231.webp",
+                "width": 450,
+                "height": 231,
+                "filesize": 18428,
+                "mime_type": "image/webp",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/comparar-2-casas-b-1-450x231.webp"
+              },
+              "portfolio-grid-one": {
+                "file": "comparar-2-casas-b-1-1140x595.webp",
+                "width": 1140,
+                "height": 595,
+                "filesize": 74274,
+                "mime_type": "image/webp",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/comparar-2-casas-b-1-1140x595.webp"
+              },
+              "portfolio-grid-two": {
+                "file": "comparar-2-casas-b-1-560x560.webp",
+                "width": 560,
+                "height": 560,
+                "filesize": 45020,
+                "mime_type": "image/webp",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/comparar-2-casas-b-1-560x560.webp"
+              },
+              "portfolio-grid": {
+                "file": "comparar-2-casas-b-1-367x367.webp",
+                "width": 367,
+                "height": 367,
+                "filesize": 23974,
+                "mime_type": "image/webp",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/comparar-2-casas-b-1-367x367.webp"
+              },
+              "portfolio-masonry": {
+                "file": "comparar-2-casas-b-1-367x275.webp",
+                "width": 367,
+                "height": 275,
+                "filesize": 21676,
+                "mime_type": "image/webp",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/comparar-2-casas-b-1-367x275.webp"
+              },
+              "portfolio-full": {
+                "file": "comparar-2-casas-b-1-1140x595.webp",
+                "width": 1140,
+                "height": 595,
+                "filesize": 74274,
+                "mime_type": "image/webp",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/comparar-2-casas-b-1-1140x595.webp"
+              },
+              "portfolio-large": {
+                "file": "comparar-2-casas-b-1-560x367.webp",
+                "width": 560,
+                "height": 367,
+                "filesize": 34856,
+                "mime_type": "image/webp",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/comparar-2-casas-b-1-560x367.webp"
+              },
+              "portfolio-medium": {
+                "file": "comparar-2-casas-b-1-367x367.webp",
+                "width": 367,
+                "height": 367,
+                "filesize": 23974,
+                "mime_type": "image/webp",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/comparar-2-casas-b-1-367x367.webp"
+              },
+              "portfolio-timeline": {
+                "file": "comparar-2-casas-b-1-560x560.webp",
+                "width": 560,
+                "height": 560,
+                "filesize": 45020,
+                "mime_type": "image/webp",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/comparar-2-casas-b-1-560x560.webp"
+              },
+              "related-portfolio": {
+                "file": "comparar-2-casas-b-1-367x367.webp",
+                "width": 367,
+                "height": 367,
+                "filesize": 23974,
+                "mime_type": "image/webp",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/comparar-2-casas-b-1-367x367.webp"
+              },
+              "portfolio-cat-stripes": {
+                "file": "comparar-2-casas-b-1-494x1080.webp",
+                "width": 494,
+                "height": 1080,
+                "filesize": 49860,
+                "mime_type": "image/webp",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/comparar-2-casas-b-1-494x1080.webp"
+              },
+              "portfolio-cat-parallax": {
+                "file": "comparar-2-casas-b-1-1792x627.webp",
+                "width": 1792,
+                "height": 627,
+                "filesize": 101542,
+                "mime_type": "image/webp",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/comparar-2-casas-b-1-1792x627.webp"
+              },
+              "portfolio-thumbnail": {
+                "file": "comparar-2-casas-b-1-200x150.webp",
+                "width": 200,
+                "height": 150,
+                "filesize": 8842,
+                "mime_type": "image/webp",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/comparar-2-casas-b-1-200x150.webp"
+              },
+              "widget-thumb-medium": {
+                "file": "comparar-2-casas-b-1-85x85.webp",
+                "width": 85,
+                "height": 85,
+                "filesize": 3394,
+                "mime_type": "image/webp",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/comparar-2-casas-b-1-85x85.webp"
+              },
+              "cmplz_banner_image": {
+                "file": "comparar-2-casas-b-1-350x100.webp",
+                "width": 350,
+                "height": 100,
+                "filesize": 5996,
+                "mime_type": "image/webp",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/comparar-2-casas-b-1-350x100.webp"
+              },
+              "full": {
+                "file": "comparar-2-casas-b-1.webp",
+                "width": 1792,
+                "height": 1344,
+                "mime_type": "image/webp",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/comparar-2-casas-b-1.webp"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://www.medgon.com/wp-content/uploads/2026/11/comparar-2-casas-b-1.webp",
+          "_links": {
+            "self": [
+              {
+                "href": "https://www.medgon.com/wp-json/wp/v2/media/12509",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://www.medgon.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://www.medgon.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://www.medgon.com/wp-json/wp/v2/users/5"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://www.medgon.com/wp-json/wp/v2/comments?post=12509"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "post",
+                "id": 12504,
+                "href": "https://www.medgon.com/wp-json/wp/v2/posts/12504"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 123,
+            "link": "https://www.medgon.com/categoria/industrializacion/",
+            "name": "Industrialización",
+            "slug": "industrializacion",
+            "taxonomy": "category",
+            "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v22.8 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Industrialización archivos | Medgon</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.medgon.com/categoria/industrializacion/\" />\n<meta property=\"og:locale\" content=\"es_ES\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Industrialización archivos | Medgon\" />\n<meta property=\"og:url\" content=\"https://www.medgon.com/categoria/industrializacion/\" />\n<meta property=\"og:site_name\" content=\"Medgon\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@medgon_passiv\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.medgon.com/categoria/industrializacion/\",\"url\":\"https://www.medgon.com/categoria/industrializacion/\",\"name\":\"Industrialización archivos | Medgon\",\"isPartOf\":{\"@id\":\"https://www.medgon.com/#website\"},\"breadcrumb\":{\"@id\":\"https://www.medgon.com/categoria/industrializacion/#breadcrumb\"},\"inLanguage\":\"es\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.medgon.com/categoria/industrializacion/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Portada\",\"item\":\"https://www.medgon.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Industrialización\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.medgon.com/#website\",\"url\":\"https://www.medgon.com/\",\"name\":\"Medgon\",\"description\":\"Fabricación de Edificios Passivhaus y Casas Pasivas\",\"publisher\":{\"@id\":\"https://www.medgon.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.medgon.com/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"es\"},{\"@type\":\"Organization\",\"@id\":\"https://www.medgon.com/#organization\",\"name\":\"Medgon\",\"url\":\"https://www.medgon.com/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"es\",\"@id\":\"https://www.medgon.com/#/schema/logo/image/\",\"url\":\"https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg\",\"contentUrl\":\"https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg\",\"width\":1000,\"height\":689,\"caption\":\"Medgon\"},\"image\":{\"@id\":\"https://www.medgon.com/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/MedgonPassivHaus/\",\"https://x.com/medgon_passiv\",\"https://www.instagram.com/medgon_passivhaus/\",\"https://www.youtube.com/channel/UCrXA5xjYqq_d2P4n6YQsqkA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+            "yoast_head_json": {
+              "title": "Industrialización archivos | Medgon",
+              "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+              },
+              "canonical": "https://www.medgon.com/categoria/industrializacion/",
+              "og_locale": "es_ES",
+              "og_type": "article",
+              "og_title": "Industrialización archivos | Medgon",
+              "og_url": "https://www.medgon.com/categoria/industrializacion/",
+              "og_site_name": "Medgon",
+              "twitter_card": "summary_large_image",
+              "twitter_site": "@medgon_passiv",
+              "schema": {
+                "@context": "https://schema.org",
+                "@graph": [
+                  {
+                    "@type": "CollectionPage",
+                    "@id": "https://www.medgon.com/categoria/industrializacion/",
+                    "url": "https://www.medgon.com/categoria/industrializacion/",
+                    "name": "Industrialización archivos | Medgon",
+                    "isPartOf": {
+                      "@id": "https://www.medgon.com/#website"
+                    },
+                    "breadcrumb": {
+                      "@id": "https://www.medgon.com/categoria/industrializacion/#breadcrumb"
+                    },
+                    "inLanguage": "es"
+                  },
+                  {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://www.medgon.com/categoria/industrializacion/#breadcrumb",
+                    "itemListElement": [
+                      {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Portada",
+                        "item": "https://www.medgon.com/"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Industrialización"
+                      }
+                    ]
+                  },
+                  {
+                    "@type": "WebSite",
+                    "@id": "https://www.medgon.com/#website",
+                    "url": "https://www.medgon.com/",
+                    "name": "Medgon",
+                    "description": "Fabricación de Edificios Passivhaus y Casas Pasivas",
+                    "publisher": {
+                      "@id": "https://www.medgon.com/#organization"
+                    },
+                    "potentialAction": [
+                      {
+                        "@type": "SearchAction",
+                        "target": {
+                          "@type": "EntryPoint",
+                          "urlTemplate": "https://www.medgon.com/?s={search_term_string}"
+                        },
+                        "query-input": "required name=search_term_string"
+                      }
+                    ],
+                    "inLanguage": "es"
+                  },
+                  {
+                    "@type": "Organization",
+                    "@id": "https://www.medgon.com/#organization",
+                    "name": "Medgon",
+                    "url": "https://www.medgon.com/",
+                    "logo": {
+                      "@type": "ImageObject",
+                      "inLanguage": "es",
+                      "@id": "https://www.medgon.com/#/schema/logo/image/",
+                      "url": "https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg",
+                      "contentUrl": "https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg",
+                      "width": 1000,
+                      "height": 689,
+                      "caption": "Medgon"
+                    },
+                    "image": {
+                      "@id": "https://www.medgon.com/#/schema/logo/image/"
+                    },
+                    "sameAs": [
+                      "https://www.facebook.com/MedgonPassivHaus/",
+                      "https://x.com/medgon_passiv",
+                      "https://www.instagram.com/medgon_passivhaus/",
+                      "https://www.youtube.com/channel/UCrXA5xjYqq_d2P4n6YQsqkA"
+                    ]
+                  }
+                ]
+              }
+            },
+            "_links": {
+              "self": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/categories/123",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/posts?categories=123"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 30,
+            "link": "https://www.medgon.com/categoria/passivhaus/",
+            "name": "Passivhaus",
+            "slug": "passivhaus",
+            "taxonomy": "category",
+            "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v22.8 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Passivhaus archivos | Medgon</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.medgon.com/categoria/passivhaus/\" />\n<meta property=\"og:locale\" content=\"es_ES\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Passivhaus archivos | Medgon\" />\n<meta property=\"og:url\" content=\"https://www.medgon.com/categoria/passivhaus/\" />\n<meta property=\"og:site_name\" content=\"Medgon\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@medgon_passiv\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.medgon.com/categoria/passivhaus/\",\"url\":\"https://www.medgon.com/categoria/passivhaus/\",\"name\":\"Passivhaus archivos | Medgon\",\"isPartOf\":{\"@id\":\"https://www.medgon.com/#website\"},\"breadcrumb\":{\"@id\":\"https://www.medgon.com/categoria/passivhaus/#breadcrumb\"},\"inLanguage\":\"es\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.medgon.com/categoria/passivhaus/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Portada\",\"item\":\"https://www.medgon.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Passivhaus\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.medgon.com/#website\",\"url\":\"https://www.medgon.com/\",\"name\":\"Medgon\",\"description\":\"Fabricación de Edificios Passivhaus y Casas Pasivas\",\"publisher\":{\"@id\":\"https://www.medgon.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.medgon.com/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"es\"},{\"@type\":\"Organization\",\"@id\":\"https://www.medgon.com/#organization\",\"name\":\"Medgon\",\"url\":\"https://www.medgon.com/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"es\",\"@id\":\"https://www.medgon.com/#/schema/logo/image/\",\"url\":\"https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg\",\"contentUrl\":\"https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg\",\"width\":1000,\"height\":689,\"caption\":\"Medgon\"},\"image\":{\"@id\":\"https://www.medgon.com/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/MedgonPassivHaus/\",\"https://x.com/medgon_passiv\",\"https://www.instagram.com/medgon_passivhaus/\",\"https://www.youtube.com/channel/UCrXA5xjYqq_d2P4n6YQsqkA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+            "yoast_head_json": {
+              "title": "Passivhaus archivos | Medgon",
+              "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+              },
+              "canonical": "https://www.medgon.com/categoria/passivhaus/",
+              "og_locale": "es_ES",
+              "og_type": "article",
+              "og_title": "Passivhaus archivos | Medgon",
+              "og_url": "https://www.medgon.com/categoria/passivhaus/",
+              "og_site_name": "Medgon",
+              "twitter_card": "summary_large_image",
+              "twitter_site": "@medgon_passiv",
+              "schema": {
+                "@context": "https://schema.org",
+                "@graph": [
+                  {
+                    "@type": "CollectionPage",
+                    "@id": "https://www.medgon.com/categoria/passivhaus/",
+                    "url": "https://www.medgon.com/categoria/passivhaus/",
+                    "name": "Passivhaus archivos | Medgon",
+                    "isPartOf": {
+                      "@id": "https://www.medgon.com/#website"
+                    },
+                    "breadcrumb": {
+                      "@id": "https://www.medgon.com/categoria/passivhaus/#breadcrumb"
+                    },
+                    "inLanguage": "es"
+                  },
+                  {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://www.medgon.com/categoria/passivhaus/#breadcrumb",
+                    "itemListElement": [
+                      {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Portada",
+                        "item": "https://www.medgon.com/"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Passivhaus"
+                      }
+                    ]
+                  },
+                  {
+                    "@type": "WebSite",
+                    "@id": "https://www.medgon.com/#website",
+                    "url": "https://www.medgon.com/",
+                    "name": "Medgon",
+                    "description": "Fabricación de Edificios Passivhaus y Casas Pasivas",
+                    "publisher": {
+                      "@id": "https://www.medgon.com/#organization"
+                    },
+                    "potentialAction": [
+                      {
+                        "@type": "SearchAction",
+                        "target": {
+                          "@type": "EntryPoint",
+                          "urlTemplate": "https://www.medgon.com/?s={search_term_string}"
+                        },
+                        "query-input": "required name=search_term_string"
+                      }
+                    ],
+                    "inLanguage": "es"
+                  },
+                  {
+                    "@type": "Organization",
+                    "@id": "https://www.medgon.com/#organization",
+                    "name": "Medgon",
+                    "url": "https://www.medgon.com/",
+                    "logo": {
+                      "@type": "ImageObject",
+                      "inLanguage": "es",
+                      "@id": "https://www.medgon.com/#/schema/logo/image/",
+                      "url": "https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg",
+                      "contentUrl": "https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg",
+                      "width": 1000,
+                      "height": 689,
+                      "caption": "Medgon"
+                    },
+                    "image": {
+                      "@id": "https://www.medgon.com/#/schema/logo/image/"
+                    },
+                    "sameAs": [
+                      "https://www.facebook.com/MedgonPassivHaus/",
+                      "https://x.com/medgon_passiv",
+                      "https://www.instagram.com/medgon_passivhaus/",
+                      "https://www.youtube.com/channel/UCrXA5xjYqq_d2P4n6YQsqkA"
+                    ]
+                  }
+                ]
+              }
+            },
+            "_links": {
+              "self": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/categories/30",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/posts?categories=30"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        []
+      ]
+    }
+  },
+  {
+    "id": 12486,
+    "date": "2026-10-15T18:12:11",
+    "slug": "que-incluye-la-estructura-y-envolvente-de-una-casa-industrializada",
+    "title": {
+      "rendered": "Qué incluye la estructura y envolvente de una casa industrializada"
+    },
+    "excerpt": {
+      "rendered": "<p>Cuando empiezas a construir tu casa, hay una pregunta que conviene resolver antes de comparar ofertas: ¿qué te entregan exactamente por el precio que aparece en el presupuesto? Una propuesta puede incluir la estructura, otra añadir los muros y la cubierta, y una tercera contemplar también parte del montaje o determinadas instalaciones. Si todas se [&hellip;]</p>\n",
+      "protected": false
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.medgon.com/wp-json/wp/v2/posts/12486",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.medgon.com/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.medgon.com/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://www.medgon.com/wp-json/wp/v2/users/5"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://www.medgon.com/wp-json/wp/v2/comments?post=12486"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "https://www.medgon.com/wp-json/wp/v2/posts/12486/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 12488,
+          "href": "https://www.medgon.com/wp-json/wp/v2/posts/12486/revisions/12488"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://www.medgon.com/wp-json/wp/v2/media/12487"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://www.medgon.com/wp-json/wp/v2/media?parent=12486"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://www.medgon.com/wp-json/wp/v2/categories?post=12486"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://www.medgon.com/wp-json/wp/v2/tags?post=12486"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "code": "rest_user_invalid_id",
+          "message": "ID de usuario no válido.",
+          "data": {
+            "status": 404
+          }
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "id": 12487,
+          "date": "2026-10-15T18:04:18",
+          "slug": "una-vivienda-industrializada",
+          "type": "attachment",
+          "link": "https://www.medgon.com/que-incluye-la-estructura-y-envolvente-de-una-casa-industrializada/una-vivienda-industrializada/",
+          "title": {
+            "rendered": "Una vivienda industrializada"
+          },
+          "author": 5,
+          "featured_media": 0,
+          "caption": {
+            "rendered": ""
+          },
+          "alt_text": "Vivienda unifamiliar contemporánea cúbica con fachada blanca y ventanas grises, representativa de la arquitectura residencial industrializada.",
+          "media_type": "image",
+          "mime_type": "image/png",
+          "media_details": {
+            "width": 1448,
+            "height": 1086,
+            "file": "2026/10/Una-vivienda-industrializada.png",
+            "filesize": 2985839,
+            "sizes": {
+              "medium": {
+                "file": "Una-vivienda-industrializada-300x225.png",
+                "width": 300,
+                "height": 225,
+                "filesize": 112350,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/10/Una-vivienda-industrializada-300x225.png"
+              },
+              "large": {
+                "file": "Una-vivienda-industrializada-1024x768.png",
+                "width": 1024,
+                "height": 768,
+                "filesize": 1266514,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/10/Una-vivienda-industrializada-1024x768.png"
+              },
+              "thumbnail": {
+                "file": "Una-vivienda-industrializada-150x150.png",
+                "width": 150,
+                "height": 150,
+                "filesize": 37832,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/10/Una-vivienda-industrializada-150x150.png"
+              },
+              "medium_large": {
+                "file": "Una-vivienda-industrializada-768x576.png",
+                "width": 768,
+                "height": 576,
+                "filesize": 718397,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/10/Una-vivienda-industrializada-768x576.png"
+              },
+              "blog-large": {
+                "file": "Una-vivienda-industrializada-1140x445.png",
+                "width": 1140,
+                "height": 445,
+                "filesize": 827136,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/10/Una-vivienda-industrializada-1140x445.png"
+              },
+              "blog-medium": {
+                "file": "Una-vivienda-industrializada-463x348.png",
+                "width": 463,
+                "height": 348,
+                "filesize": 262692,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/10/Una-vivienda-industrializada-463x348.png"
+              },
+              "blog-masonry": {
+                "file": "Una-vivienda-industrializada-640x480.png",
+                "width": 640,
+                "height": 480,
+                "filesize": 499472,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/10/Una-vivienda-industrializada-640x480.png"
+              },
+              "blog-masonry-small": {
+                "file": "Una-vivienda-industrializada-400x300.png",
+                "width": 400,
+                "height": 300,
+                "filesize": 196927,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/10/Una-vivienda-industrializada-400x300.png"
+              },
+              "blog-grid": {
+                "file": "Una-vivienda-industrializada-640x480.png",
+                "width": 640,
+                "height": 480,
+                "filesize": 499472,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/10/Una-vivienda-industrializada-640x480.png"
+              },
+              "blog-grid-small": {
+                "file": "Una-vivienda-industrializada-400x300.png",
+                "width": 400,
+                "height": 300,
+                "filesize": 196927,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/10/Una-vivienda-industrializada-400x300.png"
+              },
+              "related-post": {
+                "file": "Una-vivienda-industrializada-450x231.png",
+                "width": 450,
+                "height": 231,
+                "filesize": 176881,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/10/Una-vivienda-industrializada-450x231.png"
+              },
+              "portfolio-grid-one": {
+                "file": "Una-vivienda-industrializada-1140x595.png",
+                "width": 1140,
+                "height": 595,
+                "filesize": 1115157,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/10/Una-vivienda-industrializada-1140x595.png"
+              },
+              "portfolio-grid-two": {
+                "file": "Una-vivienda-industrializada-560x560.png",
+                "width": 560,
+                "height": 560,
+                "filesize": 488325,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/10/Una-vivienda-industrializada-560x560.png"
+              },
+              "portfolio-grid": {
+                "file": "Una-vivienda-industrializada-367x367.png",
+                "width": 367,
+                "height": 367,
+                "filesize": 210696,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/10/Una-vivienda-industrializada-367x367.png"
+              },
+              "portfolio-masonry": {
+                "file": "Una-vivienda-industrializada-367x275.png",
+                "width": 367,
+                "height": 275,
+                "filesize": 166446,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/10/Una-vivienda-industrializada-367x275.png"
+              },
+              "portfolio-full": {
+                "file": "Una-vivienda-industrializada-1140x595.png",
+                "width": 1140,
+                "height": 595,
+                "filesize": 1115157,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/10/Una-vivienda-industrializada-1140x595.png"
+              },
+              "portfolio-large": {
+                "file": "Una-vivienda-industrializada-560x367.png",
+                "width": 560,
+                "height": 367,
+                "filesize": 339311,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/10/Una-vivienda-industrializada-560x367.png"
+              },
+              "portfolio-medium": {
+                "file": "Una-vivienda-industrializada-367x367.png",
+                "width": 367,
+                "height": 367,
+                "filesize": 210696,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/10/Una-vivienda-industrializada-367x367.png"
+              },
+              "portfolio-timeline": {
+                "file": "Una-vivienda-industrializada-560x560.png",
+                "width": 560,
+                "height": 560,
+                "filesize": 488325,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/10/Una-vivienda-industrializada-560x560.png"
+              },
+              "related-portfolio": {
+                "file": "Una-vivienda-industrializada-367x367.png",
+                "width": 367,
+                "height": 367,
+                "filesize": 210696,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/10/Una-vivienda-industrializada-367x367.png"
+              },
+              "portfolio-cat-stripes": {
+                "file": "Una-vivienda-industrializada-494x1080.png",
+                "width": 494,
+                "height": 1080,
+                "filesize": 750737,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/10/Una-vivienda-industrializada-494x1080.png"
+              },
+              "portfolio-cat-parallax": {
+                "file": "Una-vivienda-industrializada-1448x627.png",
+                "width": 1448,
+                "height": 627,
+                "filesize": 1627497,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/10/Una-vivienda-industrializada-1448x627.png"
+              },
+              "portfolio-thumbnail": {
+                "file": "Una-vivienda-industrializada-200x150.png",
+                "width": 200,
+                "height": 150,
+                "filesize": 52156,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/10/Una-vivienda-industrializada-200x150.png"
+              },
+              "widget-thumb-medium": {
+                "file": "Una-vivienda-industrializada-85x85.png",
+                "width": 85,
+                "height": 85,
+                "filesize": 13004,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/10/Una-vivienda-industrializada-85x85.png"
+              },
+              "cmplz_banner_image": {
+                "file": "Una-vivienda-industrializada-350x100.png",
+                "width": 350,
+                "height": 100,
+                "filesize": 57391,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/10/Una-vivienda-industrializada-350x100.png"
+              },
+              "full": {
+                "file": "Una-vivienda-industrializada.png",
+                "width": 1448,
+                "height": 1086,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/10/Una-vivienda-industrializada.png"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://www.medgon.com/wp-content/uploads/2026/10/Una-vivienda-industrializada.png",
+          "_links": {
+            "self": [
+              {
+                "href": "https://www.medgon.com/wp-json/wp/v2/media/12487",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://www.medgon.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://www.medgon.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://www.medgon.com/wp-json/wp/v2/users/5"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://www.medgon.com/wp-json/wp/v2/comments?post=12487"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "post",
+                "id": 12486,
+                "href": "https://www.medgon.com/wp-json/wp/v2/posts/12486"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 47,
+            "link": "https://www.medgon.com/categoria/casa-pasiva/",
+            "name": "casa pasiva",
+            "slug": "casa-pasiva",
+            "taxonomy": "category",
+            "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v22.8 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>casa pasiva archivos | Medgon</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.medgon.com/categoria/casa-pasiva/\" />\n<meta property=\"og:locale\" content=\"es_ES\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"casa pasiva archivos | Medgon\" />\n<meta property=\"og:url\" content=\"https://www.medgon.com/categoria/casa-pasiva/\" />\n<meta property=\"og:site_name\" content=\"Medgon\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@medgon_passiv\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.medgon.com/categoria/casa-pasiva/\",\"url\":\"https://www.medgon.com/categoria/casa-pasiva/\",\"name\":\"casa pasiva archivos | Medgon\",\"isPartOf\":{\"@id\":\"https://www.medgon.com/#website\"},\"breadcrumb\":{\"@id\":\"https://www.medgon.com/categoria/casa-pasiva/#breadcrumb\"},\"inLanguage\":\"es\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.medgon.com/categoria/casa-pasiva/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Portada\",\"item\":\"https://www.medgon.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"casa pasiva\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.medgon.com/#website\",\"url\":\"https://www.medgon.com/\",\"name\":\"Medgon\",\"description\":\"Fabricación de Edificios Passivhaus y Casas Pasivas\",\"publisher\":{\"@id\":\"https://www.medgon.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.medgon.com/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"es\"},{\"@type\":\"Organization\",\"@id\":\"https://www.medgon.com/#organization\",\"name\":\"Medgon\",\"url\":\"https://www.medgon.com/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"es\",\"@id\":\"https://www.medgon.com/#/schema/logo/image/\",\"url\":\"https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg\",\"contentUrl\":\"https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg\",\"width\":1000,\"height\":689,\"caption\":\"Medgon\"},\"image\":{\"@id\":\"https://www.medgon.com/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/MedgonPassivHaus/\",\"https://x.com/medgon_passiv\",\"https://www.instagram.com/medgon_passivhaus/\",\"https://www.youtube.com/channel/UCrXA5xjYqq_d2P4n6YQsqkA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+            "yoast_head_json": {
+              "title": "casa pasiva archivos | Medgon",
+              "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+              },
+              "canonical": "https://www.medgon.com/categoria/casa-pasiva/",
+              "og_locale": "es_ES",
+              "og_type": "article",
+              "og_title": "casa pasiva archivos | Medgon",
+              "og_url": "https://www.medgon.com/categoria/casa-pasiva/",
+              "og_site_name": "Medgon",
+              "twitter_card": "summary_large_image",
+              "twitter_site": "@medgon_passiv",
+              "schema": {
+                "@context": "https://schema.org",
+                "@graph": [
+                  {
+                    "@type": "CollectionPage",
+                    "@id": "https://www.medgon.com/categoria/casa-pasiva/",
+                    "url": "https://www.medgon.com/categoria/casa-pasiva/",
+                    "name": "casa pasiva archivos | Medgon",
+                    "isPartOf": {
+                      "@id": "https://www.medgon.com/#website"
+                    },
+                    "breadcrumb": {
+                      "@id": "https://www.medgon.com/categoria/casa-pasiva/#breadcrumb"
+                    },
+                    "inLanguage": "es"
+                  },
+                  {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://www.medgon.com/categoria/casa-pasiva/#breadcrumb",
+                    "itemListElement": [
+                      {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Portada",
+                        "item": "https://www.medgon.com/"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "casa pasiva"
+                      }
+                    ]
+                  },
+                  {
+                    "@type": "WebSite",
+                    "@id": "https://www.medgon.com/#website",
+                    "url": "https://www.medgon.com/",
+                    "name": "Medgon",
+                    "description": "Fabricación de Edificios Passivhaus y Casas Pasivas",
+                    "publisher": {
+                      "@id": "https://www.medgon.com/#organization"
+                    },
+                    "potentialAction": [
+                      {
+                        "@type": "SearchAction",
+                        "target": {
+                          "@type": "EntryPoint",
+                          "urlTemplate": "https://www.medgon.com/?s={search_term_string}"
+                        },
+                        "query-input": "required name=search_term_string"
+                      }
+                    ],
+                    "inLanguage": "es"
+                  },
+                  {
+                    "@type": "Organization",
+                    "@id": "https://www.medgon.com/#organization",
+                    "name": "Medgon",
+                    "url": "https://www.medgon.com/",
+                    "logo": {
+                      "@type": "ImageObject",
+                      "inLanguage": "es",
+                      "@id": "https://www.medgon.com/#/schema/logo/image/",
+                      "url": "https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg",
+                      "contentUrl": "https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg",
+                      "width": 1000,
+                      "height": 689,
+                      "caption": "Medgon"
+                    },
+                    "image": {
+                      "@id": "https://www.medgon.com/#/schema/logo/image/"
+                    },
+                    "sameAs": [
+                      "https://www.facebook.com/MedgonPassivHaus/",
+                      "https://x.com/medgon_passiv",
+                      "https://www.instagram.com/medgon_passivhaus/",
+                      "https://www.youtube.com/channel/UCrXA5xjYqq_d2P4n6YQsqkA"
+                    ]
+                  }
+                ]
+              }
+            },
+            "_links": {
+              "self": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/categories/47",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/posts?categories=47"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 79,
+            "link": "https://www.medgon.com/categoria/casas-de-catalogo/",
+            "name": "Casas de catalogo",
+            "slug": "casas-de-catalogo",
+            "taxonomy": "category",
+            "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v22.8 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Casas de catalogo archivos | Medgon</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.medgon.com/categoria/casas-de-catalogo/\" />\n<meta property=\"og:locale\" content=\"es_ES\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Casas de catalogo archivos | Medgon\" />\n<meta property=\"og:url\" content=\"https://www.medgon.com/categoria/casas-de-catalogo/\" />\n<meta property=\"og:site_name\" content=\"Medgon\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@medgon_passiv\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.medgon.com/categoria/casas-de-catalogo/\",\"url\":\"https://www.medgon.com/categoria/casas-de-catalogo/\",\"name\":\"Casas de catalogo archivos | Medgon\",\"isPartOf\":{\"@id\":\"https://www.medgon.com/#website\"},\"breadcrumb\":{\"@id\":\"https://www.medgon.com/categoria/casas-de-catalogo/#breadcrumb\"},\"inLanguage\":\"es\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.medgon.com/categoria/casas-de-catalogo/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Portada\",\"item\":\"https://www.medgon.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Casas de catalogo\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.medgon.com/#website\",\"url\":\"https://www.medgon.com/\",\"name\":\"Medgon\",\"description\":\"Fabricación de Edificios Passivhaus y Casas Pasivas\",\"publisher\":{\"@id\":\"https://www.medgon.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.medgon.com/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"es\"},{\"@type\":\"Organization\",\"@id\":\"https://www.medgon.com/#organization\",\"name\":\"Medgon\",\"url\":\"https://www.medgon.com/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"es\",\"@id\":\"https://www.medgon.com/#/schema/logo/image/\",\"url\":\"https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg\",\"contentUrl\":\"https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg\",\"width\":1000,\"height\":689,\"caption\":\"Medgon\"},\"image\":{\"@id\":\"https://www.medgon.com/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/MedgonPassivHaus/\",\"https://x.com/medgon_passiv\",\"https://www.instagram.com/medgon_passivhaus/\",\"https://www.youtube.com/channel/UCrXA5xjYqq_d2P4n6YQsqkA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+            "yoast_head_json": {
+              "title": "Casas de catalogo archivos | Medgon",
+              "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+              },
+              "canonical": "https://www.medgon.com/categoria/casas-de-catalogo/",
+              "og_locale": "es_ES",
+              "og_type": "article",
+              "og_title": "Casas de catalogo archivos | Medgon",
+              "og_url": "https://www.medgon.com/categoria/casas-de-catalogo/",
+              "og_site_name": "Medgon",
+              "twitter_card": "summary_large_image",
+              "twitter_site": "@medgon_passiv",
+              "schema": {
+                "@context": "https://schema.org",
+                "@graph": [
+                  {
+                    "@type": "CollectionPage",
+                    "@id": "https://www.medgon.com/categoria/casas-de-catalogo/",
+                    "url": "https://www.medgon.com/categoria/casas-de-catalogo/",
+                    "name": "Casas de catalogo archivos | Medgon",
+                    "isPartOf": {
+                      "@id": "https://www.medgon.com/#website"
+                    },
+                    "breadcrumb": {
+                      "@id": "https://www.medgon.com/categoria/casas-de-catalogo/#breadcrumb"
+                    },
+                    "inLanguage": "es"
+                  },
+                  {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://www.medgon.com/categoria/casas-de-catalogo/#breadcrumb",
+                    "itemListElement": [
+                      {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Portada",
+                        "item": "https://www.medgon.com/"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Casas de catalogo"
+                      }
+                    ]
+                  },
+                  {
+                    "@type": "WebSite",
+                    "@id": "https://www.medgon.com/#website",
+                    "url": "https://www.medgon.com/",
+                    "name": "Medgon",
+                    "description": "Fabricación de Edificios Passivhaus y Casas Pasivas",
+                    "publisher": {
+                      "@id": "https://www.medgon.com/#organization"
+                    },
+                    "potentialAction": [
+                      {
+                        "@type": "SearchAction",
+                        "target": {
+                          "@type": "EntryPoint",
+                          "urlTemplate": "https://www.medgon.com/?s={search_term_string}"
+                        },
+                        "query-input": "required name=search_term_string"
+                      }
+                    ],
+                    "inLanguage": "es"
+                  },
+                  {
+                    "@type": "Organization",
+                    "@id": "https://www.medgon.com/#organization",
+                    "name": "Medgon",
+                    "url": "https://www.medgon.com/",
+                    "logo": {
+                      "@type": "ImageObject",
+                      "inLanguage": "es",
+                      "@id": "https://www.medgon.com/#/schema/logo/image/",
+                      "url": "https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg",
+                      "contentUrl": "https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg",
+                      "width": 1000,
+                      "height": 689,
+                      "caption": "Medgon"
+                    },
+                    "image": {
+                      "@id": "https://www.medgon.com/#/schema/logo/image/"
+                    },
+                    "sameAs": [
+                      "https://www.facebook.com/MedgonPassivHaus/",
+                      "https://x.com/medgon_passiv",
+                      "https://www.instagram.com/medgon_passivhaus/",
+                      "https://www.youtube.com/channel/UCrXA5xjYqq_d2P4n6YQsqkA"
+                    ]
+                  }
+                ]
+              }
+            },
+            "_links": {
+              "self": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/categories/79",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/posts?categories=79"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 28,
+            "link": "https://www.medgon.com/categoria/construccion/",
+            "name": "Construcción",
+            "slug": "construccion",
+            "taxonomy": "category",
+            "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v22.8 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Construcción archivos | Medgon</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.medgon.com/categoria/construccion/\" />\n<meta property=\"og:locale\" content=\"es_ES\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Construcción archivos | Medgon\" />\n<meta property=\"og:url\" content=\"https://www.medgon.com/categoria/construccion/\" />\n<meta property=\"og:site_name\" content=\"Medgon\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@medgon_passiv\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.medgon.com/categoria/construccion/\",\"url\":\"https://www.medgon.com/categoria/construccion/\",\"name\":\"Construcción archivos | Medgon\",\"isPartOf\":{\"@id\":\"https://www.medgon.com/#website\"},\"breadcrumb\":{\"@id\":\"https://www.medgon.com/categoria/construccion/#breadcrumb\"},\"inLanguage\":\"es\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.medgon.com/categoria/construccion/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Portada\",\"item\":\"https://www.medgon.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Construcción\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.medgon.com/#website\",\"url\":\"https://www.medgon.com/\",\"name\":\"Medgon\",\"description\":\"Fabricación de Edificios Passivhaus y Casas Pasivas\",\"publisher\":{\"@id\":\"https://www.medgon.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.medgon.com/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"es\"},{\"@type\":\"Organization\",\"@id\":\"https://www.medgon.com/#organization\",\"name\":\"Medgon\",\"url\":\"https://www.medgon.com/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"es\",\"@id\":\"https://www.medgon.com/#/schema/logo/image/\",\"url\":\"https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg\",\"contentUrl\":\"https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg\",\"width\":1000,\"height\":689,\"caption\":\"Medgon\"},\"image\":{\"@id\":\"https://www.medgon.com/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/MedgonPassivHaus/\",\"https://x.com/medgon_passiv\",\"https://www.instagram.com/medgon_passivhaus/\",\"https://www.youtube.com/channel/UCrXA5xjYqq_d2P4n6YQsqkA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+            "yoast_head_json": {
+              "title": "Construcción archivos | Medgon",
+              "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+              },
+              "canonical": "https://www.medgon.com/categoria/construccion/",
+              "og_locale": "es_ES",
+              "og_type": "article",
+              "og_title": "Construcción archivos | Medgon",
+              "og_url": "https://www.medgon.com/categoria/construccion/",
+              "og_site_name": "Medgon",
+              "twitter_card": "summary_large_image",
+              "twitter_site": "@medgon_passiv",
+              "schema": {
+                "@context": "https://schema.org",
+                "@graph": [
+                  {
+                    "@type": "CollectionPage",
+                    "@id": "https://www.medgon.com/categoria/construccion/",
+                    "url": "https://www.medgon.com/categoria/construccion/",
+                    "name": "Construcción archivos | Medgon",
+                    "isPartOf": {
+                      "@id": "https://www.medgon.com/#website"
+                    },
+                    "breadcrumb": {
+                      "@id": "https://www.medgon.com/categoria/construccion/#breadcrumb"
+                    },
+                    "inLanguage": "es"
+                  },
+                  {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://www.medgon.com/categoria/construccion/#breadcrumb",
+                    "itemListElement": [
+                      {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Portada",
+                        "item": "https://www.medgon.com/"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Construcción"
+                      }
+                    ]
+                  },
+                  {
+                    "@type": "WebSite",
+                    "@id": "https://www.medgon.com/#website",
+                    "url": "https://www.medgon.com/",
+                    "name": "Medgon",
+                    "description": "Fabricación de Edificios Passivhaus y Casas Pasivas",
+                    "publisher": {
+                      "@id": "https://www.medgon.com/#organization"
+                    },
+                    "potentialAction": [
+                      {
+                        "@type": "SearchAction",
+                        "target": {
+                          "@type": "EntryPoint",
+                          "urlTemplate": "https://www.medgon.com/?s={search_term_string}"
+                        },
+                        "query-input": "required name=search_term_string"
+                      }
+                    ],
+                    "inLanguage": "es"
+                  },
+                  {
+                    "@type": "Organization",
+                    "@id": "https://www.medgon.com/#organization",
+                    "name": "Medgon",
+                    "url": "https://www.medgon.com/",
+                    "logo": {
+                      "@type": "ImageObject",
+                      "inLanguage": "es",
+                      "@id": "https://www.medgon.com/#/schema/logo/image/",
+                      "url": "https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg",
+                      "contentUrl": "https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg",
+                      "width": 1000,
+                      "height": 689,
+                      "caption": "Medgon"
+                    },
+                    "image": {
+                      "@id": "https://www.medgon.com/#/schema/logo/image/"
+                    },
+                    "sameAs": [
+                      "https://www.facebook.com/MedgonPassivHaus/",
+                      "https://x.com/medgon_passiv",
+                      "https://www.instagram.com/medgon_passivhaus/",
+                      "https://www.youtube.com/channel/UCrXA5xjYqq_d2P4n6YQsqkA"
+                    ]
+                  }
+                ]
+              }
+            },
+            "_links": {
+              "self": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/categories/28",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/posts?categories=28"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 123,
+            "link": "https://www.medgon.com/categoria/industrializacion/",
+            "name": "Industrialización",
+            "slug": "industrializacion",
+            "taxonomy": "category",
+            "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v22.8 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Industrialización archivos | Medgon</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.medgon.com/categoria/industrializacion/\" />\n<meta property=\"og:locale\" content=\"es_ES\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Industrialización archivos | Medgon\" />\n<meta property=\"og:url\" content=\"https://www.medgon.com/categoria/industrializacion/\" />\n<meta property=\"og:site_name\" content=\"Medgon\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@medgon_passiv\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.medgon.com/categoria/industrializacion/\",\"url\":\"https://www.medgon.com/categoria/industrializacion/\",\"name\":\"Industrialización archivos | Medgon\",\"isPartOf\":{\"@id\":\"https://www.medgon.com/#website\"},\"breadcrumb\":{\"@id\":\"https://www.medgon.com/categoria/industrializacion/#breadcrumb\"},\"inLanguage\":\"es\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.medgon.com/categoria/industrializacion/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Portada\",\"item\":\"https://www.medgon.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Industrialización\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.medgon.com/#website\",\"url\":\"https://www.medgon.com/\",\"name\":\"Medgon\",\"description\":\"Fabricación de Edificios Passivhaus y Casas Pasivas\",\"publisher\":{\"@id\":\"https://www.medgon.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.medgon.com/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"es\"},{\"@type\":\"Organization\",\"@id\":\"https://www.medgon.com/#organization\",\"name\":\"Medgon\",\"url\":\"https://www.medgon.com/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"es\",\"@id\":\"https://www.medgon.com/#/schema/logo/image/\",\"url\":\"https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg\",\"contentUrl\":\"https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg\",\"width\":1000,\"height\":689,\"caption\":\"Medgon\"},\"image\":{\"@id\":\"https://www.medgon.com/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/MedgonPassivHaus/\",\"https://x.com/medgon_passiv\",\"https://www.instagram.com/medgon_passivhaus/\",\"https://www.youtube.com/channel/UCrXA5xjYqq_d2P4n6YQsqkA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+            "yoast_head_json": {
+              "title": "Industrialización archivos | Medgon",
+              "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+              },
+              "canonical": "https://www.medgon.com/categoria/industrializacion/",
+              "og_locale": "es_ES",
+              "og_type": "article",
+              "og_title": "Industrialización archivos | Medgon",
+              "og_url": "https://www.medgon.com/categoria/industrializacion/",
+              "og_site_name": "Medgon",
+              "twitter_card": "summary_large_image",
+              "twitter_site": "@medgon_passiv",
+              "schema": {
+                "@context": "https://schema.org",
+                "@graph": [
+                  {
+                    "@type": "CollectionPage",
+                    "@id": "https://www.medgon.com/categoria/industrializacion/",
+                    "url": "https://www.medgon.com/categoria/industrializacion/",
+                    "name": "Industrialización archivos | Medgon",
+                    "isPartOf": {
+                      "@id": "https://www.medgon.com/#website"
+                    },
+                    "breadcrumb": {
+                      "@id": "https://www.medgon.com/categoria/industrializacion/#breadcrumb"
+                    },
+                    "inLanguage": "es"
+                  },
+                  {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://www.medgon.com/categoria/industrializacion/#breadcrumb",
+                    "itemListElement": [
+                      {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Portada",
+                        "item": "https://www.medgon.com/"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Industrialización"
+                      }
+                    ]
+                  },
+                  {
+                    "@type": "WebSite",
+                    "@id": "https://www.medgon.com/#website",
+                    "url": "https://www.medgon.com/",
+                    "name": "Medgon",
+                    "description": "Fabricación de Edificios Passivhaus y Casas Pasivas",
+                    "publisher": {
+                      "@id": "https://www.medgon.com/#organization"
+                    },
+                    "potentialAction": [
+                      {
+                        "@type": "SearchAction",
+                        "target": {
+                          "@type": "EntryPoint",
+                          "urlTemplate": "https://www.medgon.com/?s={search_term_string}"
+                        },
+                        "query-input": "required name=search_term_string"
+                      }
+                    ],
+                    "inLanguage": "es"
+                  },
+                  {
+                    "@type": "Organization",
+                    "@id": "https://www.medgon.com/#organization",
+                    "name": "Medgon",
+                    "url": "https://www.medgon.com/",
+                    "logo": {
+                      "@type": "ImageObject",
+                      "inLanguage": "es",
+                      "@id": "https://www.medgon.com/#/schema/logo/image/",
+                      "url": "https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg",
+                      "contentUrl": "https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg",
+                      "width": 1000,
+                      "height": 689,
+                      "caption": "Medgon"
+                    },
+                    "image": {
+                      "@id": "https://www.medgon.com/#/schema/logo/image/"
+                    },
+                    "sameAs": [
+                      "https://www.facebook.com/MedgonPassivHaus/",
+                      "https://x.com/medgon_passiv",
+                      "https://www.instagram.com/medgon_passivhaus/",
+                      "https://www.youtube.com/channel/UCrXA5xjYqq_d2P4n6YQsqkA"
+                    ]
+                  }
+                ]
+              }
+            },
+            "_links": {
+              "self": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/categories/123",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/posts?categories=123"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 140,
+            "link": "https://www.medgon.com/categoria/mejora-continua/",
+            "name": "Mejora continua",
+            "slug": "mejora-continua",
+            "taxonomy": "category",
+            "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v22.8 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Mejora continua archivos | Medgon</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.medgon.com/categoria/mejora-continua/\" />\n<meta property=\"og:locale\" content=\"es_ES\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Mejora continua archivos | Medgon\" />\n<meta property=\"og:url\" content=\"https://www.medgon.com/categoria/mejora-continua/\" />\n<meta property=\"og:site_name\" content=\"Medgon\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@medgon_passiv\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.medgon.com/categoria/mejora-continua/\",\"url\":\"https://www.medgon.com/categoria/mejora-continua/\",\"name\":\"Mejora continua archivos | Medgon\",\"isPartOf\":{\"@id\":\"https://www.medgon.com/#website\"},\"breadcrumb\":{\"@id\":\"https://www.medgon.com/categoria/mejora-continua/#breadcrumb\"},\"inLanguage\":\"es\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.medgon.com/categoria/mejora-continua/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Portada\",\"item\":\"https://www.medgon.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Mejora continua\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.medgon.com/#website\",\"url\":\"https://www.medgon.com/\",\"name\":\"Medgon\",\"description\":\"Fabricación de Edificios Passivhaus y Casas Pasivas\",\"publisher\":{\"@id\":\"https://www.medgon.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.medgon.com/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"es\"},{\"@type\":\"Organization\",\"@id\":\"https://www.medgon.com/#organization\",\"name\":\"Medgon\",\"url\":\"https://www.medgon.com/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"es\",\"@id\":\"https://www.medgon.com/#/schema/logo/image/\",\"url\":\"https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg\",\"contentUrl\":\"https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg\",\"width\":1000,\"height\":689,\"caption\":\"Medgon\"},\"image\":{\"@id\":\"https://www.medgon.com/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/MedgonPassivHaus/\",\"https://x.com/medgon_passiv\",\"https://www.instagram.com/medgon_passivhaus/\",\"https://www.youtube.com/channel/UCrXA5xjYqq_d2P4n6YQsqkA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+            "yoast_head_json": {
+              "title": "Mejora continua archivos | Medgon",
+              "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+              },
+              "canonical": "https://www.medgon.com/categoria/mejora-continua/",
+              "og_locale": "es_ES",
+              "og_type": "article",
+              "og_title": "Mejora continua archivos | Medgon",
+              "og_url": "https://www.medgon.com/categoria/mejora-continua/",
+              "og_site_name": "Medgon",
+              "twitter_card": "summary_large_image",
+              "twitter_site": "@medgon_passiv",
+              "schema": {
+                "@context": "https://schema.org",
+                "@graph": [
+                  {
+                    "@type": "CollectionPage",
+                    "@id": "https://www.medgon.com/categoria/mejora-continua/",
+                    "url": "https://www.medgon.com/categoria/mejora-continua/",
+                    "name": "Mejora continua archivos | Medgon",
+                    "isPartOf": {
+                      "@id": "https://www.medgon.com/#website"
+                    },
+                    "breadcrumb": {
+                      "@id": "https://www.medgon.com/categoria/mejora-continua/#breadcrumb"
+                    },
+                    "inLanguage": "es"
+                  },
+                  {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://www.medgon.com/categoria/mejora-continua/#breadcrumb",
+                    "itemListElement": [
+                      {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Portada",
+                        "item": "https://www.medgon.com/"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Mejora continua"
+                      }
+                    ]
+                  },
+                  {
+                    "@type": "WebSite",
+                    "@id": "https://www.medgon.com/#website",
+                    "url": "https://www.medgon.com/",
+                    "name": "Medgon",
+                    "description": "Fabricación de Edificios Passivhaus y Casas Pasivas",
+                    "publisher": {
+                      "@id": "https://www.medgon.com/#organization"
+                    },
+                    "potentialAction": [
+                      {
+                        "@type": "SearchAction",
+                        "target": {
+                          "@type": "EntryPoint",
+                          "urlTemplate": "https://www.medgon.com/?s={search_term_string}"
+                        },
+                        "query-input": "required name=search_term_string"
+                      }
+                    ],
+                    "inLanguage": "es"
+                  },
+                  {
+                    "@type": "Organization",
+                    "@id": "https://www.medgon.com/#organization",
+                    "name": "Medgon",
+                    "url": "https://www.medgon.com/",
+                    "logo": {
+                      "@type": "ImageObject",
+                      "inLanguage": "es",
+                      "@id": "https://www.medgon.com/#/schema/logo/image/",
+                      "url": "https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg",
+                      "contentUrl": "https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg",
+                      "width": 1000,
+                      "height": 689,
+                      "caption": "Medgon"
+                    },
+                    "image": {
+                      "@id": "https://www.medgon.com/#/schema/logo/image/"
+                    },
+                    "sameAs": [
+                      "https://www.facebook.com/MedgonPassivHaus/",
+                      "https://x.com/medgon_passiv",
+                      "https://www.instagram.com/medgon_passivhaus/",
+                      "https://www.youtube.com/channel/UCrXA5xjYqq_d2P4n6YQsqkA"
+                    ]
+                  }
+                ]
+              }
+            },
+            "_links": {
+              "self": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/categories/140",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/posts?categories=140"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          },
+          {
+            "id": 30,
+            "link": "https://www.medgon.com/categoria/passivhaus/",
+            "name": "Passivhaus",
+            "slug": "passivhaus",
+            "taxonomy": "category",
+            "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v22.8 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Passivhaus archivos | Medgon</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.medgon.com/categoria/passivhaus/\" />\n<meta property=\"og:locale\" content=\"es_ES\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Passivhaus archivos | Medgon\" />\n<meta property=\"og:url\" content=\"https://www.medgon.com/categoria/passivhaus/\" />\n<meta property=\"og:site_name\" content=\"Medgon\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@medgon_passiv\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.medgon.com/categoria/passivhaus/\",\"url\":\"https://www.medgon.com/categoria/passivhaus/\",\"name\":\"Passivhaus archivos | Medgon\",\"isPartOf\":{\"@id\":\"https://www.medgon.com/#website\"},\"breadcrumb\":{\"@id\":\"https://www.medgon.com/categoria/passivhaus/#breadcrumb\"},\"inLanguage\":\"es\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.medgon.com/categoria/passivhaus/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Portada\",\"item\":\"https://www.medgon.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Passivhaus\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.medgon.com/#website\",\"url\":\"https://www.medgon.com/\",\"name\":\"Medgon\",\"description\":\"Fabricación de Edificios Passivhaus y Casas Pasivas\",\"publisher\":{\"@id\":\"https://www.medgon.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.medgon.com/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"es\"},{\"@type\":\"Organization\",\"@id\":\"https://www.medgon.com/#organization\",\"name\":\"Medgon\",\"url\":\"https://www.medgon.com/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"es\",\"@id\":\"https://www.medgon.com/#/schema/logo/image/\",\"url\":\"https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg\",\"contentUrl\":\"https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg\",\"width\":1000,\"height\":689,\"caption\":\"Medgon\"},\"image\":{\"@id\":\"https://www.medgon.com/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/MedgonPassivHaus/\",\"https://x.com/medgon_passiv\",\"https://www.instagram.com/medgon_passivhaus/\",\"https://www.youtube.com/channel/UCrXA5xjYqq_d2P4n6YQsqkA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+            "yoast_head_json": {
+              "title": "Passivhaus archivos | Medgon",
+              "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+              },
+              "canonical": "https://www.medgon.com/categoria/passivhaus/",
+              "og_locale": "es_ES",
+              "og_type": "article",
+              "og_title": "Passivhaus archivos | Medgon",
+              "og_url": "https://www.medgon.com/categoria/passivhaus/",
+              "og_site_name": "Medgon",
+              "twitter_card": "summary_large_image",
+              "twitter_site": "@medgon_passiv",
+              "schema": {
+                "@context": "https://schema.org",
+                "@graph": [
+                  {
+                    "@type": "CollectionPage",
+                    "@id": "https://www.medgon.com/categoria/passivhaus/",
+                    "url": "https://www.medgon.com/categoria/passivhaus/",
+                    "name": "Passivhaus archivos | Medgon",
+                    "isPartOf": {
+                      "@id": "https://www.medgon.com/#website"
+                    },
+                    "breadcrumb": {
+                      "@id": "https://www.medgon.com/categoria/passivhaus/#breadcrumb"
+                    },
+                    "inLanguage": "es"
+                  },
+                  {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://www.medgon.com/categoria/passivhaus/#breadcrumb",
+                    "itemListElement": [
+                      {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Portada",
+                        "item": "https://www.medgon.com/"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Passivhaus"
+                      }
+                    ]
+                  },
+                  {
+                    "@type": "WebSite",
+                    "@id": "https://www.medgon.com/#website",
+                    "url": "https://www.medgon.com/",
+                    "name": "Medgon",
+                    "description": "Fabricación de Edificios Passivhaus y Casas Pasivas",
+                    "publisher": {
+                      "@id": "https://www.medgon.com/#organization"
+                    },
+                    "potentialAction": [
+                      {
+                        "@type": "SearchAction",
+                        "target": {
+                          "@type": "EntryPoint",
+                          "urlTemplate": "https://www.medgon.com/?s={search_term_string}"
+                        },
+                        "query-input": "required name=search_term_string"
+                      }
+                    ],
+                    "inLanguage": "es"
+                  },
+                  {
+                    "@type": "Organization",
+                    "@id": "https://www.medgon.com/#organization",
+                    "name": "Medgon",
+                    "url": "https://www.medgon.com/",
+                    "logo": {
+                      "@type": "ImageObject",
+                      "inLanguage": "es",
+                      "@id": "https://www.medgon.com/#/schema/logo/image/",
+                      "url": "https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg",
+                      "contentUrl": "https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg",
+                      "width": 1000,
+                      "height": 689,
+                      "caption": "Medgon"
+                    },
+                    "image": {
+                      "@id": "https://www.medgon.com/#/schema/logo/image/"
+                    },
+                    "sameAs": [
+                      "https://www.facebook.com/MedgonPassivHaus/",
+                      "https://x.com/medgon_passiv",
+                      "https://www.instagram.com/medgon_passivhaus/",
+                      "https://www.youtube.com/channel/UCrXA5xjYqq_d2P4n6YQsqkA"
+                    ]
+                  }
+                ]
+              }
+            },
+            "_links": {
+              "self": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/categories/30",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/posts?categories=30"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        []
+      ]
+    }
+  },
+  {
+    "id": 12480,
+    "date": "2026-08-28T12:46:00",
+    "slug": "el-precio-de-la-vivienda-sube-el-coste-de-no-pensar-mas",
+    "title": {
+      "rendered": "El precio de la vivienda sube. El coste de no pensar, más"
+    },
+    "excerpt": {
+      "rendered": "<p>El titular de El País es claro: 2.100€/m², récord histórico en España. Madrid y Baleares superan los 4.000€/m², y el mercado sigue al alza. Pero hay una pregunta que nadie se hace: ¿Por qué pagamos más por lo mismo de siempre? Mientras el sector tradicional se ahoga en escasez y especulación, en Medgón construimos viviendas [&hellip;]</p>\n",
+      "protected": false
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://www.medgon.com/wp-json/wp/v2/posts/12480",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://www.medgon.com/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://www.medgon.com/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://www.medgon.com/wp-json/wp/v2/users/5"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://www.medgon.com/wp-json/wp/v2/comments?post=12480"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "https://www.medgon.com/wp-json/wp/v2/posts/12480/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 12482,
+          "href": "https://www.medgon.com/wp-json/wp/v2/posts/12480/revisions/12482"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://www.medgon.com/wp-json/wp/v2/media/12481"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://www.medgon.com/wp-json/wp/v2/media?parent=12480"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "https://www.medgon.com/wp-json/wp/v2/categories?post=12480"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "https://www.medgon.com/wp-json/wp/v2/tags?post=12480"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    },
+    "_embedded": {
+      "author": [
+        {
+          "code": "rest_user_invalid_id",
+          "message": "ID de usuario no válido.",
+          "data": {
+            "status": 404
+          }
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "id": 12481,
+          "date": "2026-08-28T12:43:58",
+          "slug": "mercado-y-metros-cuadrados",
+          "type": "attachment",
+          "link": "https://www.medgon.com/el-precio-de-la-vivienda-sube-el-coste-de-no-pensar-mas/mercado-y-metros-cuadrados/",
+          "title": {
+            "rendered": "Mercado y metros cuadrados"
+          },
+          "author": 5,
+          "featured_media": 0,
+          "caption": {
+            "rendered": "<p>Los clientes inteligentes ya miran más allá.<br />\nEn Medgon no vendemos metros cuadrados. </p>\n"
+          },
+          "alt_text": "El mercado inmobiliario español sigue obsesionado con el precio por m².",
+          "media_type": "image",
+          "mime_type": "image/png",
+          "media_details": {
+            "width": 1448,
+            "height": 1086,
+            "file": "2026/08/Mercado-y-metros-cuadrados.png",
+            "filesize": 2412442,
+            "sizes": {
+              "medium": {
+                "file": "Mercado-y-metros-cuadrados-300x225.png",
+                "width": 300,
+                "height": 225,
+                "filesize": 114002,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/08/Mercado-y-metros-cuadrados-300x225.png"
+              },
+              "large": {
+                "file": "Mercado-y-metros-cuadrados-1024x768.png",
+                "width": 1024,
+                "height": 768,
+                "filesize": 1133791,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/08/Mercado-y-metros-cuadrados-1024x768.png"
+              },
+              "thumbnail": {
+                "file": "Mercado-y-metros-cuadrados-150x150.png",
+                "width": 150,
+                "height": 150,
+                "filesize": 39922,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/08/Mercado-y-metros-cuadrados-150x150.png"
+              },
+              "medium_large": {
+                "file": "Mercado-y-metros-cuadrados-768x576.png",
+                "width": 768,
+                "height": 576,
+                "filesize": 663174,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/08/Mercado-y-metros-cuadrados-768x576.png"
+              },
+              "blog-large": {
+                "file": "Mercado-y-metros-cuadrados-1140x445.png",
+                "width": 1140,
+                "height": 445,
+                "filesize": 767280,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/08/Mercado-y-metros-cuadrados-1140x445.png"
+              },
+              "blog-medium": {
+                "file": "Mercado-y-metros-cuadrados-463x348.png",
+                "width": 463,
+                "height": 348,
+                "filesize": 258539,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/08/Mercado-y-metros-cuadrados-463x348.png"
+              },
+              "blog-masonry": {
+                "file": "Mercado-y-metros-cuadrados-640x480.png",
+                "width": 640,
+                "height": 480,
+                "filesize": 472100,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/08/Mercado-y-metros-cuadrados-640x480.png"
+              },
+              "blog-masonry-small": {
+                "file": "Mercado-y-metros-cuadrados-400x300.png",
+                "width": 400,
+                "height": 300,
+                "filesize": 196670,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/08/Mercado-y-metros-cuadrados-400x300.png"
+              },
+              "blog-grid": {
+                "file": "Mercado-y-metros-cuadrados-640x480.png",
+                "width": 640,
+                "height": 480,
+                "filesize": 472100,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/08/Mercado-y-metros-cuadrados-640x480.png"
+              },
+              "blog-grid-small": {
+                "file": "Mercado-y-metros-cuadrados-400x300.png",
+                "width": 400,
+                "height": 300,
+                "filesize": 196670,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/08/Mercado-y-metros-cuadrados-400x300.png"
+              },
+              "related-post": {
+                "file": "Mercado-y-metros-cuadrados-450x231.png",
+                "width": 450,
+                "height": 231,
+                "filesize": 175036,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/08/Mercado-y-metros-cuadrados-450x231.png"
+              },
+              "portfolio-grid-one": {
+                "file": "Mercado-y-metros-cuadrados-1140x595.png",
+                "width": 1140,
+                "height": 595,
+                "filesize": 1021156,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/08/Mercado-y-metros-cuadrados-1140x595.png"
+              },
+              "portfolio-grid-two": {
+                "file": "Mercado-y-metros-cuadrados-560x560.png",
+                "width": 560,
+                "height": 560,
+                "filesize": 473661,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/08/Mercado-y-metros-cuadrados-560x560.png"
+              },
+              "portfolio-grid": {
+                "file": "Mercado-y-metros-cuadrados-367x367.png",
+                "width": 367,
+                "height": 367,
+                "filesize": 214283,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/08/Mercado-y-metros-cuadrados-367x367.png"
+              },
+              "portfolio-masonry": {
+                "file": "Mercado-y-metros-cuadrados-367x275.png",
+                "width": 367,
+                "height": 275,
+                "filesize": 166654,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/08/Mercado-y-metros-cuadrados-367x275.png"
+              },
+              "portfolio-full": {
+                "file": "Mercado-y-metros-cuadrados-1140x595.png",
+                "width": 1140,
+                "height": 595,
+                "filesize": 1021156,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/08/Mercado-y-metros-cuadrados-1140x595.png"
+              },
+              "portfolio-large": {
+                "file": "Mercado-y-metros-cuadrados-560x367.png",
+                "width": 560,
+                "height": 367,
+                "filesize": 333414,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/08/Mercado-y-metros-cuadrados-560x367.png"
+              },
+              "portfolio-medium": {
+                "file": "Mercado-y-metros-cuadrados-367x367.png",
+                "width": 367,
+                "height": 367,
+                "filesize": 214283,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/08/Mercado-y-metros-cuadrados-367x367.png"
+              },
+              "portfolio-timeline": {
+                "file": "Mercado-y-metros-cuadrados-560x560.png",
+                "width": 560,
+                "height": 560,
+                "filesize": 473661,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/08/Mercado-y-metros-cuadrados-560x560.png"
+              },
+              "related-portfolio": {
+                "file": "Mercado-y-metros-cuadrados-367x367.png",
+                "width": 367,
+                "height": 367,
+                "filesize": 214283,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/08/Mercado-y-metros-cuadrados-367x367.png"
+              },
+              "portfolio-cat-stripes": {
+                "file": "Mercado-y-metros-cuadrados-494x1080.png",
+                "width": 494,
+                "height": 1080,
+                "filesize": 709887,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/08/Mercado-y-metros-cuadrados-494x1080.png"
+              },
+              "portfolio-cat-parallax": {
+                "file": "Mercado-y-metros-cuadrados-1448x627.png",
+                "width": 1448,
+                "height": 627,
+                "filesize": 1456650,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/08/Mercado-y-metros-cuadrados-1448x627.png"
+              },
+              "portfolio-thumbnail": {
+                "file": "Mercado-y-metros-cuadrados-200x150.png",
+                "width": 200,
+                "height": 150,
+                "filesize": 53243,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/08/Mercado-y-metros-cuadrados-200x150.png"
+              },
+              "widget-thumb-medium": {
+                "file": "Mercado-y-metros-cuadrados-85x85.png",
+                "width": 85,
+                "height": 85,
+                "filesize": 13833,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/08/Mercado-y-metros-cuadrados-85x85.png"
+              },
+              "cmplz_banner_image": {
+                "file": "Mercado-y-metros-cuadrados-350x100.png",
+                "width": 350,
+                "height": 100,
+                "filesize": 61362,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/08/Mercado-y-metros-cuadrados-350x100.png"
+              },
+              "full": {
+                "file": "Mercado-y-metros-cuadrados.png",
+                "width": 1448,
+                "height": 1086,
+                "mime_type": "image/png",
+                "source_url": "https://www.medgon.com/wp-content/uploads/2026/08/Mercado-y-metros-cuadrados.png"
+              }
+            },
+            "image_meta": {
+              "aperture": "0",
+              "credit": "",
+              "camera": "",
+              "caption": "",
+              "created_timestamp": "0",
+              "copyright": "",
+              "focal_length": "0",
+              "iso": "0",
+              "shutter_speed": "0",
+              "title": "",
+              "orientation": "0",
+              "keywords": []
+            }
+          },
+          "source_url": "https://www.medgon.com/wp-content/uploads/2026/08/Mercado-y-metros-cuadrados.png",
+          "_links": {
+            "self": [
+              {
+                "href": "https://www.medgon.com/wp-json/wp/v2/media/12481",
+                "targetHints": {
+                  "allow": [
+                    "GET"
+                  ]
+                }
+              }
+            ],
+            "collection": [
+              {
+                "href": "https://www.medgon.com/wp-json/wp/v2/media"
+              }
+            ],
+            "about": [
+              {
+                "href": "https://www.medgon.com/wp-json/wp/v2/types/attachment"
+              }
+            ],
+            "author": [
+              {
+                "embeddable": true,
+                "href": "https://www.medgon.com/wp-json/wp/v2/users/5"
+              }
+            ],
+            "replies": [
+              {
+                "embeddable": true,
+                "href": "https://www.medgon.com/wp-json/wp/v2/comments?post=12481"
+              }
+            ],
+            "wp:attached-to": [
+              {
+                "embeddable": true,
+                "post_type": "post",
+                "id": 12480,
+                "href": "https://www.medgon.com/wp-json/wp/v2/posts/12480"
+              }
+            ],
+            "curies": [
+              {
+                "name": "wp",
+                "href": "https://api.w.org/{rel}",
+                "templated": true
+              }
+            ]
+          }
+        }
+      ],
+      "wp:term": [
+        [
+          {
+            "id": 30,
+            "link": "https://www.medgon.com/categoria/passivhaus/",
+            "name": "Passivhaus",
+            "slug": "passivhaus",
+            "taxonomy": "category",
+            "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v22.8 - https://yoast.com/wordpress/plugins/seo/ -->\n<title>Passivhaus archivos | Medgon</title>\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://www.medgon.com/categoria/passivhaus/\" />\n<meta property=\"og:locale\" content=\"es_ES\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Passivhaus archivos | Medgon\" />\n<meta property=\"og:url\" content=\"https://www.medgon.com/categoria/passivhaus/\" />\n<meta property=\"og:site_name\" content=\"Medgon\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:site\" content=\"@medgon_passiv\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://www.medgon.com/categoria/passivhaus/\",\"url\":\"https://www.medgon.com/categoria/passivhaus/\",\"name\":\"Passivhaus archivos | Medgon\",\"isPartOf\":{\"@id\":\"https://www.medgon.com/#website\"},\"breadcrumb\":{\"@id\":\"https://www.medgon.com/categoria/passivhaus/#breadcrumb\"},\"inLanguage\":\"es\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://www.medgon.com/categoria/passivhaus/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Portada\",\"item\":\"https://www.medgon.com/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Passivhaus\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.medgon.com/#website\",\"url\":\"https://www.medgon.com/\",\"name\":\"Medgon\",\"description\":\"Fabricación de Edificios Passivhaus y Casas Pasivas\",\"publisher\":{\"@id\":\"https://www.medgon.com/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://www.medgon.com/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}],\"inLanguage\":\"es\"},{\"@type\":\"Organization\",\"@id\":\"https://www.medgon.com/#organization\",\"name\":\"Medgon\",\"url\":\"https://www.medgon.com/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"es\",\"@id\":\"https://www.medgon.com/#/schema/logo/image/\",\"url\":\"https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg\",\"contentUrl\":\"https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg\",\"width\":1000,\"height\":689,\"caption\":\"Medgon\"},\"image\":{\"@id\":\"https://www.medgon.com/#/schema/logo/image/\"},\"sameAs\":[\"https://www.facebook.com/MedgonPassivHaus/\",\"https://x.com/medgon_passiv\",\"https://www.instagram.com/medgon_passivhaus/\",\"https://www.youtube.com/channel/UCrXA5xjYqq_d2P4n6YQsqkA\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+            "yoast_head_json": {
+              "title": "Passivhaus archivos | Medgon",
+              "robots": {
+                "index": "index",
+                "follow": "follow",
+                "max-snippet": "max-snippet:-1",
+                "max-image-preview": "max-image-preview:large",
+                "max-video-preview": "max-video-preview:-1"
+              },
+              "canonical": "https://www.medgon.com/categoria/passivhaus/",
+              "og_locale": "es_ES",
+              "og_type": "article",
+              "og_title": "Passivhaus archivos | Medgon",
+              "og_url": "https://www.medgon.com/categoria/passivhaus/",
+              "og_site_name": "Medgon",
+              "twitter_card": "summary_large_image",
+              "twitter_site": "@medgon_passiv",
+              "schema": {
+                "@context": "https://schema.org",
+                "@graph": [
+                  {
+                    "@type": "CollectionPage",
+                    "@id": "https://www.medgon.com/categoria/passivhaus/",
+                    "url": "https://www.medgon.com/categoria/passivhaus/",
+                    "name": "Passivhaus archivos | Medgon",
+                    "isPartOf": {
+                      "@id": "https://www.medgon.com/#website"
+                    },
+                    "breadcrumb": {
+                      "@id": "https://www.medgon.com/categoria/passivhaus/#breadcrumb"
+                    },
+                    "inLanguage": "es"
+                  },
+                  {
+                    "@type": "BreadcrumbList",
+                    "@id": "https://www.medgon.com/categoria/passivhaus/#breadcrumb",
+                    "itemListElement": [
+                      {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Portada",
+                        "item": "https://www.medgon.com/"
+                      },
+                      {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Passivhaus"
+                      }
+                    ]
+                  },
+                  {
+                    "@type": "WebSite",
+                    "@id": "https://www.medgon.com/#website",
+                    "url": "https://www.medgon.com/",
+                    "name": "Medgon",
+                    "description": "Fabricación de Edificios Passivhaus y Casas Pasivas",
+                    "publisher": {
+                      "@id": "https://www.medgon.com/#organization"
+                    },
+                    "potentialAction": [
+                      {
+                        "@type": "SearchAction",
+                        "target": {
+                          "@type": "EntryPoint",
+                          "urlTemplate": "https://www.medgon.com/?s={search_term_string}"
+                        },
+                        "query-input": "required name=search_term_string"
+                      }
+                    ],
+                    "inLanguage": "es"
+                  },
+                  {
+                    "@type": "Organization",
+                    "@id": "https://www.medgon.com/#organization",
+                    "name": "Medgon",
+                    "url": "https://www.medgon.com/",
+                    "logo": {
+                      "@type": "ImageObject",
+                      "inLanguage": "es",
+                      "@id": "https://www.medgon.com/#/schema/logo/image/",
+                      "url": "https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg",
+                      "contentUrl": "https://www.medgon.com/wp-content/uploads/2020/01/medgon-logo-passivhaus.jpg",
+                      "width": 1000,
+                      "height": 689,
+                      "caption": "Medgon"
+                    },
+                    "image": {
+                      "@id": "https://www.medgon.com/#/schema/logo/image/"
+                    },
+                    "sameAs": [
+                      "https://www.facebook.com/MedgonPassivHaus/",
+                      "https://x.com/medgon_passiv",
+                      "https://www.instagram.com/medgon_passivhaus/",
+                      "https://www.youtube.com/channel/UCrXA5xjYqq_d2P4n6YQsqkA"
+                    ]
+                  }
+                ]
+              }
+            },
+            "_links": {
+              "self": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/categories/30",
+                  "targetHints": {
+                    "allow": [
+                      "GET"
+                    ]
+                  }
+                }
+              ],
+              "collection": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/categories"
+                }
+              ],
+              "about": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/taxonomies/category"
+                }
+              ],
+              "wp:post_type": [
+                {
+                  "href": "https://www.medgon.com/wp-json/wp/v2/posts?categories=30"
+                }
+              ],
+              "curies": [
+                {
+                  "name": "wp",
+                  "href": "https://api.w.org/{rel}",
+                  "templated": true
+                }
+              ]
+            }
+          }
+        ],
+        []
+      ]
+    }
+  }
+]

@@ -1,0 +1,211 @@
+/* ==========================================================================
+   MEDGÓN PASSIVHAUS - PALETA CORPORATIVA OFICIAL Y ACCESIBILIDAD WCAG AAA
+   ========================================================================== */
+:root {
+  /* Paleta Corporativa Oficial */
+  --fiery-terracotta: #e25338;
+  --wheat: #f5ddb7;
+  --bright-fern: #23bd00;
+  --emerald-depths: #285943;
+  --frosted-mint: #d2f5d6;
+
+  /* Neutros del logo - Optimizados para alto contraste y personas mayores */
+  --logo-black: #16181B;
+  --logo-white: #ffffff;
+  --logo-gray: #2C313A; /* Oscurecido: Contraste > 10:1 sobre #FAF8F5 (antes #5A606A) */
+  --logo-gray-light: #4A5160; /* Oscurecido: Contraste > 6.5:1 sobre #FAF8F5 (antes #8E95A2) */
+  --color-brand-bg: #FAF8F5;
+
+  /* Aliases corporativos */
+  --color-brand-primary: var(--bright-fern);
+  --color-brand-emerald: var(--bright-fern);
+  --color-brand-emerald-dark: var(--emerald-depths);
+  --color-brand-dark: var(--logo-black);
+  --color-brand-slate: var(--logo-gray);
+  --color-brand-muted: var(--logo-gray-light);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-dark);
+  font-size: 16px;
+}
+
+::selection {
+  background-color: rgba(35, 189, 0, 0.2);
+  color: var(--color-brand-dark);
+}
+
+#mobile-menu-drawer {
+  background-color: var(--color-brand-bg, #FAF8F5) !important;
+}
+
+/* ==========================================================================
+   MEJORA DE ACCESIBILIDAD Y LEGIBILIDAD (WCAG AAA - PERSONAS MAYORES)
+   ========================================================================== */
+
+/* 1. Textos descriptivos, párrafos de tarjetas y listas: mínimo 1.125rem (18px) con leading-relaxed */
+p,
+article p,
+.card p,
+.prose p,
+.leading-relaxed,
+section p,
+main p:not(.nav-item) {
+  font-size: 1.125rem; /* 18px mínimo */
+  line-height: 1.7; /* leading-relaxed confortable */
+  color: #2C313A; /* Texto secundario oscurecido para máximo contraste */
+}
+
+/* Títulos y textos principales destacados */
+h1, h2, h3, h4, h5, h6 {
+  color: #16181B;
+}
+
+/* Listas en tarjetas, modalidades y características */
+ul:not([role="menubar"]):not(.nav-menu):not(nav ul) > li,
+ol > li,
+.modalidad-list li,
+.specs-list li {
+  font-size: 1.125rem; /* 18px mínimo */
+  line-height: 1.65;
+  color: #2C313A;
+}
+
+/* 2. Etiquetas en mayúsculas, badges y rótulos secundarios: mínimo 0.95rem (15px) */
+.uppercase,
+[class*="uppercase"],
+.badge,
+[class*="badge-"],
+span.tracking-wider,
+span.tracking-widest,
+.tracking-wider,
+.tracking-widest {
+  font-size: max(0.95rem, 15px) !important;
+  line-height: 1.45;
+  letter-spacing: 0.04em;
+}
+
+/* 3. Oscurecimiento de párrafos secundarios para contraste máximo sobre #FAF8F5 */
+.text-\[\#5A606A\],
+.text-slate-600,
+.text-slate-500 {
+  color: #2C313A !important; /* Contraste > 10:1 (WCAG AAA) sobre #FAF8F5 */
+}
+
+.text-\[\#8E95A2\],
+.text-slate-400 {
+  color: #4A5160 !important; /* Contraste > 6.5:1 (WCAG AAA) sobre #FAF8F5 */
+}
+
+/* 4. Alto contraste en fondos oscuros (footer, tarjetas oscuras y gradientes) */
+footer,
+footer p,
+footer li,
+footer a {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+footer a {
+  color: #E2E8F0 !important;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #ffffff !important;
+}
+
+footer ul li a {
+  color: #E2E8F0 !important;
+  display: inline-block;
+  transition: color 0.15s ease;
+}
+
+footer ul li a:hover,
+footer ul li a:focus {
+  color: #23bd00 !important;
+}
+
+footer .text-slate-400,
+footer .text-slate-500 {
+  color: #CBD5E1 !important; /* Slate claro de alto contraste sobre fondo oscuro #16181B */
+}
+
+footer .text-slate-300 {
+  color: #E2E8F0 !important;
+}
+
+footer .text-slate-200 {
+  color: #F8FAFC !important;
+}
+
+footer .pt-8 a,
+footer .pt-8 p {
+  color: #CBD5E1 !important;
+}
+
+footer .pt-8 a:hover {
+  color: #ffffff !important;
+}
+
+.bg-gradient-to-br p,
+.bg-gradient-to-t p,
+.bg-black\/60 p,
+.bg-\[\#16181B\] p,
+.text-white p,
+.dark-card p {
+  color: #E2E8F0 !important;
+}
+
+/* 5. Preservar navegación y botones interactivos */
+header nav a,
+header nav button,
+#mobile-menu-drawer a,
+#mobile-menu-drawer button {
+  font-size: 1rem !important; /* 16px */
+  line-height: 1.4 !important;
+}
+
+/* ==========================================================================
+   NAVEGACIÓN DESKTOP ROBUSTA Y ESTABLE (SIN PARPADEO NI PÉRDIDA DE HOVER)
+   ========================================================================== */
+header nav .nav-dropdown-item {
+  position: relative;
+}
+header nav .nav-dropdown-panel {
+  position: absolute;
+  top: 100%;
+  padding-top: 0.375rem;
+  transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.2s;
+  will-change: opacity, transform;
+}
+header nav .nav-dropdown-item:hover > .nav-dropdown-panel,
+header nav .nav-dropdown-item.is-open > .nav-dropdown-panel,
+header nav .nav-dropdown-item:focus-within > .nav-dropdown-panel {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  pointer-events: auto !important;
+  visibility: visible !important;
+}
+header nav .nav-dropdown-item:hover button svg,
+header nav .nav-dropdown-item.is-open button svg,
+header nav .nav-dropdown-item:focus-within button svg {
+  transform: rotate(180deg);
+  color: #23bd00;
+}
+header nav .nav-dropdown-item.is-open button {
+  color: #23bd00;
+}
+header nav .nav-hover-bridge {
+  position: absolute;
+  top: -0.875rem;
+  left: 0;
+  right: 0;
+  height: 0.875rem;
+  pointer-events: auto;
+}

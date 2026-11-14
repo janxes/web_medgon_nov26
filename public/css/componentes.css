@@ -1,0 +1,38 @@
+/* ==========================================================================
+   MEDGÓN PASSIVHAUS - COMPONENTES REUTILIZABLES
+   ========================================================================== */
+.btn-cta-emerald,
+.btn-cta-fern {
+  background-color: var(--bright-fern, #23bd00);
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 0.75rem;
+  transition: all 0.2s ease;
+}
+.btn-cta-emerald:hover,
+.btn-cta-fern:hover {
+  background-color: var(--emerald-depths, #285943);
+}
+
+.badge-frosted-mint {
+  background-color: var(--frosted-mint, #d2f5d6);
+  color: var(--emerald-depths, #285943);
+}
+
+.badge-terracotta {
+  background-color: var(--fiery-terracotta, #e25338);
+  color: #ffffff;
+}
+
+.badge-wheat {
+  background-color: var(--wheat, #f5ddb7);
+  color: var(--logo-black, #16181B);
+}
+
+.card-shadow-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-shadow-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08);
+}

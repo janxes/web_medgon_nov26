@@ -1,0 +1,12 @@
+# Medgón Passivhaus S.L. · Configuración de rastreo SEO
+User-agent: *
+Allow: /
+
+# Evitar indexación de plantillas dinámicas y parámetros de filtrado
+Disallow: /post
+Disallow: /*?modelo=
+Disallow: /*?dorm=
+Disallow: /*?enviado=
+
+Host: https://medgon.com
+Sitemap: https://medgon.com/sitemap.xml
