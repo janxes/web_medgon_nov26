@@ -20,7 +20,7 @@ jobs:
 
       - name: 3. Instalar dependencias y compilar web (Vite)
         run: |
-          npm install
+          npm install --legacy-peer-deps
           npm run build
 
       - name: 4. Subir carpeta compilada (dist/) a Hostinger por FTP
