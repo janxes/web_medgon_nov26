@@ -493,6 +493,18 @@ function getPageSeo(filename, existingLdList) {
       changefreq: 'monthly',
       preserveLdGraph: true,
     },
+    'proyectos-destacados.html': {
+      title: 'Proyectos Destacados Passivhaus (48 Obras) · Medgón',
+      description:
+        'Explora nuestra galería de 48 proyectos destacados en España: viviendas unifamiliares, plurifamiliares, colegios y edificios terciarios Passivhaus en madera técnica.',
+      canonical: `${SITE_URL}/proyectos-destacados`,
+      ogImage: `${SITE_URL}/assets/imagenes/proyectos/oficinas-medgon.webp`,
+      heroPreload: 'assets/imagenes/proyectos/oficinas-medgon.webp',
+      inSitemap: true,
+      priority: '0.85',
+      changefreq: 'monthly',
+      preserveLdGraph: true,
+    },
     'rsc.html': {
       title: 'RSC, Sostenibilidad, ODS y Huella de Carbono · Medgón',
       description:
@@ -753,6 +765,7 @@ function optimizeImgTags(bodyHtml, filename) {
     'productos-plurifamiliares.html',
     'productos-terciario.html',
     'productos-unifamiliares.html',
+    'proyectos-destacados.html',
   ]);
 
   return bodyHtml.replace(/<img\b([^>]*)>/gi, (fullMatch, rawAttrs) => {
@@ -837,12 +850,15 @@ function optimizeHtmlFile(filePath, filename) {
     )
     .join('\n');
 
+  const existingMsValidate = html.match(/<meta\s+name=["']msvalidate\.01["'][^>]*>/i);
+  const msValidateTag = existingMsValidate ? `\n  ${existingMsValidate[0]}` : '';
+
   const newHead = `<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title${titleIdAttr}>${escapeAttr(seo.title)}</title>
   <meta${descIdAttr} name="description" content="${escapeAttr(seo.description)}">
-  <link rel="canonical" href="${seo.canonical}">
+  <link rel="canonical" href="${seo.canonical}">${msValidateTag}
   <!-- <meta name="google-site-verification" content="AyMUI8PZh_H7WgF7qFUwALmmrcUis2_cl477-OSAdWg" /> -->
   <meta property="og:locale" content="es_ES">
   <meta property="og:site_name" content="Medgón Passivhaus">
@@ -995,6 +1011,7 @@ Medgón Passivhaus S.L. diseña, fabrica mediante control numérico CNC e instal
 - Catálogo completo: ${SITE_URL}/catalogo
 - Cómo funciona y precios: ${SITE_URL}/como-funciona
 - Nuestro sistema constructivo: ${SITE_URL}/nuestro-sistema
+- Proyectos destacados (48 obras): ${SITE_URL}/proyectos-destacados
 - Obras y proyectos ejecutados: ${SITE_URL}/proyectos
 - Blog técnico: ${SITE_URL}/blog
 - Contacto y estudio de parcela gratuito: ${SITE_URL}/contacto

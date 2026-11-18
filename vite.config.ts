@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import zlib from 'zlib';
 import {defineConfig} from 'vite';
 
 // Automatically detect all HTML files in root for Multi-Page App (MPA) support
@@ -53,12 +54,56 @@ const serveStaticAssetsPlugin = (): any => ({
   },
 });
 
+// Plugin to compress static JS, CSS, HTML, SVG, JSON, XML, and TXT assets in production build (.gz and .br)
+const compressStaticAssetsPlugin = (): any => ({
+  name: 'compress-static-assets',
+  apply: 'build',
+  closeBundle() {
+    const distDir = path.resolve(__dirname, 'dist');
+    if (!fs.existsSync(distDir)) return;
+    const compressibleExts = new Set(['.js', '.css', '.html', '.svg', '.json', '.xml', '.txt']);
+
+    const walk = (dir: string) => {
+      for (const entry of fs.readdirSync(dir, {withFileTypes: true})) {
+        const fullPath = path.join(dir, entry.name);
+        if (entry.isDirectory()) {
+          walk(fullPath);
+        } else if (compressibleExts.has(path.extname(entry.name).toLowerCase())) {
+          const content = fs.readFileSync(fullPath);
+          if (content.length < 1024) continue;
+          fs.writeFileSync(`${fullPath}.gz`, zlib.gzipSync(content, {level: 9}));
+          fs.writeFileSync(`${fullPath}.br`, zlib.brotliCompressSync(content));
+        }
+      }
+    };
+
+    walk(distDir);
+  },
+});
+
 export default defineConfig(() => {
   return {
-    plugins: [serveStaticAssetsPlugin()],
+    plugins: [serveStaticAssetsPlugin(), compressStaticAssetsPlugin()],
     build: {
+      cssCodeSplit: true,
+      assetsInlineLimit: 4096,
+      chunkSizeWarningLimit: 600,
       rollupOptions: {
         input: rollupInput,
+        output: {
+          chunkFileNames: 'assets/js/[name]-[hash].js',
+          entryFileNames: 'assets/js/[name]-[hash].js',
+          manualChunks(id: string) {
+            if (!id.includes('node_modules')) return undefined;
+            if (id.includes('react') || id.includes('react-dom') || id.includes('scheduler')) {
+              return 'react-vendor';
+            }
+            if (id.includes('lucide-react') || id.includes('motion') || id.includes('framer-motion')) {
+              return 'ui-vendor';
+            }
+            return 'vendor';
+          },
+        },
       },
     },
     server: {

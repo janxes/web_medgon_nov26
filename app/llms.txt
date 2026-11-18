@@ -1,4 +1,4 @@
-﻿# Medgón Passivhaus S.L.
+# Medgón Passivhaus S.L.
 
 > Fabricante líder en España de viviendas Passivhaus industrializadas de estructura de madera técnica con precio y plazo cerrados, desde Carrión de los Condes (Palencia).
 
@@ -44,6 +44,7 @@ Medgón Passivhaus S.L. diseña, fabrica mediante control numérico CNC e instal
 - Catálogo completo: https://medgon.com/catalogo
 - Cómo funciona y precios: https://medgon.com/como-funciona
 - Nuestro sistema constructivo: https://medgon.com/nuestro-sistema
+- Proyectos destacados (48 obras): https://medgon.com/proyectos-destacados
 - Obras y proyectos ejecutados: https://medgon.com/proyectos
 - Blog técnico: https://medgon.com/blog
 - Contacto y estudio de parcela gratuito: https://medgon.com/contacto
