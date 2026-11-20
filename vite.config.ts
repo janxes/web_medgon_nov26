@@ -87,6 +87,7 @@ const compressStaticAssetsPlugin = (): any => ({
 
 export default defineConfig(() => {
   return {
+    base: '/app/',
     plugins: [serveStaticAssetsPlugin(), compressStaticAssetsPlugin()],
     build: {
       cssCodeSplit: true,
