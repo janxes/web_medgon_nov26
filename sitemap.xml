@@ -127,12 +127,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://medgon.com/proyectos</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://medgon.com/i-d</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>yearly</changefreq>

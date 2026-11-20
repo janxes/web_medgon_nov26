@@ -24,8 +24,8 @@
 
     if (!img.dataset.fadeBound) {
       img.dataset.fadeBound = '1';
-      img.addEventListener('load', reveal, { once: true });
-      img.addEventListener('error', reveal, { once: true });
+      img.addEventListener('load', reveal);
+      img.addEventListener('error', reveal);
     }
   }
 

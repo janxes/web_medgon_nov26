@@ -267,6 +267,26 @@ footer .pt-8 p {
 footer .pt-8 a:hover {
   color: #ffffff !important;
 }
+footer a.footer-social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.75rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  color: #E2E8F0 !important;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+footer a.footer-social-link:hover,
+footer a.footer-social-link:focus-visible {
+  background-color: #23bd00;
+  border-color: #23bd00;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  outline: none;
+}
 
 .bg-gradient-to-br p,
 .bg-gradient-to-t p,

@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --port=3000 --host=0.0.0.0",
     "build:css": "node scripts/build-css.mjs",
     "build": "node scripts/build-css.mjs && vite build",
     "preview": "vite preview",

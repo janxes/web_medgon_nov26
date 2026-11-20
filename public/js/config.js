@@ -106,9 +106,9 @@ window.MEDGON_CONFIG = {
       "aliasSlug": "modelo-mg-100.html",
       "thumbUrl": "assets/imagenes/mg100/MG_100_Exterior.webp",
       "planoDistribucion": "assets/imagenes/mg100/MG_100_Plano.webp",
-      "planoCotas": "assets/imagenes/mg100/COMERCIAL - MG100 - V2 - Inclinada 30% cotas.webp",
-      "planoPdf": "assets/imagenes/mg100/COMERCIAL - MG100 - V2 - Inclinada 30% cotas.pdf",
-      "pdfPath": "assets/imagenes/mg100/COMERCIAL - MG100 - V2 - Inclinada 30% cotas.pdf",
+      "planoCotas": "assets/imagenes/mg100/COMERCIAL-MG100-V2-Inclinada-30-cotas.webp",
+      "planoPdf": "assets/imagenes/mg100/COMERCIAL-MG100-V2-Inclinada-30-cotas.pdf",
+      "pdfPath": "assets/imagenes/mg100/COMERCIAL-MG100-V2-Inclinada-30-cotas.pdf",
       "gallery": [
         {
           "url": "assets/imagenes/mg100/MG_100_Exterior.webp",
@@ -146,7 +146,7 @@ window.MEDGON_CONFIG = {
           "caption": "Plano oficial de distribución con 3 dormitorios y doble baño"
         },
         {
-          "url": "assets/imagenes/mg100/COMERCIAL - MG100 - V2 - Inclinada 30% cotas.webp",
+          "url": "assets/imagenes/mg100/COMERCIAL-MG100-V2-Inclinada-30-cotas.webp",
           "title": "Plano Técnico y Cotas",
           "caption": "Plano acotado comercial con cubierta inclinada 30%"
         }

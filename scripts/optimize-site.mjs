@@ -166,7 +166,7 @@ const MODEL_SPECS = {
     lowPrice: 297000,
     highPrice: 330000,
     image: `${SITE_URL}/assets/imagenes/mg165/coastal_l_shaped_home.webp`,
-    desc: 'Vivienda unifamiliar contemporánea MG 165 de 165 m² construidos (148 m² útiles) en dos plantas, 4-5 dormitorios, porches bioclimáticos integrados y eficiencia ZEB A+.',
+    desc: 'Vivienda unifamiliar contemporánea MG 165 de 165 m² construidos (148 m² útiles) en dos plantas, 4-5 dormitorios, porches bioclimáticos integrados y eficiencia ECCN.',
   },
 };
 
@@ -472,22 +472,11 @@ function getPageSeo(filename, existingLdList) {
       ],
     },
     'nuestro-sistema.html': {
-      title: 'Nuestro Sistema Constructivo en Madera Técnica · Medgón',
+      title: 'Sistema Constructivo: Entramado Ligero y Forjados Kerto Ripa · Medgón',
       description:
-        'Fábrica robotizada en Carrión de los Condes: entramado ligero, CLT, hermeticidad n50 ≤ 0,6 ren/h y trazabilidad CE en construcción Passivhaus.',
+        'Cómo construimos tu casa Passivhaus en madera técnica: muros de entramado ligero con fibra de madera insuflada, forjados Kerto Ripa con Marcado CE y hermeticidad certificada.',
       canonical: `${SITE_URL}/nuestro-sistema`,
-      ogImage: ogDefault,
-      inSitemap: true,
-      priority: '0.8',
-      changefreq: 'monthly',
-      preserveLdGraph: true,
-    },
-    'proyectos.html': {
-      title: 'Obras y Proyectos Passivhaus Ejecutados · Medgón',
-      description:
-        'Casos reales de viviendas unifamiliares, edificios plurifamiliares y centros terciarios Passivhaus ejecutados en madera técnica con ensayos certificados.',
-      canonical: `${SITE_URL}/proyectos`,
-      ogImage: ogDefault,
+      ogImage: `${SITE_URL}/assets/imagenes/sistema/sistema-forjado-estructuras.webp`,
       inSitemap: true,
       priority: '0.8',
       changefreq: 'monthly',
@@ -736,6 +725,10 @@ function inferImageDimensions(src, attrs) {
       if (/h-8/.test(attrs)) return { w: 140, h: 61 };
       return { w: 180, h: 78 };
     }
+    if (cleanSrc === 'assets/imagenes/generales/medgon20a.webp') {
+      if (/w-\[300px\]|width=["']300["']/i.test(attrs)) return { w: 300, h: 101 };
+      return { w: sz.w, h: sz.h };
+    }
     return { w: sz.w, h: sz.h };
   }
 
@@ -782,8 +775,8 @@ function optimizeImgTags(bodyHtml, filename) {
     const src = srcMatch ? srcMatch[2] : '';
     const idMatch = attrs.match(/\bid=(["'])([^"']*)\1/i);
     const idVal = idMatch ? idMatch[2] : '';
-    const isLogo = src.includes('logo_medgon.webp');
-    const isHeaderLogo = isLogo && /\bh-10\b/.test(attrs) && !/\bw-\[200px\]/.test(attrs);
+    const isLogo = src.includes('logo_medgon.webp') || src.includes('medgon20a.webp');
+    const isHeaderLogo = isLogo && (/\bh-10\b/.test(attrs) || /\bw-\[300px\]/.test(attrs)) && !/\bw-\[200px\]/.test(attrs);
     const isHeroCandidate =
       !isLogo &&
       !primaryHeroAssigned &&
@@ -1012,7 +1005,6 @@ Medgón Passivhaus S.L. diseña, fabrica mediante control numérico CNC e instal
 - Cómo funciona y precios: ${SITE_URL}/como-funciona
 - Nuestro sistema constructivo: ${SITE_URL}/nuestro-sistema
 - Proyectos destacados (48 obras): ${SITE_URL}/proyectos-destacados
-- Obras y proyectos ejecutados: ${SITE_URL}/proyectos
 - Blog técnico: ${SITE_URL}/blog
 - Contacto y estudio de parcela gratuito: ${SITE_URL}/contacto
 
