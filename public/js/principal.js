@@ -460,6 +460,58 @@ function initDesktopNavDropdowns() {
       }
     });
 
+    // Navegación por teclado en el botón disparador
+    trigger.addEventListener('keydown', function (e) {
+      var links = Array.from(panel.querySelectorAll('a[href]'));
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        container.dataset.pinned = 'true';
+        openMenu();
+        if (links.length) links[0].focus();
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        container.dataset.pinned = 'true';
+        openMenu();
+        if (links.length) links[links.length - 1].focus();
+      } else if (e.key === 'Escape' || e.key === 'Esc') {
+        e.preventDefault();
+        closeMenu(true);
+        trigger.focus();
+      }
+    });
+
+    // Navegación por teclado dentro del desplegable
+    panel.addEventListener('keydown', function (e) {
+      var links = Array.from(panel.querySelectorAll('a[href]'));
+      if (!links.length) return;
+      var currentIdx = links.indexOf(document.activeElement);
+
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        links[(currentIdx + 1) % links.length].focus();
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        links[(currentIdx - 1 + links.length) % links.length].focus();
+      } else if (e.key === 'Home') {
+        e.preventDefault();
+        links[0].focus();
+      } else if (e.key === 'End') {
+        e.preventDefault();
+        links[links.length - 1].focus();
+      } else if (e.key === 'Escape' || e.key === 'Esc') {
+        e.preventDefault();
+        closeMenu(true);
+        trigger.focus();
+      }
+    });
+
+    // Cerrar al salir del contenedor mediante Tab
+    container.addEventListener('focusout', function (e) {
+      if (!container.contains(e.relatedTarget)) {
+        closeMenu(true);
+      }
+    });
+
     // Cierre inmediato al seleccionar una opción de navegación
     panel.addEventListener('click', function (e) {
       if (e.target.closest('a')) {
@@ -480,7 +532,7 @@ function initDesktopNavDropdowns() {
     });
   });
 
-  // Cerrar con Escape
+  // Cerrar desplegables y menú móvil con Escape
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' || e.key === 'Esc') {
       dropdownContainers.forEach(function (container) {
@@ -494,6 +546,17 @@ function initDesktopNavDropdowns() {
           }
         }
       });
+
+      var mobileDrawer = document.getElementById('mobile-menu-drawer');
+      if (mobileDrawer && !mobileDrawer.classList.contains('hidden')) {
+        if (typeof window.toggleMobileMenu === 'function') {
+          window.toggleMobileMenu();
+        } else {
+          mobileDrawer.classList.add('hidden');
+        }
+        var mobileBtn = document.getElementById('btn-mobile-menu');
+        if (mobileBtn) mobileBtn.focus();
+      }
     }
   });
 }

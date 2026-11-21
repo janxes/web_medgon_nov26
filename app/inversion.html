@@ -60,6 +60,29 @@
       "about": {
         "@id": "https://medgon.com/#organization"
       }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://medgon.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Medgón",
+          "item": "https://medgon.com/sobre-nosotros"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Inversión y alianzas",
+          "item": "https://medgon.com/inversion"
+        }
+      ]
     }
   ]
 }
@@ -70,240 +93,190 @@
 <!-- ================= HEADER SEMÁNTICO Y ACCESIBLE ================= -->
 <header class="sticky top-0 z-50 bg-[#FAF8F5]/95 backdrop-blur-md border-b border-slate-200" style="min-height: 80px;">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between min-h-20 py-2">
-      
+    <div class="flex items-center justify-between gap-4 min-h-20 py-2">
+
       <!-- LOGO -->
       <a href="index.html" class="flex-shrink-0" aria-label="Ir al inicio de Medgón Passivhaus">
-        <img src="assets/imagenes/generales/medgon20a.webp?v=2" 
-          alt="Medgón Passivhaus" 
+        <img src="assets/imagenes/generales/medgon20a.webp?v=2"
+          alt="Medgón Passivhaus"
           class="w-[300px] max-w-[calc(100vw-5.5rem)] h-auto object-contain" width="300" height="77" decoding="async" />
       </a>
 
-            <!-- NAVEGACIÓN DESKTOP (4 PILARES) -->
-      <nav class="hidden md:flex items-center gap-7 lg:gap-10 shrink-0 relative" aria-label="Navegación principal">
-        
-        <!-- 1. Catálogo -->
+      <!-- NAVEGACIÓN DESKTOP (6 ELEMENTOS) -->
+      <nav class="hidden lg:flex items-center gap-4 xl:gap-6 shrink-0 relative" aria-label="Navegación principal">
+
+        <!-- 1. Viviendas -->
         <div class="relative nav-dropdown-item group">
-          <button 
+          <button
             type="button"
-            class="nav-dropdown-trigger whitespace-nowrap flex items-center gap-2 text-lg font-semibold text-[#16181B] hover:text-[#23bd00] transition-colors py-2 cursor-pointer focus:outline-none focus-visible:text-[#23bd00]" 
+            class="nav-dropdown-trigger whitespace-nowrap flex items-center gap-1.5 text-[15px] xl:text-base font-semibold text-[#16181B] hover:text-[#23bd00] transition-colors py-2 cursor-pointer focus:outline-none focus-visible:text-[#23bd00]"
             aria-expanded="false"
             aria-haspopup="true"
+            aria-controls="submenu-viviendas"
           >
-            <span>Catálogo</span>
-            <svg class="w-5 h-5 text-slate-400 group-hover:text-[#23bd00] group-[.is-open]:text-[#23bd00] group-[.is-open]:rotate-180 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            <span>Viviendas</span>
+            <svg class="w-4 h-4 text-slate-400 group-hover:text-[#23bd00] group-[.is-open]:text-[#23bd00] group-[.is-open]:rotate-180 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </button>
-          <!-- Contenedor con puente continuo sin hueco (top-full pt-1.5) y grace delay -->
-          <div class="nav-dropdown-panel absolute left-0 top-full pt-1.5 w-64 opacity-0 translate-y-1 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto group-focus-within:opacity-100 group-focus-within:translate-y-0 group-focus-within:pointer-events-auto group-[.is-open]:opacity-100 group-[.is-open]:translate-y-0 group-[.is-open]:pointer-events-auto transition-[opacity,transform,visibility] duration-200 ease-out delay-75 group-hover:delay-0 z-50">
-            <!-- Puente de interacción invisible que une físicamente el botón con el submenú -->
+          <div id="submenu-viviendas" class="nav-dropdown-panel absolute left-0 top-full pt-1.5 w-64 opacity-0 translate-y-1 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto group-focus-within:opacity-100 group-focus-within:translate-y-0 group-focus-within:pointer-events-auto group-[.is-open]:opacity-100 group-[.is-open]:translate-y-0 group-[.is-open]:pointer-events-auto transition-[opacity,transform,visibility] duration-200 ease-out delay-75 group-hover:delay-0 z-50">
             <div class="nav-hover-bridge absolute -top-3.5 inset-x-0 h-3.5 pointer-events-auto" aria-hidden="true"></div>
             <div class="rounded-2xl bg-white border border-slate-100 shadow-xl p-2 ring-1 ring-black/5">
-              <a href="catalogo.html" class="block px-4 py-2.5 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Todos los modelos (87 - 165 m²)</a>
-              <a href="viviendas-a-medida.html" class="block px-4 py-2.5 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Viviendas a Medida (+200 m²)</a>
-              <a href="passivhaus.html" class="block px-4 py-2.5 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">¿Qué es Passivhaus? (Guía clara)</a>
-              <a href="como-funciona.html" class="block px-4 py-2.5 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Cómo funciona (Fases y plazos)</a>
-              <a href="como-funciona.html#precios" class="block px-4 py-2.5 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Opciones de contrato y precios</a>
+              <a href="catalogo.html" class="block px-3.5 py-2 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Todos los modelos (87 - 165 m²)</a>
+              <a href="viviendas-a-medida.html" class="block px-3.5 py-2 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Viviendas a Medida (+200 m²)</a>
+              <a href="passivhaus.html" class="block px-3.5 py-2 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">¿Qué es Passivhaus? (Guía clara)</a>
+              <a href="como-funciona.html" class="block px-3.5 py-2 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Cómo funciona (Fases y plazos)</a>
+              <a href="como-funciona.html#precios" class="block px-3.5 py-2 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Opciones de contrato y precios</a>
             </div>
           </div>
         </div>
 
-        <!-- 2. Proyectos (B2B) -->
+        <!-- 2. Soluciones constructivas -->
         <div class="relative nav-dropdown-item group">
-          <button 
+          <button
             type="button"
-            class="nav-dropdown-trigger whitespace-nowrap flex items-center gap-2 text-lg font-semibold text-[#16181B] hover:text-[#23bd00] transition-colors py-2 cursor-pointer focus:outline-none focus-visible:text-[#23bd00]" 
+            class="nav-dropdown-trigger whitespace-nowrap flex items-center gap-1.5 text-[15px] xl:text-base font-semibold text-[#16181B] hover:text-[#23bd00] transition-colors py-2 cursor-pointer focus:outline-none focus-visible:text-[#23bd00]"
             aria-expanded="false"
             aria-haspopup="true"
+            aria-controls="submenu-soluciones"
           >
-            <span>Proyectos</span>
-            <svg class="w-5 h-5 text-slate-400 group-hover:text-[#23bd00] group-[.is-open]:text-[#23bd00] group-[.is-open]:rotate-180 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            <span>Soluciones constructivas</span>
+            <svg class="w-4 h-4 text-slate-400 group-hover:text-[#23bd00] group-[.is-open]:text-[#23bd00] group-[.is-open]:rotate-180 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </button>
-          <!-- Contenedor con puente continuo sin hueco (top-full pt-1.5) y grace delay -->
-          <div class="nav-dropdown-panel absolute left-0 top-full pt-1.5 w-64 opacity-0 translate-y-1 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto group-focus-within:opacity-100 group-focus-within:translate-y-0 group-focus-within:pointer-events-auto group-[.is-open]:opacity-100 group-[.is-open]:translate-y-0 group-[.is-open]:pointer-events-auto transition-[opacity,transform,visibility] duration-200 ease-out delay-75 group-hover:delay-0 z-50">
-            <!-- Puente de interacción invisible que une físicamente el botón con el submenú -->
+          <div id="submenu-soluciones" class="nav-dropdown-panel absolute left-0 top-full pt-1.5 w-64 opacity-0 translate-y-1 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto group-focus-within:opacity-100 group-focus-within:translate-y-0 group-focus-within:pointer-events-auto group-[.is-open]:opacity-100 group-[.is-open]:translate-y-0 group-[.is-open]:pointer-events-auto transition-[opacity,transform,visibility] duration-200 ease-out delay-75 group-hover:delay-0 z-50">
             <div class="nav-hover-bridge absolute -top-3.5 inset-x-0 h-3.5 pointer-events-auto" aria-hidden="true"></div>
             <div class="rounded-2xl bg-white border border-slate-100 shadow-xl p-2 ring-1 ring-black/5">
-              <a href="productos-fachadas.html" class="block px-4 py-2.5 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Fachadas industrializadas 2D</a>
-              <a href="productos-cubiertas.html" class="block px-4 py-2.5 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Cubiertas y estructuras de madera</a>
-              <a href="productos-derecho-vuelo.html" class="block px-4 py-2.5 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Remontas / Derecho de vuelo</a>
-              <a href="productos-plurifamiliares.html" class="block px-4 py-2.5 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Plurifamiliares en altura</a>
-              <a href="productos-terciario.html" class="block px-4 py-2.5 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Edificios terciarios y dotacionales</a>
+              <a href="productos-fachadas.html" class="block px-3.5 py-2 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Fachadas industrializadas 2D</a>
+              <a href="productos-cubiertas.html" class="block px-3.5 py-2 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Cubiertas y estructuras de madera</a>
+              <a href="productos-derecho-vuelo.html" class="block px-3.5 py-2 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Remontas / Derecho de vuelo</a>
+              <a href="productos-plurifamiliares.html" class="block px-3.5 py-2 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Plurifamiliares en altura</a>
+              <a href="productos-terciario.html" class="block px-3.5 py-2 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Edificios terciarios y dotacionales</a>
             </div>
           </div>
         </div>
 
-        <!-- 3. Blog -->
-        <a href="blog.html" class="whitespace-nowrap text-lg font-semibold text-[#16181B] hover:text-[#23bd00] transition-colors py-2">
+        <!-- 3. Proyectos -->
+        <a href="proyectos-destacados.html" class="whitespace-nowrap text-[15px] xl:text-base font-semibold text-[#16181B] hover:text-[#23bd00] transition-colors py-2 focus:outline-none focus-visible:text-[#23bd00]">
+          Proyectos
+        </a>
+
+        <!-- 4. Medgón (Corporativo en 2 grupos) -->
+        <div class="relative nav-dropdown-item group">
+          <button
+            type="button"
+            class="nav-dropdown-trigger whitespace-nowrap flex items-center gap-1.5 text-[15px] xl:text-base font-semibold text-[#23bd00] hover:text-[#23bd00] transition-colors py-2 cursor-pointer focus:outline-none focus-visible:text-[#23bd00]"
+            aria-expanded="false"
+            aria-haspopup="true"
+            aria-controls="submenu-medgon"
+          >
+            <span>Medgón</span>
+            <svg class="w-4 h-4 text-[#23bd00] group-[.is-open]:rotate-180 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="submenu-medgon" class="nav-dropdown-panel absolute right-0 top-full pt-1.5 w-80 opacity-0 translate-y-1 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto group-focus-within:opacity-100 group-focus-within:translate-y-0 group-focus-within:pointer-events-auto group-[.is-open]:opacity-100 group-[.is-open]:translate-y-0 group-[.is-open]:pointer-events-auto transition-[opacity,transform,visibility] duration-200 ease-out delay-75 group-hover:delay-0 z-50">
+            <div class="nav-hover-bridge absolute -top-3.5 inset-x-0 h-3.5 pointer-events-auto" aria-hidden="true"></div>
+            <div class="rounded-2xl bg-white border border-slate-100 shadow-xl p-2.5 ring-1 ring-black/5 space-y-2">
+              <div role="group" aria-labelledby="nav-group-conoce">
+                <p id="nav-group-conoce" class="px-3.5 pt-1.5 pb-1 text-[11px] font-bold uppercase tracking-[0.14em] text-[#23bd00]">Conoce Medgón</p>
+                <a href="sobre-nosotros.html" class="block px-3.5 py-2 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Quiénes somos</a>
+                <a href="construccion-industrializada.html" class="block px-3.5 py-2 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Cómo fabricamos</a>
+                <a href="nuestro-sistema.html" class="block px-3.5 py-2 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Nuestro sistema constructivo</a>
+                <a href="oficina-tecnica.html" class="block px-3.5 py-2 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Oficina técnica</a>
+              </div>
+              <div class="border-t border-slate-100 pt-2" role="group" aria-labelledby="nav-group-mas">
+                <p id="nav-group-mas" class="px-3.5 pt-1 pb-1 text-[11px] font-bold uppercase tracking-[0.14em] text-slate-500">Más sobre Medgón</p>
+                <a href="i-d.html" class="block px-3.5 py-2 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Innovación e I+D</a>
+                <a href="rsc.html" class="block px-3.5 py-2 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Responsabilidad Social Corporativa</a>
+                <a href="inversion.html" aria-current="page" class="block px-3.5 py-2 text-sm font-semibold text-[#23bd00] bg-[#FAF8F5] rounded-xl transition-colors">Inversión y alianzas</a>
+                <a href="premios-y-reconocimientos.html" class="block px-3.5 py-2 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Premios y reconocimientos</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Blog -->
+        <a href="blog.html" class="whitespace-nowrap text-[15px] xl:text-base font-semibold text-[#16181B] hover:text-[#23bd00] transition-colors py-2 focus:outline-none focus-visible:text-[#23bd00]">
           Blog
         </a>
 
-        <!-- 4. Medgón -->
-        <div class="relative nav-dropdown-item group">
-          <button 
-            type="button"
-            class="nav-dropdown-trigger whitespace-nowrap flex items-center gap-2 text-lg font-semibold text-[#23bd00] transition-colors py-2 cursor-pointer focus:outline-none focus-visible:text-[#23bd00]" 
-            aria-expanded="false"
-            aria-haspopup="true"
-          >
-            <span>Medgón</span>
-            <svg class="w-5 h-5 text-slate-400 group-hover:text-[#23bd00] group-[.is-open]:text-[#23bd00] group-[.is-open]:rotate-180 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-          </button>
-          <!-- Contenedor con puente continuo sin hueco (top-full pt-1.5) y grace delay -->
-          <div class="nav-dropdown-panel absolute right-0 top-full pt-1.5 w-64 opacity-0 translate-y-1 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto group-focus-within:opacity-100 group-focus-within:translate-y-0 group-focus-within:pointer-events-auto group-[.is-open]:opacity-100 group-[.is-open]:translate-y-0 group-[.is-open]:pointer-events-auto transition-[opacity,transform,visibility] duration-200 ease-out delay-75 group-hover:delay-0 z-50">
-            <!-- Puente de interacción invisible que une físicamente el botón con el submenú -->
-            <div class="nav-hover-bridge absolute -top-3.5 inset-x-0 h-3.5 pointer-events-auto" aria-hidden="true"></div>
-            <div class="rounded-2xl bg-white border border-slate-100 shadow-xl p-2 ring-1 ring-black/5">
-              <a href="nuestro-sistema.html" class="block px-4 py-2.5 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Sobre nosotros y fábrica</a>
-              <a href="proyectos-destacados.html" class="block px-4 py-2.5 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Proyectos destacados</a>
-              <a href="nuestro-sistema.html#tecnologia" class="block px-4 py-2.5 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Madera técnica Passivhaus</a>
-              <div class="my-1 border-t border-slate-100"></div>
-              <a href="rsc.html" class="block px-4 py-2.5 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">RSC (Responsabilidad Social)</a>
-              <a href="i-d.html" class="block px-4 py-2.5 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">I+D (Innovación Técnica)</a>
-              <a href="inversion.html" class="block px-4 py-2.5 text-sm font-medium text-slate-700 hover:bg-[#FAF8F5] hover:text-[#23bd00] rounded-xl transition-colors">Inversión y Alianzas</a>
-            </div>
-          </div>
-        </div>
+        <!-- 6. Contacto -->
+        <a href="contacto.html" class="whitespace-nowrap text-[15px] xl:text-base font-semibold text-[#16181B] hover:text-[#23bd00] transition-colors py-2 focus:outline-none focus-visible:text-[#23bd00]">
+          Contacto
+        </a>
 
       </nav>
 
-      <!-- ACCIONES DERECHA: BOTÓN MENÚ 3 RAYAS (MÓVIL Y TABLET) -->
-      <div class="flex items-center gap-3">
-        <!-- BOTÓN MENÚ DE 3 RAYAS HORIZONTALES (MÓVIL Y TABLET) -->
-        <button 
+      <!-- BOTÓN MENÚ MÓVIL -->
+      <div class="lg:hidden flex items-center">
+        <button
           id="btn-mobile-menu"
-          type="button" 
-          class="md:hidden inline-flex items-center justify-center p-2 rounded-xl text-[#16181B] hover:text-[#23bd00] hover:bg-white border border-slate-200 shadow-2xs transition-colors cursor-pointer"
+          type="button"
+          onclick="toggleMobileMenu()"
+          class="p-2.5 rounded-xl bg-white border border-slate-200 text-[#16181B] hover:text-[#23bd00] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#23bd00] transition-colors cursor-pointer"
           aria-label="Abrir menú de navegación"
           aria-expanded="false"
           aria-controls="mobile-menu-drawer"
-          onclick="toggleMobileMenu()"
         >
-          <!-- Icono de 3 Rayas Horizontales (Hamburger) -->
-          <svg id="icon-menu-open" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true">
-            <line x1="4" y1="6" x2="20" y2="6" stroke-linecap="round"/>
-            <line x1="4" y1="12" x2="20" y2="12" stroke-linecap="round"/>
-            <line x1="4" y1="18" x2="20" y2="18" stroke-linecap="round"/>
-          </svg>
-          <!-- Icono de Cierre (X) -->
-          <svg id="icon-menu-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true">
-            <line x1="18" y1="6" x2="6" y2="18" stroke-linecap="round"/>
-            <line x1="6" y1="6" x2="18" y2="18" stroke-linecap="round"/>
-          </svg>
+          <svg id="icon-menu-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="icon-menu-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
         </button>
       </div>
 
     </div>
   </div>
 
-  <!-- MENÚ MÓVIL DESPLEGABLE CON ACCESO A TODAS LAS PÁGINAS (COMPACTO Y CON DESLIZADOR VERTICAL) -->
-  <div 
-    id="mobile-menu-drawer" 
-    class="hidden md:hidden border-t border-slate-200 bg-[#FAF8F5] backdrop-blur-md px-4 sm:px-6 py-4 space-y-2.5 shadow-2xl max-h-[calc(100dvh-5rem)] max-h-[75vh] overflow-y-auto overscroll-contain"
-    style="background-color: #FAF8F5; scrollbar-width: thin; scrollbar-color: #23bd00 #FAF8F5;"
-  >
-    <style>
-      #mobile-menu-drawer::-webkit-scrollbar {
-        width: 6px;
-      }
-      #mobile-menu-drawer::-webkit-scrollbar-track {
-        background: #FAF8F5;
-        border-radius: 9999px;
-      }
-      #mobile-menu-drawer::-webkit-scrollbar-thumb {
-        background: #23bd00;
-        border-radius: 9999px;
-      }
-      #mobile-menu-drawer::-webkit-scrollbar-thumb:hover {
-        background: #285943;
-      }
-    </style>
-    
-    <!-- 1. Catálogo de Viviendas -->
-    <div class="space-y-0.5">
-      <div class="px-2 py-0.5 text-[0.95rem] font-bold uppercase tracking-wider text-[#23bd00] flex items-center gap-1.5">
-        <span class="w-1.5 h-1.5 rounded-full bg-[#23bd00]"></span>
-        <span>Catálogo</span>
+  <!-- MENÚ MÓVIL (DRAWER) -->
+  <nav id="mobile-menu-drawer" class="hidden lg:hidden bg-[#FAF8F5] border-b border-slate-200 shadow-lg max-h-[85vh] overflow-y-auto" aria-label="Navegación móvil">
+    <div class="px-4 py-4 space-y-4">
+
+      <div class="space-y-1">
+        <p class="px-2 text-xs font-bold uppercase tracking-wider text-[#23bd00]">Viviendas</p>
+        <a href="catalogo.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Todos los modelos (87 - 165 m²)</a>
+        <a href="viviendas-a-medida.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Viviendas a Medida (+200 m²)</a>
+        <a href="passivhaus.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">¿Qué es Passivhaus?</a>
+        <a href="como-funciona.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Cómo funciona (Fases y plazos)</a>
+        <a href="como-funciona.html#precios" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Opciones de contrato y precios</a>
       </div>
-      <a href="catalogo.html" class="block px-3 py-1.5 text-xs sm:text-sm font-semibold text-[#16181B] leading-snug hover:bg-white hover:text-[#23bd00] rounded-xl transition-colors">
-        Todos los modelos (87 - 165 m²)
-      </a>
-      <a href="viviendas-a-medida.html" class="block px-3 py-1.5 text-xs sm:text-sm font-semibold text-[#16181B] leading-snug hover:bg-white hover:text-[#23bd00] rounded-xl transition-colors">
-        Viviendas a Medida (+200 m²)
-      </a>
-      <a href="passivhaus.html" class="block px-3 py-1.5 text-xs sm:text-sm font-semibold text-[#16181B] leading-snug hover:bg-white hover:text-[#23bd00] rounded-xl transition-colors">
-        ¿Qué es Passivhaus? (Guía clara)
-      </a>
-      <a href="como-funciona.html" class="block px-3 py-1.5 text-xs sm:text-sm font-semibold text-[#16181B] leading-snug hover:bg-white hover:text-[#23bd00] rounded-xl transition-colors">
-        Cómo funciona (Fases y plazos)
-      </a>
-      <a href="como-funciona.html#precios" class="block px-3 py-1.5 text-xs sm:text-sm font-semibold text-[#16181B] leading-snug hover:bg-white hover:text-[#23bd00] rounded-xl transition-colors">
-        Opciones de contrato y precios
-      </a>
-    </div>
 
-    <!-- 2. Proyectos B2B -->
-    <div class="space-y-0.5 pt-2 border-t border-slate-200/70">
-      <div class="px-2 py-0.5 text-[0.95rem] font-bold uppercase tracking-wider text-[#23bd00] flex items-center gap-1.5">
-        <span class="w-1.5 h-1.5 rounded-full bg-[#23bd00]"></span>
-        <span>Proyectos</span>
+      <div class="space-y-1 pt-2 border-t border-slate-200/80">
+        <p class="px-2 text-xs font-bold uppercase tracking-wider text-[#23bd00]">Soluciones constructivas</p>
+        <a href="productos-fachadas.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Fachadas industrializadas 2D</a>
+        <a href="productos-cubiertas.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Cubiertas y estructuras de madera</a>
+        <a href="productos-derecho-vuelo.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Remontas / Derecho de vuelo</a>
+        <a href="productos-plurifamiliares.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Plurifamiliares en altura</a>
+        <a href="productos-terciario.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Edificios terciarios y dotacionales</a>
       </div>
-      <a href="productos-fachadas.html" class="block px-3 py-1.5 text-xs sm:text-sm font-semibold text-[#16181B] leading-snug hover:bg-white hover:text-[#23bd00] rounded-xl transition-colors">
-        Fachadas industrializadas 2D
-      </a>
-      <a href="productos-cubiertas.html" class="block px-3 py-1.5 text-xs sm:text-sm font-semibold text-[#16181B] leading-snug hover:bg-white hover:text-[#23bd00] rounded-xl transition-colors">
-        Cubiertas y estructuras de madera
-      </a>
-      <a href="productos-plurifamiliares.html" class="block px-3 py-1.5 text-xs sm:text-sm font-semibold text-[#16181B] leading-snug hover:bg-white hover:text-[#23bd00] rounded-xl transition-colors">
-        Plurifamiliares en altura
-      </a>
-      <a href="productos-derecho-vuelo.html" class="block px-3 py-1.5 text-xs sm:text-sm font-semibold text-[#16181B] leading-snug hover:bg-white hover:text-[#23bd00] rounded-xl transition-colors">
-        Remontas / Derecho de vuelo
-      </a>
-      <a href="productos-terciario.html" class="block px-3 py-1.5 text-xs sm:text-sm font-semibold text-[#16181B] leading-snug hover:bg-white hover:text-[#23bd00] rounded-xl transition-colors">
-        Edificios terciarios y dotacionales
-      </a>
-    </div>
 
-    <!-- 3. Blog -->
-    <div class="pt-2 border-t border-slate-200/70">
-      <a href="blog.html" class="block px-3 py-1.5 text-xs sm:text-sm font-bold text-[#16181B] leading-snug hover:bg-white hover:text-[#23bd00] rounded-xl transition-colors">
-        Blog y Divulgación
-      </a>
-    </div>
-
-    <!-- 4. Sobre Medgón -->
-    <div class="space-y-0.5 pt-2 border-t border-slate-200/70">
-      <div class="px-2 py-0.5 text-[0.95rem] font-bold uppercase tracking-wider text-[#23bd00] flex items-center gap-1.5">
-        <span class="w-1.5 h-1.5 rounded-full bg-[#23bd00]"></span>
-        <span>Sobre Medgón</span>
+      <div class="pt-2 border-t border-slate-200/80">
+        <a href="proyectos-destacados.html" class="block px-3 py-2 text-base font-semibold text-[#16181B] hover:bg-white hover:text-[#23bd00] rounded-xl">Proyectos</a>
       </div>
-      <a href="nuestro-sistema.html" class="block px-3 py-1.5 text-xs sm:text-sm font-semibold text-[#16181B] leading-snug hover:bg-white hover:text-[#23bd00] rounded-xl transition-colors">
-        Sobre nosotros y fábrica
-      </a>
-      <a href="proyectos-destacados.html" class="block px-3 py-1.5 text-xs sm:text-sm font-semibold text-[#16181B] leading-snug hover:bg-white hover:text-[#23bd00] rounded-xl transition-colors">
-        Proyectos destacados
-      </a>
-      <a href="nuestro-sistema.html#tecnologia" class="block px-3 py-1.5 text-xs sm:text-sm font-semibold text-[#16181B] leading-snug hover:bg-white hover:text-[#23bd00] rounded-xl transition-colors">
-        Madera técnica Passivhaus
-      </a>
-      <a href="rsc.html" class="block px-3 py-1.5 text-xs sm:text-sm font-semibold text-[#16181B] leading-snug hover:bg-white hover:text-[#23bd00] rounded-xl transition-colors">
-        RSC (Responsabilidad Social)
-      </a>
-      <a href="i-d.html" class="block px-3 py-1.5 text-xs sm:text-sm font-semibold text-[#16181B] leading-snug hover:bg-white hover:text-[#23bd00] rounded-xl transition-colors">
-        I+D (Innovación Técnica)
-      </a>
-      <a href="inversion.html" class="block px-3 py-1.5 text-xs sm:text-sm font-semibold text-[#16181B] leading-snug hover:bg-white hover:text-[#23bd00] rounded-xl transition-colors">
-        Inversión y Alianzas
-      </a>
-    </div>
 
-    <!-- CTA Móvil Botón -->
-    <div class="pt-2.5 border-t border-slate-200">
-      <a href="contacto.html" class="block w-full text-center px-4 py-2.5 text-xs sm:text-sm font-bold text-white bg-[#16181B] hover:bg-[#23bd00] rounded-xl shadow-sm transition-colors">
-        Estudiar mi parcela →
-      </a>
+      <div class="space-y-3 pt-2 border-t border-slate-200/80">
+        <div class="space-y-1">
+          <p class="px-2 text-xs font-bold uppercase tracking-wider text-[#23bd00]">Medgón · Conoce Medgón</p>
+          <a href="sobre-nosotros.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Quiénes somos</a>
+          <a href="construccion-industrializada.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Cómo fabricamos</a>
+          <a href="nuestro-sistema.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Nuestro sistema constructivo</a>
+          <a href="oficina-tecnica.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Oficina técnica</a>
+        </div>
+        <div class="space-y-1">
+          <p class="px-2 text-xs font-bold uppercase tracking-wider text-slate-500">Más sobre Medgón</p>
+          <a href="i-d.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Innovación e I+D</a>
+          <a href="rsc.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Responsabilidad Social Corporativa</a>
+          <a href="inversion.html" aria-current="page" class="block px-3 py-2 text-base font-semibold text-[#23bd00] bg-white rounded-xl">Inversión y alianzas</a>
+          <a href="premios-y-reconocimientos.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Premios y reconocimientos</a>
+        </div>
+      </div>
+
+      <div class="pt-2 border-t border-slate-200/80 space-y-1">
+        <a href="blog.html" class="block px-3 py-2 text-base font-semibold text-[#16181B] hover:bg-white hover:text-[#23bd00] rounded-xl">Blog</a>
+        <a href="contacto.html" class="block px-3 py-2 text-base font-semibold text-[#16181B] hover:bg-white hover:text-[#23bd00] rounded-xl">Contacto</a>
+      </div>
+
+      <div class="pt-3 border-t border-slate-200">
+        <a href="contacto.html" class="block w-full text-center px-4 py-3 text-base font-semibold text-white bg-[#23bd00] hover:bg-[#1ea300] rounded-xl shadow-sm transition-colors">
+          Estudio de parcela gratuito
+        </a>
+      </div>
     </div>
-  </div>
+  </nav>
 
   <script>
     function toggleMobileMenu() {
@@ -332,6 +305,17 @@
   <main class="flex-grow">
     
   <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-16">
+
+      <!-- BREADCRUMB ACCESIBLE -->
+      <nav aria-label="Ruta de navegación" class="text-sm text-[#2C313A]">
+        <ol class="flex flex-wrap items-center gap-2">
+          <li><a href="index.html" class="hover:text-[#23bd00] transition-colors">Inicio</a></li>
+          <li aria-hidden="true" class="text-slate-400">/</li>
+          <li><a href="sobre-nosotros.html" class="hover:text-[#23bd00] transition-colors">Medgón</a></li>
+          <li aria-hidden="true" class="text-slate-400">/</li>
+          <li aria-current="page" class="font-semibold text-[#16181B]">Inversión y alianzas</li>
+        </ol>
+      </nav>
     
     <!-- ENCABEZADO DE LA SECCIÓN -->
     <div class="max-w-3xl space-y-4">
@@ -502,6 +486,54 @@
       </a>
     </div>
 
+      <!-- SIGUE CONOCIENDO MEDGÓN (ENLACES RELACIONADOS) -->
+      <section aria-labelledby="heading-relacionados-corp" class="pt-10 border-t border-slate-200/80 space-y-8">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+          <div class="space-y-2">
+            <p class="text-sm font-bold uppercase tracking-[0.16em] text-[#23bd00]">Sigue conociendo Medgón</p>
+            <h2 id="heading-relacionados-corp" class="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#16181B]">
+              Explora otras secciones corporativas y técnicas
+            </h2>
+          </div>
+          <a href="proyectos-destacados.html" class="text-sm font-bold text-[#23bd00] hover:underline">
+            Ver proyectos ejecutados →
+          </a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <a href="construccion-industrializada.html" class="group bg-white border border-slate-200/80 hover:border-[#23bd00] rounded-3xl p-6 sm:p-7 transition-colors flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
+            <p class="text-xs font-bold uppercase tracking-wider text-[#23bd00]">Conoce Medgón</p>
+            <h3 class="text-xl font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors">Cómo fabricamos</h3>
+            <p class="text-sm text-[#2C313A] leading-relaxed">Conoce las líneas de mecanizado CNC y control de calidad de nuestra planta.</p>
+          </div>
+          <span class="text-sm font-bold text-[#16181B] group-hover:text-[#23bd00]">Ver fábrica →</span>
+        </a>
+        <a href="i-d.html" class="group bg-white border border-slate-200/80 hover:border-[#23bd00] rounded-3xl p-6 sm:p-7 transition-colors flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
+            <p class="text-xs font-bold uppercase tracking-wider text-[#23bd00]">Más sobre Medgón</p>
+            <h3 class="text-xl font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors">Innovación e I+D</h3>
+            <p class="text-sm text-[#2C313A] leading-relaxed">Proyectos de investigación estratégica IND-KIT, INDUCE y programas europeos.</p>
+          </div>
+          <span class="text-sm font-bold text-[#16181B] group-hover:text-[#23bd00]">Explorar I+D →</span>
+        </a>
+        <a href="sobre-nosotros.html" class="group bg-white border border-slate-200/80 hover:border-[#23bd00] rounded-3xl p-6 sm:p-7 transition-colors flex flex-col justify-between space-y-4">
+          <div class="space-y-2">
+            <p class="text-xs font-bold uppercase tracking-wider text-[#23bd00]">Conoce Medgón</p>
+            <h3 class="text-xl font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors">Quiénes somos</h3>
+            <p class="text-sm text-[#2C313A] leading-relaxed">Historia, valores y compromiso industrial de Medgón desde Carrión de los Condes.</p>
+          </div>
+          <span class="text-sm font-bold text-[#16181B] group-hover:text-[#23bd00]">Conocer Medgón →</span>
+        </a>
+        </div>
+        <div class="flex flex-wrap items-center gap-x-6 gap-y-2 pt-2 text-sm text-[#2C313A]">
+          <span class="font-semibold text-[#16181B]">También en Medgón:</span>
+        <a href="nuestro-sistema.html" class="hover:text-[#23bd00] underline underline-offset-4">Nuestro sistema constructivo</a>
+        <a href="oficina-tecnica.html" class="hover:text-[#23bd00] underline underline-offset-4">Oficina técnica</a>
+        <a href="rsc.html" class="hover:text-[#23bd00] underline underline-offset-4">Responsabilidad Social Corporativa</a>
+        </div>
+      </section>
+
+
   </div>
   
   </main>
@@ -557,7 +589,7 @@
 
       <!-- Columna 2: Viviendas -->
       <div>
-        <h4 class="text-[0.95rem] font-bold uppercase tracking-wider text-slate-200 mb-4">Viviendas Passivhaus</h4>
+        <h4 class="text-[0.95rem] font-bold uppercase tracking-wider text-slate-200 mb-4">Viviendas</h4>
         <ul class="space-y-2.5 text-sm">
           <li><a href="catalogo.html" class="text-slate-200 hover:text-[#23bd00] transition-colors">Catálogo de modelos</a></li>
           <li><a href="viviendas-a-medida.html" class="text-slate-200 hover:text-[#23bd00] transition-colors">Viviendas a Medida</a></li>
@@ -568,29 +600,32 @@
         </ul>
       </div>
 
-      <!-- Columna 3: Grandes Proyectos -->
+      <!-- Columna 3: Soluciones constructivas -->
       <div>
-        <h4 class="text-[0.95rem] font-bold uppercase tracking-wider text-slate-200 mb-4">Grandes Proyectos</h4>
+        <h4 class="text-[0.95rem] font-bold uppercase tracking-wider text-slate-200 mb-4">Soluciones constructivas</h4>
         <ul class="space-y-2.5 text-sm">
-          <li><a href="productos-fachadas.html" class="text-slate-200 hover:text-[#23bd00] transition-colors">Fachadas industrializadas</a></li>
-          <li><a href="productos-cubiertas.html" class="text-slate-200 hover:text-[#23bd00] transition-colors">Cubiertas de madera de alta precisión</a></li>
+          <li><a href="productos-fachadas.html" class="text-slate-200 hover:text-[#23bd00] transition-colors">Fachadas industrializadas 2D</a></li>
+          <li><a href="productos-cubiertas.html" class="text-slate-200 hover:text-[#23bd00] transition-colors">Cubiertas y estructuras de madera</a></li>
           <li><a href="productos-plurifamiliares.html" class="text-slate-200 hover:text-[#23bd00] transition-colors">Plurifamiliares en altura</a></li>
-          <li><a href="productos-derecho-vuelo.html" class="text-slate-200 hover:text-[#23bd00] transition-colors">Derecho de vuelo y remontas</a></li>
+          <li><a href="productos-derecho-vuelo.html" class="text-slate-200 hover:text-[#23bd00] transition-colors">Remontas / Derecho de vuelo</a></li>
           <li><a href="productos-terciario.html" class="text-slate-200 hover:text-[#23bd00] transition-colors">Edificios terciarios y dotacionales</a></li>
+          <li><a href="proyectos-destacados.html" class="text-slate-200 hover:text-[#23bd00] transition-colors">Proyectos destacados</a></li>
         </ul>
       </div>
 
-      <!-- Columna 4: Sobre Medgón (Submenú Medgón + RSC, I+D, Inversión) -->
+      <!-- Columna 4: Medgón -->
       <div>
-        <h4 class="text-[0.95rem] font-bold uppercase tracking-wider text-slate-200 mb-4">Sobre Medgón</h4>
+        <h4 class="text-[0.95rem] font-bold uppercase tracking-wider text-slate-200 mb-4">Medgón</h4>
         <ul class="space-y-2.5 text-sm">
-          <li><a href="nuestro-sistema.html" class="text-slate-200 hover:text-[#23bd00] transition-colors">Sobre nosotros y fábrica</a></li>
-          <li><a href="proyectos-destacados.html" class="text-slate-200 hover:text-[#23bd00] transition-colors">Proyectos destacados</a></li>
-          <li><a href="nuestro-sistema.html#tecnologia" class="text-slate-200 hover:text-[#23bd00] transition-colors">Madera técnica Passivhaus</a></li>
-          <li><a href="blog.html" class="text-slate-200 hover:text-[#23bd00] transition-colors">Blog y divulgación</a></li>
-          <li><a href="rsc.html" class="text-slate-200 hover:text-[#23bd00] font-medium transition-colors">RSC (Responsabilidad Social)</a></li>
-          <li><a href="i-d.html" class="text-slate-200 hover:text-[#23bd00] font-medium transition-colors">I+D</a></li>
-          <li><a href="inversion.html" class="text-slate-200 hover:text-[#23bd00] font-medium transition-colors">Inversión y Alianzas</a></li>
+          <li><a href="sobre-nosotros.html" class="text-slate-200 hover:text-[#23bd00] transition-colors">Quiénes somos</a></li>
+          <li><a href="construccion-industrializada.html" class="text-slate-200 hover:text-[#23bd00] transition-colors">Cómo fabricamos</a></li>
+          <li><a href="nuestro-sistema.html" class="text-slate-200 hover:text-[#23bd00] transition-colors">Nuestro sistema constructivo</a></li>
+          <li><a href="oficina-tecnica.html" class="text-slate-200 hover:text-[#23bd00] transition-colors">Oficina técnica</a></li>
+          <li><a href="i-d.html" class="text-slate-200 hover:text-[#23bd00] transition-colors">Innovación e I+D</a></li>
+          <li><a href="rsc.html" class="text-slate-200 hover:text-[#23bd00] transition-colors">Responsabilidad Social Corporativa</a></li>
+          <li><a href="inversion.html" class="text-slate-200 hover:text-[#23bd00] transition-colors">Inversión y alianzas</a></li>
+          <li><a href="premios-y-reconocimientos.html" class="text-slate-200 hover:text-[#23bd00] transition-colors">Premios y reconocimientos</a></li>
+          <li><a href="blog.html" class="text-slate-200 hover:text-[#23bd00] transition-colors">Blog</a></li>
         </ul>
       </div>
 

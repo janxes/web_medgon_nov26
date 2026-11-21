@@ -19,39 +19,56 @@ for (const file of htmlFiles) {
 const serveStaticAssetsPlugin = (): any => ({
   name: 'serve-static-assets',
   configureServer(server: any) {
+    const basePrefix = '/app';
     server.middlewares.use((req: any, res: any, next: any) => {
-      // Soporte transparente para peticiones al subdirectorio /app/
-      if (req.url === '/app' || req.url === '/app/') {
-        req.url = '/index.html';
-      } else if (req.url.startsWith('/app/')) {
-        req.url = req.url.substring(4);
+      const rawUrl = req.url || '/';
+      const [rawPath, rawQuery] = rawUrl.split('?');
+      const query = rawQuery ? `?${rawQuery}` : '';
+
+      // Normalize path relative to /app/ so both /... and /app/... work in dev preview
+      let relPath = rawPath;
+      if (relPath === basePrefix || relPath === `${basePrefix}/`) {
+        relPath = '/';
+      } else if (relPath.startsWith(`${basePrefix}/`)) {
+        relPath = relPath.substring(basePrefix.length);
       }
 
-      const url = req.url?.split('?')[0] || '';
-      if (url.startsWith('/css/') && url.endsWith('.css')) {
-        const filePath = path.join(__dirname, 'public', url);
+      if (relPath.startsWith('/css/') && relPath.endsWith('.css')) {
+        const filePath = path.join(__dirname, 'public', relPath);
         if (fs.existsSync(filePath)) {
           res.setHeader('Content-Type', 'text/css');
           res.end(fs.readFileSync(filePath));
           return;
         }
       }
-      if (url.startsWith('/js/') && url.endsWith('.js')) {
-        const filePath = path.join(__dirname, 'public', url);
+      if (relPath.startsWith('/js/') && relPath.endsWith('.js')) {
+        const filePath = path.join(__dirname, 'public', relPath);
         if (fs.existsSync(filePath)) {
           res.setHeader('Content-Type', 'text/javascript');
           res.end(fs.readFileSync(filePath));
           return;
         }
       }
-      // Clean URL rewrites for all MPA pages (e.g. /catalogo -> /catalogo.html, /mg87 -> /mg87.html)
-      if (url && url !== '/' && !path.extname(url)) {
-        const cleanSlug = url.replace(/^\/+|\/+$/g, '');
+
+      // Clean URL rewrites for all MPA pages (e.g. /catalogo -> /app/catalogo.html)
+      if (relPath && relPath !== '/' && !path.extname(relPath)) {
+        const cleanSlug = relPath.replace(/^\/+|\/+$/g, '');
         const candidateHtml = `${cleanSlug}.html`;
         if (cleanSlug && !cleanSlug.includes('/') && htmlFiles.includes(candidateHtml)) {
-          const query = req.url?.includes('?') ? '?' + req.url.split('?')[1] : '';
-          req.url = `/${candidateHtml}${query}`;
+          req.url = `${basePrefix}/${candidateHtml}${query}`;
+          next();
+          return;
         }
+      }
+
+      // Ensure non-Vite-internal paths include the configured base '/app/' so Vite serves them with 200
+      if (
+        !rawPath.startsWith(`${basePrefix}/`) &&
+        rawPath !== basePrefix &&
+        !rawPath.startsWith('/@') &&
+        !rawPath.startsWith('/node_modules/')
+      ) {
+        req.url = `${basePrefix}${relPath === '/' ? '/index.html' : relPath}${query}`;
       }
       next();
     });

@@ -43,7 +43,10 @@ Medgón Passivhaus S.L. diseña, fabrica mediante control numérico CNC e instal
 - Inicio: https://medgon.com/
 - Catálogo completo: https://medgon.com/catalogo
 - Cómo funciona y precios: https://medgon.com/como-funciona
+- Quiénes somos: https://medgon.com/sobre-nosotros
+- Cómo fabricamos (construcción industrializada): https://medgon.com/construccion-industrializada
 - Nuestro sistema constructivo: https://medgon.com/nuestro-sistema
+- Oficina técnica (BIM, cálculo estructural y energético): https://medgon.com/oficina-tecnica
 - Proyectos destacados (48 obras): https://medgon.com/proyectos-destacados
 - Blog técnico: https://medgon.com/blog
 - Contacto y estudio de parcela gratuito: https://medgon.com/contacto

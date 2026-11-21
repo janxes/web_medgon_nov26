@@ -471,6 +471,53 @@ function getPageSeo(filename, existingLdList) {
         },
       ],
     },
+    'sobre-nosotros.html': {
+      title: 'Quiénes somos: construcción industrializada · Medgón',
+      description:
+        'Conoce Medgón, empresa fundada en 2005 en Carrión de los Condes (Palencia) especializada en construcción industrializada de viviendas y edificios eficientes.',
+      canonical: `${SITE_URL}/sobre-nosotros`,
+      ogImage: `${SITE_URL}/assets/imagenes/proyectos/oficinas-medgon.webp`,
+      heroPreload: 'assets/imagenes/proyectos/oficinas-medgon.webp',
+      inSitemap: true,
+      priority: '0.85',
+      changefreq: 'monthly',
+      preserveLdGraph: true,
+    },
+    'premios-y-reconocimientos.html': {
+      title: 'Premios y Reconocimientos Passivhaus e Innovación · Medgón',
+      description:
+        'Descubre los premios y reconocimientos de Medgón en construcción industrializada Passivhaus, sostenibilidad e I+D+i. Solvencia y ahorro real para tu proyecto.',
+      canonical: `${SITE_URL}/premios-y-reconocimientos`,
+      ogImage: `${SITE_URL}/assets/imagenes/proyectos/oficinas-medgon.webp`,
+      inSitemap: true,
+      priority: '0.75',
+      changefreq: 'monthly',
+      preserveLdGraph: true,
+    },
+    'construccion-industrializada.html': {
+      title: 'Cómo fabricamos edificios industrializados · Medgón',
+      description:
+        'Descubre cómo funciona la construcción industrializada de Medgón: oficina técnica, mecanizado CNC en Palencia, control en fábrica, transporte y montaje en obra.',
+      canonical: `${SITE_URL}/construccion-industrializada`,
+      ogImage: `${SITE_URL}/assets/imagenes/sistema/sistema-forjado-estructuras.webp`,
+      heroPreload: 'assets/imagenes/sistema/sistema-forjado-estructuras.webp',
+      inSitemap: true,
+      priority: '0.85',
+      changefreq: 'monthly',
+      preserveLdGraph: true,
+    },
+    'oficina-tecnica.html': {
+      title: 'Oficina Técnica: Ingeniería BIM, Cálculo Estructural y Passivhaus · Medgón',
+      description:
+        'Oficina técnica de Medgón Passivhaus: ingeniería en madera técnica, modelado BIM-CAM, cálculo estructural de entramado ligero y Kerto Ripa, balance energético y soporte para arquitectos, promotores y constructoras.',
+      canonical: `${SITE_URL}/oficina-tecnica`,
+      ogImage: `${SITE_URL}/assets/imagenes/proyectos/oficinas-medgon.webp`,
+      heroPreload: 'assets/imagenes/sistema/forjado-ripa-techo.webp',
+      inSitemap: true,
+      priority: '0.85',
+      changefreq: 'monthly',
+      preserveLdGraph: true,
+    },
     'nuestro-sistema.html': {
       title: 'Sistema Constructivo: Entramado Ligero y Forjados Kerto Ripa · Medgón',
       description:
@@ -759,6 +806,9 @@ function optimizeImgTags(bodyHtml, filename) {
     'productos-terciario.html',
     'productos-unifamiliares.html',
     'proyectos-destacados.html',
+    'sobre-nosotros.html',
+    'construccion-industrializada.html',
+    'oficina-tecnica.html',
   ]);
 
   return bodyHtml.replace(/<img\b([^>]*)>/gi, (fullMatch, rawAttrs) => {
@@ -1001,10 +1051,16 @@ Medgón Passivhaus S.L. diseña, fabrica mediante control numérico CNC e instal
 ## Enlaces clave del sitio
 
 - Inicio: ${SITE_URL}/
-- Catálogo completo: ${SITE_URL}/catalogo
+- Viviendas (catálogo completo): ${SITE_URL}/catalogo
 - Cómo funciona y precios: ${SITE_URL}/como-funciona
+- Quiénes somos: ${SITE_URL}/sobre-nosotros
+- Cómo fabricamos (construcción industrializada): ${SITE_URL}/construccion-industrializada
 - Nuestro sistema constructivo: ${SITE_URL}/nuestro-sistema
+- Oficina técnica (BIM, cálculo estructural y energético): ${SITE_URL}/oficina-tecnica
 - Proyectos destacados (48 obras): ${SITE_URL}/proyectos-destacados
+- Innovación e I+D: ${SITE_URL}/i-d
+- Responsabilidad Social Corporativa (RSC): ${SITE_URL}/rsc
+- Inversión y alianzas: ${SITE_URL}/inversion
 - Blog técnico: ${SITE_URL}/blog
 - Contacto y estudio de parcela gratuito: ${SITE_URL}/contacto
 
