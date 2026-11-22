@@ -324,6 +324,7 @@
     });
 
     initDesktopNavDropdowns();
+    initMobileMenuScrollControls();
     initBedroomFilters();
   }
 
@@ -660,3 +661,54 @@ function initBedroomFilters() {
     }
   } catch (e) {}
 }
+
+// 6. Control vertical táctil y de clic para el menú móvil (#mobile-menu-drawer)
+window.updateMobileMenuScrollButtons = function () {
+  var scroller = document.getElementById('mobile-menu-scroll');
+  var btnUp = document.getElementById('btn-mobile-scroll-up');
+  var btnDown = document.getElementById('btn-mobile-scroll-down');
+  if (!scroller || !btnUp || !btnDown) return;
+
+  var maxScroll = Math.max(0, scroller.scrollHeight - scroller.clientHeight);
+  var atTop = scroller.scrollTop <= 4;
+  var atBottom = scroller.scrollTop >= maxScroll - 4;
+
+  btnUp.disabled = atTop;
+  btnDown.disabled = atBottom;
+  btnUp.setAttribute('aria-disabled', atTop ? 'true' : 'false');
+  btnDown.setAttribute('aria-disabled', atBottom ? 'true' : 'false');
+};
+
+window.scrollMobileMenu = function (direction) {
+  var scroller = document.getElementById('mobile-menu-scroll');
+  if (!scroller) return;
+  var step = Math.max(180, Math.round(scroller.clientHeight * 0.55));
+  var targetTop = scroller.scrollTop + (direction > 0 ? step : -step);
+  if (typeof scroller.scrollTo === 'function') {
+    scroller.scrollTo({ top: targetTop, behavior: 'smooth' });
+  } else {
+    scroller.scrollTop = targetTop;
+  }
+  setTimeout(window.updateMobileMenuScrollButtons, 220);
+};
+
+function initMobileMenuScrollControls() {
+  var scroller = document.getElementById('mobile-menu-scroll');
+  var drawer = document.getElementById('mobile-menu-drawer');
+  if (!scroller || !drawer) return;
+
+  scroller.addEventListener('scroll', window.updateMobileMenuScrollButtons, { passive: true });
+  window.addEventListener('resize', window.updateMobileMenuScrollButtons, { passive: true });
+
+  // Cerrar el menú móvil al pulsar cualquier enlace interno
+  scroller.addEventListener('click', function (e) {
+    if (e.target.closest('a') && !drawer.classList.contains('hidden')) {
+      if (typeof window.toggleMobileMenu === 'function') {
+        window.toggleMobileMenu();
+      }
+    }
+  });
+
+  window.updateMobileMenuScrollButtons();
+}
+

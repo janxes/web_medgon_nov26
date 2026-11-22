@@ -21,8 +21,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="image" href="assets/imagenes/sistema/sistema-forjado-estructuras.webp" fetchpriority="high">
-  <link rel="preload" as="style" href="assets/css/styles.min.css">
-  <link rel="stylesheet" href="assets/css/styles.min.css">
+  <link rel="preload" as="style" href="assets/css/styles.min.css?v=4">
+  <link rel="stylesheet" href="assets/css/styles.min.css?v=4">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"></noscript>
   <script type="application/ld+json">
@@ -101,11 +101,11 @@
       <a href="index.html" class="flex-shrink-0" aria-label="Ir al inicio de Medgón Passivhaus">
         <img src="assets/imagenes/generales/medgon20a.webp?v=2"
           alt="Medgón Passivhaus"
-          class="w-[300px] max-w-[calc(100vw-5.5rem)] h-auto object-contain" width="300" height="77" decoding="async" />
+          class="w-[210px] sm:w-[250px] xl:w-[280px] max-w-[calc(100vw-5.5rem)] h-auto object-contain" width="300" height="77" decoding="async" />
       </a>
 
       <!-- NAVEGACIÓN DESKTOP (6 ELEMENTOS) -->
-      <nav class="hidden lg:flex items-center gap-4 xl:gap-6 shrink-0 relative" aria-label="Navegación principal">
+      <nav class="medgon-desktop-nav hidden lg:flex items-center gap-3.5 xl:gap-6 shrink-0 relative" aria-label="Navegación principal">
 
         <!-- 1. Viviendas -->
         <div class="relative nav-dropdown-item group">
@@ -206,7 +206,7 @@
       </nav>
 
       <!-- BOTÓN MENÚ MÓVIL -->
-      <div class="lg:hidden flex items-center">
+      <div class="medgon-mobile-toggle lg:hidden flex items-center">
         <button
           id="btn-mobile-menu"
           type="button"
@@ -225,62 +225,98 @@
   </div>
 
   <!-- MENÚ MÓVIL (DRAWER) -->
-  <nav id="mobile-menu-drawer" class="hidden lg:hidden bg-[#FAF8F5] border-b border-slate-200 shadow-lg max-h-[85vh] overflow-y-auto" aria-label="Navegación móvil">
-    <div class="px-4 py-4 space-y-4">
+  <nav id="mobile-menu-drawer" class="hidden lg:hidden bg-[#FAF8F5] border-b border-slate-200 shadow-lg" aria-label="Navegación móvil">
+    <div id="mobile-menu-scroll" class="px-3.5 py-2.5 space-y-2">
 
-      <div class="space-y-1">
-        <p class="px-2 text-xs font-bold uppercase tracking-wider text-[#23bd00]">Viviendas</p>
-        <a href="catalogo.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Todos los modelos (87 - 165 m²)</a>
-        <a href="viviendas-a-medida.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Viviendas a Medida (+200 m²)</a>
-        <a href="passivhaus.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">¿Qué es Passivhaus?</a>
-        <a href="como-funciona.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Cómo funciona (Fases y plazos)</a>
-        <a href="como-funciona.html#precios" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Opciones de contrato y precios</a>
+      <div class="space-y-0.5">
+        <p class="mobile-nav-group-label px-2.5 pt-0.5 text-[11px] font-bold uppercase tracking-wider text-[#23bd00]">Viviendas</p>
+        <a href="catalogo.html" class="block px-2.5 py-1.5 text-sm leading-tight font-medium text-[#16181B] hover:bg-white rounded-lg">Todos los modelos (87 - 165 m²)</a>
+        <a href="viviendas-a-medida.html" class="block px-2.5 py-1.5 text-sm leading-tight font-medium text-[#16181B] hover:bg-white rounded-lg">Viviendas a Medida (+200 m²)</a>
+        <a href="passivhaus.html" class="block px-2.5 py-1.5 text-sm leading-tight font-medium text-[#16181B] hover:bg-white rounded-lg">¿Qué es Passivhaus?</a>
+        <a href="como-funciona.html" class="block px-2.5 py-1.5 text-sm leading-tight font-medium text-[#16181B] hover:bg-white rounded-lg">Cómo funciona (Fases y plazos)</a>
+        <a href="como-funciona.html#precios" class="block px-2.5 py-1.5 text-sm leading-tight font-medium text-[#16181B] hover:bg-white rounded-lg">Opciones de contrato y precios</a>
       </div>
 
-      <div class="space-y-1 pt-2 border-t border-slate-200/80">
-        <p class="px-2 text-xs font-bold uppercase tracking-wider text-[#23bd00]">Soluciones constructivas</p>
-        <a href="productos-fachadas.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Fachadas industrializadas 2D</a>
-        <a href="productos-cubiertas.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Cubiertas y estructuras de madera</a>
-        <a href="productos-derecho-vuelo.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Remontas / Derecho de vuelo</a>
-        <a href="productos-plurifamiliares.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Plurifamiliares en altura</a>
-        <a href="productos-terciario.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Edificios terciarios y dotacionales</a>
+      <div class="space-y-0.5 pt-1.5 border-t border-slate-200/80">
+        <p class="mobile-nav-group-label px-2.5 pt-0.5 text-[11px] font-bold uppercase tracking-wider text-[#23bd00]">Soluciones constructivas</p>
+        <a href="productos-fachadas.html" class="block px-2.5 py-1.5 text-sm leading-tight font-medium text-[#16181B] hover:bg-white rounded-lg">Fachadas industrializadas 2D</a>
+        <a href="productos-cubiertas.html" class="block px-2.5 py-1.5 text-sm leading-tight font-medium text-[#16181B] hover:bg-white rounded-lg">Cubiertas y estructuras de madera</a>
+        <a href="productos-derecho-vuelo.html" class="block px-2.5 py-1.5 text-sm leading-tight font-medium text-[#16181B] hover:bg-white rounded-lg">Remontas / Derecho de vuelo</a>
+        <a href="productos-plurifamiliares.html" class="block px-2.5 py-1.5 text-sm leading-tight font-medium text-[#16181B] hover:bg-white rounded-lg">Plurifamiliares en altura</a>
+        <a href="productos-terciario.html" class="block px-2.5 py-1.5 text-sm leading-tight font-medium text-[#16181B] hover:bg-white rounded-lg">Edificios terciarios y dotacionales</a>
       </div>
 
-      <div class="pt-2 border-t border-slate-200/80">
-        <a href="proyectos-destacados.html" class="block px-3 py-2 text-base font-semibold text-[#16181B] hover:bg-white hover:text-[#23bd00] rounded-xl">Proyectos</a>
+      <div class="pt-1.5 border-t border-slate-200/80">
+        <a href="proyectos-destacados.html" class="block px-2.5 py-1.5 text-sm leading-tight font-semibold text-[#16181B] hover:bg-white hover:text-[#23bd00] rounded-lg">Proyectos</a>
       </div>
 
-      <div class="space-y-3 pt-2 border-t border-slate-200/80">
-        <div class="space-y-1">
-          <p class="px-2 text-xs font-bold uppercase tracking-wider text-[#23bd00]">Medgón · Conoce Medgón</p>
-          <a href="sobre-nosotros.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Quiénes somos</a>
-          <a href="construccion-industrializada.html" aria-current="page" class="block px-3 py-2 text-base font-semibold text-[#23bd00] bg-white rounded-xl">Cómo fabricamos</a>
-          <a href="nuestro-sistema.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Nuestro sistema constructivo</a>
-          <a href="oficina-tecnica.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Oficina técnica</a>
+      <div class="space-y-1.5 pt-1.5 border-t border-slate-200/80">
+        <div class="space-y-0.5">
+          <p class="mobile-nav-group-label px-2.5 pt-0.5 text-[11px] font-bold uppercase tracking-wider text-[#23bd00]">Medgón · Conoce Medgón</p>
+          <a href="sobre-nosotros.html" class="block px-2.5 py-1.5 text-sm leading-tight font-medium text-[#16181B] hover:bg-white rounded-lg">Quiénes somos</a>
+          <a href="construccion-industrializada.html" aria-current="page" class="block px-2.5 py-1.5 text-sm leading-tight font-semibold text-[#23bd00] bg-white rounded-lg">Cómo fabricamos</a>
+          <a href="nuestro-sistema.html" class="block px-2.5 py-1.5 text-sm leading-tight font-medium text-[#16181B] hover:bg-white rounded-lg">Nuestro sistema constructivo</a>
+          <a href="oficina-tecnica.html" class="block px-2.5 py-1.5 text-sm leading-tight font-medium text-[#16181B] hover:bg-white rounded-lg">Oficina técnica</a>
         </div>
-        <div class="space-y-1">
-          <p class="px-2 text-xs font-bold uppercase tracking-wider text-slate-500">Más sobre Medgón</p>
-          <a href="i-d.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Innovación e I+D</a>
-          <a href="rsc.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Responsabilidad Social Corporativa</a>
-          <a href="inversion.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Inversión y alianzas</a>
-          <a href="premios-y-reconocimientos.html" class="block px-3 py-2 text-base font-medium text-[#16181B] hover:bg-white rounded-xl">Premios y reconocimientos</a>
+        <div class="space-y-0.5">
+          <p class="mobile-nav-group-label px-2.5 pt-0.5 text-[11px] font-bold uppercase tracking-wider text-slate-500">Más sobre Medgón</p>
+          <a href="i-d.html" class="block px-2.5 py-1.5 text-sm leading-tight font-medium text-[#16181B] hover:bg-white rounded-lg">Innovación e I+D</a>
+          <a href="rsc.html" class="block px-2.5 py-1.5 text-sm leading-tight font-medium text-[#16181B] hover:bg-white rounded-lg">Responsabilidad Social Corporativa</a>
+          <a href="inversion.html" class="block px-2.5 py-1.5 text-sm leading-tight font-medium text-[#16181B] hover:bg-white rounded-lg">Inversión y alianzas</a>
+          <a href="premios-y-reconocimientos.html" class="block px-2.5 py-1.5 text-sm leading-tight font-medium text-[#16181B] hover:bg-white rounded-lg">Premios y reconocimientos</a>
         </div>
       </div>
 
-      <div class="pt-2 border-t border-slate-200/80 space-y-1">
-        <a href="blog.html" class="block px-3 py-2 text-base font-semibold text-[#16181B] hover:bg-white hover:text-[#23bd00] rounded-xl">Blog</a>
-        <a href="contacto.html" class="block px-3 py-2 text-base font-semibold text-[#16181B] hover:bg-white hover:text-[#23bd00] rounded-xl">Contacto</a>
+      <div class="pt-1.5 border-t border-slate-200/80 space-y-0.5">
+        <a href="blog.html" class="block px-2.5 py-1.5 text-sm leading-tight font-semibold text-[#16181B] hover:bg-white hover:text-[#23bd00] rounded-lg">Blog</a>
+        <a href="contacto.html" class="block px-2.5 py-1.5 text-sm leading-tight font-semibold text-[#16181B] hover:bg-white hover:text-[#23bd00] rounded-lg">Contacto</a>
       </div>
 
-      <div class="pt-3 border-t border-slate-200">
-        <a href="contacto.html" class="block w-full text-center px-4 py-3 text-base font-semibold text-white bg-[#23bd00] hover:bg-[#1ea300] rounded-xl shadow-sm transition-colors">
+      <div class="pt-2 border-t border-slate-200">
+        <a href="contacto.html" class="mobile-nav-cta block w-full text-center px-4 py-2.5 text-sm leading-tight font-semibold text-white bg-[#23bd00] hover:bg-[#1ea300] rounded-xl shadow-sm transition-colors">
           Estudio de parcela gratuito
         </a>
       </div>
+    
+    </div>
+    <div id="mobile-menu-scroll-bar" role="group" aria-label="Desplazamiento vertical del menú">
+      <button id="btn-mobile-scroll-up" type="button" onclick="scrollMobileMenu(-1)" class="mobile-scroll-btn" aria-label="Subir en el menú">
+        <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M5 15l7-7 7 7"/></svg>
+        <span>Subir</span>
+      </button>
+      <button id="btn-mobile-scroll-down" type="button" onclick="scrollMobileMenu(1)" class="mobile-scroll-btn" aria-label="Bajar en el menú">
+        <span>Bajar más</span>
+        <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M19 9l-7 7-7-7"/></svg>
+      </button>
     </div>
   </nav>
 
   <script>
+    function updateMobileMenuScrollButtons() {
+      var scroller = document.getElementById('mobile-menu-scroll');
+      var btnUp = document.getElementById('btn-mobile-scroll-up');
+      var btnDown = document.getElementById('btn-mobile-scroll-down');
+      if (!scroller || !btnUp || !btnDown) return;
+      var maxScroll = Math.max(0, scroller.scrollHeight - scroller.clientHeight);
+      var atTop = scroller.scrollTop <= 4;
+      var atBottom = scroller.scrollTop >= maxScroll - 4;
+      btnUp.disabled = atTop;
+      btnDown.disabled = atBottom;
+      btnUp.setAttribute('aria-disabled', atTop ? 'true' : 'false');
+      btnDown.setAttribute('aria-disabled', atBottom ? 'true' : 'false');
+    }
+    function scrollMobileMenu(direction) {
+      var scroller = document.getElementById('mobile-menu-scroll');
+      if (!scroller) return;
+      var step = Math.max(180, Math.round(scroller.clientHeight * 0.55));
+      var targetTop = scroller.scrollTop + (direction > 0 ? step : -step);
+      if (typeof scroller.scrollTo === 'function') {
+        scroller.scrollTo({ top: targetTop, behavior: 'smooth' });
+      } else {
+        scroller.scrollTop = targetTop;
+      }
+      setTimeout(updateMobileMenuScrollButtons, 220);
+    }
     function toggleMobileMenu() {
       var drawer = document.getElementById('mobile-menu-drawer');
       var iconOpen = document.getElementById('icon-menu-open');
@@ -298,6 +334,7 @@
         if (iconOpen) iconOpen.classList.add('hidden');
         if (iconClose) iconClose.classList.remove('hidden');
         if (btn) btn.setAttribute('aria-expanded', 'true');
+        setTimeout(updateMobileMenuScrollButtons, 40);
       }
     }
   </script>
@@ -805,6 +842,6 @@
   </div>
 </footer>
 
-<script src="js/principal.js" defer></script>
+<script src="js/principal.js?v=4" defer></script>
 </body>
 </html>

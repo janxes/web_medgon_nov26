@@ -36,11 +36,49 @@ header {
   background-color: #FAF8F5 !important;
   background: #FAF8F5 !important;
 }
-header .max-w-7xl,
-header > div,
-header .flex {
+header > div > div {
   min-height: 80px;
 }
+
+/* Visibilidad robusta de navegación desktop vs móvil en todos los navegadores */
+.medgon-desktop-nav {
+  display: none;
+}
+.medgon-mobile-toggle {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .medgon-desktop-nav {
+    display: flex !important;
+    align-items: center;
+  }
+  .medgon-mobile-toggle {
+    display: none !important;
+  }
+  #mobile-menu-drawer {
+    display: none !important;
+  }
+}
+
+/* Garantía de fondos corporativos oscuros y acentos verdes frente a capas/cachés */
+.medgon-dark-forest,
+.bg-\\[\\#1D2A20\\] {
+  background-color: #1D2A20 !important;
+}
+.bg-\\[\\#16181B\\] {
+  background-color: #16181B;
+}
+.text-\\[\\#23bd00\\] {
+  color: #23bd00 !important;
+}
+.text-\\[\\#82c343\\] {
+  color: #82c343 !important;
+}
+.bg-\\[\\#82c343\\] {
+  background-color: #82c343 !important;
+}
+
 main section:first-of-type {
   min-height: 520px;
 }
@@ -181,7 +219,7 @@ header nav .nav-hover-bridge {
 /* ==========================================================================
    MEJORA DE ACCESIBILIDAD Y LEGIBILIDAD (SENIORS & WCAG AAA)
    ========================================================================== */
-p,
+p:not(#mobile-menu-drawer p):not(.mobile-nav-group-label):not(.mobile-scroll-hint),
 article p,
 .card p,
 section p,
@@ -189,6 +227,14 @@ section p,
 .text-desc {
   font-size: 1.125rem !important;
   line-height: 1.7 !important;
+}
+
+p:not([class*="text-"]),
+article p:not([class*="text-"]),
+.card p:not([class*="text-"]),
+section p:not([class*="text-"]),
+.faq-answer:not([class*="text-"]),
+.text-desc:not([class*="text-"]) {
   color: #2C313A;
 }
 
@@ -201,14 +247,14 @@ ol > li,
   color: #2C313A;
 }
 
-.uppercase,
-[class*="uppercase"],
+.uppercase:not(.mobile-nav-group-label):not(#mobile-menu-drawer *),
+[class*="uppercase"]:not(.mobile-nav-group-label):not(#mobile-menu-drawer *),
 .badge,
 [class*="badge-"],
-span.tracking-wider,
-span.tracking-widest,
-.tracking-wider,
-.tracking-widest {
+span.tracking-wider:not(#mobile-menu-drawer *),
+span.tracking-widest:not(#mobile-menu-drawer *),
+.tracking-wider:not(.mobile-nav-group-label):not(#mobile-menu-drawer *),
+.tracking-widest:not(.mobile-nav-group-label):not(#mobile-menu-drawer *) {
   font-size: max(0.95rem, 15px) !important;
   line-height: 1.45 !important;
   letter-spacing: 0.04em !important;
@@ -288,37 +334,111 @@ footer a.footer-social-link:focus-visible {
   outline: none;
 }
 
-.bg-gradient-to-br p,
-.bg-gradient-to-t p,
-.bg-black\\/60 p,
-.bg-\\[\\#16181B\\] p,
-.text-white p,
-.dark-card p {
+.bg-gradient-to-br p:not(.text-\\[\\#82c343\\]):not(.text-\\[\\#23bd00\\]),
+.bg-gradient-to-t p:not(.text-\\[\\#82c343\\]):not(.text-\\[\\#23bd00\\]),
+.bg-black\\/60 p:not(.text-\\[\\#82c343\\]):not(.text-\\[\\#23bd00\\]),
+.bg-\\[\\#16181B\\] p:not(.text-\\[\\#82c343\\]):not(.text-\\[\\#23bd00\\]),
+.bg-\\[\\#1D2A20\\] p:not(.text-\\[\\#82c343\\]):not(.text-\\[\\#23bd00\\]),
+.medgon-dark-forest p:not(.text-\\[\\#82c343\\]):not(.text-\\[\\#23bd00\\]),
+.text-white p:not(.text-\\[\\#82c343\\]):not(.text-\\[\\#23bd00\\]),
+.dark-card p:not(.text-\\[\\#82c343\\]):not(.text-\\[\\#23bd00\\]) {
   color: #F1F5F9 !important;
 }
 
-header nav a,
-header nav button,
-#mobile-menu-drawer a,
-#mobile-menu-drawer button {
-  font-size: 1rem !important;
-  line-height: 1.4 !important;
+header nav.medgon-desktop-nav a,
+header nav.medgon-desktop-nav button {
+  font-size: 0.96rem !important;
+  line-height: 1.35 !important;
 }
 
-/* Barra de desplazamiento personalizada para menú móvil */
-#mobile-menu-drawer::-webkit-scrollbar {
-  width: 6px;
+/* Menú móvil compacto con área desplazable y barra de control vertical fija */
+#mobile-menu-drawer:not(.hidden) {
+  display: flex !important;
+  flex-direction: column !important;
+  max-height: calc(100vh - 80px);
+  max-height: calc(100dvh - 80px);
+  overflow: hidden !important;
 }
-#mobile-menu-drawer::-webkit-scrollbar-track {
-  background: #FAF8F5;
+#mobile-menu-scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: scroll !important;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #23bd00 #E2E8F0;
+}
+#mobile-menu-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+#mobile-menu-scroll::-webkit-scrollbar-track {
+  background: #E2E8F0;
   border-radius: 9999px;
 }
-#mobile-menu-drawer::-webkit-scrollbar-thumb {
+#mobile-menu-scroll::-webkit-scrollbar-thumb {
   background: #23bd00;
   border-radius: 9999px;
+  border: 2px solid #E2E8F0;
 }
-#mobile-menu-drawer::-webkit-scrollbar-thumb:hover {
+#mobile-menu-scroll::-webkit-scrollbar-thumb:hover {
   background: #285943;
+}
+#mobile-menu-drawer p.mobile-nav-group-label {
+  font-size: 0.72rem !important;
+  line-height: 1.15 !important;
+  letter-spacing: 0.08em !important;
+  color: #23bd00 !important;
+  margin-bottom: 0.15rem !important;
+}
+#mobile-menu-drawer a {
+  font-size: 0.92rem !important;
+  line-height: 1.2 !important;
+  padding-top: 0.34rem !important;
+  padding-bottom: 0.34rem !important;
+}
+#mobile-menu-drawer a.mobile-nav-cta {
+  padding-top: 0.55rem !important;
+  padding-bottom: 0.55rem !important;
+  font-size: 0.92rem !important;
+  line-height: 1.2 !important;
+}
+#mobile-menu-scroll-bar {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #FFFFFF;
+  border-top: 1px solid #CBD5E1;
+  box-shadow: 0 -4px 12px rgba(22, 24, 27, 0.06);
+}
+#mobile-menu-scroll-bar button.mobile-scroll-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  flex: 1 1 0%;
+  padding: 0.48rem 0.75rem !important;
+  border-radius: 0.65rem;
+  font-size: 0.84rem !important;
+  line-height: 1.1 !important;
+  font-weight: 700;
+  border: 1px solid #CBD5E1;
+  background-color: #FAF8F5;
+  color: #16181B;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, opacity 0.15s ease;
+}
+#mobile-menu-scroll-bar button.mobile-scroll-btn:hover:not(:disabled),
+#mobile-menu-scroll-bar button.mobile-scroll-btn:active:not(:disabled) {
+  background-color: #23bd00;
+  border-color: #23bd00;
+  color: #FFFFFF;
+}
+#mobile-menu-scroll-bar button.mobile-scroll-btn:disabled {
+  opacity: 0.38;
+  cursor: not-allowed;
 }
 
 /* Compatibilidad utilidades galería sin barra */
@@ -517,6 +637,8 @@ async function buildCss() {
     'rounded-3xl', 'p-8', 'text-sm', 'text-slate-600', 'mb-4', 'px-5', 'py-2.5',
     'text-xs', 'font-bold', 'rounded-xl', 'cursor-pointer', 'text-[0.95rem]',
     'scale-102', 'group-hover:scale-102', 'group-hover:scale-105',
+    'bg-[#1D2A20]', 'text-[#82c343]', 'bg-[#82c343]', 'lg:flex', 'lg:hidden',
+    'lg:grid-cols-6', 'aspect-[16/10]', 'w-[210px]', 'sm:w-[250px]', 'xl:w-[280px]',
   ];
   const allCandidates = Array.from(new Set([...candidates, ...extraCandidates]));
 
@@ -525,13 +647,19 @@ async function buildCss() {
     onDependency: () => {},
   });
 
-  const generatedTailwindCss = compiled.build(allCandidates);
+  // Convertir media queries modernos (width >= X) a sintaxis estándar (min-width: X)
+  // para garantizar compatibilidad total con Safari/macOS/iOS y servidores reales
+  const generatedTailwindCss = compiled
+    .build(allCandidates)
+    .replace(/@media\s*\(\s*width\s*>=\s*([^)]+)\)/g, '@media (min-width: $1)')
+    .replace(/@media\s*\(\s*width\s*<=\s*([^)]+)\)/g, '@media (max-width: $1)');
   const combinedCss = `${generatedTailwindCss}\n${customCss}`;
 
   const minified = await transform(combinedCss, {
     loader: 'css',
     minify: true,
     legalComments: 'none',
+    target: ['chrome100', 'firefox100', 'safari15'],
   });
 
   const outPaths = [
