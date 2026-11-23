@@ -78,6 +78,25 @@ header > div > div {
 .bg-\\[\\#82c343\\] {
   background-color: #82c343 !important;
 }
+.medgon-hero-gradient {
+  background-image: linear-gradient(90deg, #23bd00 0%, #87A9FF 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+.medgon-btn-forest,
+.bg-\\[\\#297040\\] {
+  background-color: #297040 !important;
+  color: #ffffff !important;
+}
+.medgon-btn-forest:hover,
+.bg-\\[\\#297040\\]:hover,
+.medgon-btn-forest:focus-visible,
+.bg-\\[\\#297040\\]:focus-visible {
+  background-color: #23bd00 !important;
+  color: #ffffff !important;
+}
 
 main section:first-of-type {
   min-height: 520px;
@@ -639,6 +658,8 @@ async function buildCss() {
     'scale-102', 'group-hover:scale-102', 'group-hover:scale-105',
     'bg-[#1D2A20]', 'text-[#82c343]', 'bg-[#82c343]', 'lg:flex', 'lg:hidden',
     'lg:grid-cols-6', 'aspect-[16/10]', 'w-[210px]', 'sm:w-[250px]', 'xl:w-[280px]',
+    'bg-[#297040]', 'hover:bg-[#23bd00]', 'from-[#23bd00]', 'to-[#87A9FF]',
+    'mix-blend-multiply', 'rounded-full', 'shadow-sm', 'px-5', 'py-2.5',
   ];
   const allCandidates = Array.from(new Set([...candidates, ...extraCandidates]));
 
