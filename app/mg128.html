@@ -29,22 +29,22 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Product",
-  "@id": "https://medgon.com/mg128#product",
+  "@type": "SingleFamilyResidence",
+  "@id": "https://medgon.com/mg128.html#residence",
   "name": "Modelo MG 128 · Casa Passivhaus 128 m²",
   "description": "Modelo de referencia Medgón MG 128 de 128 m² en madera técnica con patio bioclimático, 3-4 dormitorios y certificación Passivhaus Classic.",
   "image": "https://medgon.com/assets/imagenes/mg128/boho_autumn_exterior.webp",
-  "url": "https://medgon.com/mg128",
-  "sku": "MEDGON-MG128",
-  "size": "128 m²",
-  "brand": {
-    "@type": "Brand",
-    "name": "Medgón Passivhaus S.L."
+  "url": "https://medgon.com/mg128.html",
+  "floorSize": {
+    "@type": "QuantitativeValue",
+    "value": 128,
+    "unitCode": "MTK",
+    "unitText": "m²"
   },
-  "manufacturer": {
-    "@type": "Organization",
-    "name": "Medgón Passivhaus S.L.",
-    "url": "https://medgon.com"
+  "numberOfRooms": {
+    "@type": "QuantitativeValue",
+    "minValue": 3,
+    "maxValue": 4
   },
   "additionalProperty": [
     {
@@ -77,16 +77,23 @@
       "value": "Passivhaus · Hermeticidad n50 ≤ 0,6 ren/h"
     }
   ],
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "EUR",
-    "price": 230400,
-    "priceValidUntil": "2026-12-31",
-    "availability": "https://schema.org/InStock",
-    "url": "https://medgon.com/mg128",
-    "seller": {
-      "@type": "Organization",
-      "name": "Medgón Passivhaus S.L."
+  "potentialAction": {
+    "@type": "QuoteAction",
+    "name": "Solicitar estudio de parcela",
+    "description": "Solicitar estudio técnico de viabilidad en parcela y presupuesto personalizado para esta vivienda Passivhaus Medgón.",
+    "provider": {
+      "@type": "HomeAndConstructionBusiness",
+      "@id": "https://medgon.com/#organization",
+      "name": "Medgón Passivhaus S.L.",
+      "url": "https://medgon.com/"
+    },
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://medgon.com/contacto.html",
+      "actionPlatform": [
+        "https://schema.org/DesktopWebPlatform",
+        "https://schema.org/MobileWebPlatform"
+      ]
     }
   }
 }

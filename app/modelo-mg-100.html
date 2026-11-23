@@ -29,23 +29,19 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Product",
-  "@id": "https://medgon.com/mg100#product",
+  "@type": "SingleFamilyResidence",
+  "@id": "https://medgon.com/modelo-mg-100.html#residence",
   "name": "Modelo MG 100 · Casa Passivhaus 100 m²",
   "description": "Casa industrializada Passivhaus MG 100 de 100 m² construidos (86,2 m² útiles) en planta única con 3 dormitorios, 2 baños, ventilación VMC y envolvente hermética n50 ≤ 0,6.",
   "image": "https://medgon.com/assets/imagenes/mg100/MG_100_Exterior.webp",
-  "url": "https://medgon.com/mg100",
-  "sku": "MEDGON-MG100",
-  "size": "100 m²",
-  "brand": {
-    "@type": "Brand",
-    "name": "Medgón Passivhaus S.L."
+  "url": "https://medgon.com/modelo-mg-100.html",
+  "floorSize": {
+    "@type": "QuantitativeValue",
+    "value": 100,
+    "unitCode": "MTK",
+    "unitText": "m²"
   },
-  "manufacturer": {
-    "@type": "Organization",
-    "name": "Medgón Passivhaus S.L.",
-    "url": "https://medgon.com"
-  },
+  "numberOfRooms": 3,
   "additionalProperty": [
     {
       "@type": "PropertyValue",
@@ -77,16 +73,23 @@
       "value": "Passivhaus · Hermeticidad n50 ≤ 0,6 ren/h"
     }
   ],
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "EUR",
-    "price": 180000,
-    "priceValidUntil": "2026-12-31",
-    "availability": "https://schema.org/InStock",
-    "url": "https://medgon.com/mg100",
-    "seller": {
-      "@type": "Organization",
-      "name": "Medgón Passivhaus S.L."
+  "potentialAction": {
+    "@type": "QuoteAction",
+    "name": "Solicitar estudio de parcela",
+    "description": "Solicitar estudio técnico de viabilidad en parcela y presupuesto personalizado para esta vivienda Passivhaus Medgón.",
+    "provider": {
+      "@type": "HomeAndConstructionBusiness",
+      "@id": "https://medgon.com/#organization",
+      "name": "Medgón Passivhaus S.L.",
+      "url": "https://medgon.com/"
+    },
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://medgon.com/contacto.html",
+      "actionPlatform": [
+        "https://schema.org/DesktopWebPlatform",
+        "https://schema.org/MobileWebPlatform"
+      ]
     }
   }
 }

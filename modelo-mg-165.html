@@ -29,22 +29,22 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Product",
-  "@id": "https://medgon.com/mg165#product",
+  "@type": "SingleFamilyResidence",
+  "@id": "https://medgon.com/modelo-mg-165.html#residence",
   "name": "Modelo MG 165 · Casa Passivhaus 165 m²",
   "description": "Vivienda unifamiliar contemporánea MG 165 de 165 m² construidos (148 m² útiles) en dos plantas, 4-5 dormitorios, porches bioclimáticos integrados y eficiencia ZEB A+.",
   "image": "https://medgon.com/assets/imagenes/mg165/coastal_l_shaped_home.webp",
-  "url": "https://medgon.com/mg165",
-  "sku": "MEDGON-MG165",
-  "size": "165 m²",
-  "brand": {
-    "@type": "Brand",
-    "name": "Medgón Passivhaus S.L."
+  "url": "https://medgon.com/modelo-mg-165.html",
+  "floorSize": {
+    "@type": "QuantitativeValue",
+    "value": 165,
+    "unitCode": "MTK",
+    "unitText": "m²"
   },
-  "manufacturer": {
-    "@type": "Organization",
-    "name": "Medgón Passivhaus S.L.",
-    "url": "https://medgon.com"
+  "numberOfRooms": {
+    "@type": "QuantitativeValue",
+    "minValue": 4,
+    "maxValue": 5
   },
   "additionalProperty": [
     {
@@ -77,16 +77,23 @@
       "value": "Passivhaus · Hermeticidad n50 ≤ 0,6 ren/h"
     }
   ],
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "EUR",
-    "price": 297000,
-    "priceValidUntil": "2026-12-31",
-    "availability": "https://schema.org/InStock",
-    "url": "https://medgon.com/mg165",
-    "seller": {
-      "@type": "Organization",
-      "name": "Medgón Passivhaus S.L."
+  "potentialAction": {
+    "@type": "QuoteAction",
+    "name": "Solicitar estudio de parcela",
+    "description": "Solicitar estudio técnico de viabilidad en parcela y presupuesto personalizado para esta vivienda Passivhaus Medgón.",
+    "provider": {
+      "@type": "HomeAndConstructionBusiness",
+      "@id": "https://medgon.com/#organization",
+      "name": "Medgón Passivhaus S.L.",
+      "url": "https://medgon.com/"
+    },
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://medgon.com/contacto.html",
+      "actionPlatform": [
+        "https://schema.org/DesktopWebPlatform",
+        "https://schema.org/MobileWebPlatform"
+      ]
     }
   }
 }

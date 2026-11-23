@@ -29,46 +29,69 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Product",
-  "@id": "https://medgon.com/viviendas-a-medida#product",
+  "@type": "SingleFamilyResidence",
+  "@id": "https://medgon.com/viviendas-a-medida.html#residence",
   "name": "Viviendas Modulares Passivhaus a Medida (+200 m²) · Sistema MÓDULO",
   "description": "Viviendas de autor de diseño libre a partir de 200 m² con estructura industrializada en madera técnica y certificación Passivhaus.",
   "image": "https://medgon.com/assets/imagenes/medida/vivienda_medida_gran_formato_exterior.webp",
-  "url": "https://medgon.com/viviendas-a-medida",
-  "size": "+200 m²",
-  "brand": {
-    "@type": "Brand",
-    "name": "Medgón Passivhaus S.L."
+  "url": "https://medgon.com/viviendas-a-medida.html",
+  "floorSize": {
+    "@type": "QuantitativeValue",
+    "minValue": 200,
+    "unitCode": "MTK",
+    "unitText": "m²"
   },
-  "manufacturer": {
-    "@type": "Organization",
-    "@id": "https://medgon.com/#organization",
-    "name": "Medgón Passivhaus S.L.",
-    "legalName": "Medgón Passivhaus S.L.",
-    "url": "https://medgon.com",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://medgon.com/assets/imagenes/generales/logo_medgon.webp",
-      "width": 341,
-      "height": 148
+  "numberOfRooms": {
+    "@type": "QuantitativeValue",
+    "minValue": 4
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "Superficie construida",
+      "minValue": 200,
+      "unitCode": "MTK",
+      "unitText": "m²"
     },
-    "telephone": "+34 979 88 10 10",
-    "email": "informacion@medgon.com",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Polígono Industrial, nave 50",
-      "addressLocality": "Carrión de los Condes",
-      "addressRegion": "Palencia",
-      "postalCode": "34120",
-      "addressCountry": "ES"
+    {
+      "@type": "PropertyValue",
+      "name": "Superficie útil",
+      "value": "A medida según proyecto y parcela"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Plantas",
+      "value": "1 o 2 plantas (diseño libre)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Dormitorios",
+      "value": "Personalizables (4 o más)"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Estándar energético",
+      "value": "Passivhaus · Hermeticidad n50 ≤ 0,6 ren/h"
     }
-  },
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "EUR",
-    "price": 360000,
-    "availability": "https://schema.org/InStock",
-    "url": "https://medgon.com/viviendas-a-medida"
+  ],
+  "potentialAction": {
+    "@type": "QuoteAction",
+    "name": "Solicitar estudio de parcela",
+    "description": "Solicitar estudio técnico de viabilidad en parcela y presupuesto personalizado para esta vivienda Passivhaus Medgón.",
+    "provider": {
+      "@type": "HomeAndConstructionBusiness",
+      "@id": "https://medgon.com/#organization",
+      "name": "Medgón Passivhaus S.L.",
+      "url": "https://medgon.com/"
+    },
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://medgon.com/contacto.html",
+      "actionPlatform": [
+        "https://schema.org/DesktopWebPlatform",
+        "https://schema.org/MobileWebPlatform"
+      ]
+    }
   }
 }
   </script>

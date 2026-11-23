@@ -29,22 +29,22 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Product",
-  "@id": "https://medgon.com/mg87#product",
+  "@type": "SingleFamilyResidence",
+  "@id": "https://medgon.com/mg87.html#residence",
   "name": "Modelo MG 87 · Casa Passivhaus 87 m²",
   "description": "Vivienda unifamiliar Passivhaus de 87 m² construidos (74,5 m² útiles) en una planta con 2-3 dormitorios, estructura en madera técnica industrializada y precio cerrado.",
   "image": "https://medgon.com/assets/imagenes/mg87/castilian_wheat_house.webp",
-  "url": "https://medgon.com/mg87",
-  "sku": "MEDGON-MG87",
-  "size": "87 m²",
-  "brand": {
-    "@type": "Brand",
-    "name": "Medgón Passivhaus S.L."
+  "url": "https://medgon.com/mg87.html",
+  "floorSize": {
+    "@type": "QuantitativeValue",
+    "value": 87,
+    "unitCode": "MTK",
+    "unitText": "m²"
   },
-  "manufacturer": {
-    "@type": "Organization",
-    "name": "Medgón Passivhaus S.L.",
-    "url": "https://medgon.com"
+  "numberOfRooms": {
+    "@type": "QuantitativeValue",
+    "minValue": 2,
+    "maxValue": 3
   },
   "additionalProperty": [
     {
@@ -77,16 +77,23 @@
       "value": "Passivhaus · Hermeticidad n50 ≤ 0,6 ren/h"
     }
   ],
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "EUR",
-    "price": 156600,
-    "priceValidUntil": "2026-12-31",
-    "availability": "https://schema.org/InStock",
-    "url": "https://medgon.com/mg87",
-    "seller": {
-      "@type": "Organization",
-      "name": "Medgón Passivhaus S.L."
+  "potentialAction": {
+    "@type": "QuoteAction",
+    "name": "Solicitar estudio de parcela",
+    "description": "Solicitar estudio técnico de viabilidad en parcela y presupuesto personalizado para esta vivienda Passivhaus Medgón.",
+    "provider": {
+      "@type": "HomeAndConstructionBusiness",
+      "@id": "https://medgon.com/#organization",
+      "name": "Medgón Passivhaus S.L.",
+      "url": "https://medgon.com/"
+    },
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://medgon.com/contacto.html",
+      "actionPlatform": [
+        "https://schema.org/DesktopWebPlatform",
+        "https://schema.org/MobileWebPlatform"
+      ]
     }
   }
 }

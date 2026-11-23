@@ -29,23 +29,19 @@
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Product",
-  "@id": "https://medgon.com/mg105#product",
+  "@type": "SingleFamilyResidence",
+  "@id": "https://medgon.com/mg105.html#residence",
   "name": "Modelo MG 105 · Casa Passivhaus 105 m²",
   "description": "Vivienda Passivhaus MG 105 de 105 m² con espacios fluidos orientados a radiación solar pasiva, triple acristalamiento y estructura de madera CNC.",
   "image": "https://medgon.com/assets/imagenes/mg105/industrial_luminous_house_exterior.webp",
-  "url": "https://medgon.com/mg105",
-  "sku": "MEDGON-MG105",
-  "size": "105 m²",
-  "brand": {
-    "@type": "Brand",
-    "name": "Medgón Passivhaus S.L."
+  "url": "https://medgon.com/mg105.html",
+  "floorSize": {
+    "@type": "QuantitativeValue",
+    "value": 105,
+    "unitCode": "MTK",
+    "unitText": "m²"
   },
-  "manufacturer": {
-    "@type": "Organization",
-    "name": "Medgón Passivhaus S.L.",
-    "url": "https://medgon.com"
-  },
+  "numberOfRooms": 3,
   "additionalProperty": [
     {
       "@type": "PropertyValue",
@@ -77,16 +73,23 @@
       "value": "Passivhaus · Hermeticidad n50 ≤ 0,6 ren/h"
     }
   ],
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "EUR",
-    "price": 189000,
-    "priceValidUntil": "2026-12-31",
-    "availability": "https://schema.org/InStock",
-    "url": "https://medgon.com/mg105",
-    "seller": {
-      "@type": "Organization",
-      "name": "Medgón Passivhaus S.L."
+  "potentialAction": {
+    "@type": "QuoteAction",
+    "name": "Solicitar estudio de parcela",
+    "description": "Solicitar estudio técnico de viabilidad en parcela y presupuesto personalizado para esta vivienda Passivhaus Medgón.",
+    "provider": {
+      "@type": "HomeAndConstructionBusiness",
+      "@id": "https://medgon.com/#organization",
+      "name": "Medgón Passivhaus S.L.",
+      "url": "https://medgon.com/"
+    },
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://medgon.com/contacto.html",
+      "actionPlatform": [
+        "https://schema.org/DesktopWebPlatform",
+        "https://schema.org/MobileWebPlatform"
+      ]
     }
   }
 }
