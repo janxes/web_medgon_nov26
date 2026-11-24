@@ -21,8 +21,8 @@
   <link rel="icon" type="image/webp" href="assets/iconos/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="assets/css/styles.min.css?v=5">
-  <link rel="stylesheet" href="assets/css/styles.min.css?v=5">
+  <link rel="preload" as="style" href="assets/css/styles.min.css?v=6">
+  <link rel="stylesheet" href="assets/css/styles.min.css?v=6">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"></noscript>
   <script type="application/ld+json">
@@ -683,145 +683,50 @@
           </div>
         </div>
 
-        <!-- Columna del Formulario de Proyecto Web3Forms -->
+        <!-- Columna del Formulario de Google Forms -->
         <div class="lg:col-span-7">
-          <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-5">
-            <!-- Web3Forms Configuración -->
-            <input type="hidden" name="access_key" value="d8dae1e9-317b-4fbe-949e-38557cedda05">
-            <input type="hidden" name="subject" value="Solicitud de proyecto B2B: Fachadas Industrializadas 2D · Medgón">
-            <input type="hidden" name="from_name" value="Web Medgón Passivhaus">
-            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-            <input type="hidden" name="origen_solucion" value="Fachadas Industrializadas 2D">
-
-            <!-- Alerta de Error en caso de fallo de red -->
-            <div id="form-error-alert" class="hidden p-4 rounded-xl bg-red-50 border border-red-200 text-red-800 text-xs">
-              <div class="flex items-center gap-2 font-bold mb-1">
-                <svg class="w-4 h-4 text-red-600 shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
-                </svg>
-                <span>No se ha podido enviar la solicitud en este momento</span>
+          <div id="contact-form" role="region" aria-label="Formulario de solicitud técnica de fachadas industrializadas 2D" class="w-full">
+            <div class="medgon-gform-card medgon-gform-mobile-bleed">
+              <div class="medgon-gform-bar">
+                <span class="medgon-gform-bar-title">
+                  <span class="medgon-gform-dot" aria-hidden="true"></span>
+                  <span>Formulario técnico de fachadas 2D · Respuesta en menos de 48h</span>
+                </span>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdEu7hIbydUcJ7eUq0TpIYMdO95MFBrUFhzhHRGkjFxrvfghw/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Abrir el formulario en una pestaña nueva a pantalla completa"
+                  class="medgon-gform-open-btn">
+                  <span>Abrir a pantalla completa</span>
+                  <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                  </svg>
+                </a>
               </div>
-              <p>Por favor, comprueba tu conexión o envíanos la documentación directamente a <a href="mailto:informacion@medgon.com" class="underline font-bold">informacion@medgon.com</a> o llámanos al <a href="tel:979881010" class="underline font-bold">+34 979 88 10 10</a>.</p>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label for="fachada-nombre" class="block text-xs font-bold text-[#16181B] uppercase mb-1">Nombre y apellidos *</label>
-                <input type="text" id="fachada-nombre" name="nombre" required placeholder="Persona de contacto" class="w-full px-4 py-3 text-sm border border-[#16181B]/20 rounded-xl focus:border-[#23bd00] focus:ring-1 focus:ring-[#23bd00] outline-none transition-all">
+              <div class="medgon-gform-frame-wrap">
+                <iframe
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSdEu7hIbydUcJ7eUq0TpIYMdO95MFBrUFhzhHRGkjFxrvfghw/viewform?embedded=true"
+                  class="medgon-gform-iframe"
+                  width="100%"
+                  height="1180"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Formulario de solicitud técnica de fachadas industrializadas 2D · Medgón Passivhaus">
+                  Cargando formulario de valoración… Si no se muestra, puedes rellenarlo directamente en
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEu7hIbydUcJ7eUq0TpIYMdO95MFBrUFhzhHRGkjFxrvfghw/viewform" target="_blank" rel="noopener noreferrer">Google Forms</a>.
+                </iframe>
               </div>
-              <div>
-                <label for="fachada-empresa" class="block text-xs font-bold text-[#16181B] uppercase mb-1">Empresa / Estudio / Entidad</label>
-                <input type="text" id="fachada-empresa" name="empresa_o_estudio" placeholder="Nombre de la empresa o estudio" class="w-full px-4 py-3 text-sm border border-[#16181B]/20 rounded-xl focus:border-[#23bd00] focus:ring-1 focus:ring-[#23bd00] outline-none transition-all">
-              </div>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label for="fachada-email" class="block text-xs font-bold text-[#16181B] uppercase mb-1">Email profesional *</label>
-                <input type="email" id="fachada-email" name="email" required placeholder="tu@empresa.com" class="w-full px-4 py-3 text-sm border border-[#16181B]/20 rounded-xl focus:border-[#23bd00] focus:ring-1 focus:ring-[#23bd00] outline-none transition-all">
-              </div>
-              <div>
-                <label for="fachada-telefono" class="block text-xs font-bold text-[#16181B] uppercase mb-1">Teléfono de contacto *</label>
-                <input type="tel" id="fachada-telefono" name="telefono" required placeholder="+34 600 000 000" class="w-full px-4 py-3 text-sm border border-[#16181B]/20 rounded-xl focus:border-[#23bd00] focus:ring-1 focus:ring-[#23bd00] outline-none transition-all">
+              <div class="medgon-gform-footer">
+                <span>¿Prefieres atención directa? Llámanos al <a href="tel:+34979881010">+34 979 88 10 10</a> o escribe a <a href="mailto:informacion@medgon.com">informacion@medgon.com</a>.</span>
               </div>
             </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label for="fachada-perfil" class="block text-xs font-bold text-[#16181B] uppercase mb-1">Perfil del solicitante *</label>
-                <select id="fachada-perfil" name="perfil_solicitante" required class="w-full px-4 py-3 text-sm border border-[#16181B]/20 rounded-xl bg-white focus:border-[#23bd00] focus:ring-1 focus:ring-[#23bd00] outline-none transition-all">
-                  <option value="Estudio de Arquitectura / Ingeniería">Estudio de Arquitectura / Ingeniería</option>
-                  <option value="Empresa Constructora">Empresa Constructora</option>
-                  <option value="Promotora Inmobiliaria">Promotora Inmobiliaria</option>
-                  <option value="Project Management / Consultoría">Project Management / Consultoría</option>
-                  <option value="Propiedad / Comunidad de Propietarios">Propiedad / Particular / Comunidad</option>
-                </select>
-              </div>
-              <div>
-                <label for="fachada-estructura" class="block text-xs font-bold text-[#16181B] uppercase mb-1">Estructura portante prevista</label>
-                <select id="fachada-estructura" name="estructura_portante" class="w-full px-4 py-3 text-sm border border-[#16181B]/20 rounded-xl bg-white focus:border-[#23bd00] focus:ring-1 focus:ring-[#23bd00] outline-none transition-all">
-                  <option value="Hormigón armado (pilares y forjados)">Hormigón armado (pilares y forjados)</option>
-                  <option value="Estructura metálica de acero">Estructura metálica de acero</option>
-                  <option value="Madera masiva CLT o vigas laminadas">Madera masiva CLT o vigas laminadas</option>
-                  <option value="Rehabilitación / Muros existentes">Rehabilitación sobre muros existentes</option>
-                  <option value="Por definir en fase de proyecto">Por definir en fase de proyecto</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label for="fachada-ubicacion" class="block text-xs font-bold text-[#16181B] uppercase mb-1">Ubicación del edificio u obra *</label>
-                <input type="text" id="fachada-ubicacion" name="ubicacion_proyecto" required placeholder="Municipio y provincia" class="w-full px-4 py-3 text-sm border border-[#16181B]/20 rounded-xl focus:border-[#23bd00] focus:ring-1 focus:ring-[#23bd00] outline-none transition-all">
-              </div>
-              <div>
-                <label for="fachada-superficie" class="block text-xs font-bold text-[#16181B] uppercase mb-1">Superficie estimada de fachada (m²)</label>
-                <input type="text" id="fachada-superficie" name="superficie_m2" placeholder="Ej: 450 m², 1.200 m², 3 plantas..." class="w-full px-4 py-3 text-sm border border-[#16181B]/20 rounded-xl focus:border-[#23bd00] focus:ring-1 focus:ring-[#23bd00] outline-none transition-all">
-              </div>
-            </div>
-
-            <div>
-              <label for="fachada-mensaje" class="block text-xs font-bold text-[#16181B] uppercase mb-1">Descripción técnica o requerimientos del proyecto *</label>
-              <textarea id="fachada-mensaje" name="descripcion_tecnica" rows="4" required placeholder="Describe las características de la obra: si requieres carpinterías integradas de fábrica, estándar Passivhaus, aislamiento de lana mineral/fibra de madera, plazos previstos o enlace a planos..." class="w-full px-4 py-3 text-sm border border-[#16181B]/20 rounded-xl focus:border-[#23bd00] focus:ring-1 focus:ring-[#23bd00] outline-none transition-all resize-y"></textarea>
-            </div>
-
-            <div>
-              <label class="flex items-start gap-3 text-xs text-[#2C313A] cursor-pointer select-none">
-                <input type="checkbox" name="privacidad" required class="mt-0.5 rounded text-[#23bd00] focus:ring-[#23bd00] border-slate-300">
-                <span>He leído y acepto la política de privacidad y el tratamiento de mis datos para la elaboración de la propuesta técnica de fachada industrializada. *</span>
-              </label>
-            </div>
-
-            <button type="submit" id="submit-btn" class="w-full py-4 text-xs sm:text-sm font-extrabold text-white bg-gradient-to-r from-[#16181B] to-[#23bd00] rounded-xl hover:opacity-95 transition-all cursor-pointer shadow-md hover:shadow-lg flex items-center justify-center gap-2">
-              <span id="btn-text" class="flex items-center gap-2">
-                <span>Enviar solicitud de estudio de fachada</span>
-                <span aria-hidden="true">→</span>
-              </span>
-              <span id="btn-loading" class="hidden flex items-center gap-2">
-                <svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                </svg>
-                <span>Transmitiendo a la oficina técnica...</span>
-              </span>
-            </button>
-
-            <p class="text-[11px] text-[#2C313A] text-center leading-relaxed">
-              Atención directa por ingenieros y calculistas en Carrión de los Condes (Palencia). Presupuesto y despiece sin compromiso.
-            </p>
-          </form>
+          </div>
         </div>
 
       </div>
     </div>
   </section>
-
-  <!-- Modal de confirmación de envío Web3Forms -->
-  <div id="contact-success-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-[#16181B]/80 backdrop-blur-sm transition-opacity">
-    <div class="bg-white rounded-3xl max-w-lg w-full p-8 sm:p-10 text-center shadow-2xl border border-slate-100 transform transition-transform">
-      <div class="w-16 h-16 bg-[#23bd00]/10 text-[#23bd00] rounded-2xl flex items-center justify-center mx-auto mb-6">
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-        </svg>
-      </div>
-      <span class="inline-block px-3 py-1 rounded-full text-[0.95rem] font-bold uppercase tracking-wider bg-[#23bd00]/10 text-[#23bd00] mb-3">Solicitud confirmada</span>
-      <h3 class="text-2xl font-extrabold text-[#16181B] mb-3">¡Consulta de fachada recibida!</h3>
-      <p class="text-lg text-[#2C313A] leading-relaxed mb-6">
-        Muchas gracias <strong id="modal-client-name" class="text-[#16181B]"></strong>. La información de tu proyecto ha sido asignada al equipo de ingeniería de envolventes de Medgón.
-      </p>
-      <div class="bg-[#FAF8F5] border border-slate-200/80 rounded-2xl p-4 text-left text-xs text-[#2C313A] space-y-2 mb-6">
-        <div class="flex items-center gap-2 text-[#16181B] font-semibold">
-          <span class="w-2 h-2 rounded-full bg-[#23bd00]"></span>
-          <span>Próximos pasos:</span>
-        </div>
-        <p>• Revisión preliminar de metros, modulación y transmitancia requerida.</p>
-        <p>• Contacto técnico en <strong>24 a 48 horas laborables</strong> para intercambiar documentación gráfica o detalles de entrega.</p>
-      </div>
-      <button type="button" id="modal-close-btn" class="w-full py-3.5 text-sm font-bold text-white bg-[#16181B] hover:bg-[#23bd00] rounded-xl transition-colors cursor-pointer">
-        Aceptar y cerrar
-      </button>
-    </div>
-  </div>
 
 </main>
 

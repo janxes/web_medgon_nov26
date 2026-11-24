@@ -632,6 +632,141 @@ header nav.medgon-desktop-nav button {
   border-top: 1px solid #E2E8F0;
   margin: 3rem 0;
 }
+
+/* ==========================================================================
+   GOOGLE FORMS IFRAME - RESPONSIVE, ACCESIBLE Y OPTIMIZADO PARA MÓVIL
+   ========================================================================== */
+.medgon-gform-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(22, 24, 27, 0.12);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(22, 24, 27, 0.04);
+}
+.medgon-gform-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.9rem 1rem;
+  background-color: #FAF8F5;
+  border-bottom: 1px solid rgba(22, 24, 27, 0.08);
+}
+@media (min-width: 640px) {
+  .medgon-gform-bar {
+    padding: 0.9rem 1.25rem;
+  }
+}
+.medgon-gform-bar-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.94rem;
+  font-weight: 700;
+  color: #16181B;
+  line-height: 1.35;
+}
+.medgon-gform-dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 9999px;
+  background-color: #23bd00;
+  flex-shrink: 0;
+}
+.medgon-gform-open-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  min-height: 44px;
+  padding: 0.55rem 1rem;
+  border-radius: 0.75rem;
+  background-color: #297040;
+  color: #ffffff !important;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.25;
+  text-decoration: none;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  white-space: nowrap;
+}
+.medgon-gform-open-btn:hover,
+.medgon-gform-open-btn:focus-visible {
+  background-color: #23bd00;
+  color: #ffffff !important;
+  outline: 2px solid #16181B;
+  outline-offset: 2px;
+}
+.medgon-gform-frame-wrap {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+  -webkit-overflow-scrolling: touch;
+}
+.medgon-gform-iframe {
+  display: block;
+  width: 100%;
+  height: 1380px;
+  min-height: 1200px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+@media (min-width: 640px) {
+  .medgon-gform-iframe {
+    height: 1220px;
+    min-height: 1150px;
+  }
+}
+@media (min-width: 1024px) {
+  .medgon-gform-iframe {
+    height: 1180px;
+    min-height: 1150px;
+  }
+}
+.medgon-gform-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.65rem 1rem;
+  padding: 0.9rem 1rem;
+  background-color: #FAF8F5;
+  border-top: 1px solid rgba(22, 24, 27, 0.08);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #2C313A;
+}
+@media (min-width: 640px) {
+  .medgon-gform-footer {
+    padding: 0.9rem 1.25rem;
+  }
+}
+.medgon-gform-footer a {
+  color: #297040;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.medgon-gform-footer a:hover,
+.medgon-gform-footer a:focus-visible {
+  color: #16181B;
+  outline: 2px solid #297040;
+  outline-offset: 2px;
+  border-radius: 0.25rem;
+}
+@media (max-width: 639px) {
+  .medgon-gform-mobile-bleed {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+    border-radius: 1rem;
+  }
+  .medgon-gform-open-btn {
+    width: 100%;
+  }
+}
 `;
 
 async function buildCss() {

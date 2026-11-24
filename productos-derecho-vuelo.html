@@ -21,8 +21,8 @@
   <link rel="icon" type="image/webp" href="assets/iconos/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="assets/css/styles.min.css?v=5">
-  <link rel="stylesheet" href="assets/css/styles.min.css?v=5">
+  <link rel="preload" as="style" href="assets/css/styles.min.css?v=6">
+  <link rel="stylesheet" href="assets/css/styles.min.css?v=6">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"></noscript>
   <script type="application/ld+json">
@@ -683,145 +683,50 @@
           </div>
         </div>
 
-        <!-- Columna del Formulario Web3Forms -->
+        <!-- Columna del Formulario de Google Forms -->
         <div class="lg:col-span-7">
-          <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-5">
-            <!-- Web3Forms Configuración -->
-            <input type="hidden" name="access_key" value="d8dae1e9-317b-4fbe-949e-38557cedda05">
-            <input type="hidden" name="subject" value="Solicitud de estudio de remonta y derecho de vuelo · Medgón">
-            <input type="hidden" name="from_name" value="Web Medgón Passivhaus">
-            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-            <input type="hidden" name="origen_solucion" value="Remontas y Derecho de Vuelo">
-
-            <!-- Alerta de Error en caso de fallo de red -->
-            <div id="form-error-alert" class="hidden p-4 rounded-xl bg-red-50 border border-red-200 text-red-800 text-xs">
-              <div class="flex items-center gap-2 font-bold mb-1">
-                <svg class="w-4 h-4 text-red-600 shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
-                </svg>
-                <span>No se ha podido enviar la solicitud en este momento</span>
+          <div id="contact-form" role="region" aria-label="Formulario de estudio de viabilidad de remontas y derecho de vuelo" class="w-full">
+            <div class="medgon-gform-card medgon-gform-mobile-bleed">
+              <div class="medgon-gform-bar">
+                <span class="medgon-gform-bar-title">
+                  <span class="medgon-gform-dot" aria-hidden="true"></span>
+                  <span>Formulario técnico de remontas · Respuesta en menos de 48h</span>
+                </span>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdEu7hIbydUcJ7eUq0TpIYMdO95MFBrUFhzhHRGkjFxrvfghw/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Abrir el formulario en una pestaña nueva a pantalla completa"
+                  class="medgon-gform-open-btn">
+                  <span>Abrir a pantalla completa</span>
+                  <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                  </svg>
+                </a>
               </div>
-              <p>Por favor, comprueba tu conexión o envíanos los datos a <a href="mailto:informacion@medgon.com" class="underline font-bold">informacion@medgon.com</a> o llámanos al <a href="tel:979881010" class="underline font-bold">+34 979 88 10 10</a>.</p>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label for="remonta-nombre" class="block text-xs font-bold text-[#16181B] uppercase mb-1">Nombre y apellidos *</label>
-                <input type="text" id="remonta-nombre" name="nombre" required placeholder="Persona de contacto" class="w-full px-4 py-3 text-sm border border-[#16181B]/20 rounded-xl focus:border-[#23bd00] focus:ring-1 focus:ring-[#23bd00] outline-none transition-all">
+              <div class="medgon-gform-frame-wrap">
+                <iframe
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSdEu7hIbydUcJ7eUq0TpIYMdO95MFBrUFhzhHRGkjFxrvfghw/viewform?embedded=true"
+                  class="medgon-gform-iframe"
+                  width="100%"
+                  height="1180"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Formulario de estudio de viabilidad de remontas y derecho de vuelo · Medgón Passivhaus">
+                  Cargando formulario de valoración… Si no se muestra, puedes rellenarlo directamente en
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEu7hIbydUcJ7eUq0TpIYMdO95MFBrUFhzhHRGkjFxrvfghw/viewform" target="_blank" rel="noopener noreferrer">Google Forms</a>.
+                </iframe>
               </div>
-              <div>
-                <label for="remonta-entidad" class="block text-xs font-bold text-[#16181B] uppercase mb-1">Comunidad / Despacho / Empresa</label>
-                <input type="text" id="remonta-entidad" name="comunidad_o_empresa" placeholder="Ej: C.P. Gran Vía 12 / Estudio / Inversora" class="w-full px-4 py-3 text-sm border border-[#16181B]/20 rounded-xl focus:border-[#23bd00] focus:ring-1 focus:ring-[#23bd00] outline-none transition-all">
-              </div>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label for="remonta-email" class="block text-xs font-bold text-[#16181B] uppercase mb-1">Email de contacto *</label>
-                <input type="email" id="remonta-email" name="email" required placeholder="tu@email.com" class="w-full px-4 py-3 text-sm border border-[#16181B]/20 rounded-xl focus:border-[#23bd00] focus:ring-1 focus:ring-[#23bd00] outline-none transition-all">
-              </div>
-              <div>
-                <label for="remonta-telefono" class="block text-xs font-bold text-[#16181B] uppercase mb-1">Teléfono de contacto *</label>
-                <input type="tel" id="remonta-telefono" name="telefono" required placeholder="+34 600 000 000" class="w-full px-4 py-3 text-sm border border-[#16181B]/20 rounded-xl focus:border-[#23bd00] focus:ring-1 focus:ring-[#23bd00] outline-none transition-all">
+              <div class="medgon-gform-footer">
+                <span>¿Prefieres atención directa? Llámanos al <a href="tel:+34979881010">+34 979 88 10 10</a> o escribe a <a href="mailto:informacion@medgon.com">informacion@medgon.com</a>.</span>
               </div>
             </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label for="remonta-perfil" class="block text-xs font-bold text-[#16181B] uppercase mb-1">Perfil del solicitante *</label>
-                <select id="remonta-perfil" name="perfil_solicitante" required class="w-full px-4 py-3 text-sm border border-[#16181B]/20 rounded-xl bg-white focus:border-[#23bd00] focus:ring-1 focus:ring-[#23bd00] outline-none transition-all">
-                  <option value="Comunidad de Propietarios / Presidente">Comunidad de Propietarios / Presidente</option>
-                  <option value="Administrador de Fincas">Administrador de Fincas</option>
-                  <option value="Arquitecto / Estudio Técnico">Arquitecto / Dirección Facultativa</option>
-                  <option value="Propietario particular / Titular de vuelo">Propietario / Titular del derecho de vuelo</option>
-                  <option value="Promotor / Inversor Inmobiliario">Promotor / Inversor Inmobiliario</option>
-                </select>
-              </div>
-              <div>
-                <label for="remonta-plantas" class="block text-xs font-bold text-[#16181B] uppercase mb-1">Ampliación estimada</label>
-                <select id="remonta-plantas" name="ampliacion_estimada" class="w-full px-4 py-3 text-sm border border-[#16181B]/20 rounded-xl bg-white focus:border-[#23bd00] focus:ring-1 focus:ring-[#23bd00] outline-none transition-all">
-                  <option value="1 planta adicional (ático/dúplex)">1 planta adicional (ático / nuevos dúplex)</option>
-                  <option value="2 plantas adicionales">2 plantas adicionales</option>
-                  <option value="3 o más plantas adicionales">3 o más plantas en altura</option>
-                  <option value="Conversión / Elevación de cubierta bajocubierta">Conversión o elevación de bajocubierta existente</option>
-                  <option value="Por determinar según normativa urbanística">Por determinar según estudio urbanístico</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label for="remonta-ubicacion" class="block text-xs font-bold text-[#16181B] uppercase mb-1">Dirección y municipio del edificio *</label>
-                <input type="text" id="remonta-ubicacion" name="direccion_edificio" required placeholder="Calle, número, código postal y ciudad" class="w-full px-4 py-3 text-sm border border-[#16181B]/20 rounded-xl focus:border-[#23bd00] focus:ring-1 focus:ring-[#23bd00] outline-none transition-all">
-              </div>
-              <div>
-                <label for="remonta-catastro" class="block text-xs font-bold text-[#16181B] uppercase mb-1">Ref. catastral o año de construcción</label>
-                <input type="text" id="remonta-catastro" name="referencia_catastral_o_ano" placeholder="Ej: 20 dígitos catastro o año aprox. 1974" class="w-full px-4 py-3 text-sm border border-[#16181B]/20 rounded-xl focus:border-[#23bd00] focus:ring-1 focus:ring-[#23bd00] outline-none transition-all">
-              </div>
-            </div>
-
-            <div>
-              <label for="remonta-mensaje" class="block text-xs font-bold text-[#16181B] uppercase mb-1">Estado de la azotea y objetivos del proyecto *</label>
-              <textarea id="remonta-mensaje" name="descripcion_inmueble" rows="4" required placeholder="Indica el tipo de cubierta actual (plana transitable, tejado a dos aguas...), si el edificio cuenta con ascensor, si la comunidad busca financiar obras de rehabilitación energética o el objetivo de las nuevas viviendas..." class="w-full px-4 py-3 text-sm border border-[#16181B]/20 rounded-xl focus:border-[#23bd00] focus:ring-1 focus:ring-[#23bd00] outline-none transition-all resize-y"></textarea>
-            </div>
-
-            <div>
-              <label class="flex items-start gap-3 text-xs text-[#2C313A] cursor-pointer select-none">
-                <input type="checkbox" name="privacidad" required class="mt-0.5 rounded text-[#23bd00] focus:ring-[#23bd00] border-slate-300">
-                <span>He leído y acepto la política de privacidad y el tratamiento de mis datos para el preestudio técnico de remonta sobre edificio. *</span>
-              </label>
-            </div>
-
-            <button type="submit" id="submit-btn" class="w-full py-4 text-xs sm:text-sm font-extrabold text-white bg-gradient-to-r from-[#16181B] to-[#23bd00] rounded-xl hover:opacity-95 transition-all cursor-pointer shadow-md hover:shadow-lg flex items-center justify-center gap-2">
-              <span id="btn-text" class="flex items-center gap-2">
-                <span>Solicitar estudio de viabilidad de remonta</span>
-                <span aria-hidden="true">→</span>
-              </span>
-              <span id="btn-loading" class="hidden flex items-center gap-2">
-                <svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                </svg>
-                <span>Enviando al equipo técnico de remontas...</span>
-              </span>
-            </button>
-
-            <p class="text-[11px] text-[#2C313A] text-center leading-relaxed">
-              Respuesta en menos de 48h hábiles · Asesoramiento preliminar técnico y normativo sin coste por Medgón.
-            </p>
-          </form>
+          </div>
         </div>
 
       </div>
     </div>
   </section>
-
-  <!-- Modal de confirmación de envío Web3Forms -->
-  <div id="contact-success-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-[#16181B]/80 backdrop-blur-sm transition-opacity">
-    <div class="bg-white rounded-3xl max-w-lg w-full p-8 sm:p-10 text-center shadow-2xl border border-slate-100 transform transition-transform">
-      <div class="w-16 h-16 bg-[#23bd00]/10 text-[#23bd00] rounded-2xl flex items-center justify-center mx-auto mb-6">
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-        </svg>
-      </div>
-      <span class="inline-block px-3 py-1 rounded-full text-[0.95rem] font-bold uppercase tracking-wider bg-[#23bd00]/10 text-[#23bd00] mb-3">Solicitud de Remonta Confirmada</span>
-      <h3 class="text-2xl font-extrabold text-[#16181B] mb-3">¡Consulta de sobreelevación recibida!</h3>
-      <p class="text-lg text-[#2C313A] leading-relaxed mb-6">
-        Muchas gracias <strong id="modal-client-name" class="text-[#16181B]"></strong>. Los datos del edificio han sido registrados en nuestro departamento de rehabilitación y derecho de vuelo.
-      </p>
-      <div class="bg-[#FAF8F5] border border-slate-200/80 rounded-2xl p-4 text-left text-xs text-[#2C313A] space-y-2 mb-6">
-        <div class="flex items-center gap-2 text-[#16181B] font-semibold">
-          <span class="w-2 h-2 rounded-full bg-[#23bd00]"></span>
-          <span>Próximos pasos:</span>
-        </div>
-        <p>• Análisis de planeamiento urbanístico y ficha catastral del inmueble.</p>
-        <p>• Contacto por parte de un ingeniero de Medgón en <strong>24 a 48 horas</strong> para concretar la viabilidad de la sobreelevación.</p>
-      </div>
-      <button type="button" id="modal-close-btn" class="w-full py-3.5 text-sm font-bold text-white bg-[#16181B] hover:bg-[#23bd00] rounded-xl transition-colors cursor-pointer">
-        Aceptar y cerrar
-      </button>
-    </div>
-  </div>
 
 </main>
 

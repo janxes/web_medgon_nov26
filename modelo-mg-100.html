@@ -22,8 +22,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="image" href="assets/imagenes/mg100/MG_100_Exterior.webp" fetchpriority="high">
-  <link rel="preload" as="style" href="assets/css/styles.min.css?v=5">
-  <link rel="stylesheet" href="assets/css/styles.min.css?v=5">
+  <link rel="preload" as="style" href="assets/css/styles.min.css?v=6">
+  <link rel="stylesheet" href="assets/css/styles.min.css?v=6">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"></noscript>
   <script type="application/ld+json">
@@ -654,7 +654,7 @@
     </div>
 
     <!-- Formulario de Viabilidad para MG 100 -->
-    <div class="bg-white border border-[#16181B]/10 rounded-3xl p-8 sm:p-12 shadow-md space-y-6">
+    <div class="bg-white border border-[#16181B]/10 rounded-3xl p-5 sm:p-10 lg:p-12 shadow-md space-y-6">
       <div class="max-w-2xl space-y-2">
         <span class="text-[0.95rem] font-bold uppercase tracking-wider text-[#23bd00]">ESTUDIO EXCLUSIVO PARA MG 100 - 100 m²</span>
         <h2 class="text-2xl sm:text-3xl font-extrabold text-[#16181B]">
@@ -665,55 +665,43 @@
         </p>
       </div>
 
-      <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-4 max-w-2xl">
-        <!-- Web3Forms Configuración -->
-        <input type="hidden" name="access_key" value="d8dae1e9-317b-4fbe-949e-38557cedda05">
-        <input type="hidden" name="subject" value="Solicitud de estudio de viabilidad MG 100 · Medgón">
-        <input type="hidden" name="from_name" value="Web Medgón Passivhaus">
-        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-        <input type="hidden" name="modelo" value="MG 100">
-
-        <div id="form-error-alert" class="hidden p-4 rounded-xl bg-red-50 border border-red-200 text-red-800 text-xs">
-          <div class="flex items-center gap-2 font-bold mb-1">
-            <span>No se ha podido enviar la solicitud en este momento</span>
+      <div id="contact-form" role="region" aria-label="Formulario de estudio de viabilidad para el modelo MG 100" class="w-full max-w-3xl">
+            <div class="medgon-gform-card medgon-gform-mobile-bleed">
+              <div class="medgon-gform-bar">
+                <span class="medgon-gform-bar-title">
+                  <span class="medgon-gform-dot" aria-hidden="true"></span>
+                  <span>Estudio de viabilidad MG 100 · Respuesta en menos de 48h</span>
+                </span>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdEu7hIbydUcJ7eUq0TpIYMdO95MFBrUFhzhHRGkjFxrvfghw/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Abrir el formulario en una pestaña nueva a pantalla completa"
+                  class="medgon-gform-open-btn">
+                  <span>Abrir a pantalla completa</span>
+                  <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                  </svg>
+                </a>
+              </div>
+              <div class="medgon-gform-frame-wrap">
+                <iframe
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSdEu7hIbydUcJ7eUq0TpIYMdO95MFBrUFhzhHRGkjFxrvfghw/viewform?embedded=true"
+                  class="medgon-gform-iframe"
+                  width="100%"
+                  height="1180"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Formulario de estudio de viabilidad para el modelo MG 100 · Medgón Passivhaus">
+                  Cargando formulario de valoración… Si no se muestra, puedes rellenarlo directamente en
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEu7hIbydUcJ7eUq0TpIYMdO95MFBrUFhzhHRGkjFxrvfghw/viewform" target="_blank" rel="noopener noreferrer">Google Forms</a>.
+                </iframe>
+              </div>
+              <div class="medgon-gform-footer">
+                <span>¿Prefieres atención directa? Llámanos al <a href="tel:+34979881010">+34 979 88 10 10</a> o escribe a <a href="mailto:informacion@medgon.com">informacion@medgon.com</a>.</span>
+              </div>
+            </div>
           </div>
-          <p>Por favor, comprueba tu conexión o escríbenos a <a href="mailto:comunicacion@medgon.com" class="underline font-bold">comunicacion@medgon.com</a> o llámanos al <a href="tel:+34979881010" class="underline font-bold">+34 979 88 10 10</a>.</p>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <label for="mg100-nombre" class="block text-xs font-bold text-[#16181B] uppercase mb-1">Nombre y Apellidos *</label>
-            <input type="text" id="mg100-nombre" name="nombre" required placeholder="Tu nombre" class="w-full px-4 py-3 text-sm border border-[#16181B]/20 rounded-xl focus:border-[#23bd00] outline-none">
-          </div>
-          <div>
-            <label for="mg100-telefono" class="block text-xs font-bold text-[#16181B] uppercase mb-1">Teléfono de contacto *</label>
-            <input type="tel" id="mg100-telefono" name="telefono" required placeholder="+34 600 000 000" class="w-full px-4 py-3 text-sm border border-[#16181B]/20 rounded-xl focus:border-[#23bd00] outline-none">
-          </div>
-        </div>
-        <button type="submit" id="submit-btn" class="w-full sm:w-auto px-8 py-4 text-xs sm:text-sm font-extrabold text-white bg-[#16181B] hover:bg-[#23bd00] rounded-xl transition-colors cursor-pointer shadow-sm flex items-center justify-center gap-2">
-          <span id="btn-text">Solicitar estudio de viabilidad gratuito para MG 100 - 100 m² →</span>
-          <span id="btn-loading" class="hidden">Enviando solicitud...</span>
-        </button>
-      </form>
-    </div>
-
-    <!-- Modal de confirmación de envío Web3Forms -->
-    <div id="contact-success-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-[#16181B]/80 backdrop-blur-sm transition-opacity">
-      <div class="bg-white rounded-3xl max-w-lg w-full p-8 sm:p-10 text-center shadow-2xl border border-slate-100">
-        <div class="w-16 h-16 bg-[#23bd00]/10 text-[#23bd00] rounded-2xl flex items-center justify-center mx-auto mb-6">
-          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-          </svg>
-        </div>
-        <span class="inline-block px-3 py-1 rounded-full text-[0.95rem] font-bold uppercase tracking-wider bg-[#23bd00]/10 text-[#23bd00] mb-3">Solicitud confirmada</span>
-        <h3 class="text-2xl font-extrabold text-[#16181B] mb-3">¡Solicitud recibida con éxito!</h3>
-        <p class="text-lg text-[#2C313A] leading-relaxed mb-6">
-          Muchas gracias <strong id="modal-client-name" class="text-[#16181B]"></strong>. Tu consulta sobre el modelo MG 100 ha sido recibida por nuestra oficina técnica.
-        </p>
-        <button type="button" id="modal-close-btn" class="w-full py-3.5 text-sm font-bold text-white bg-[#16181B] hover:bg-[#23bd00] rounded-xl transition-colors cursor-pointer">
-          Aceptar y cerrar
-        </button>
-      </div>
     </div>
   </div>
   

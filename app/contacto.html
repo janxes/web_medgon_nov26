@@ -21,8 +21,8 @@
   <link rel="icon" type="image/webp" href="assets/iconos/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="assets/css/styles.min.css?v=5">
-  <link rel="stylesheet" href="assets/css/styles.min.css?v=5">
+  <link rel="preload" as="style" href="assets/css/styles.min.css?v=6">
+  <link rel="stylesheet" href="assets/css/styles.min.css?v=6">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"></noscript>
   <script type="application/ld+json">
@@ -359,129 +359,42 @@
         </div>
       </div>
 
-          <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="md:col-span-2 w-full space-y-5">
-            <!-- Web3Forms Configuración -->
-            <input type="hidden" name="access_key" value="d8dae1e9-317b-4fbe-949e-38557cedda05">
-            <input type="hidden" name="subject" value="Nueva solicitud de estudio de parcela · Medgón Passivhaus">
-            <input type="hidden" name="from_name" value="Web Medgón Passivhaus">
-            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-
-            <!-- Alerta de Error en caso de fallo de red -->
-            <div id="form-error-alert" class="hidden p-4 rounded-xl bg-red-50 border border-red-200 text-red-800 text-xs">
-              <div class="flex items-center gap-2 font-bold mb-1">
-                <svg class="w-4 h-4 text-red-600 shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
-                </svg>
-                <span>No se ha podido enviar la solicitud en este momento</span>
+          <div id="contact-form" role="region" aria-label="Formulario de valoración de proyecto de construcción" class="md:col-span-2 w-full">
+            <div class="medgon-gform-card">
+              <div class="medgon-gform-bar">
+                <span class="medgon-gform-bar-title">
+                  <span class="medgon-gform-dot" aria-hidden="true"></span>
+                  <span>Formulario de valoración de proyecto · Respuesta en menos de 48h</span>
+                </span>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdEu7hIbydUcJ7eUq0TpIYMdO95MFBrUFhzhHRGkjFxrvfghw/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Abrir el formulario de valoración de proyecto en una pestaña nueva a pantalla completa"
+                  class="medgon-gform-open-btn">
+                  <span>Abrir a pantalla completa</span>
+                  <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                  </svg>
+                </a>
               </div>
-              <p>Por favor, comprueba tu conexión o envíanos directamente un correo a <a href="mailto:info@medgon.com" class="underline font-bold">info@medgon.com</a> o llámanos al <a href="tel:+34979880000" class="underline font-bold">+34 979 880 000</a>.</p>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label for="form-nombre" class="block text-xs font-bold text-[#16181B] uppercase mb-1">Nombre completo *</label>
-                <input type="text" id="form-nombre" name="nombre" required placeholder="Tu nombre y apellidos" class="w-full px-4 py-3 text-sm border border-[#16181B]/20 rounded-xl focus:border-[#23bd00] focus:ring-1 focus:ring-[#23bd00] outline-none transition-all">
+              <div class="medgon-gform-frame-wrap">
+                <iframe
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSdEu7hIbydUcJ7eUq0TpIYMdO95MFBrUFhzhHRGkjFxrvfghw/viewform?embedded=true"
+                  class="medgon-gform-iframe"
+                  width="100%"
+                  height="1180"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Formulario de valoración de proyecto de construcción y estudio de parcela · Medgón Passivhaus">
+                  Cargando formulario de valoración… Si no se muestra, puedes rellenarlo directamente en
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdEu7hIbydUcJ7eUq0TpIYMdO95MFBrUFhzhHRGkjFxrvfghw/viewform" target="_blank" rel="noopener noreferrer">Google Forms</a>.
+                </iframe>
               </div>
-              <div>
-                <label for="form-email" class="block text-xs font-bold text-[#16181B] uppercase mb-1">Email de contacto *</label>
-                <input type="email" id="form-email" name="email" required placeholder="tu@email.com" class="w-full px-4 py-3 text-sm border border-[#16181B]/20 rounded-xl focus:border-[#23bd00] focus:ring-1 focus:ring-[#23bd00] outline-none transition-all">
-              </div>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label for="form-telefono" class="block text-xs font-bold text-[#16181B] uppercase mb-1">Teléfono de contacto *</label>
-                <input type="tel" id="form-telefono" name="telefono" required placeholder="+34 600 000 000" class="w-full px-4 py-3 text-sm border border-[#16181B]/20 rounded-xl focus:border-[#23bd00] focus:ring-1 focus:ring-[#23bd00] outline-none transition-all">
-              </div>
-              <div>
-                <label for="form-municipio" class="block text-xs font-bold text-[#16181B] uppercase mb-1">Municipio y provincia de la parcela *</label>
-                <input type="text" id="form-municipio" name="municipio" required placeholder="Ej. Palencia, Segovia, Girona..." class="w-full px-4 py-3 text-sm border border-[#16181B]/20 rounded-xl focus:border-[#23bd00] focus:ring-1 focus:ring-[#23bd00] outline-none transition-all">
+              <div class="medgon-gform-footer">
+                <span>¿Prefieres atención directa? Llámanos al <a href="tel:+34979881010">+34 979 88 10 10</a> o escribe a <a href="mailto:informacion@medgon.com">informacion@medgon.com</a>.</span>
               </div>
             </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label for="form-situacion" class="block text-xs font-bold text-[#16181B] uppercase mb-1">Situación de la parcela</label>
-                <select id="form-situacion" name="situacion_parcela" class="w-full px-4 py-3 text-sm border border-[#16181B]/20 rounded-xl bg-white focus:border-[#23bd00] focus:ring-1 focus:ring-[#23bd00] outline-none transition-all">
-                  <option value="En propiedad">En propiedad</option>
-                  <option value="En proceso de arras / compra">En proceso de compra o arras</option>
-                  <option value="Buscando terreno activamente">Buscando terreno activamente</option>
-                  <option value="Aún sin terreno / Información general">Aún no dispongo de parcela</option>
-                </select>
-              </div>
-              <div>
-                <label for="select-modelo" class="block text-xs font-bold text-[#16181B] uppercase mb-1">Modelo de catálogo o interés</label>
-                <select id="select-modelo" name="modelo" class="w-full px-4 py-3 text-sm border border-[#16181B]/20 rounded-xl bg-white focus:border-[#23bd00] focus:ring-1 focus:ring-[#23bd00] outline-none transition-all">
-                  <option value="Orientación técnica general">Aún no lo sé / Deseo orientación técnica</option>
-                  <option value="MG 87">MG87 (74.5 m² útiles)</option>
-                  <option value="MG 100">MG100 (86.2 m² útiles)</option>
-                  <option value="MG 105">MG105 (105 m² útiles)</option>
-                  <option value="MG 128">MG128 (128 m² útiles)</option>
-                  <option value="MG 148">MG148 (148 m² útiles)</option>
-                  <option value="MG 165">MG165 (148 m² útiles)</option>
-                  <option value="Viviendas a Medida (+200 m²)" selected>Vivienda a Medida (+200 m² - Estudio Marcos Martínez Parga)</option>
-                  <option value="B2B Fachadas 2D">Fachadas industrializadas 2D (B2B)</option>
-                  <option value="B2B Plurifamiliar">Edificios plurifamiliares / Terciario (B2B)</option>
-                </select>
-              </div>
-            </div>
-
-            <div>
-              <label for="form-mensaje" class="block text-xs font-bold text-[#16181B] uppercase mb-1">Detalles de la parcela o consulta técnica</label>
-              <textarea id="form-mensaje" name="mensaje" rows="4" placeholder="Indícanos los metros de la parcela, referencia catastral si dispones de ella, pendiente o dudas sobre el proceso constructivo Passivhaus..." class="w-full px-4 py-3 text-sm border border-[#16181B]/20 rounded-xl focus:border-[#23bd00] focus:ring-1 focus:ring-[#23bd00] outline-none transition-all resize-y"></textarea>
-            </div>
-
-            <div>
-              <label class="flex items-start gap-3 text-xs text-[#2C313A] cursor-pointer select-none">
-                <input type="checkbox" name="privacidad" required class="mt-0.5 rounded text-[#23bd00] focus:ring-[#23bd00] border-slate-300">
-                <span>He leído y acepto la política de privacidad y el tratamiento de mis datos para la elaboración del estudio técnico preliminar de mi proyecto. *</span>
-              </label>
-            </div>
-
-            <button type="submit" id="submit-btn" class="w-full py-4 text-xs sm:text-sm font-extrabold text-white bg-gradient-to-r from-[#16181B] to-[#23bd00] rounded-xl hover:opacity-95 transition-all cursor-pointer shadow-md hover:shadow-lg flex items-center justify-center gap-2">
-              <span id="btn-text" class="flex items-center gap-2">
-                <span>Solicitar estudio técnico preliminar gratuito</span>
-                <span aria-hidden="true">→</span>
-              </span>
-              <span id="btn-loading" class="hidden flex items-center gap-2">
-                <svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                </svg>
-                <span>Enviando a la oficina técnica de Medgón...</span>
-              </span>
-            </button>
-
-            <p class="text-[11px] text-[#2C313A] text-center leading-relaxed">
-              Respuesta en menos de 48h hábiles · Asesoramiento directo sin compromiso por la oficina técnica en Carrión de los Condes (Palencia).
-            </p>
-          </form>
-        </div>
-
-        <!-- Modal de confirmación de envío Web3Forms -->
-        <div id="contact-success-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-[#16181B]/80 backdrop-blur-sm transition-opacity">
-          <div class="bg-white rounded-3xl max-w-lg w-full p-8 sm:p-10 text-center shadow-2xl border border-slate-100 transform transition-transform">
-            <div class="w-16 h-16 bg-[#23bd00]/10 text-[#23bd00] rounded-2xl flex items-center justify-center mx-auto mb-6">
-              <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-              </svg>
-            </div>
-            <span class="inline-block px-3 py-1 rounded-full text-[0.95rem] font-bold uppercase tracking-wider bg-[#23bd00]/10 text-[#23bd00] mb-3">Solicitud confirmada</span>
-            <h3 class="text-2xl font-extrabold text-[#16181B] mb-3">¡Solicitud recibida con éxito!</h3>
-            <p class="text-lg text-[#2C313A] leading-relaxed mb-6">
-              Muchas gracias <strong id="modal-client-name" class="text-[#16181B]"></strong>. Tu consulta ha sido recibida correctamente por nuestro equipo en Carrión de los Condes (Palencia).
-            </p>
-            <div class="bg-[#FAF8F5] border border-slate-200/80 rounded-2xl p-4 text-left text-xs text-[#2C313A] space-y-2 mb-6">
-              <div class="flex items-center gap-2 text-[#16181B] font-semibold">
-                <span class="w-2 h-2 rounded-full bg-[#23bd00]"></span>
-                <span>Próximos pasos:</span>
-              </div>
-              <p>• Valoración inicial de tu proyecto, parcela o consulta por parte de nuestro equipo técnico.</p>
-              <p>• Contacto <strong>en un plazo de 24–48 horas </strong>laborables para darte respuesta o solicitarte algún dato o documentación adicional si fuera necesario para estudiar tu caso.</p>
-            </div>
-            <button type="button" id="modal-close-btn" class="w-full py-3.5 text-sm font-bold text-white bg-[#16181B] hover:bg-[#23bd00] rounded-xl transition-colors cursor-pointer">
-              Aceptar y cerrar
-            </button>
           </div>
         </div>
       </div>
