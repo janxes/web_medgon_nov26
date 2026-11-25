@@ -443,7 +443,8 @@
       </div>
 
       <!-- Visor Principal de Presentación -->
-      <div class="relative h-[380px] sm:h-[500px] md:h-[560px] rounded-3xl overflow-hidden bg-[#16181B] border border-[#16181B]/10 shadow-lg group">
+      <figure class="rounded-3xl overflow-hidden bg-[#16181B] border border-[#16181B]/10 shadow-lg group">
+        <div class="relative h-[260px] sm:h-[440px] md:h-[520px] overflow-hidden bg-[#16181B]">
         <img id="gallery-main-image" 
           src="assets/imagenes/mg148/l_shaped_farmhouse_golden_hour.webp" 
           alt="Fachada en L · MG 148" 
@@ -467,13 +468,15 @@
           <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
         </button>
 
-        <!-- Pie de foto superpuesto -->
-        <div class="absolute bottom-4 left-4 right-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 bg-[#16181B]/85 backdrop-blur-md px-5 py-3.5 rounded-2xl border border-white/10 text-white shadow-lg">
+        </div>
+
+        <!-- Pie de foto accesible debajo de la imagen -->
+        <figcaption class="bg-[#16181B] px-5 py-4 sm:px-6 sm:py-5 border-t border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-white">
           <div>
             <h3 id="gallery-caption-title" class="text-sm sm:text-base font-bold text-white">Fachada en L</h3>
             <p id="gallery-caption-desc" class="text-xs text-slate-300">Geometría envolvente que abraza el jardín y protege del viento norte</p>
           </div>
-          <div class="flex items-center gap-2 shrink-0">
+          <div class="flex flex-wrap items-center gap-2 shrink-0">
             <button 
               id="gallery-btn-fullscreen"
               type="button"
@@ -492,8 +495,8 @@
               <span>Plano PDF ↓</span>
             </a>
           </div>
-        </div>
-      </div>
+        </figcaption>
+      </figure>
 
       <!-- Tira de Miniaturas Interactivas -->
       <div 

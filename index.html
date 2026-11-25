@@ -428,27 +428,28 @@
       </div>
 
       <!-- Hero Visual -->
-      <div class="mt-12 sm:mt-16 relative rounded-3xl overflow-hidden shadow-2xl border border-[#16181B]/10 bg-[#16181B] group hero-visual-critical" style="min-height: 380px;">
-        <picture>
-          <source media="(max-width: 768px)" srcset="assets/imagenes/generales/SA-POBLA-Landing.webp">
-          <img src="assets/imagenes/generales/SA-POBLA-Landing.webp" 
-            alt="Vivienda Passivhaus de madera técnica industrializada en parcela Medgón"
-            class="w-full h-[380px] sm:h-[500px] lg:h-[620px] object-cover group-hover:scale-102 transition-transform duration-700" width="1600" height="894" loading="eager" fetchpriority="high" decoding="async" />
-        </picture>
-        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent pointer-events-none"></div>
-        <div class="absolute inset-x-0 bottom-0 p-6 sm:p-10 flex flex-col md:flex-row md:items-end justify-between gap-6 text-white">
+      <figure class="mt-12 sm:mt-16 rounded-3xl overflow-hidden shadow-2xl border border-[#16181B]/10 bg-[#16181B] group hero-visual-critical" style="min-height: 380px;">
+        <div class="relative overflow-hidden bg-[#16181B]">
+          <picture>
+            <source media="(max-width: 768px)" srcset="assets/imagenes/generales/SA-POBLA-Landing.webp">
+            <img src="assets/imagenes/generales/SA-POBLA-Landing.webp" 
+              alt="Vivienda Passivhaus de madera técnica industrializada en parcela Medgón"
+              class="w-full h-[240px] sm:h-[440px] lg:h-[560px] object-cover group-hover:scale-102 transition-transform duration-700" width="1600" height="894" loading="eager" fetchpriority="high" decoding="async" />
+          </picture>
+        </div>
+        <figcaption class="bg-[#16181B] px-5 py-6 sm:px-10 sm:py-7 border-t border-white/10 flex flex-col md:flex-row md:items-center justify-between gap-5 text-white">
           <div class="space-y-2 max-w-2xl">
-            <span class="text-[0.95rem] font-bold uppercase tracking-widest text-white">Fábrica de Carrión de los Condes</span>
-            <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">Rendimiento contrastado en cada metro cuadrado</h2>
-            <p class="text-xs sm:text-sm text-slate-300">Envolvente térmica continua hermética, test Blower Door garantizado por contrato y estructura de madera técnica con fijación de carbono negativo.</p>
+            <span class="block text-[0.95rem] font-bold uppercase tracking-widest text-[#82c343]">Fábrica de Carrión de los Condes</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white">Rendimiento contrastado en cada metro cuadrado</h2>
+            <p class="text-base text-slate-200 leading-relaxed">Envolvente térmica continua hermética, test Blower Door garantizado por contrato y estructura de madera técnica con fijación de carbono negativo.</p>
           </div>
           <div class="flex items-center gap-3 shrink-0">
-            <a href="catalogo.html" class="px-5 py-3 rounded-xl bg-white text-[#16181B] hover:bg-[#23bd00] hover:text-white font-bold text-xs transition-colors">
+            <a href="catalogo.html" class="inline-flex items-center justify-center px-5 py-3 rounded-xl bg-white text-[#16181B] hover:bg-[#23bd00] hover:text-white font-bold text-sm transition-colors">
               Explorar modelos disponibles
             </a>
           </div>
-        </div>
-      </div>
+        </figcaption>
+      </figure>
     </section>
 
     <!-- Modelos Destacados: Galería Horizontal Desplazable -->
