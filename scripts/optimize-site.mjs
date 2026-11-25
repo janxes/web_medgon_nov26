@@ -2,7 +2,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const rootDir = process.cwd();
-const SITE_URL = 'https://medgon.com';
+const SITE_URL = 'https://www.medgon.com';
+const ASSETS_BASE_URL = `${SITE_URL}/app`;
 
 const ORG_ENTITY = {
   '@type': 'Organization',
@@ -12,7 +13,7 @@ const ORG_ENTITY = {
   url: SITE_URL,
   logo: {
     '@type': 'ImageObject',
-    url: `${SITE_URL}/assets/imagenes/generales/logo_medgon.webp`,
+    url: `${ASSETS_BASE_URL}/assets/imagenes/generales/logo_medgon.webp`,
     width: 341,
     height: 148,
   },
@@ -38,8 +39,8 @@ const HOME_BUSINESS_LD = {
   email: 'informacion@medgon.com',
   description:
     'Fabricante líder en España de viviendas Passivhaus industrializadas de estructura de madera técnica. Modelos de 87 a 165 m² y viviendas modulares a medida (+200 m²) con precio cerrado.',
-  image: `${SITE_URL}/assets/imagenes/generales/Frontal_HeroCasa_Mediterranea.webp`,
-  logo: `${SITE_URL}/assets/imagenes/generales/logo_medgon.webp`,
+  image: `${ASSETS_BASE_URL}/assets/imagenes/generales/Frontal_HeroCasa_Mediterranea.webp`,
+  logo: `${ASSETS_BASE_URL}/assets/imagenes/generales/logo_medgon.webp`,
   priceRange: '1.700 – 1.900 €/m² + IVA',
   address: {
     '@type': 'PostalAddress',
@@ -105,7 +106,7 @@ const MODEL_SPECS = {
     baths: '1 - 2',
     lowPrice: 156600,
     highPrice: 174000,
-    image: `${SITE_URL}/assets/imagenes/mg87/castilian_wheat_house.webp`,
+    image: `${ASSETS_BASE_URL}/assets/imagenes/mg87/castilian_wheat_house.webp`,
     desc: 'Vivienda unifamiliar Passivhaus de 87 m² construidos (74,5 m² útiles) en una planta con 2-3 dormitorios, estructura en madera técnica industrializada y precio cerrado.',
   },
   100: {
@@ -117,7 +118,7 @@ const MODEL_SPECS = {
     baths: '2',
     lowPrice: 180000,
     highPrice: 200000,
-    image: `${SITE_URL}/assets/imagenes/mg100/MG_100_Exterior.webp`,
+    image: `${ASSETS_BASE_URL}/assets/imagenes/mg100/MG_100_Exterior.webp`,
     desc: 'Casa industrializada Passivhaus MG 100 de 100 m² construidos (86,2 m² útiles) en planta única con 3 dormitorios, 2 baños, ventilación VMC y envolvente hermética n50 ≤ 0,6.',
   },
   105: {
@@ -129,7 +130,7 @@ const MODEL_SPECS = {
     baths: '2',
     lowPrice: 189000,
     highPrice: 210000,
-    image: `${SITE_URL}/assets/imagenes/mg105/industrial_luminous_house_exterior.webp`,
+    image: `${ASSETS_BASE_URL}/assets/imagenes/mg105/industrial_luminous_house_exterior.webp`,
     desc: 'Vivienda Passivhaus MG 105 de 105 m² con espacios fluidos orientados a radiación solar pasiva, triple acristalamiento y estructura de madera CNC.',
   },
   128: {
@@ -141,7 +142,7 @@ const MODEL_SPECS = {
     baths: '2',
     lowPrice: 230400,
     highPrice: 256000,
-    image: `${SITE_URL}/assets/imagenes/mg128/boho_autumn_exterior.webp`,
+    image: `${ASSETS_BASE_URL}/assets/imagenes/mg128/boho_autumn_exterior.webp`,
     desc: 'Modelo de referencia Medgón MG 128 de 128 m² en madera técnica con patio bioclimático, 3-4 dormitorios y certificación Passivhaus Classic.',
   },
   148: {
@@ -153,7 +154,7 @@ const MODEL_SPECS = {
     baths: '3',
     lowPrice: 266400,
     highPrice: 296000,
-    image: `${SITE_URL}/assets/imagenes/mg148/l_shaped_farmhouse_golden_hour.webp`,
+    image: `${ASSETS_BASE_URL}/assets/imagenes/mg148/l_shaped_farmhouse_golden_hour.webp`,
     desc: 'Casa Passivhaus en L modelo MG 148 de 148 m² con suite en planta baja, 4 dormitorios, 3 baños y ensayo Blower Door n50 ≤ 0,5.',
   },
   165: {
@@ -165,7 +166,7 @@ const MODEL_SPECS = {
     baths: '3',
     lowPrice: 297000,
     highPrice: 330000,
-    image: `${SITE_URL}/assets/imagenes/mg165/coastal_l_shaped_home.webp`,
+    image: `${ASSETS_BASE_URL}/assets/imagenes/mg165/coastal_l_shaped_home.webp`,
     desc: 'Vivienda unifamiliar contemporánea MG 165 de 165 m² construidos (148 m² útiles) en dos plantas, 4-5 dormitorios, porches bioclimáticos integrados y eficiencia ECCN.',
   },
 };
@@ -284,7 +285,7 @@ const EXTERNAL_IMAGE_SIZES = {
 };
 
 function getPageSeo(filename, existingLdList) {
-  const ogDefault = `${SITE_URL}/assets/imagenes/generales/Frontal_HeroCasa_Mediterranea.webp`;
+  const ogDefault = `${ASSETS_BASE_URL}/assets/imagenes/generales/Frontal_HeroCasa_Mediterranea.webp`;
 
   const mPrimary = filename.match(/^mg(\d+)\.html$/);
   if (mPrimary) {
@@ -295,25 +296,10 @@ function getPageSeo(filename, existingLdList) {
       description: m.desc,
       canonical: `${SITE_URL}/mg${num}`,
       ogImage: m.image,
-      heroPreload: m.image.replace(`${SITE_URL}/`, ''),
+      heroPreload: m.image.replace(`${ASSETS_BASE_URL}/`, ''),
       inSitemap: true,
       priority: '0.9',
       changefreq: 'monthly',
-      ldBlocks: [buildModelProductLd(num)],
-    };
-  }
-
-  const mAlias = filename.match(/^modelo-mg-(\d+)\.html$/);
-  if (mAlias) {
-    const num = Number(mAlias[1]);
-    const m = MODEL_SPECS[num];
-    return {
-      title: `Modelo ${m.code} Passivhaus · Plano, Memoria y Precio Cerrado | Medgón`,
-      description: `Consulta la ficha arquitectónica completa del modelo ${m.code} (${m.builtM2} m² construidos, ${m.usefulM2} m² útiles), planos y sistema constructivo Medgón.`,
-      canonical: `${SITE_URL}/mg${num}`,
-      ogImage: m.image,
-      heroPreload: m.image.replace(`${SITE_URL}/`, ''),
-      inSitemap: false,
       ldBlocks: [buildModelProductLd(num)],
     };
   }
@@ -359,7 +345,7 @@ function getPageSeo(filename, existingLdList) {
       description:
         'Arquitectura modular Passivhaus de autor a partir de 200 m². Sistema industrializado MÓDULO junto a Marcos Martínez Parga Estudio en madera técnica.',
       canonical: `${SITE_URL}/viviendas-a-medida`,
-      ogImage: `${SITE_URL}/assets/imagenes/medida/vivienda_medida_gran_formato_exterior.webp`,
+      ogImage: `${ASSETS_BASE_URL}/assets/imagenes/medida/vivienda_medida_gran_formato_exterior.webp`,
       heroPreload: 'assets/imagenes/medida/vivienda_medida_gran_formato_exterior.webp',
       inSitemap: true,
       priority: '0.85',
@@ -372,7 +358,7 @@ function getPageSeo(filename, existingLdList) {
           name: 'Viviendas Modulares Passivhaus a Medida (+200 m²) · Sistema MÓDULO',
           description:
             'Viviendas de autor de diseño libre a partir de 200 m² con estructura industrializada en madera técnica y certificación Passivhaus.',
-          image: `${SITE_URL}/assets/imagenes/medida/vivienda_medida_gran_formato_exterior.webp`,
+          image: `${ASSETS_BASE_URL}/assets/imagenes/medida/vivienda_medida_gran_formato_exterior.webp`,
           url: `${SITE_URL}/viviendas-a-medida`,
           size: '+200 m²',
           brand: { '@type': 'Brand', name: 'Medgón Passivhaus S.L.' },
@@ -403,7 +389,7 @@ function getPageSeo(filename, existingLdList) {
       description:
         'Solicita un estudio técnico gratuito de tu parcela en menos de 48 horas. Sede central y fábrica industrializada en Carrión de los Condes (Palencia).',
       canonical: `${SITE_URL}/contacto`,
-      ogImage: `${SITE_URL}/assets/imagenes/generales/medgon_fachada_corregida.webp`,
+      ogImage: `${ASSETS_BASE_URL}/assets/imagenes/generales/medgon_fachada_corregida.webp`,
       inSitemap: true,
       priority: '0.85',
       changefreq: 'monthly',
@@ -476,7 +462,7 @@ function getPageSeo(filename, existingLdList) {
       description:
         'Conoce Medgón, empresa fundada en 2005 en Carrión de los Condes (Palencia) especializada en construcción industrializada de viviendas y edificios eficientes.',
       canonical: `${SITE_URL}/sobre-nosotros`,
-      ogImage: `${SITE_URL}/assets/imagenes/proyectos/oficinas-medgon.webp`,
+      ogImage: `${ASSETS_BASE_URL}/assets/imagenes/proyectos/oficinas-medgon.webp`,
       heroPreload: 'assets/imagenes/proyectos/oficinas-medgon.webp',
       inSitemap: true,
       priority: '0.85',
@@ -488,7 +474,7 @@ function getPageSeo(filename, existingLdList) {
       description:
         'Descubre los premios y reconocimientos de Medgón en construcción industrializada Passivhaus, sostenibilidad e I+D+i. Solvencia y ahorro real para tu proyecto.',
       canonical: `${SITE_URL}/premios-y-reconocimientos`,
-      ogImage: `${SITE_URL}/assets/imagenes/proyectos/oficinas-medgon.webp`,
+      ogImage: `${ASSETS_BASE_URL}/assets/imagenes/proyectos/oficinas-medgon.webp`,
       inSitemap: true,
       priority: '0.75',
       changefreq: 'monthly',
@@ -499,7 +485,7 @@ function getPageSeo(filename, existingLdList) {
       description:
         'Descubre cómo funciona la construcción industrializada de Medgón: oficina técnica, mecanizado CNC en Palencia, control en fábrica, transporte y montaje en obra.',
       canonical: `${SITE_URL}/construccion-industrializada`,
-      ogImage: `${SITE_URL}/assets/imagenes/sistema/sistema-forjado-estructuras.webp`,
+      ogImage: `${ASSETS_BASE_URL}/assets/imagenes/sistema/sistema-forjado-estructuras.webp`,
       heroPreload: 'assets/imagenes/sistema/sistema-forjado-estructuras.webp',
       inSitemap: true,
       priority: '0.85',
@@ -511,7 +497,7 @@ function getPageSeo(filename, existingLdList) {
       description:
         'Oficina técnica de Medgón Passivhaus: ingeniería en madera técnica, modelado BIM-CAM, cálculo estructural de entramado ligero y Kerto Ripa, balance energético y soporte para arquitectos, promotores y constructoras.',
       canonical: `${SITE_URL}/oficina-tecnica`,
-      ogImage: `${SITE_URL}/assets/imagenes/proyectos/oficinas-medgon.webp`,
+      ogImage: `${ASSETS_BASE_URL}/assets/imagenes/proyectos/oficinas-medgon.webp`,
       heroPreload: 'assets/imagenes/sistema/forjado-ripa-techo.webp',
       inSitemap: true,
       priority: '0.85',
@@ -523,7 +509,7 @@ function getPageSeo(filename, existingLdList) {
       description:
         'Cómo construimos tu casa Passivhaus en madera técnica: muros de entramado ligero con fibra de madera insuflada, forjados Kerto Ripa con Marcado CE y hermeticidad certificada.',
       canonical: `${SITE_URL}/nuestro-sistema`,
-      ogImage: `${SITE_URL}/assets/imagenes/sistema/sistema-forjado-estructuras.webp`,
+      ogImage: `${ASSETS_BASE_URL}/assets/imagenes/sistema/sistema-forjado-estructuras.webp`,
       inSitemap: true,
       priority: '0.8',
       changefreq: 'monthly',
@@ -534,7 +520,7 @@ function getPageSeo(filename, existingLdList) {
       description:
         'Explora nuestra galería de 48 proyectos destacados en España: viviendas unifamiliares, plurifamiliares, colegios y edificios terciarios Passivhaus en madera técnica.',
       canonical: `${SITE_URL}/proyectos-destacados`,
-      ogImage: `${SITE_URL}/assets/imagenes/proyectos/oficinas-medgon.webp`,
+      ogImage: `${ASSETS_BASE_URL}/assets/imagenes/proyectos/oficinas-medgon.webp`,
       heroPreload: 'assets/imagenes/proyectos/oficinas-medgon.webp',
       inSitemap: true,
       priority: '0.85',
@@ -621,7 +607,7 @@ function getPageSeo(filename, existingLdList) {
       description:
         'Cálculo, diseño y fabricación robotizada CNC de cubiertas ligeras de madera con escaneado 3D Leica Geosystems para obra nueva y rehabilitación.',
       canonical: `${SITE_URL}/productos-cubiertas`,
-      ogImage: `${SITE_URL}/assets/imagenes/generales/productos_medgon_cubiertas_fachadas_Remontas_596a0995.webp`,
+      ogImage: `${ASSETS_BASE_URL}/assets/imagenes/generales/productos_medgon_cubiertas_fachadas_Remontas_596a0995.webp`,
       inSitemap: true,
       priority: '0.8',
       changefreq: 'monthly',
@@ -632,7 +618,7 @@ function getPageSeo(filename, existingLdList) {
       description:
         'Ampliación en altura sobre edificios existentes mediante derecho de vuelo y estructuras ligeras industrializadas Passivhaus sin sobrecargar cimentación.',
       canonical: `${SITE_URL}/productos-derecho-vuelo`,
-      ogImage: `${SITE_URL}/assets/imagenes/generales/productos_medgon_cubiertas_fachadas_Remontas_596a0995.webp`,
+      ogImage: `${ASSETS_BASE_URL}/assets/imagenes/generales/productos_medgon_cubiertas_fachadas_Remontas_596a0995.webp`,
       inSitemap: true,
       priority: '0.8',
       changefreq: 'monthly',
@@ -643,7 +629,7 @@ function getPageSeo(filename, existingLdList) {
       description:
         'Módulos de fachada industrializada 2D en madera técnica con aislamiento continuo y carpinterías instaladas en fábrica para acelerar promociones.',
       canonical: `${SITE_URL}/productos-fachadas`,
-      ogImage: `${SITE_URL}/assets/imagenes/generales/productos_medgon_cubiertas_fachadas_Remontas_596a0995.webp`,
+      ogImage: `${ASSETS_BASE_URL}/assets/imagenes/generales/productos_medgon_cubiertas_fachadas_Remontas_596a0995.webp`,
       inSitemap: true,
       priority: '0.8',
       changefreq: 'monthly',
@@ -793,7 +779,7 @@ function inferImageDimensions(src, attrs) {
 
 function optimizeImgTags(bodyHtml, filename) {
   let primaryHeroAssigned = false;
-  const isModelPage = /^(mg|modelo-mg-)\d+\.html$/.test(filename);
+  const isModelPage = /^mg\d+\.html$/.test(filename);
   const pagesWithHero = new Set([
     'index.html',
     'passivhaus.html',
@@ -898,6 +884,7 @@ function optimizeHtmlFile(filePath, filename) {
 
   const newHead = `<head>
   <meta charset="UTF-8">
+  <base href="/app/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title${titleIdAttr}>${escapeAttr(seo.title)}</title>
   <meta${descIdAttr} name="description" content="${escapeAttr(seo.description)}">
@@ -998,7 +985,9 @@ const robotsTxt = `# Medgón Passivhaus S.L. · Configuración de rastreo SEO
 User-agent: *
 Allow: /
 
-# Evitar indexación de plantillas dinámicas y parámetros de filtrado
+# Evitar indexación de plantillas dinámicas, carpeta interna /app/ y parámetros de filtrado
+Disallow: /app/
+Allow: /app/assets/
 Disallow: /post
 Disallow: /*?modelo=
 Disallow: /*?dorm=

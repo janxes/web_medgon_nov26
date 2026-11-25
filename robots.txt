@@ -2,11 +2,13 @@
 User-agent: *
 Allow: /
 
-# Evitar indexación de plantillas dinámicas y parámetros de filtrado
+# Evitar indexación de plantillas dinámicas, carpeta interna /app/ y parámetros de filtrado
+Disallow: /app/
+Allow: /app/assets/
 Disallow: /post
 Disallow: /*?modelo=
 Disallow: /*?dorm=
 Disallow: /*?enviado=
 
-Host: https://medgon.com
-Sitemap: https://medgon.com/sitemap.xml
+Host: https://www.medgon.com
+Sitemap: https://www.medgon.com/sitemap.xml
