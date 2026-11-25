@@ -767,6 +767,12 @@ header nav.medgon-desktop-nav button {
     width: 100%;
   }
 }
+
+/* Garantizar margen interno vertical (24px) en figcaptions oscuros bajo imágenes */
+figure > figcaption.bg-\\[\\#16181B\\] {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 `;
 
 async function buildCss() {
@@ -794,7 +800,7 @@ async function buildCss() {
     'bg-[#1D2A20]', 'text-[#82c343]', 'bg-[#82c343]', 'lg:flex', 'lg:hidden',
     'lg:grid-cols-6', 'aspect-[16/10]', 'w-[210px]', 'sm:w-[250px]', 'xl:w-[280px]',
     'bg-[#297040]', 'hover:bg-[#23bd00]', 'from-[#23bd00]', 'to-[#87A9FF]',
-    'mix-blend-multiply', 'rounded-full', 'shadow-sm', 'px-5', 'py-2.5',
+    'mix-blend-multiply', 'rounded-full', 'shadow-sm', 'px-5', 'py-2.5', 'py-6',
   ];
   const allCandidates = Array.from(new Set([...candidates, ...extraCandidates]));
 
