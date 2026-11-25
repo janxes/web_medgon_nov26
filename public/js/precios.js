@@ -8,13 +8,15 @@
  * todas las páginas y componentes del sitio web que utilicen el atributo:
  * [data-precio-vivienda="identificador-del-modelo"]
  *
- * Regla de cálculo aplicada: Superficie construida (m²) x 1.800 €/m²
- *   - MG 87  (87 m²):  176.600 €
- *   - MG 100 (100 m²): 189.000 € (desde 180.000 euros)
- *   - MG 105 (105 m²): 195.000 €
- *   - MG 128 (128 m²): 230.400 €
- *   - MG 148 (148 m²): 266.400 €
- *   - MG 165 (165 m²): 297.000 €
+ * Regla de cálculo orientativa aplicada a los modelos con tarifa publicada:
+ *   - MG 87  (87 m²):     desde 156.600 € (orientativo)
+ *   - MG 89  (89,01 m²):  Precio por confirmar
+ *   - MG 100 (100 m²):    desde 180.000 € (orientativo)
+ *   - MG 105 (105 m²):    desde 189.000 € (orientativo)
+ *   - MG 128 (128 m²):    desde 230.400 € (orientativo)
+ *   - MG 130 (130 m²):    Precio por confirmar
+ *   - MG 148 (148 m²):    desde 266.400 € (orientativo)
+ *   - MG 165 (165 m²):    desde 297.000 € (orientativo)
  * ============================================================================
  */
 
@@ -24,48 +26,74 @@
   // ==========================================================================
   // 1. TABLA CENTRALIZADA DE PRECIOS (MODIFICAR AQUÍ AL ACTUALIZAR TARIFAS)
   // ==========================================================================
+  var TEXTO_PRECIO_PENDIENTE = 'Precio por confirmar';
+
   var PRECIOS_VIVIENDAS = {
     'mg-87': {
       codigo: 'MG 87',
       superficieM2: 87,
-      precioBase: 176600,   // 87 m² x 1.800 €
+      precioBase: 156600,   // Referencia orientativa (87 m² x 1.800 €)
       precioM2: 1800,
-      rangoMax: 174000
+      rangoMax: 174000,
+      orientativo: true
+    },
+    'mg-89': {
+      codigo: 'MG 89',
+      superficieM2: 89.01,
+      precioBase: null,
+      precioM2: null,
+      rangoMax: null,
+      orientativo: true,
+      textoPendiente: TEXTO_PRECIO_PENDIENTE
     },
     'mg-100': {
       codigo: 'MG 100',
       superficieM2: 100,
-      precioBase: 195000,   // 100 m² x 1.800 €
+      precioBase: 180000,   // Referencia orientativa (100 m² x 1.800 €)
       precioM2: 1800,
-      rangoMax: 200000
+      rangoMax: 200000,
+      orientativo: true
     },
     'mg-105': {
       codigo: 'MG 105',
       superficieM2: 105,
-      precioBase: 189000,   // 105 m² x 1.800 €
+      precioBase: 189000,   // Referencia orientativa (105 m² x 1.800 €)
       precioM2: 1800,
-      rangoMax: 210000
+      rangoMax: 210000,
+      orientativo: true
     },
     'mg-128': {
       codigo: 'MG 128',
       superficieM2: 128,
-      precioBase: 230400,   // 128 m² x 1.800 €
+      precioBase: 230400,   // Referencia orientativa (128 m² x 1.800 €)
       precioM2: 1800,
-      rangoMax: 256000
+      rangoMax: 256000,
+      orientativo: true
+    },
+    'mg-130': {
+      codigo: 'MG 130',
+      superficieM2: 130,
+      precioBase: null,
+      precioM2: null,
+      rangoMax: null,
+      orientativo: true,
+      textoPendiente: TEXTO_PRECIO_PENDIENTE
     },
     'mg-148': {
       codigo: 'MG 148',
       superficieM2: 148,
-      precioBase: 266400,   // 148 m² x 1.800 €
+      precioBase: 266400,   // Referencia orientativa (148 m² x 1.800 €)
       precioM2: 1800,
-      rangoMax: 296000
+      rangoMax: 296000,
+      orientativo: true
     },
     'mg-165': {
       codigo: 'MG 165',
       superficieM2: 165,
-      precioBase: 297000,   // 165 m² x 1.800 €
+      precioBase: 297000,   // Referencia orientativa (165 m² x 1.800 €)
       precioM2: 1800,
-      rangoMax: 330000
+      rangoMax: 330000,
+      orientativo: true
     }
   };
 
@@ -120,6 +148,12 @@
         return;
       }
 
+      if (typeof modelo.precioBase !== 'number' || isNaN(modelo.precioBase)) {
+        el.textContent = modelo.textoPendiente || TEXTO_PRECIO_PENDIENTE;
+        el.removeAttribute('data-precio-numerico');
+        return;
+      }
+
       var formato = (el.getAttribute('data-precio-formato') || 'desde').toLowerCase();
       var precioFmt = formatearEuros(modelo.precioBase);
       var texto = '';
@@ -131,10 +165,14 @@
           break;
         case 'm2':
         case 'metro':
-          texto = formatearEuros(modelo.precioM2) + '/m²';
+          texto = typeof modelo.precioM2 === 'number'
+            ? formatearEuros(modelo.precioM2) + '/m²'
+            : (modelo.textoPendiente || TEXTO_PRECIO_PENDIENTE);
           break;
         case 'rango':
-          texto = precioFmt + ' – ' + formatearEuros(modelo.rangoMax);
+          texto = typeof modelo.rangoMax === 'number'
+            ? precioFmt + ' – ' + formatearEuros(modelo.rangoMax)
+            : 'desde ' + precioFmt;
           break;
         case 'iva':
           texto = 'desde ' + precioFmt + ' + IVA';
@@ -155,7 +193,8 @@
       var id = el.getAttribute('data-superficie-vivienda');
       var modelo = obtenerModelo(id);
       if (modelo) {
-        el.textContent = modelo.superficieM2 + ' m²';
+        var supFmt = String(modelo.superficieM2).replace('.', ',');
+        el.textContent = supFmt + ' m²';
       }
     });
   }

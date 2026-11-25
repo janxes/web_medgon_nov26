@@ -454,206 +454,254 @@
     </section>
 
     <!-- Modelos Destacados: Galería Horizontal Desplazable -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 pt-12">
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 pt-12" aria-labelledby="titulo-catalogo-home">
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-[#16181B]/10 pb-6 mt-12" style="margin-top: 48px;">
-        <div>
+        <div class="max-w-3xl">
           <span class="text-[0.95rem] font-bold uppercase tracking-wider text-[#23bd00]">CATÁLOGO DE VIVIENDAS 2026</span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#16181B] tracking-tight mt-1">
-            Casas Passivhaus de catálogo: modelos, planos y precios
+          <h2 id="titulo-catalogo-home" class="text-3xl sm:text-4xl font-extrabold text-[#16181B] tracking-tight mt-1">
+            Encuentra la vivienda que encaja contigo
           </h2>
-          <p class="text-lg text-[#2C313A] leading-relaxed mt-1.5 flex items-center gap-2">
-            <span>Explora los modelos y compara sus distribuciones</span>
-            <span class="inline-flex items-center text-[#23bd00] font-bold text-xs">
-              <svg class="w-4 h-4 inline animate-pulse" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
-            </span>
+          <p class="text-lg text-[#2C313A] leading-relaxed mt-2">
+            Ocho modelos de vivienda industrializada que puedes adaptar a tus necesidades, tu parcela y tu presupuesto. Descubre sus distribuciones y conoce la calidad constructiva que hay detrás de cada una.
           </p>
         </div>
 
-        <div class="flex items-center gap-3">
+        <div class="flex items-center gap-3 shrink-0">
           <!-- Botones de control de desplazamiento horizontal -->
           <div class="flex items-center gap-2">
-            <button 
-              type="button" 
-              onclick="document.getElementById('galeria-modelos-scroll').scrollBy({ left: -380, behavior: 'smooth' })"
-              class="w-10 h-10 rounded-full border border-[#16181B]/15 bg-white hover:bg-[#16181B] hover:text-white text-[#16181B] flex items-center justify-center transition-all shadow-2xs hover:shadow-md cursor-pointer active:scale-95"
+            <button
+              type="button"
+              onclick="var g=document.getElementById('galeria-modelos-scroll');if(g){var r=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;g.scrollBy({left:-380,behavior:r?'auto':'smooth'});}"
+              class="w-10 h-10 rounded-full border border-[#16181B]/15 bg-white hover:bg-[#16181B] hover:text-white text-[#16181B] flex items-center justify-center transition-all shadow-2xs hover:shadow-md cursor-pointer active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]"
               aria-label="Ver modelos anteriores"
+              aria-controls="galeria-modelos-scroll"
               title="Desplazar a la izquierda"
             >
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
             </button>
-            <button 
-              type="button" 
-              onclick="document.getElementById('galeria-modelos-scroll').scrollBy({ left: 380, behavior: 'smooth' })"
-              class="w-10 h-10 rounded-full border border-[#16181B]/15 bg-white hover:bg-[#16181B] hover:text-white text-[#16181B] flex items-center justify-center transition-all shadow-2xs hover:shadow-md cursor-pointer active:scale-95"
+            <button
+              type="button"
+              onclick="var g=document.getElementById('galeria-modelos-scroll');if(g){var r=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;g.scrollBy({left:380,behavior:r?'auto':'smooth'});}"
+              class="w-10 h-10 rounded-full border border-[#16181B]/15 bg-white hover:bg-[#16181B] hover:text-white text-[#16181B] flex items-center justify-center transition-all shadow-2xs hover:shadow-md cursor-pointer active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]"
               aria-label="Ver siguientes modelos"
+              aria-controls="galeria-modelos-scroll"
               title="Desplazar a la derecha"
             >
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
             </button>
           </div>
-          <a href="catalogo.html" class="hidden sm:inline-flex items-center gap-1.5 text-sm font-bold text-[#16181B] hover:text-[#23bd00] transition-colors ml-2 py-2">
+          <a href="catalogo.html" class="hidden sm:inline-flex items-center gap-1.5 text-sm font-bold text-[#16181B] hover:text-[#23bd00] transition-colors ml-2 py-2 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]">
             <span>Ver todo el catálogo</span>
-            <span class="text-base">→</span>
+            <span class="text-base" aria-hidden="true">→</span>
           </a>
         </div>
       </div>
 
-      <!-- Filtro interactivo por dormitorios (2, 3, 4 y más) -->
+      <!-- Filtro interactivo por dormitorios (2, 3, 4 o más) -->
       <div class="pt-1 pb-1">
-        <div class="inline-flex flex-wrap items-center justify-center sm:justify-start gap-2 p-1.5 rounded-2xl bg-white/90 backdrop-blur-md border border-slate-200/90 shadow-sm" id="filtros-dormitorios" role="tablist" aria-label="Filtrar modelos por dormitorios">
+        <div class="inline-flex flex-wrap items-center justify-center sm:justify-start gap-2 p-1.5 rounded-2xl bg-white/90 backdrop-blur-md border border-slate-200/90 shadow-sm" id="filtros-dormitorios" role="group" aria-label="Filtrar modelos de catálogo por dormitorios">
           <span class="text-xs font-bold uppercase tracking-wider text-[#4A5160] px-3 hidden sm:inline-flex items-center gap-1.5">
-            <svg class="w-4 h-4 text-[#23bd00]" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/></svg>
+            <svg class="w-4 h-4 text-[#23bd00]" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/></svg>
             <span>Dormitorios:</span>
           </span>
-          <button 
-            type="button" 
-            data-filter-dorm="todos" 
-            class="filter-tag-btn px-4 py-2 rounded-xl text-[0.95rem] font-bold transition-all flex items-center gap-2 cursor-pointer bg-[#16181B] text-white shadow-xs"
+          <button
+            type="button"
+            data-filter-dorm="todos"
+            class="filter-tag-btn active px-4 py-2 rounded-xl text-[0.95rem] font-bold transition-all flex items-center gap-2 cursor-pointer bg-[#16181B] text-white border border-[#16181B] shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]"
             aria-pressed="true"
+            aria-controls="galeria-modelos-scroll"
           >
+            <span class="filter-active-indicator text-xs font-black" aria-hidden="true">✓</span>
             <span>Todos</span>
-            <span class="text-xs px-2 py-0.5 rounded-full bg-white/20">6</span>
+            <span data-filter-count class="text-xs px-2 py-0.5 rounded-full bg-white/20 text-white">8</span>
           </button>
-          <button 
-            type="button" 
-            data-filter-dorm="2" 
-            class="filter-tag-btn px-4 py-2 rounded-xl text-[0.95rem] font-semibold text-[#16181B] hover:text-[#23bd00] hover:bg-slate-50 transition-all flex items-center gap-2 cursor-pointer border border-transparent"
+          <button
+            type="button"
+            data-filter-dorm="2"
+            class="filter-tag-btn px-4 py-2 rounded-xl text-[0.95rem] font-semibold bg-white text-[#16181B] hover:text-[#23bd00] hover:bg-slate-50 transition-all flex items-center gap-2 cursor-pointer border border-transparent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]"
             aria-pressed="false"
+            aria-controls="galeria-modelos-scroll"
           >
+            <span class="filter-active-indicator hidden text-xs font-black" aria-hidden="true">✓</span>
             <span>2 dorm.</span>
-            <span class="text-xs px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">1</span>
+            <span data-filter-count class="text-xs px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">3</span>
           </button>
-          <button 
-            type="button" 
-            data-filter-dorm="3" 
-            class="filter-tag-btn px-4 py-2 rounded-xl text-[0.95rem] font-semibold text-[#16181B] hover:text-[#23bd00] hover:bg-slate-50 transition-all flex items-center gap-2 cursor-pointer border border-transparent"
+          <button
+            type="button"
+            data-filter-dorm="3"
+            class="filter-tag-btn px-4 py-2 rounded-xl text-[0.95rem] font-semibold bg-white text-[#16181B] hover:text-[#23bd00] hover:bg-slate-50 transition-all flex items-center gap-2 cursor-pointer border border-transparent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]"
             aria-pressed="false"
+            aria-controls="galeria-modelos-scroll"
           >
+            <span class="filter-active-indicator hidden text-xs font-black" aria-hidden="true">✓</span>
             <span>3 dorm.</span>
-            <span class="text-xs px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">5</span>
+            <span data-filter-count class="text-xs px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">4</span>
           </button>
-          <button 
-            type="button" 
-            data-filter-dorm="4" 
-            class="filter-tag-btn px-4 py-2 rounded-xl text-[0.95rem] font-semibold text-[#16181B] hover:text-[#23bd00] hover:bg-slate-50 transition-all flex items-center gap-2 cursor-pointer border border-transparent"
+          <button
+            type="button"
+            data-filter-dorm="4"
+            class="filter-tag-btn px-4 py-2 rounded-xl text-[0.95rem] font-semibold bg-white text-[#16181B] hover:text-[#23bd00] hover:bg-slate-50 transition-all flex items-center gap-2 cursor-pointer border border-transparent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]"
             aria-pressed="false"
+            aria-controls="galeria-modelos-scroll"
           >
-            <span>4 y más</span>
-            <span class="text-xs px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">3</span>
+            <span class="filter-active-indicator hidden text-xs font-black" aria-hidden="true">✓</span>
+            <span>4 o más</span>
+            <span data-filter-count class="text-xs px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">1</span>
           </button>
-          <a 
-            href="viviendas-a-medida.html" 
-            class="px-4 py-2 rounded-xl text-[0.95rem] font-bold bg-[#d2f5d6] text-[#285943] hover:bg-[#23bd00] hover:text-white transition-all flex items-center gap-1.5 shadow-xs"
+          <a
+            href="viviendas-a-medida.html"
+            class="px-4 py-2 rounded-xl text-[0.95rem] font-bold bg-[#d2f5d6] text-[#285943] hover:bg-[#23bd00] hover:text-white transition-all flex items-center gap-1.5 shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]"
             title="Viviendas exclusivas de más de 200 m² a medida"
           >
             <span>+200 m² a medida →</span>
           </a>
         </div>
-        <!-- Contador -->
-        <div id="filter-feedback" class="mt-2 text-sm text-[#4A5160] font-medium hidden">
-          <span id="filter-counter-display">Mostrando todos los modelos</span>
+        <!-- Contador accesible de resultados -->
+        <div id="filter-feedback" class="mt-2 text-sm text-[#4A5160] font-medium">
+          <span id="filter-counter-display" role="status" aria-live="polite" aria-atomic="true">Mostrando todos los modelos de catálogo (8)</span>
         </div>
       </div>
 
       <!-- Contenedor desplazable con soporte de snap horizontal -->
-      <div 
-        id="galeria-modelos-scroll" 
-        class="flex gap-6 overflow-x-auto pb-6 pt-2 scroll-smooth snap-x snap-mandatory overscroll-x-contain focus:outline-none"
+      <div
+        id="galeria-modelos-scroll"
+        class="flex gap-6 overflow-x-auto pb-6 pt-2 scroll-smooth snap-x snap-mandatory overscroll-x-contain rounded-2xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]"
         tabindex="0"
         role="region"
-        aria-label="Galería desplazable de modelos de casas pasivas"
+        aria-label="Galería desplazable de modelos de viviendas industrializadas Gama MG"
         style="scrollbar-width: thin; scrollbar-color: #23bd00 #FAF8F5;"
       >
-        
-        <!-- Modelo 1: MG 87 -->
-        <article data-dorm="2,3" class="w-[300px] sm:w-[360px] md:w-[380px] shrink-0 snap-start bg-white border border-[#16181B]/10 hover:border-[#16181B]/30 rounded-3xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+
+        <!-- Modelo 1: MG87 -->
+        <article data-dorm="2" class="w-[300px] sm:w-[360px] md:w-[380px] shrink-0 snap-start bg-white border border-[#16181B]/10 hover:border-[#16181B]/30 rounded-3xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
           <div>
             <div class="relative h-60 sm:h-64 overflow-hidden bg-[#FAF8F5]">
-              <img src="assets/imagenes/mg87/castilian_wheat_house.webp" alt="MG87 · Casa pasiva en madera técnica en entorno castellano" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="1920" height="1280" loading="lazy" decoding="async">
-              <div class="absolute top-3 right-3 bg-[#16181B]/90 text-white text-[0.95rem] font-bold px-3.5 py-1.5 rounded-full shadow-sm shadow-xs">
-                74,5 m² útiles
+              <img src="assets/imagenes/mg87/mg87-exterior-principal.webp" alt="Render orientativo del modelo MG87: fachada blanca de una planta con cubierta de teja y ventanal al jardín" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="1774" height="887" loading="lazy" decoding="async">
+              <div class="absolute top-3 right-3 bg-[#16181B]/90 text-white text-[0.95rem] font-bold px-3.5 py-1.5 rounded-full shadow-sm">
+                72,44 m² útiles
               </div>
               <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-[0.95rem] font-medium bg-black/75 backdrop-blur-md px-3.5 py-2 rounded-xl shadow-sm">
-                <span>🛏️ 2 - 3 dorm.</span>
-                <span>🚿 1 - 2 baños</span>
+                <span>🛏️ 2 dorm.</span>
+                <span>🚿 2 baños</span>
                 <span>📐 1 planta</span>
               </div>
             </div>
             <div class="p-6 space-y-3">
-              <span class="text-[0.95rem] font-bold text-[#23bd00] uppercase tracking-wider block">87 m² const. · 74,5 m² útiles · Estilo personalizable</span>
+              <span class="text-[0.95rem] font-bold text-[#23bd00] uppercase tracking-wider block">Todo lo necesario en una sola planta</span>
               <h3 class="text-2xl font-extrabold text-[#16181B] group-hover:text-[#23bd00] transition-colors">
                 MG87
               </h3>
-              <p class="text-lg text-[#2C313A] leading-relaxed line-clamp-3">
-                Una casa compacta de una planta, con 2 o 3 dormitorios y una distribución abierta que aprovecha el espacio.
+              <p class="text-lg text-[#2C313A] leading-relaxed">
+                Vivienda compacta de dos dormitorios y dos baños, pensada para disfrutar del confort cotidiano aprovechando el espacio.
               </p>
               <div class="flex flex-wrap gap-1.5 pt-1">
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">Planta compacta 87 m²</span>
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">Cubierta inclinada 30%</span>
+                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">87 m² construidos</span>
+                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">72,44 m² útiles</span>
               </div>
             </div>
           </div>
           <div>
             <div class="px-6 pb-3 pt-2 flex items-center justify-between border-t border-[#16181B]/5">
               <span class="text-[0.95rem] font-semibold text-[#4A5160]">Precio orientativo</span>
-              <span class="text-base sm:text-lg font-black text-[#23bd00] tabular-nums">desde 156.600 €</span>
+              <span data-precio-vivienda="mg-87" data-precio-formato="desde" class="text-base sm:text-lg font-black text-[#23bd00] tabular-nums">desde 156.600 €</span>
             </div>
             <div class="p-6 pt-0">
-              <a href="mg87.html" class="w-full py-3.5 text-base font-bold text-center text-[#16181B] bg-[#FAF8F5] hover:bg-[#16181B] hover:text-white border border-[#16181B]/15 rounded-xl transition-colors block">
+              <a href="mg87.html" class="w-full py-3.5 text-base font-bold text-center text-[#16181B] bg-[#FAF8F5] hover:bg-[#16181B] hover:text-white border border-[#16181B]/15 rounded-xl transition-colors block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]">
                 Ver ficha y planos de MG87 →
               </a>
             </div>
           </div>
         </article>
 
-        <!-- Modelo 2: MG 100 -->
-        <article data-dorm="3" class="w-[300px] sm:w-[360px] md:w-[380px] shrink-0 snap-start bg-white border border-[#16181B]/10 hover:border-[#16181B]/30 rounded-3xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+        <!-- Modelo 2: MG89 -->
+        <article data-dorm="2" class="w-[300px] sm:w-[360px] md:w-[380px] shrink-0 snap-start bg-white border border-[#16181B]/10 hover:border-[#16181B]/30 rounded-3xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
           <div>
             <div class="relative h-60 sm:h-64 overflow-hidden bg-[#FAF8F5]">
-              <img src="assets/imagenes/mg100/MG_100_Exterior.webp" alt="MG100 · Casa pasiva en madera técnica" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="1536" height="1024" loading="lazy" decoding="async">
-              <div class="absolute top-3 right-3 bg-[#16181B]/90 text-white text-[0.95rem] font-bold px-3.5 py-1.5 rounded-full shadow-sm shadow-xs">
-                86,2 m² útiles
+              <img src="assets/imagenes/mg89/mg89-exterior-porche.webp" alt="Render orientativo del modelo MG89: vivienda de una planta con porche de madera, fachada blanca y cubierta de teja" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="1774" height="887" loading="lazy" decoding="async">
+              <div class="absolute top-3 right-3 bg-[#16181B]/90 text-white text-[0.95rem] font-bold px-3.5 py-1.5 rounded-full shadow-sm">
+                74,82 m² útiles
               </div>
               <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-[0.95rem] font-medium bg-black/75 backdrop-blur-md px-3.5 py-2 rounded-xl shadow-sm">
-                <span>🛏️ 3 dorm.</span>
+                <span>🛏️ 2 dorm.</span>
                 <span>🚿 2 baños</span>
                 <span>📐 1 planta</span>
               </div>
             </div>
             <div class="p-6 space-y-3">
-              <span class="text-[0.95rem] font-bold text-[#23bd00] uppercase tracking-wider block">Una casa de una planta</span>
+              <span class="text-[0.95rem] font-bold text-[#23bd00] uppercase tracking-wider block">Más espacio para compartir</span>
               <h3 class="text-2xl font-extrabold text-[#16181B] group-hover:text-[#23bd00] transition-colors">
-                MG100
+                MG89
               </h3>
-              <p class="text-lg text-[#2C313A] leading-relaxed line-clamp-3">
-                Tres dormitorios, dos baños y una amplia zona de estar abierta y luminosa, pensada para la vida familiar.
+              <p class="text-lg text-[#2C313A] leading-relaxed">
+                Dos dormitorios y una zona de salón y cocina de 36,54 m², para quienes valoran especialmente los espacios de convivencia.
               </p>
               <div class="flex flex-wrap gap-1.5 pt-1">
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">3 dorm. planta baja</span>
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">Doble baño completo</span>
+                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">89,01 m² construidos</span>
+                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">Salón-cocina 36,54 m²</span>
               </div>
             </div>
           </div>
           <div>
             <div class="px-6 pb-3 pt-2 flex items-center justify-between border-t border-[#16181B]/5">
               <span class="text-[0.95rem] font-semibold text-[#4A5160]">Precio orientativo</span>
-              <span class="text-base sm:text-lg font-black text-[#23bd00] tabular-nums">desde 180.000 €</span>
+              <span data-precio-vivienda="mg-89" data-precio-formato="desde" class="text-base sm:text-lg font-black text-[#4A5160] tabular-nums">Precio por confirmar</span>
             </div>
             <div class="p-6 pt-0">
-              <a href="mg100.html" class="w-full py-3.5 text-base font-bold text-center text-[#16181B] bg-[#FAF8F5] hover:bg-[#16181B] hover:text-white border border-[#16181B]/15 rounded-xl transition-colors block">
+              <a href="mg89.html" class="w-full py-3.5 text-base font-bold text-center text-[#16181B] bg-[#FAF8F5] hover:bg-[#16181B] hover:text-white border border-[#16181B]/15 rounded-xl transition-colors block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]">
+                Ver ficha y planos de MG89 →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Modelo 3: MG100 -->
+        <article data-dorm="2" class="w-[300px] sm:w-[360px] md:w-[380px] shrink-0 snap-start bg-white border border-[#16181B]/10 hover:border-[#16181B]/30 rounded-3xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="relative h-60 sm:h-64 overflow-hidden bg-[#FAF8F5]">
+              <img src="assets/imagenes/mg100/mg100-exterior-principal.webp" alt="Render orientativo del modelo MG100: fachada blanca con cubierta de teja y terraza ante los ventanales" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="1536" height="1024" loading="lazy" decoding="async">
+              <div class="absolute top-3 right-3 bg-[#16181B]/90 text-white text-[0.95rem] font-bold px-3.5 py-1.5 rounded-full shadow-sm">
+                84,58 m² útiles
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-[0.95rem] font-medium bg-black/75 backdrop-blur-md px-3.5 py-2 rounded-xl shadow-sm">
+                <span>🛏️ 2 dorm.</span>
+                <span>🚿 2 baños</span>
+                <span>📐 1 planta</span>
+              </div>
+            </div>
+            <div class="p-6 space-y-3">
+              <span class="text-[0.95rem] font-bold text-[#23bd00] uppercase tracking-wider block">Espacio para vivir con comodidad</span>
+              <h3 class="text-2xl font-extrabold text-[#16181B] group-hover:text-[#23bd00] transition-colors">
+                MG100
+              </h3>
+              <p class="text-lg text-[#2C313A] leading-relaxed">
+                Dos dormitorios, dos baños, vestidor y una amplia zona de día en una sola planta.
+              </p>
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">100 m² construidos</span>
+                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">Vestidor y 2 baños</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="px-6 pb-3 pt-2 flex items-center justify-between border-t border-[#16181B]/5">
+              <span class="text-[0.95rem] font-semibold text-[#4A5160]">Precio orientativo</span>
+              <span data-precio-vivienda="mg-100" data-precio-formato="desde" class="text-base sm:text-lg font-black text-[#23bd00] tabular-nums">desde 180.000 €</span>
+            </div>
+            <div class="p-6 pt-0">
+              <a href="mg100.html" class="w-full py-3.5 text-base font-bold text-center text-[#16181B] bg-[#FAF8F5] hover:bg-[#16181B] hover:text-white border border-[#16181B]/15 rounded-xl transition-colors block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]">
                 Ver ficha y planos de MG100 →
               </a>
             </div>
           </div>
         </article>
 
-        <!-- Modelo 3: MG 105 -->
+        <!-- Modelo 4: MG105 -->
         <article data-dorm="3" class="w-[300px] sm:w-[360px] md:w-[380px] shrink-0 snap-start bg-white border border-[#16181B]/10 hover:border-[#16181B]/30 rounded-3xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
           <div>
             <div class="relative h-60 sm:h-64 overflow-hidden bg-[#FAF8F5]">
-              <img src="assets/imagenes/mg105/industrial_luminous_house_exterior.webp" alt="MG105 · Casa pasiva en madera técnica" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="1920" height="1280" loading="lazy" decoding="async">
-              <div class="absolute top-3 right-3 bg-[#16181B]/90 text-white text-[0.95rem] font-bold px-3.5 py-1.5 rounded-full shadow-sm shadow-xs">
-                105 m² útiles
+              <img src="assets/imagenes/mg105/mg105-exterior-principal.webp" alt="Render orientativo del modelo MG105: fachada blanca alargada, cubierta de teja y grandes puertas acristaladas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="1774" height="887" loading="lazy" decoding="async">
+              <div class="absolute top-3 right-3 bg-[#16181B]/90 text-white text-[0.95rem] font-bold px-3.5 py-1.5 rounded-full shadow-sm">
+                88,81 m² útiles
               </div>
               <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-[0.95rem] font-medium bg-black/75 backdrop-blur-md px-3.5 py-2 rounded-xl shadow-sm">
                 <span>🛏️ 3 dorm.</span>
@@ -662,163 +710,204 @@
               </div>
             </div>
             <div class="p-6 space-y-3">
-              <span class="text-[0.95rem] font-bold text-[#23bd00] uppercase tracking-wider block">Luz natural y espacios abiertos</span>
+              <span class="text-[0.95rem] font-bold text-[#23bd00] uppercase tracking-wider block">Una casa que crece contigo</span>
               <h3 class="text-2xl font-extrabold text-[#16181B] group-hover:text-[#23bd00] transition-colors">
                 MG105
               </h3>
-              <p class="text-lg text-[#2C313A] leading-relaxed line-clamp-3">
-                Amplias ventanas de triple vidrio y espacios abiertos que aprovechan la luz natural, con ventilación controlada para renovar el aire interior.
+              <p class="text-lg text-[#2C313A] leading-relaxed">
+                Tres dormitorios y dos baños, con una distribución pensada para las necesidades de una familia.
               </p>
               <div class="flex flex-wrap gap-1.5 pt-1">
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">Espacios abiertos y luminosos</span>
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">Ventilación con recuperación de calor</span>
+                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">105 m² construidos</span>
+                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">88,81 m² útiles</span>
               </div>
             </div>
           </div>
           <div>
             <div class="px-6 pb-3 pt-2 flex items-center justify-between border-t border-[#16181B]/5">
               <span class="text-[0.95rem] font-semibold text-[#4A5160]">Precio orientativo</span>
-              <span class="text-base sm:text-lg font-black text-[#23bd00] tabular-nums">desde 189.000 €</span>
+              <span data-precio-vivienda="mg-105" data-precio-formato="desde" class="text-base sm:text-lg font-black text-[#23bd00] tabular-nums">desde 189.000 €</span>
             </div>
             <div class="p-6 pt-0">
-              <a href="mg105.html" class="w-full py-3.5 text-base font-bold text-center text-[#16181B] bg-[#FAF8F5] hover:bg-[#16181B] hover:text-white border border-[#16181B]/15 rounded-xl transition-colors block">
+              <a href="mg105.html" class="w-full py-3.5 text-base font-bold text-center text-[#16181B] bg-[#FAF8F5] hover:bg-[#16181B] hover:text-white border border-[#16181B]/15 rounded-xl transition-colors block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]">
                 Ver ficha y planos de MG105 →
               </a>
             </div>
           </div>
         </article>
 
-        <!-- Modelo 4: MG 128 (Más demandado) -->
-        <article data-dorm="3,4" class="w-[300px] sm:w-[360px] md:w-[380px] shrink-0 snap-start bg-white border border-[#16181B]/10 hover:border-[#16181B]/30 rounded-3xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+        <!-- Modelo 5: MG128 -->
+        <article data-dorm="3" class="w-[300px] sm:w-[360px] md:w-[380px] shrink-0 snap-start bg-white border border-[#16181B]/10 hover:border-[#16181B]/30 rounded-3xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
           <div>
             <div class="relative h-60 sm:h-64 overflow-hidden bg-[#FAF8F5]">
-              <img src="assets/imagenes/mg128/boho_autumn_exterior.webp" alt="MG128 · Casa pasiva en madera técnica" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="2096" height="1184" loading="lazy" decoding="async">
-              <div class="absolute top-3 right-3 bg-[#16181B]/90 text-white text-[0.95rem] font-bold px-3.5 py-1.5 rounded-full shadow-sm shadow-xs">
-                128 m² útiles
-              </div>
-              <div class="absolute top-3 left-3 bg-[#23bd00] text-white text-[11px] font-bold px-2.5 py-0.5 rounded-full shadow-xs">
-                Más demandado
+              <img src="assets/imagenes/mg128/mg128-exterior-principal.webp" alt="Render orientativo del modelo MG128: vivienda de una planta con volúmenes en L, fachada blanca y cubierta de teja" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="1446" height="1087" loading="lazy" decoding="async">
+              <div class="absolute top-3 right-3 bg-[#16181B]/90 text-white text-[0.95rem] font-bold px-3.5 py-1.5 rounded-full shadow-sm">
+                108,68 m² útiles
               </div>
               <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-[0.95rem] font-medium bg-black/75 backdrop-blur-md px-3.5 py-2 rounded-xl shadow-sm">
-                <span>🛏️ 3 - 4 dorm.</span>
+                <span>🛏️ 3 dorm.</span>
                 <span>🚿 2 baños</span>
                 <span>📐 1 planta</span>
               </div>
             </div>
             <div class="p-6 space-y-3">
-              <span class="text-[0.95rem] font-bold text-[#23bd00] uppercase tracking-wider block">Una casa para crecer</span>
+              <span class="text-[0.95rem] font-bold text-[#23bd00] uppercase tracking-wider block">Amplitud y vida en común</span>
               <h3 class="text-2xl font-extrabold text-[#16181B] group-hover:text-[#23bd00] transition-colors">
                 MG128
               </h3>
-              <p class="text-lg text-[#2C313A] leading-relaxed line-clamp-3">
-                Una vivienda de una planta con opciones de 3 o 4 dormitorios y un patio interior que aporta luz natural.
+              <p class="text-lg text-[#2C313A] leading-relaxed">
+                Tres dormitorios y una zona de salón y cocina de 46,96 m².
               </p>
               <div class="flex flex-wrap gap-1.5 pt-1">
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">Cubierta plana o inclinada</span>
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">Patio interior de luz</span>
+                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">128 m² construidos</span>
+                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">Salón-cocina 46,96 m²</span>
               </div>
             </div>
           </div>
           <div>
             <div class="px-6 pb-3 pt-2 flex items-center justify-between border-t border-[#16181B]/5">
               <span class="text-[0.95rem] font-semibold text-[#4A5160]">Precio orientativo</span>
-              <span class="text-base sm:text-lg font-black text-[#23bd00] tabular-nums">desde 230.400 €</span>
+              <span data-precio-vivienda="mg-128" data-precio-formato="desde" class="text-base sm:text-lg font-black text-[#23bd00] tabular-nums">desde 230.400 €</span>
             </div>
             <div class="p-6 pt-0">
-              <a href="mg128.html" class="w-full py-3.5 text-base font-bold text-center text-[#16181B] bg-[#FAF8F5] hover:bg-[#16181B] hover:text-white border border-[#16181B]/15 rounded-xl transition-colors block">
+              <a href="mg128.html" class="w-full py-3.5 text-base font-bold text-center text-[#16181B] bg-[#FAF8F5] hover:bg-[#16181B] hover:text-white border border-[#16181B]/15 rounded-xl transition-colors block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]">
                 Ver ficha y planos de MG128 →
               </a>
             </div>
           </div>
         </article>
 
-        <!-- Modelo 5: MG 148 -->
-        <article data-dorm="4" class="w-[300px] sm:w-[360px] md:w-[380px] shrink-0 snap-start bg-white border border-[#16181B]/10 hover:border-[#16181B]/30 rounded-3xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+        <!-- Modelo 6: MG130 -->
+        <article data-dorm="3" class="w-[300px] sm:w-[360px] md:w-[380px] shrink-0 snap-start bg-white border border-[#16181B]/10 hover:border-[#16181B]/30 rounded-3xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
           <div>
             <div class="relative h-60 sm:h-64 overflow-hidden bg-[#FAF8F5]">
-              <img src="assets/imagenes/mg148/l_shaped_farmhouse_golden_hour.webp" alt="MG148 · Casa pasiva en madera técnica" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="2096" height="1184" loading="lazy" decoding="async">
-              <div class="absolute top-3 right-3 bg-[#16181B]/90 text-white text-[0.95rem] font-bold px-3.5 py-1.5 rounded-full shadow-sm shadow-xs">
-                148 m² útiles
+              <img src="assets/imagenes/mg130/mg130-exterior-principal.webp" alt="Render orientativo del modelo MG130: fachada longitudinal con revestimiento de madera y grandes ventanales" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="1678" height="937" loading="lazy" decoding="async">
+              <div class="absolute top-3 right-3 bg-[#16181B]/90 text-white text-[0.95rem] font-bold px-3.5 py-1.5 rounded-full shadow-sm">
+                110,86 m² útiles
               </div>
               <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-[0.95rem] font-medium bg-black/75 backdrop-blur-md px-3.5 py-2 rounded-xl shadow-sm">
-                <span>🛏️ 4 dorm.</span>
-                <span>🚿 3 baños</span>
-                <span>📐 2 plantas</span>
+                <span>🛏️ 3 dorm.</span>
+                <span>🚿 2 baños</span>
+                <span>📐 1 planta</span>
               </div>
             </div>
             <div class="p-6 space-y-3">
-              <span class="text-[0.95rem] font-bold text-[#23bd00] uppercase tracking-wider block">Una casa en L de dos plantas</span>
+              <span class="text-[0.95rem] font-bold text-[#23bd00] uppercase tracking-wider block">Más espacio para tu día a día</span>
               <h3 class="text-2xl font-extrabold text-[#16181B] group-hover:text-[#23bd00] transition-colors">
-                MG148
+                MG130
               </h3>
-              <p class="text-lg text-[#2C313A] leading-relaxed line-clamp-3">
-                Una vivienda de dos plantas que se abre al jardín, con dormitorio principal y baño en la planta baja.
+              <p class="text-lg text-[#2C313A] leading-relaxed">
+                Tres dormitorios, dos baños y vestidor, con una distribución que combina espacios compartidos y privacidad.
               </p>
               <div class="flex flex-wrap gap-1.5 pt-1">
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">Distribución en L</span>
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">Dormitorio principal en planta baja</span>
+                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">130 m² construidos</span>
+                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">Vestidor y 2 baños</span>
               </div>
             </div>
           </div>
           <div>
             <div class="px-6 pb-3 pt-2 flex items-center justify-between border-t border-[#16181B]/5">
               <span class="text-[0.95rem] font-semibold text-[#4A5160]">Precio orientativo</span>
-              <span class="text-base sm:text-lg font-black text-[#23bd00] tabular-nums">desde 266.400 €</span>
+              <span data-precio-vivienda="mg-130" data-precio-formato="desde" class="text-base sm:text-lg font-black text-[#4A5160] tabular-nums">Precio por confirmar</span>
             </div>
             <div class="p-6 pt-0">
-              <a href="mg148.html" class="w-full py-3.5 text-base font-bold text-center text-[#16181B] bg-[#FAF8F5] hover:bg-[#16181B] hover:text-white border border-[#16181B]/15 rounded-xl transition-colors block">
+              <a href="mg130.html" class="w-full py-3.5 text-base font-bold text-center text-[#16181B] bg-[#FAF8F5] hover:bg-[#16181B] hover:text-white border border-[#16181B]/15 rounded-xl transition-colors block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]">
+                Ver ficha y planos de MG130 →
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Modelo 7: MG148 -->
+        <article data-dorm="3" class="w-[300px] sm:w-[360px] md:w-[380px] shrink-0 snap-start bg-white border border-[#16181B]/10 hover:border-[#16181B]/30 rounded-3xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="relative h-60 sm:h-64 overflow-hidden bg-[#FAF8F5]">
+              <img src="assets/imagenes/mg148/mg148-exterior-en-l.webp" alt="Render orientativo del modelo MG148: vivienda de una planta en L con fachada blanca y cubierta de teja" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="1674" height="939" loading="lazy" decoding="async">
+              <div class="absolute top-3 right-3 bg-[#16181B]/90 text-white text-[0.95rem] font-bold px-3.5 py-1.5 rounded-full shadow-sm">
+                125,79 m² útiles
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-[0.95rem] font-medium bg-black/75 backdrop-blur-md px-3.5 py-2 rounded-xl shadow-sm">
+                <span>🛏️ 3 + despacho</span>
+                <span>🚿 2 baños</span>
+                <span>📐 1 planta</span>
+              </div>
+            </div>
+            <div class="p-6 space-y-3">
+              <span class="text-[0.95rem] font-bold text-[#23bd00] uppercase tracking-wider block">Vivir y trabajar en casa</span>
+              <h3 class="text-2xl font-extrabold text-[#16181B] group-hover:text-[#23bd00] transition-colors">
+                MG148
+              </h3>
+              <p class="text-lg text-[#2C313A] leading-relaxed">
+                Vivienda de una planta con distribución en L, tres dormitorios, dos baños y despacho independiente.
+              </p>
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">148 m² construidos</span>
+                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">Distribución en L + despacho</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="px-6 pb-3 pt-2 flex items-center justify-between border-t border-[#16181B]/5">
+              <span class="text-[0.95rem] font-semibold text-[#4A5160]">Precio orientativo</span>
+              <span data-precio-vivienda="mg-148" data-precio-formato="desde" class="text-base sm:text-lg font-black text-[#23bd00] tabular-nums">desde 266.400 €</span>
+            </div>
+            <div class="p-6 pt-0">
+              <a href="mg148.html" class="w-full py-3.5 text-base font-bold text-center text-[#16181B] bg-[#FAF8F5] hover:bg-[#16181B] hover:text-white border border-[#16181B]/15 rounded-xl transition-colors block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]">
                 Ver ficha y planos de MG148 →
               </a>
             </div>
           </div>
         </article>
 
-        <!-- Modelo 6: MG 165 -->
+        <!-- Modelo 8: MG165 (Propuesta conceptual adaptable pendiente de validación técnica) -->
         <article data-dorm="4,5" class="w-[300px] sm:w-[360px] md:w-[380px] shrink-0 snap-start bg-white border border-[#16181B]/10 hover:border-[#16181B]/30 rounded-3xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
           <div>
             <div class="relative h-60 sm:h-64 overflow-hidden bg-[#FAF8F5]">
-              <img src="assets/imagenes/mg165/coastal_l_shaped_home.webp" alt="MG165 · Casa pasiva en madera técnica" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="1904" height="1328" loading="lazy" decoding="async">
-              <div class="absolute top-3 right-3 bg-[#16181B]/90 text-white text-[0.95rem] font-bold px-3.5 py-1.5 rounded-full shadow-sm shadow-xs">
-                165 m² útiles
+              <img src="assets/imagenes/mg165/mg165-exterior-principal-conceptual.webp" alt="Render conceptual orientativo pendiente de desarrollo técnico del modelo MG165: vivienda de dos plantas con fachada blanca, cubierta de teja y porche de madera" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="836" height="470" loading="lazy" decoding="async">
+              <div class="absolute top-3 left-3 bg-[#16181B]/90 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+                Propuesta conceptual
+              </div>
+              <div class="absolute top-3 right-3 bg-[#16181B]/90 text-white text-[0.95rem] font-bold px-3.5 py-1.5 rounded-full shadow-sm">
+                Útiles por validar
               </div>
               <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-[0.95rem] font-medium bg-black/75 backdrop-blur-md px-3.5 py-2 rounded-xl shadow-sm">
-                <span>🛏️ 4 - 5 dorm.</span>
+                <span>🛏️ 4-5 dorm.</span>
                 <span>🚿 3 baños</span>
                 <span>📐 2 plantas</span>
               </div>
             </div>
             <div class="p-6 space-y-3">
-              <span class="text-[0.95rem] font-bold text-[#23bd00] uppercase tracking-wider block">Diseño contemporáneo</span>
+              <span class="text-[0.95rem] font-bold text-[#23bd00] uppercase tracking-wider block">Espacio para una nueva etapa</span>
               <h3 class="text-2xl font-extrabold text-[#16181B] group-hover:text-[#23bd00] transition-colors">
                 MG165
               </h3>
-              <p class="text-lg text-[#2C313A] leading-relaxed line-clamp-3">
-                Una vivienda de dos plantas con 4 o 5 dormitorios y amplios porches para disfrutar del exterior.
+              <p class="text-lg text-[#2C313A] leading-relaxed">
+                Propuesta de vivienda familiar de dos plantas, con cuatro dormitorios y un despacho adaptable a un quinto dormitorio. Distribución pendiente de validación técnica.
               </p>
               <div class="flex flex-wrap gap-1.5 pt-1">
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">165 m² en dos niveles</span>
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">Porches exteriores</span>
+                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">165 m² construidos</span>
+                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">Propuesta adaptable · Pendiente desarrollo técnico</span>
               </div>
             </div>
           </div>
           <div>
             <div class="px-6 pb-3 pt-2 flex items-center justify-between border-t border-[#16181B]/5">
               <span class="text-[0.95rem] font-semibold text-[#4A5160]">Precio orientativo</span>
-              <span class="text-base sm:text-lg font-black text-[#23bd00] tabular-nums">desde 297.000 €</span>
+              <span data-precio-vivienda="mg-165" data-precio-formato="desde" class="text-base sm:text-lg font-black text-[#23bd00] tabular-nums">desde 297.000 €</span>
             </div>
             <div class="p-6 pt-0">
-              <a href="mg165.html" class="w-full py-3.5 text-base font-bold text-center text-[#16181B] bg-[#FAF8F5] hover:bg-[#16181B] hover:text-white border border-[#16181B]/15 rounded-xl transition-colors block">
+              <a href="mg165.html" class="w-full py-3.5 text-base font-bold text-center text-[#16181B] bg-[#FAF8F5] hover:bg-[#16181B] hover:text-white border border-[#16181B]/15 rounded-xl transition-colors block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]">
                 Ver ficha y planos de MG165 →
               </a>
             </div>
           </div>
         </article>
 
-        <!-- Tarjeta Viviendas a Medida (+200 m²) -->
-        <article data-dorm="4,5,6" class="w-[300px] sm:w-[360px] md:w-[380px] shrink-0 snap-start bg-white border-2 border-[#23bd00]/40 hover:border-[#23bd00] rounded-3xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+        <!-- Alternativa comercial independiente: Viviendas a Medida (+200 m²) -->
+        <article data-card-role="alternativa-medida" class="w-[300px] sm:w-[360px] md:w-[380px] shrink-0 snap-start bg-white border-2 border-[#23bd00]/40 hover:border-[#23bd00] rounded-3xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
           <div>
             <div class="relative h-60 sm:h-64 overflow-hidden bg-[#16181B]">
-              <img src="assets/imagenes/medida/vivienda_medida_gran_formato_exterior.webp" alt="Viviendas a Medida (+200 m²) - Diseño libre de autor con sistema modular MÓDULO" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="1904" height="1328" loading="lazy" decoding="async">
+              <img src="assets/imagenes/medida/vivienda_medida_gran_formato_exterior.webp" alt="Imagen orientativa de viviendas a medida desde 200 m² con sistema modular MÓDULO" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="1904" height="1328" loading="lazy" decoding="async">
               <div class="absolute top-3 right-3 bg-[#23bd00] text-white text-[0.95rem] font-bold px-3.5 py-1.5 rounded-full shadow-sm">
                 +200 m²
               </div>
@@ -836,7 +925,7 @@
               <h3 class="text-2xl font-extrabold text-[#16181B] group-hover:text-[#23bd00] transition-colors">
                 Viviendas a medida desde 200 m²
               </h3>
-              <p class="text-lg text-[#2C313A] leading-relaxed line-clamp-3">
+              <p class="text-lg text-[#2C313A] leading-relaxed">
                 Desarrollamos un diseño personalizado mediante módulos y conexiones, adaptado a las necesidades de cada proyecto y a las condiciones de la parcela.
               </p>
               <div class="flex flex-wrap gap-1.5 pt-1">
@@ -851,7 +940,7 @@
               <span class="text-base sm:text-lg font-black text-[#23bd00] tabular-nums">desde 200 m²</span>
             </div>
             <div class="p-6 pt-0">
-              <a href="viviendas-a-medida.html" class="w-full py-3.5 text-base font-bold text-center text-white bg-[#16181B] hover:bg-[#23bd00] rounded-xl transition-colors block shadow-xs">
+              <a href="viviendas-a-medida.html" class="w-full py-3.5 text-base font-bold text-center text-white bg-[#16181B] hover:bg-[#23bd00] rounded-xl transition-colors block shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]">
                 Ver línea a medida (+200 m²) →
               </a>
             </div>
@@ -872,16 +961,20 @@
             </p>
           </div>
           <div class="pt-6 space-y-3">
-            <a href="catalogo.html" class="w-full py-3.5 text-base font-bold text-center text-[#16181B] bg-white hover:bg-[#23bd00] hover:text-white rounded-xl transition-colors block">
-              Explorar los 6 modelos →
+            <a href="catalogo.html" class="w-full py-3.5 text-base font-bold text-center text-[#16181B] bg-white hover:bg-[#23bd00] hover:text-white rounded-xl transition-colors block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]">
+              Explorar los 8 modelos →
             </a>
-            <a href="contacto.html" class="w-full py-2.5 text-xs font-semibold text-center text-slate-300 hover:text-white block">
+            <a href="contacto.html" class="w-full py-2.5 text-xs font-semibold text-center text-slate-300 hover:text-white block rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]">
               Consultar viabilidad de parcela
             </a>
           </div>
         </article>
 
       </div>
+
+      <p class="text-sm text-[#4A5160] leading-relaxed">
+        Las representaciones arquitectónicas son imágenes orientativas (el modelo MG165 corresponde a una propuesta conceptual adaptable y pendiente de desarrollo técnico). Los importes mostrados tienen carácter orientativo y no constituyen un presupuesto contractual; el precio final dependerá de las calidades, configuración, parcela, normativa y alcance de los trabajos contratados.
+      </p>
     </section>
 
         <!-- ================= SECCIONES INFORMATIVAS Y TÉCNICAS MEDGÓN ================= -->
@@ -1711,6 +1804,7 @@
 </footer>
   
 
+  <script src="js/precios.js" defer></script>
   <script src="js/principal.js?v=4" defer></script>
   
 </body>

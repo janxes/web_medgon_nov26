@@ -562,83 +562,191 @@ function initDesktopNavDropdowns() {
   });
 }
 
-// 5. Filtro dinámico por dormitorios (2, 3, 4 y más) para modelos Passivhaus
+// 5. Filtro dinámico por dormitorios (2, 3, 4 y más) para modelos de catálogo
 function initBedroomFilters() {
   var filterContainer = document.getElementById('filtros-dormitorios');
   if (!filterContainer) return;
 
-  var filterButtons = filterContainer.querySelectorAll('[data-filter-dorm]');
+  var filterButtons = Array.prototype.slice.call(filterContainer.querySelectorAll('[data-filter-dorm]'));
+  if (!filterButtons.length) return;
+
   var galleryContainer = document.getElementById('galeria-modelos-scroll');
   var feedbackContainer = document.getElementById('filter-feedback');
   var counterDisplay = document.getElementById('filter-counter-display');
+  var focusableSelector = 'a[href], button, input, select, textarea, [tabindex]';
 
-  function applyFilter(targetDorm, smoothScroll) {
+  function prefersReducedMotion() {
+    return Boolean(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  }
+
+  function getCatalogCards() {
+    var root = galleryContainer || document;
+    var candidates = root.querySelectorAll('article[data-dorm]');
+    return Array.prototype.slice.call(candidates).filter(function (card) {
+      return card.getAttribute('data-card-role') !== 'alternativa-medida';
+    });
+  }
+
+  function parseCardBedrooms(card) {
+    var dormAttr = card.getAttribute('data-dorm') || '';
+    return dormAttr
+      .split(',')
+      .map(function (token) { return parseInt(token.trim(), 10); })
+      .filter(function (num) { return !isNaN(num); });
+  }
+
+  function cardMatchesFilter(card, targetDorm) {
+    if (targetDorm === 'todos') return true;
+    var bedrooms = parseCardBedrooms(card);
+    if (!bedrooms.length) return false;
+
+    if (targetDorm === '4' || targetDorm === '4+') {
+      return bedrooms.some(function (n) { return n >= 4; });
+    }
+    var exact = parseInt(targetDorm, 10);
+    if (isNaN(exact)) return false;
+    return bedrooms.indexOf(exact) !== -1;
+  }
+
+  function setCardVisibility(card, visible) {
+    var focusables = card.querySelectorAll(focusableSelector);
+    if (visible) {
+      card.style.display = '';
+      card.classList.remove('hidden');
+      card.removeAttribute('hidden');
+      card.removeAttribute('aria-hidden');
+      if ('inert' in card) card.inert = false;
+      focusables.forEach(function (el) {
+        if (el.hasAttribute('data-prev-tabindex')) {
+          var prev = el.getAttribute('data-prev-tabindex');
+          if (prev === '') {
+            el.removeAttribute('tabindex');
+          } else {
+            el.setAttribute('tabindex', prev);
+          }
+          el.removeAttribute('data-prev-tabindex');
+        }
+      });
+    } else {
+      card.style.display = 'none';
+      card.classList.add('hidden');
+      card.setAttribute('hidden', '');
+      card.setAttribute('aria-hidden', 'true');
+      if ('inert' in card) card.inert = true;
+      focusables.forEach(function (el) {
+        if (!el.hasAttribute('data-prev-tabindex')) {
+          el.setAttribute('data-prev-tabindex', el.getAttribute('tabindex') || '');
+        }
+        el.setAttribute('tabindex', '-1');
+      });
+    }
+  }
+
+  // Calcular dinámicamente el recuento de cada filtro a partir de las tarjetas existentes
+  function updateButtonCounters() {
+    var catalogCards = getCatalogCards();
+    filterButtons.forEach(function (btn) {
+      var filterKey = btn.getAttribute('data-filter-dorm') || 'todos';
+      var count = 0;
+      catalogCards.forEach(function (card) {
+        if (cardMatchesFilter(card, filterKey)) {
+          count++;
+        }
+      });
+      var badge = btn.querySelector('[data-filter-count]') || btn.querySelector('span:last-of-type');
+      if (badge) {
+        badge.textContent = String(count);
+      }
+    });
+  }
+
+  function applyFilter(targetDorm, smoothScroll, resetGalleryScroll) {
+    var catalogCards = getCatalogCards();
     var matchCount = 0;
 
-    // Actualizar estado activo en los botones de filtro
+    // Actualizar estado activo y accesible en los botones de filtro (sin depender solo del color)
     filterButtons.forEach(function (btn) {
       var isCurrent = btn.getAttribute('data-filter-dorm') === targetDorm;
       btn.setAttribute('aria-pressed', isCurrent ? 'true' : 'false');
+
+      var activeIndicator = btn.querySelector('.filter-active-indicator');
+      var badge = btn.querySelector('[data-filter-count]') || btn.querySelector('span:last-of-type');
+
       if (isCurrent) {
-        btn.classList.add('bg-[#16181B]', 'text-white', 'shadow-xs', 'active');
-        btn.classList.remove('bg-white', 'text-[#16181B]', 'hover:text-[#23bd00]', 'border-transparent');
+        btn.classList.add('bg-[#16181B]', 'text-white', 'font-bold', 'border-[#16181B]', 'shadow-xs', 'active');
+        btn.classList.remove('bg-white', 'text-[#16181B]', 'font-semibold', 'hover:text-[#23bd00]', 'hover:bg-slate-50', 'border-transparent');
+        if (activeIndicator) activeIndicator.classList.remove('hidden');
+        if (badge) {
+          badge.classList.add('bg-white/20', 'text-white');
+          badge.classList.remove('bg-slate-100', 'text-slate-700');
+        }
       } else {
-        btn.classList.remove('bg-[#16181B]', 'text-white', 'shadow-xs', 'active');
-        btn.classList.add('bg-white', 'text-[#16181B]', 'border-transparent');
+        btn.classList.remove('bg-[#16181B]', 'text-white', 'font-bold', 'border-[#16181B]', 'shadow-xs', 'active');
+        btn.classList.add('bg-white', 'text-[#16181B]', 'font-semibold', 'hover:text-[#23bd00]', 'hover:bg-slate-50', 'border-transparent');
+        if (activeIndicator) activeIndicator.classList.add('hidden');
+        if (badge) {
+          badge.classList.remove('bg-white/20', 'text-white');
+          badge.classList.add('bg-slate-100', 'text-slate-700');
+        }
       }
     });
 
-    // Filtrar tarjetas en carrusel horizontal y cuadrícula de catálogo
-    var allCards = document.querySelectorAll('article[data-dorm]');
-    allCards.forEach(function (card) {
-      var dormAttr = card.getAttribute('data-dorm') || '';
-      var cardDorms = dormAttr.split(',').map(function (s) { return s.trim(); });
-      var matches = false;
-
-      if (targetDorm === 'todos') {
-        matches = true;
-      } else if (targetDorm === '2') {
-        matches = cardDorms.includes('2');
-      } else if (targetDorm === '3') {
-        matches = cardDorms.includes('3');
-      } else if (targetDorm === '4') {
-        matches = cardDorms.some(function (d) { return parseInt(d, 10) >= 4; });
-      }
-
+    // Filtrar exclusivamente las tarjetas de catálogo (la tarjeta a medida permanece siempre accesible)
+    catalogCards.forEach(function (card) {
+      var matches = cardMatchesFilter(card, targetDorm);
+      setCardVisibility(card, matches);
       if (matches) {
-        card.style.display = '';
-        card.classList.remove('hidden');
         matchCount++;
-      } else {
-        card.style.display = 'none';
-        card.classList.add('hidden');
       }
     });
 
-    // Actualizar indicador de recuento
+    // Actualizar indicador de recuento accesible (aria-live="polite")
     if (feedbackContainer && counterDisplay) {
       feedbackContainer.classList.remove('hidden');
       if (targetDorm === 'todos') {
-        counterDisplay.textContent = 'Mostrando todos los modelos (' + matchCount + ')';
+        counterDisplay.textContent = 'Mostrando todos los modelos de catálogo (' + matchCount + ')';
+      } else if (targetDorm === '4' || targetDorm === '4+') {
+        counterDisplay.textContent = 'Mostrando ' + matchCount + ' modelo' + (matchCount === 1 ? '' : 's') + ' de 4 dormitorios o más';
       } else {
-        var label = targetDorm === '4' ? '4 o más' : targetDorm;
-        counterDisplay.textContent = 'Mostrando ' + matchCount + ' modelo' + (matchCount === 1 ? '' : 's') + ' de ' + label + ' dormitorios';
+        counterDisplay.textContent = 'Mostrando ' + matchCount + ' modelo' + (matchCount === 1 ? '' : 's') + ' de ' + targetDorm + ' dormitorios';
       }
     }
 
-    // Desplazamiento suave al inicio de la galería horizontal si aplica
-    if (galleryContainer) {
-      galleryContainer.scrollTo({ left: 0, behavior: 'smooth' });
-      if (smoothScroll) {
-        galleryContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    // Devolver el desplazamiento horizontal al inicio de la galería respetando movimiento reducido
+    if (galleryContainer && resetGalleryScroll !== false) {
+      var scrollBehavior = prefersReducedMotion() ? 'auto' : 'smooth';
+      if (typeof galleryContainer.scrollTo === 'function') {
+        galleryContainer.scrollTo({ left: 0, behavior: scrollBehavior });
+      } else {
+        galleryContainer.scrollLeft = 0;
+      }
+      if (smoothScroll && typeof galleryContainer.scrollIntoView === 'function') {
+        galleryContainer.scrollIntoView({ behavior: scrollBehavior, block: 'center' });
       }
     }
   }
 
+  // Soporte de desplazamiento por teclado en la galería horizontal
+  if (galleryContainer) {
+    galleryContainer.addEventListener('keydown', function (e) {
+      if (e.target !== galleryContainer) return;
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+        e.preventDefault();
+        var delta = e.key === 'ArrowRight' ? 380 : -380;
+        var scrollBehavior = prefersReducedMotion() ? 'auto' : 'smooth';
+        if (typeof galleryContainer.scrollBy === 'function') {
+          galleryContainer.scrollBy({ left: delta, behavior: scrollBehavior });
+        } else {
+          galleryContainer.scrollLeft += delta;
+        }
+      }
+    });
+  }
+
   filterButtons.forEach(function (btn) {
     btn.addEventListener('click', function () {
-      var dorm = btn.getAttribute('data-filter-dorm');
-      applyFilter(dorm, false);
+      var dorm = btn.getAttribute('data-filter-dorm') || 'todos';
+      applyFilter(dorm, false, true);
 
       // Sincronizar parámetro en la URL (?dorm=3) para compartir o recargar
       try {
@@ -653,13 +761,19 @@ function initBedroomFilters() {
     });
   });
 
-  // Leer parámetro inicial si viene de enlace externo
+  // Inicializar contadores dinámicos y estado inicial
+  updateButtonCounters();
+
+  var initialDorm = 'todos';
   try {
-    var initialDorm = new URLSearchParams(window.location.search).get('dorm');
-    if (initialDorm && ['2', '3', '4', 'todos'].includes(initialDorm)) {
-      applyFilter(initialDorm, false);
+    var paramDorm = new URLSearchParams(window.location.search).get('dorm');
+    var validKeys = filterButtons.map(function (b) { return b.getAttribute('data-filter-dorm'); });
+    if (paramDorm && validKeys.indexOf(paramDorm) !== -1) {
+      initialDorm = paramDorm;
     }
   } catch (e) {}
+
+  applyFilter(initialDorm, false, false);
 }
 
 // 6. Control vertical táctil y de clic para el menú móvil (#mobile-menu-drawer)
