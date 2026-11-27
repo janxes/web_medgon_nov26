@@ -498,7 +498,7 @@ window.MEDGON_CONFIG = {
     "images": {
       "principal": "assets/imagenes/medida/vivienda_medida_gran_formato_exterior.webp",
       "moduloDia": "assets/imagenes/medida/modulo_zona_dia_60m2.webp",
-      "moduloNoche": "assets/imagenes/medida/modulo_zona_noche_suite.webp",
+      "moduloNoche": "assets/imagenes/medida/modulo_zona_noche_suite.png",
       "grapaNexo": "assets/imagenes/medida/grapa_nexo_articulacion.webp",
       "acabados": "assets/imagenes/medida/acabados_alta_gama_madera_ceramica.webp",
       "suiteVestidor": "assets/imagenes/medida/suite_vestidor_lujo.webp"
