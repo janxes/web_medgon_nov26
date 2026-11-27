@@ -1,0 +1,15 @@
+# Medgón Passivhaus S.L. — rastreo público
+User-agent: *
+Allow: /
+# Las páginas /app/ redirigen a sus URL canónicas.
+# Permitir el rastreo de recursos necesarios para renderizar.
+# No bloquear las redirecciones de páginas duplicadas.
+Disallow: /post$
+Disallow: /post?
+Disallow: /post.html$
+Disallow: /post.html?
+Disallow: /*?modelo=
+Disallow: /*?dorm=
+Disallow: /*?enviado=
+
+Sitemap: https://www.medgon.com/sitemap.xml
