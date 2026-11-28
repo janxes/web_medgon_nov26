@@ -279,6 +279,39 @@ span.tracking-widest:not(#mobile-menu-drawer *),
   letter-spacing: 0.04em !important;
 }
 
+/* Galería horizontal de proyectos en portada: tipografía compacta sin recortes ni espacio sobrante */
+#seccion-proyectos-home p:not(#home-lightbox-location):not(.proyectos-home-intro) {
+  font-size: 16px !important;
+  line-height: 1.55 !important;
+}
+#seccion-proyectos-home #galeria-proyectos-scroll .home-project-card p {
+  font-size: 13px !important;
+  line-height: 1.25 !important;
+  letter-spacing: 0.02em !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+}
+#seccion-proyectos-home #galeria-proyectos-scroll .home-project-card h3 {
+  font-size: 10px !important;
+  line-height: 1.3 !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+}
+#seccion-proyectos-home #galeria-proyectos-scroll .home-projects-cta-card span {
+  font-size: 10px !important;
+  line-height: 1.2 !important;
+}
+#seccion-proyectos-home #galeria-proyectos-scroll .home-projects-cta-card h3 {
+  font-size: 12px !important;
+  line-height: 1.3 !important;
+}
+#seccion-proyectos-home #galeria-proyectos-scroll .home-projects-cta-card p {
+  font-size: 12px !important;
+  line-height: 1.35 !important;
+}
+
 .text-\\[\\#5A606A\\],
 .text-slate-600,
 .text-slate-500 {

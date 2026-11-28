@@ -25,8 +25,8 @@
   <link rel="preconnect" href="https://medgon.com" crossorigin>
   <link rel="dns-prefetch" href="https://medgon.com">
   <link rel="preload" as="image" href="assets/imagenes/generales/SA-POBLA-Landing.webp" fetchpriority="high">
-  <link rel="preload" as="style" href="assets/css/styles.min.css?v=9">
-  <link rel="stylesheet" href="assets/css/styles.min.css?v=9">
+  <link rel="preload" as="style" href="assets/css/styles.min.css?v=14">
+  <link rel="stylesheet" href="assets/css/styles.min.css?v=14">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"></noscript>
   <script type="application/ld+json">
@@ -453,16 +453,16 @@
       </figure>
     </section>
 
-    <!-- Modelos Destacados: Galería Horizontal Desplazable -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 pt-12" aria-labelledby="titulo-catalogo-home">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-[#16181B]/10 pb-6 mt-12" style="margin-top: 48px;">
+    <!-- Proyectos Realizados: Galería Horizontal Desplazable -->
+    <section id="seccion-proyectos-home" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4 pt-12" aria-labelledby="titulo-proyectos-home">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 border-b border-[#16181B]/10 pb-6 mt-12" style="margin-top: 48px;">
         <div class="max-w-3xl">
-          <span class="text-[0.95rem] font-bold uppercase tracking-wider text-[#23bd00]">CATÁLOGO DE VIVIENDAS 2026</span>
-          <h2 id="titulo-catalogo-home" class="text-3xl sm:text-4xl font-extrabold text-[#16181B] tracking-tight mt-1">
-            Encuentra la vivienda que encaja contigo
+          <span class="text-[0.95rem] font-bold uppercase tracking-wider text-[#23bd00]">OBRA REAL · 48 PROYECTOS INDUSTRIALIZADOS</span>
+          <h2 id="titulo-proyectos-home" class="text-3xl sm:text-4xl font-extrabold text-[#16181B] tracking-tight mt-1 leading-tight">
+            Proyectos de construcción industrializada y madera técnica en España
           </h2>
-          <p class="text-lg text-[#2C313A] leading-relaxed mt-2">
-            Ocho modelos de vivienda industrializada que puedes adaptar a tus necesidades, tu parcela y tu presupuesto. Descubre sus distribuciones y conoce la calidad constructiva que hay detrás de cada una.
+          <p class="proyectos-home-intro text-lg sm:text-xl text-[#2C313A] leading-relaxed mt-3">
+            Explora obra real fabricada en nuestra factoría de Carrión de los Condes (Palencia): viviendas unifamiliares, promociones residenciales, colegios y edificios terciarios, todos ellos con soluciones de madera técnica diseñadas para la durabilidad, el confort, la salud y la eficiencia energética.
           </p>
         </div>
 
@@ -471,515 +471,1775 @@
           <div class="flex items-center gap-2">
             <button
               type="button"
-              onclick="var g=document.getElementById('galeria-modelos-scroll');if(g){var r=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;g.scrollBy({left:-380,behavior:r?'auto':'smooth'});}"
+              onclick="var g=document.getElementById('galeria-proyectos-scroll');if(g){var r=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;g.scrollBy({left:-Math.max(260,Math.round(g.clientWidth*0.48)),behavior:r?'auto':'smooth'});}"
               class="w-10 h-10 rounded-full border border-[#16181B]/15 bg-white hover:bg-[#16181B] hover:text-white text-[#16181B] flex items-center justify-center transition-all shadow-2xs hover:shadow-md cursor-pointer active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]"
-              aria-label="Ver modelos anteriores"
-              aria-controls="galeria-modelos-scroll"
+              aria-label="Ver proyectos anteriores"
+              aria-controls="galeria-proyectos-scroll"
               title="Desplazar a la izquierda"
             >
               <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
             </button>
             <button
               type="button"
-              onclick="var g=document.getElementById('galeria-modelos-scroll');if(g){var r=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;g.scrollBy({left:380,behavior:r?'auto':'smooth'});}"
+              onclick="var g=document.getElementById('galeria-proyectos-scroll');if(g){var r=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;g.scrollBy({left:Math.max(260,Math.round(g.clientWidth*0.48)),behavior:r?'auto':'smooth'});}"
               class="w-10 h-10 rounded-full border border-[#16181B]/15 bg-white hover:bg-[#16181B] hover:text-white text-[#16181B] flex items-center justify-center transition-all shadow-2xs hover:shadow-md cursor-pointer active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]"
-              aria-label="Ver siguientes modelos"
-              aria-controls="galeria-modelos-scroll"
+              aria-label="Ver siguientes proyectos"
+              aria-controls="galeria-proyectos-scroll"
               title="Desplazar a la derecha"
             >
               <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
             </button>
           </div>
-          <a href="catalogo.html" class="hidden sm:inline-flex items-center gap-1.5 text-sm font-bold text-[#16181B] hover:text-[#23bd00] transition-colors ml-2 py-2 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]">
-            <span>Ver todo el catálogo</span>
+          <a href="proyectos-destacados.html" class="hidden sm:inline-flex items-center gap-1.5 text-sm font-bold text-[#16181B] hover:text-[#23bd00] transition-colors ml-2 py-2 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]">
+            <span>Ver los 48 proyectos</span>
             <span class="text-base" aria-hidden="true">→</span>
           </a>
         </div>
       </div>
 
-      <!-- Filtro interactivo por dormitorios (2, 3, 4 o más) -->
-      <div class="pt-1 pb-1">
-        <div class="inline-flex flex-wrap items-center justify-center sm:justify-start gap-2 p-1.5 rounded-2xl bg-white/90 backdrop-blur-md border border-slate-200/90 shadow-sm" id="filtros-dormitorios" role="group" aria-label="Filtrar modelos de catálogo por dormitorios">
-          <span class="text-xs font-bold uppercase tracking-wider text-[#4A5160] px-3 hidden sm:inline-flex items-center gap-1.5">
-            <svg class="w-4 h-4 text-[#23bd00]" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/></svg>
-            <span>Dormitorios:</span>
-          </span>
+      <!-- Filtro rápido por zona geográfica -->
+      <div class="space-y-2.5">
+        <div id="filtros-proyectos-home" class="flex flex-wrap items-center gap-2" role="group" aria-label="Filtrar proyectos realizados por zona geográfica">
           <button
             type="button"
-            data-filter-dorm="todos"
-            class="filter-tag-btn active px-4 py-2 rounded-xl text-[0.95rem] font-bold transition-all flex items-center gap-2 cursor-pointer bg-[#16181B] text-white border border-[#16181B] shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]"
+            data-home-region-filter="todos"
             aria-pressed="true"
-            aria-controls="galeria-modelos-scroll"
+            aria-controls="galeria-proyectos-scroll"
+            class="whitespace-nowrap shrink-0 px-4 py-2 rounded-xl border text-xs sm:text-sm font-bold transition-all cursor-pointer bg-[#16181B] text-white border-[#16181B] shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]"
           >
-            <span class="filter-active-indicator text-xs font-black" aria-hidden="true">✓</span>
-            <span>Todos</span>
-            <span data-filter-count class="text-xs px-2 py-0.5 rounded-full bg-white/20 text-white">8</span>
+            Todos (48)
           </button>
           <button
             type="button"
-            data-filter-dorm="2"
-            class="filter-tag-btn px-4 py-2 rounded-xl text-[0.95rem] font-semibold bg-white text-[#16181B] hover:text-[#23bd00] hover:bg-slate-50 transition-all flex items-center gap-2 cursor-pointer border border-transparent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]"
+            data-home-region-filter="cyl"
             aria-pressed="false"
-            aria-controls="galeria-modelos-scroll"
+            aria-controls="galeria-proyectos-scroll"
+            class="whitespace-nowrap shrink-0 px-4 py-2 rounded-xl border text-xs sm:text-sm font-bold transition-all cursor-pointer bg-white text-[#16181B] border-slate-200 hover:border-[#23bd00] hover:text-[#23bd00] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]"
           >
-            <span class="filter-active-indicator hidden text-xs font-black" aria-hidden="true">✓</span>
-            <span>2 dorm.</span>
-            <span data-filter-count class="text-xs px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">3</span>
+            Castilla y León (26)
           </button>
           <button
             type="button"
-            data-filter-dorm="3"
-            class="filter-tag-btn px-4 py-2 rounded-xl text-[0.95rem] font-semibold bg-white text-[#16181B] hover:text-[#23bd00] hover:bg-slate-50 transition-all flex items-center gap-2 cursor-pointer border border-transparent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]"
+            data-home-region-filter="madrid"
             aria-pressed="false"
-            aria-controls="galeria-modelos-scroll"
+            aria-controls="galeria-proyectos-scroll"
+            class="whitespace-nowrap shrink-0 px-4 py-2 rounded-xl border text-xs sm:text-sm font-bold transition-all cursor-pointer bg-white text-[#16181B] border-slate-200 hover:border-[#23bd00] hover:text-[#23bd00] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]"
           >
-            <span class="filter-active-indicator hidden text-xs font-black" aria-hidden="true">✓</span>
-            <span>3 dorm.</span>
-            <span data-filter-count class="text-xs px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">4</span>
+            Madrid (6)
           </button>
           <button
             type="button"
-            data-filter-dorm="4"
-            class="filter-tag-btn px-4 py-2 rounded-xl text-[0.95rem] font-semibold bg-white text-[#16181B] hover:text-[#23bd00] hover:bg-slate-50 transition-all flex items-center gap-2 cursor-pointer border border-transparent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]"
+            data-home-region-filter="baleares"
             aria-pressed="false"
-            aria-controls="galeria-modelos-scroll"
+            aria-controls="galeria-proyectos-scroll"
+            class="whitespace-nowrap shrink-0 px-4 py-2 rounded-xl border text-xs sm:text-sm font-bold transition-all cursor-pointer bg-white text-[#16181B] border-slate-200 hover:border-[#23bd00] hover:text-[#23bd00] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]"
           >
-            <span class="filter-active-indicator hidden text-xs font-black" aria-hidden="true">✓</span>
-            <span>4 o más</span>
-            <span data-filter-count class="text-xs px-2 py-0.5 rounded-full bg-slate-100 text-slate-700">1</span>
+            Baleares (6)
           </button>
-          <a
-            href="viviendas-a-medida.html"
-            class="px-4 py-2 rounded-xl text-[0.95rem] font-bold bg-[#d2f5d6] text-[#285943] hover:bg-[#23bd00] hover:text-white transition-all flex items-center gap-1.5 shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]"
-            title="Viviendas exclusivas de más de 200 m² a medida"
+          <button
+            type="button"
+            data-home-region-filter="asturias"
+            aria-pressed="false"
+            aria-controls="galeria-proyectos-scroll"
+            class="whitespace-nowrap shrink-0 px-4 py-2 rounded-xl border text-xs sm:text-sm font-bold transition-all cursor-pointer bg-white text-[#16181B] border-slate-200 hover:border-[#23bd00] hover:text-[#23bd00] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]"
           >
-            <span>+200 m² a medida →</span>
-          </a>
+            Asturias (4)
+          </button>
+          <button
+            type="button"
+            data-home-region-filter="norte-levante"
+            aria-pressed="false"
+            aria-controls="galeria-proyectos-scroll"
+            class="whitespace-nowrap shrink-0 px-4 py-2 rounded-xl border text-xs sm:text-sm font-bold transition-all cursor-pointer bg-white text-[#16181B] border-slate-200 hover:border-[#23bd00] hover:text-[#23bd00] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]"
+          >
+            Norte y Levante (6)
+          </button>
         </div>
-        <!-- Contador accesible de resultados -->
-        <div id="filter-feedback" class="mt-2 text-sm text-[#4A5160] font-medium">
-          <span id="filter-counter-display" role="status" aria-live="polite" aria-atomic="true">Mostrando todos los modelos de catálogo (8)</span>
-        </div>
+
+        <p class="text-xs sm:text-sm text-[#4A5160] font-medium">
+          <span id="home-projects-counter" role="status" aria-live="polite" aria-atomic="true">Mostrando 48 proyectos realizados en España · Desliza horizontalmente o pulsa una obra para ampliar</span>
+        </p>
       </div>
 
-      <!-- Contenedor desplazable con soporte de snap horizontal -->
+      <!-- Contenedor desplazable horizontal con snap -->
       <div
-        id="galeria-modelos-scroll"
-        class="flex gap-6 overflow-x-auto pb-6 pt-2 scroll-smooth snap-x snap-mandatory overscroll-x-contain rounded-2xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]"
+        id="galeria-proyectos-scroll"
+        class="flex items-stretch gap-4 lg:gap-5 overflow-x-auto pb-2 pt-1 scroll-smooth snap-x snap-mandatory overscroll-x-contain rounded-2xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]"
         tabindex="0"
         role="region"
-        aria-label="Galería desplazable de modelos de viviendas industrializadas Gama MG"
+        aria-label="Galería horizontal desplazable de proyectos realizados por Medgón en España"
         style="scrollbar-width: thin; scrollbar-color: #23bd00 #FAF8F5;"
       >
 
-        <!-- Modelo 1: MG87 -->
-        <article data-dorm="2" class="w-[300px] sm:w-[360px] md:w-[380px] shrink-0 snap-start bg-white border border-[#16181B]/10 hover:border-[#16181B]/30 rounded-3xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
-          <div>
-            <div class="relative h-60 sm:h-64 overflow-hidden bg-[#FAF8F5]">
-              <img src="assets/imagenes/mg87/mg87-exterior-principal.webp" alt="Render orientativo del modelo MG87: fachada blanca de una planta con cubierta de teja y ventanal al jardín" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="1774" height="887" loading="lazy" decoding="async">
-              <div class="absolute top-3 right-3 bg-[#16181B]/90 text-white text-[0.95rem] font-bold px-3.5 py-1.5 rounded-full shadow-sm">
-                72,44 m² útiles
-              </div>
-              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-[0.95rem] font-medium bg-black/75 backdrop-blur-md px-3.5 py-2 rounded-xl shadow-sm">
-                <span>🛏️ 2 dorm.</span>
-                <span>🚿 2 baños</span>
-                <span>📐 1 planta</span>
-              </div>
-            </div>
-            <div class="p-6 space-y-3">
-              <span class="text-[0.95rem] font-bold text-[#23bd00] uppercase tracking-wider block">Todo lo necesario en una sola planta</span>
-              <h3 class="text-2xl font-extrabold text-[#16181B] group-hover:text-[#23bd00] transition-colors">
-                MG87
-              </h3>
-              <p class="text-lg text-[#2C313A] leading-relaxed">
-                Vivienda compacta de dos dormitorios y dos baños, pensada para disfrutar del confort cotidiano aprovechando el espacio.
-              </p>
-              <div class="flex flex-wrap gap-1.5 pt-1">
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">87 m² construidos</span>
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">72,44 m² útiles</span>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="px-6 pb-3 pt-2 flex items-center justify-between border-t border-[#16181B]/5">
-              <span class="text-[0.95rem] font-semibold text-[#4A5160]">Precio orientativo</span>
-              <span data-precio-vivienda="mg-87" data-precio-formato="desde" class="text-base sm:text-lg font-black text-[#23bd00] tabular-nums">desde 156.600 €</span>
-            </div>
-            <div class="p-6 pt-0">
-              <a href="mg87.html" class="w-full py-3.5 text-base font-bold text-center text-[#16181B] bg-[#FAF8F5] hover:bg-[#16181B] hover:text-white border border-[#16181B]/15 rounded-xl transition-colors block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]">
-                Ver ficha y planos de MG87 →
-              </a>
+        <!-- Proyecto 1: Castrillo de Murcia -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Castrillo de Murcia, Castrillo de Murcia (Burgos)"
+          data-slug="castrillo-de-murcia"
+          data-name="Castrillo de Murcia"
+          data-location="Castrillo de Murcia (Burgos)"
+          data-region="cyl"
+          data-image="assets/imagenes/proyectos/castrillo-de-murcia.webp"
+          data-width="1040"
+          data-height="780"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/castrillo-de-murcia.webp"
+              alt="Castrillo de Murcia en Castrillo de Murcia (Burgos) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1040"
+              height="780"
+              loading="eager"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
             </div>
           </div>
-        </article>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Castrillo de Murcia (Burgos)">Castrillo de Murcia (Burgos)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Castrillo de Murcia">Castrillo de Murcia</h3>
+          </div>
+        </button>
 
-        <!-- Modelo 2: MG89 -->
-        <article data-dorm="2" class="w-[300px] sm:w-[360px] md:w-[380px] shrink-0 snap-start bg-white border border-[#16181B]/10 hover:border-[#16181B]/30 rounded-3xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
-          <div>
-            <div class="relative h-60 sm:h-64 overflow-hidden bg-[#FAF8F5]">
-              <img src="assets/imagenes/mg89/mg89-exterior-porche.webp" alt="Render orientativo del modelo MG89: vivienda de una planta con porche de madera, fachada blanca y cubierta de teja" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="1774" height="887" loading="lazy" decoding="async">
-              <div class="absolute top-3 right-3 bg-[#16181B]/90 text-white text-[0.95rem] font-bold px-3.5 py-1.5 rounded-full shadow-sm">
-                74,82 m² útiles
-              </div>
-              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-[0.95rem] font-medium bg-black/75 backdrop-blur-md px-3.5 py-2 rounded-xl shadow-sm">
-                <span>🛏️ 2 dorm.</span>
-                <span>🚿 2 baños</span>
-                <span>📐 1 planta</span>
-              </div>
-            </div>
-            <div class="p-6 space-y-3">
-              <span class="text-[0.95rem] font-bold text-[#23bd00] uppercase tracking-wider block">Más espacio para compartir</span>
-              <h3 class="text-2xl font-extrabold text-[#16181B] group-hover:text-[#23bd00] transition-colors">
-                MG89
-              </h3>
-              <p class="text-lg text-[#2C313A] leading-relaxed">
-                Dos dormitorios y una zona de salón y cocina de 36,54 m², para quienes valoran especialmente los espacios de convivencia.
-              </p>
-              <div class="flex flex-wrap gap-1.5 pt-1">
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">89,01 m² construidos</span>
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">Salón-cocina 36,54 m²</span>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="px-6 pb-3 pt-2 flex items-center justify-between border-t border-[#16181B]/5">
-              <span class="text-[0.95rem] font-semibold text-[#4A5160]">Precio orientativo</span>
-              <span data-precio-vivienda="mg-89" data-precio-formato="desde" class="text-base sm:text-lg font-black text-[#4A5160] tabular-nums">Precio por confirmar</span>
-            </div>
-            <div class="p-6 pt-0">
-              <a href="mg89.html" class="w-full py-3.5 text-base font-bold text-center text-[#16181B] bg-[#FAF8F5] hover:bg-[#16181B] hover:text-white border border-[#16181B]/15 rounded-xl transition-colors block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]">
-                Ver ficha y planos de MG89 →
-              </a>
+        <!-- Proyecto 2: 4 VPO Villamuriel de Cerrato -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: 4 VPO Villamuriel de Cerrato, Villamuriel de Cerrato (Palencia)"
+          data-slug="4-vpo-villamuriel-de-cerrato"
+          data-name="4 VPO Villamuriel de Cerrato"
+          data-location="Villamuriel de Cerrato (Palencia)"
+          data-region="cyl"
+          data-image="assets/imagenes/proyectos/4-vpo-villamuriel-de-cerrato.webp"
+          data-width="1040"
+          data-height="780"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/4-vpo-villamuriel-de-cerrato.webp"
+              alt="4 VPO Villamuriel de Cerrato en Villamuriel de Cerrato (Palencia) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1040"
+              height="780"
+              loading="eager"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
             </div>
           </div>
-        </article>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Villamuriel de Cerrato (Palencia)">Villamuriel de Cerrato (Palencia)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="4 VPO Villamuriel de Cerrato">4 VPO Villamuriel de Cerrato</h3>
+          </div>
+        </button>
 
-        <!-- Modelo 3: MG100 -->
-        <article data-dorm="2" class="w-[300px] sm:w-[360px] md:w-[380px] shrink-0 snap-start bg-white border border-[#16181B]/10 hover:border-[#16181B]/30 rounded-3xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
-          <div>
-            <div class="relative h-60 sm:h-64 overflow-hidden bg-[#FAF8F5]">
-              <img src="assets/imagenes/mg100/mg100-exterior-principal.webp" alt="Render orientativo del modelo MG100: fachada blanca con cubierta de teja y terraza ante los ventanales" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="1536" height="1024" loading="lazy" decoding="async">
-              <div class="absolute top-3 right-3 bg-[#16181B]/90 text-white text-[0.95rem] font-bold px-3.5 py-1.5 rounded-full shadow-sm">
-                84,58 m² útiles
-              </div>
-              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-[0.95rem] font-medium bg-black/75 backdrop-blur-md px-3.5 py-2 rounded-xl shadow-sm">
-                <span>🛏️ 2 dorm.</span>
-                <span>🚿 2 baños</span>
-                <span>📐 1 planta</span>
-              </div>
-            </div>
-            <div class="p-6 space-y-3">
-              <span class="text-[0.95rem] font-bold text-[#23bd00] uppercase tracking-wider block">Espacio para vivir con comodidad</span>
-              <h3 class="text-2xl font-extrabold text-[#16181B] group-hover:text-[#23bd00] transition-colors">
-                MG100
-              </h3>
-              <p class="text-lg text-[#2C313A] leading-relaxed">
-                Dos dormitorios, dos baños, vestidor y una amplia zona de día en una sola planta.
-              </p>
-              <div class="flex flex-wrap gap-1.5 pt-1">
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">100 m² construidos</span>
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">Vestidor y 2 baños</span>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="px-6 pb-3 pt-2 flex items-center justify-between border-t border-[#16181B]/5">
-              <span class="text-[0.95rem] font-semibold text-[#4A5160]">Precio orientativo</span>
-              <span data-precio-vivienda="mg-100" data-precio-formato="desde" class="text-base sm:text-lg font-black text-[#23bd00] tabular-nums">desde 180.000 €</span>
-            </div>
-            <div class="p-6 pt-0">
-              <a href="mg100.html" class="w-full py-3.5 text-base font-bold text-center text-[#16181B] bg-[#FAF8F5] hover:bg-[#16181B] hover:text-white border border-[#16181B]/15 rounded-xl transition-colors block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]">
-                Ver ficha y planos de MG100 →
-              </a>
+        <!-- Proyecto 3: Duquesa de Castrejón -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Duquesa de Castrejón, Madrid"
+          data-slug="duquesa-de-castrejon"
+          data-name="Duquesa de Castrejón"
+          data-location="Madrid"
+          data-region="madrid"
+          data-image="assets/imagenes/proyectos/duquesa-de-castrejon.webp"
+          data-width="1600"
+          data-height="1200"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/duquesa-de-castrejon.webp"
+              alt="Duquesa de Castrejón en Madrid · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1600"
+              height="1200"
+              loading="eager"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
             </div>
           </div>
-        </article>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Madrid">Madrid</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Duquesa de Castrejón">Duquesa de Castrejón</h3>
+          </div>
+        </button>
 
-        <!-- Modelo 4: MG105 -->
-        <article data-dorm="3" class="w-[300px] sm:w-[360px] md:w-[380px] shrink-0 snap-start bg-white border border-[#16181B]/10 hover:border-[#16181B]/30 rounded-3xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
-          <div>
-            <div class="relative h-60 sm:h-64 overflow-hidden bg-[#FAF8F5]">
-              <img src="assets/imagenes/mg105/mg105-exterior-principal.webp" alt="Render orientativo del modelo MG105: fachada blanca alargada, cubierta de teja y grandes puertas acristaladas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="1774" height="887" loading="lazy" decoding="async">
-              <div class="absolute top-3 right-3 bg-[#16181B]/90 text-white text-[0.95rem] font-bold px-3.5 py-1.5 rounded-full shadow-sm">
-                88,81 m² útiles
-              </div>
-              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-[0.95rem] font-medium bg-black/75 backdrop-blur-md px-3.5 py-2 rounded-xl shadow-sm">
-                <span>🛏️ 3 dorm.</span>
-                <span>🚿 2 baños</span>
-                <span>📐 1 planta</span>
-              </div>
-            </div>
-            <div class="p-6 space-y-3">
-              <span class="text-[0.95rem] font-bold text-[#23bd00] uppercase tracking-wider block">Una casa que crece contigo</span>
-              <h3 class="text-2xl font-extrabold text-[#16181B] group-hover:text-[#23bd00] transition-colors">
-                MG105
-              </h3>
-              <p class="text-lg text-[#2C313A] leading-relaxed">
-                Tres dormitorios y dos baños, con una distribución pensada para las necesidades de una familia.
-              </p>
-              <div class="flex flex-wrap gap-1.5 pt-1">
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">105 m² construidos</span>
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">88,81 m² útiles</span>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="px-6 pb-3 pt-2 flex items-center justify-between border-t border-[#16181B]/5">
-              <span class="text-[0.95rem] font-semibold text-[#4A5160]">Precio orientativo</span>
-              <span data-precio-vivienda="mg-105" data-precio-formato="desde" class="text-base sm:text-lg font-black text-[#23bd00] tabular-nums">desde 189.000 €</span>
-            </div>
-            <div class="p-6 pt-0">
-              <a href="mg105.html" class="w-full py-3.5 text-base font-bold text-center text-[#16181B] bg-[#FAF8F5] hover:bg-[#16181B] hover:text-white border border-[#16181B]/15 rounded-xl transition-colors block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]">
-                Ver ficha y planos de MG105 →
-              </a>
+        <!-- Proyecto 4: Molino de la hoz -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Molino de la hoz, Madrid"
+          data-slug="molino-de-la-hoz"
+          data-name="Molino de la hoz"
+          data-location="Madrid"
+          data-region="madrid"
+          data-image="assets/imagenes/proyectos/molino-de-la-hoz.webp"
+          data-width="1600"
+          data-height="1200"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/molino-de-la-hoz.webp"
+              alt="Molino de la hoz en Madrid · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1600"
+              height="1200"
+              loading="eager"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
             </div>
           </div>
-        </article>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Madrid">Madrid</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Molino de la hoz">Molino de la hoz</h3>
+          </div>
+        </button>
 
-        <!-- Modelo 5: MG128 -->
-        <article data-dorm="3" class="w-[300px] sm:w-[360px] md:w-[380px] shrink-0 snap-start bg-white border border-[#16181B]/10 hover:border-[#16181B]/30 rounded-3xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
-          <div>
-            <div class="relative h-60 sm:h-64 overflow-hidden bg-[#FAF8F5]">
-              <img src="assets/imagenes/mg128/mg128-exterior-principal.webp" alt="Render orientativo del modelo MG128: vivienda de una planta con volúmenes en L, fachada blanca y cubierta de teja" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="1446" height="1087" loading="lazy" decoding="async">
-              <div class="absolute top-3 right-3 bg-[#16181B]/90 text-white text-[0.95rem] font-bold px-3.5 py-1.5 rounded-full shadow-sm">
-                108,68 m² útiles
-              </div>
-              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-[0.95rem] font-medium bg-black/75 backdrop-blur-md px-3.5 py-2 rounded-xl shadow-sm">
-                <span>🛏️ 3 dorm.</span>
-                <span>🚿 2 baños</span>
-                <span>📐 1 planta</span>
-              </div>
-            </div>
-            <div class="p-6 space-y-3">
-              <span class="text-[0.95rem] font-bold text-[#23bd00] uppercase tracking-wider block">Amplitud y vida en común</span>
-              <h3 class="text-2xl font-extrabold text-[#16181B] group-hover:text-[#23bd00] transition-colors">
-                MG128
-              </h3>
-              <p class="text-lg text-[#2C313A] leading-relaxed">
-                Tres dormitorios y una zona de salón y cocina de 46,96 m².
-              </p>
-              <div class="flex flex-wrap gap-1.5 pt-1">
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">128 m² construidos</span>
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">Salón-cocina 46,96 m²</span>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="px-6 pb-3 pt-2 flex items-center justify-between border-t border-[#16181B]/5">
-              <span class="text-[0.95rem] font-semibold text-[#4A5160]">Precio orientativo</span>
-              <span data-precio-vivienda="mg-128" data-precio-formato="desde" class="text-base sm:text-lg font-black text-[#23bd00] tabular-nums">desde 230.400 €</span>
-            </div>
-            <div class="p-6 pt-0">
-              <a href="mg128.html" class="w-full py-3.5 text-base font-bold text-center text-[#16181B] bg-[#FAF8F5] hover:bg-[#16181B] hover:text-white border border-[#16181B]/15 rounded-xl transition-colors block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]">
-                Ver ficha y planos de MG128 →
-              </a>
+        <!-- Proyecto 5: Casa Vona -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Casa Vona, Torrellano (Elche)"
+          data-slug="casa-vona"
+          data-name="Casa Vona"
+          data-location="Torrellano (Elche)"
+          data-region="norte-levante"
+          data-image="assets/imagenes/proyectos/casa-vona.webp"
+          data-width="1600"
+          data-height="1200"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/casa-vona.webp"
+              alt="Casa Vona en Torrellano (Elche) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1600"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
             </div>
           </div>
-        </article>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Torrellano (Elche)">Torrellano (Elche)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Casa Vona">Casa Vona</h3>
+          </div>
+        </button>
 
-        <!-- Modelo 6: MG130 -->
-        <article data-dorm="3" class="w-[300px] sm:w-[360px] md:w-[380px] shrink-0 snap-start bg-white border border-[#16181B]/10 hover:border-[#16181B]/30 rounded-3xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
-          <div>
-            <div class="relative h-60 sm:h-64 overflow-hidden bg-[#FAF8F5]">
-              <img src="assets/imagenes/mg130/mg130-exterior-principal.webp" alt="Render orientativo del modelo MG130: fachada longitudinal con revestimiento de madera y grandes ventanales" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="1678" height="937" loading="lazy" decoding="async">
-              <div class="absolute top-3 right-3 bg-[#16181B]/90 text-white text-[0.95rem] font-bold px-3.5 py-1.5 rounded-full shadow-sm">
-                110,86 m² útiles
-              </div>
-              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-[0.95rem] font-medium bg-black/75 backdrop-blur-md px-3.5 py-2 rounded-xl shadow-sm">
-                <span>🛏️ 3 dorm.</span>
-                <span>🚿 2 baños</span>
-                <span>📐 1 planta</span>
-              </div>
-            </div>
-            <div class="p-6 space-y-3">
-              <span class="text-[0.95rem] font-bold text-[#23bd00] uppercase tracking-wider block">Más espacio para tu día a día</span>
-              <h3 class="text-2xl font-extrabold text-[#16181B] group-hover:text-[#23bd00] transition-colors">
-                MG130
-              </h3>
-              <p class="text-lg text-[#2C313A] leading-relaxed">
-                Tres dormitorios, dos baños y vestidor, con una distribución que combina espacios compartidos y privacidad.
-              </p>
-              <div class="flex flex-wrap gap-1.5 pt-1">
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">130 m² construidos</span>
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">Vestidor y 2 baños</span>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="px-6 pb-3 pt-2 flex items-center justify-between border-t border-[#16181B]/5">
-              <span class="text-[0.95rem] font-semibold text-[#4A5160]">Precio orientativo</span>
-              <span data-precio-vivienda="mg-130" data-precio-formato="desde" class="text-base sm:text-lg font-black text-[#4A5160] tabular-nums">Precio por confirmar</span>
-            </div>
-            <div class="p-6 pt-0">
-              <a href="mg130.html" class="w-full py-3.5 text-base font-bold text-center text-[#16181B] bg-[#FAF8F5] hover:bg-[#16181B] hover:text-white border border-[#16181B]/15 rounded-xl transition-colors block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]">
-                Ver ficha y planos de MG130 →
-              </a>
+        <!-- Proyecto 6: Lanera -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Lanera, Palencia"
+          data-slug="lanera"
+          data-name="Lanera"
+          data-location="Palencia"
+          data-region="cyl"
+          data-image="assets/imagenes/proyectos/lanera.webp"
+          data-width="1600"
+          data-height="1200"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/lanera.webp"
+              alt="Lanera en Palencia · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1600"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
             </div>
           </div>
-        </article>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Palencia">Palencia</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Lanera">Lanera</h3>
+          </div>
+        </button>
 
-        <!-- Modelo 7: MG148 -->
-        <article data-dorm="3" class="w-[300px] sm:w-[360px] md:w-[380px] shrink-0 snap-start bg-white border border-[#16181B]/10 hover:border-[#16181B]/30 rounded-3xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
-          <div>
-            <div class="relative h-60 sm:h-64 overflow-hidden bg-[#FAF8F5]">
-              <img src="assets/imagenes/mg148/mg148-exterior-en-l.webp" alt="Render orientativo del modelo MG148: vivienda de una planta en L con fachada blanca y cubierta de teja" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="1674" height="939" loading="lazy" decoding="async">
-              <div class="absolute top-3 right-3 bg-[#16181B]/90 text-white text-[0.95rem] font-bold px-3.5 py-1.5 rounded-full shadow-sm">
-                125,79 m² útiles
-              </div>
-              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-[0.95rem] font-medium bg-black/75 backdrop-blur-md px-3.5 py-2 rounded-xl shadow-sm">
-                <span>🛏️ 3 + despacho</span>
-                <span>🚿 2 baños</span>
-                <span>📐 1 planta</span>
-              </div>
-            </div>
-            <div class="p-6 space-y-3">
-              <span class="text-[0.95rem] font-bold text-[#23bd00] uppercase tracking-wider block">Vivir y trabajar en casa</span>
-              <h3 class="text-2xl font-extrabold text-[#16181B] group-hover:text-[#23bd00] transition-colors">
-                MG148
-              </h3>
-              <p class="text-lg text-[#2C313A] leading-relaxed">
-                Vivienda de una planta con distribución en L, tres dormitorios, dos baños y despacho independiente.
-              </p>
-              <div class="flex flex-wrap gap-1.5 pt-1">
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">148 m² construidos</span>
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">Distribución en L + despacho</span>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="px-6 pb-3 pt-2 flex items-center justify-between border-t border-[#16181B]/5">
-              <span class="text-[0.95rem] font-semibold text-[#4A5160]">Precio orientativo</span>
-              <span data-precio-vivienda="mg-148" data-precio-formato="desde" class="text-base sm:text-lg font-black text-[#23bd00] tabular-nums">desde 266.400 €</span>
-            </div>
-            <div class="p-6 pt-0">
-              <a href="mg148.html" class="w-full py-3.5 text-base font-bold text-center text-[#16181B] bg-[#FAF8F5] hover:bg-[#16181B] hover:text-white border border-[#16181B]/15 rounded-xl transition-colors block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]">
-                Ver ficha y planos de MG148 →
-              </a>
+        <!-- Proyecto 7: Autillo de Campos -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Autillo de Campos, Autillo de Campos (Palencia)"
+          data-slug="autillo-de-campos"
+          data-name="Autillo de Campos"
+          data-location="Autillo de Campos (Palencia)"
+          data-region="cyl"
+          data-image="assets/imagenes/proyectos/autillo-de-campos.webp"
+          data-width="1600"
+          data-height="1200"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/autillo-de-campos.webp"
+              alt="Autillo de Campos en Autillo de Campos (Palencia) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1600"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
             </div>
           </div>
-        </article>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Autillo de Campos (Palencia)">Autillo de Campos (Palencia)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Autillo de Campos">Autillo de Campos</h3>
+          </div>
+        </button>
 
-        <!-- Modelo 8: MG165 (Propuesta conceptual adaptable pendiente de validación técnica) -->
-        <article data-dorm="4,5" class="w-[300px] sm:w-[360px] md:w-[380px] shrink-0 snap-start bg-white border border-[#16181B]/10 hover:border-[#16181B]/30 rounded-3xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
-          <div>
-            <div class="relative h-60 sm:h-64 overflow-hidden bg-[#FAF8F5]">
-              <img src="assets/imagenes/mg165/mg165-exterior-principal-conceptual.webp" alt="Render conceptual orientativo pendiente de desarrollo técnico del modelo MG165: vivienda de dos plantas con fachada blanca, cubierta de teja y porche de madera" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="836" height="470" loading="lazy" decoding="async">
-              <div class="absolute top-3 left-3 bg-[#16181B]/90 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">
-                Propuesta conceptual
-              </div>
-              <div class="absolute top-3 right-3 bg-[#16181B]/90 text-white text-[0.95rem] font-bold px-3.5 py-1.5 rounded-full shadow-sm">
-                Útiles por validar
-              </div>
-              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-[0.95rem] font-medium bg-black/75 backdrop-blur-md px-3.5 py-2 rounded-xl shadow-sm">
-                <span>🛏️ 4-5 dorm.</span>
-                <span>🚿 3 baños</span>
-                <span>📐 2 plantas</span>
-              </div>
-            </div>
-            <div class="p-6 space-y-3">
-              <span class="text-[0.95rem] font-bold text-[#23bd00] uppercase tracking-wider block">Espacio para una nueva etapa</span>
-              <h3 class="text-2xl font-extrabold text-[#16181B] group-hover:text-[#23bd00] transition-colors">
-                MG165
-              </h3>
-              <p class="text-lg text-[#2C313A] leading-relaxed">
-                Propuesta de vivienda familiar de dos plantas, con cuatro dormitorios y un despacho adaptable a un quinto dormitorio. Distribución pendiente de validación técnica.
-              </p>
-              <div class="flex flex-wrap gap-1.5 pt-1">
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">165 m² construidos</span>
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">Propuesta adaptable · Pendiente desarrollo técnico</span>
-              </div>
+        <!-- Proyecto 8: Boalo -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Boalo, El Boalo (Madrid)"
+          data-slug="boalo"
+          data-name="Boalo"
+          data-location="El Boalo (Madrid)"
+          data-region="madrid"
+          data-image="assets/imagenes/proyectos/boalo.webp"
+          data-width="1600"
+          data-height="1200"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/boalo.webp"
+              alt="Boalo en El Boalo (Madrid) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1600"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
             </div>
           </div>
-          <div>
-            <div class="px-6 pb-3 pt-2 flex items-center justify-between border-t border-[#16181B]/5">
-              <span class="text-[0.95rem] font-semibold text-[#4A5160]">Precio orientativo</span>
-              <span data-precio-vivienda="mg-165" data-precio-formato="desde" class="text-base sm:text-lg font-black text-[#23bd00] tabular-nums">desde 297.000 €</span>
-            </div>
-            <div class="p-6 pt-0">
-              <a href="mg165.html" class="w-full py-3.5 text-base font-bold text-center text-[#16181B] bg-[#FAF8F5] hover:bg-[#16181B] hover:text-white border border-[#16181B]/15 rounded-xl transition-colors block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]">
-                Ver ficha y planos de MG165 →
-              </a>
-            </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="El Boalo (Madrid)">El Boalo (Madrid)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Boalo">Boalo</h3>
           </div>
-        </article>
+        </button>
 
-        <!-- Alternativa comercial independiente: Viviendas a Medida (+200 m²) -->
-        <article data-card-role="alternativa-medida" class="w-[300px] sm:w-[360px] md:w-[380px] shrink-0 snap-start bg-white border-2 border-[#23bd00]/40 hover:border-[#23bd00] rounded-3xl overflow-hidden shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
-          <div>
-            <div class="relative h-60 sm:h-64 overflow-hidden bg-[#16181B]">
-              <img src="assets/imagenes/medida/vivienda_medida_gran_formato_exterior.webp" alt="Imagen orientativa de viviendas a medida desde 200 m² con sistema modular MÓDULO" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="1904" height="1328" loading="lazy" decoding="async">
-              <div class="absolute top-3 right-3 bg-[#23bd00] text-white text-[0.95rem] font-bold px-3.5 py-1.5 rounded-full shadow-sm">
-                +200 m²
-              </div>
-              <div class="absolute top-3 left-3 bg-[#16181B]/90 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">
-                Proyecto personalizado
-              </div>
-              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-[0.95rem] font-medium bg-black/75 backdrop-blur-md px-3.5 py-2 rounded-xl shadow-sm">
-                <span>🛏️ 4, 5 o más dorm.</span>
-                <span>🚿 3 - 5 baños</span>
-                <span>📐 A medida</span>
-              </div>
-            </div>
-            <div class="p-6 space-y-3">
-              <span class="text-[0.95rem] font-bold text-[#23bd00] uppercase tracking-wider block">Marcos Martínez Parga Estudio</span>
-              <h3 class="text-2xl font-extrabold text-[#16181B] group-hover:text-[#23bd00] transition-colors">
-                Viviendas a medida desde 200 m²
-              </h3>
-              <p class="text-lg text-[#2C313A] leading-relaxed">
-                Desarrollamos un diseño personalizado mediante módulos y conexiones, adaptado a las necesidades de cada proyecto y a las condiciones de la parcela.
-              </p>
-              <div class="flex flex-wrap gap-1.5 pt-1">
-                <span class="text-[0.95rem] font-medium bg-[#d2f5d6] text-[#285943] px-2.5 py-1 rounded-md border border-[#285943]/20">Diseño personalizado</span>
-                <span class="text-[0.95rem] font-medium bg-[#FAF8F5] text-[#16181B] px-2.5 py-1 rounded-md border border-[#16181B]/10">Certificación Passivhaus según proyecto</span>
-              </div>
+        <!-- Proyecto 9: Frómista -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Frómista, Frómista (Palencia)"
+          data-slug="fromista"
+          data-name="Frómista"
+          data-location="Frómista (Palencia)"
+          data-region="cyl"
+          data-image="assets/imagenes/proyectos/fromista.webp"
+          data-width="1600"
+          data-height="1200"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/fromista.webp"
+              alt="Frómista en Frómista (Palencia) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1600"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
             </div>
           </div>
-          <div>
-            <div class="px-6 pb-3 pt-2 flex items-center justify-between border-t border-[#16181B]/5">
-              <span class="text-[0.95rem] font-semibold text-[#4A5160]">Formato</span>
-              <span class="text-base sm:text-lg font-black text-[#23bd00] tabular-nums">desde 200 m²</span>
-            </div>
-            <div class="p-6 pt-0">
-              <a href="viviendas-a-medida.html" class="w-full py-3.5 text-base font-bold text-center text-white bg-[#16181B] hover:bg-[#23bd00] rounded-xl transition-colors block shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]">
-                Ver línea a medida (+200 m²) →
-              </a>
-            </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Frómista (Palencia)">Frómista (Palencia)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Frómista">Frómista</h3>
           </div>
-        </article>
+        </button>
 
-        <!-- Tarjeta Final: Catálogo Completo & Comparador -->
-        <article class="w-[280px] sm:w-[320px] shrink-0 snap-start bg-gradient-to-br from-[#16181B] to-[#222831] text-white rounded-3xl overflow-hidden p-8 flex flex-col justify-between shadow-md">
-          <div class="space-y-4">
-            <span class="inline-block px-3 py-1 bg-[#23bd00]/20 text-[#23bd00] text-xs font-bold rounded-full border border-[#23bd00]/30">
-              COMPARA Y ELIGE
+        <!-- Proyecto 10: Oficinas Medgón -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Oficinas Medgón, Carrión de los Condes (Palencia)"
+          data-slug="oficinas-medgon"
+          data-name="Oficinas Medgón"
+          data-location="Carrión de los Condes (Palencia)"
+          data-region="cyl"
+          data-image="assets/imagenes/proyectos/oficinas-medgon.webp"
+          data-width="1613"
+          data-height="1210"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/oficinas-medgon.webp"
+              alt="Oficinas Medgón en Carrión de los Condes (Palencia) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1613"
+              height="1210"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Carrión de los Condes (Palencia)">Carrión de los Condes (Palencia)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Oficinas Medgón">Oficinas Medgón</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 11: Grijota -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Grijota, Grijota (Palencia)"
+          data-slug="grijota"
+          data-name="Grijota"
+          data-location="Grijota (Palencia)"
+          data-region="cyl"
+          data-image="assets/imagenes/proyectos/grijota.webp"
+          data-width="1600"
+          data-height="1200"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/grijota.webp"
+              alt="Grijota en Grijota (Palencia) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1600"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Grijota (Palencia)">Grijota (Palencia)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Grijota">Grijota</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 12: Pabellón Oncológico -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Pabellón Oncológico, Aranda de Duero (Burgos)"
+          data-slug="pabellon-oncologico"
+          data-name="Pabellón Oncológico"
+          data-location="Aranda de Duero (Burgos)"
+          data-region="cyl"
+          data-image="assets/imagenes/proyectos/pabellon-oncologico.webp"
+          data-width="800"
+          data-height="600"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/pabellon-oncologico.webp"
+              alt="Pabellón Oncológico en Aranda de Duero (Burgos) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Aranda de Duero (Burgos)">Aranda de Duero (Burgos)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Pabellón Oncológico">Pabellón Oncológico</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 13: Viviendas Tuteladas Plena Inclusión -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Viviendas Tuteladas Plena Inclusión, Ávila"
+          data-slug="viviendas-tuteladas-plena-inclusion"
+          data-name="Viviendas Tuteladas Plena Inclusión"
+          data-location="Ávila"
+          data-region="cyl"
+          data-image="assets/imagenes/proyectos/viviendas-tuteladas-plena-inclusion.webp"
+          data-width="1600"
+          data-height="1200"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/viviendas-tuteladas-plena-inclusion.webp"
+              alt="Viviendas Tuteladas Plena Inclusión en Ávila · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1600"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Ávila">Ávila</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Viviendas Tuteladas Plena Inclusión">Viviendas Tuteladas Plena Inclusión</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 14: SA Pobla -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: SA Pobla, Mallorca"
+          data-slug="sa-pobla"
+          data-name="SA Pobla"
+          data-location="Mallorca"
+          data-region="baleares"
+          data-image="assets/imagenes/proyectos/sa-pobla.webp"
+          data-width="1600"
+          data-height="1200"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/sa-pobla.webp"
+              alt="SA Pobla en Mallorca · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1600"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Mallorca">Mallorca</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="SA Pobla">SA Pobla</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 15: 29 viviendas Passivhaus -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: 29 viviendas Passivhaus, Villimar (Burgos)"
+          data-slug="29-viviendas-passivhaus"
+          data-name="29 viviendas Passivhaus"
+          data-location="Villimar (Burgos)"
+          data-region="cyl"
+          data-image="assets/imagenes/proyectos/29-viviendas-passivhaus.webp"
+          data-width="1600"
+          data-height="1200"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/29-viviendas-passivhaus.webp"
+              alt="29 viviendas Passivhaus en Villimar (Burgos) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1600"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Villimar (Burgos)">Villimar (Burgos)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="29 viviendas Passivhaus">29 viviendas Passivhaus</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 16: Azahar -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Azahar, Mallorca"
+          data-slug="azahar"
+          data-name="Azahar"
+          data-location="Mallorca"
+          data-region="baleares"
+          data-image="assets/imagenes/proyectos/azahar.webp"
+          data-width="1600"
+          data-height="1200"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/azahar.webp"
+              alt="Azahar en Mallorca · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1600"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Mallorca">Mallorca</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Azahar">Azahar</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 17: Ampliación Colegio Waldorf -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Ampliación Colegio Waldorf, Aravaca (Madrid)"
+          data-slug="ampliacion-colegio-waldorf"
+          data-name="Ampliación Colegio Waldorf"
+          data-location="Aravaca (Madrid)"
+          data-region="madrid"
+          data-image="assets/imagenes/proyectos/ampliacion-colegio-waldorf.webp"
+          data-width="800"
+          data-height="600"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/ampliacion-colegio-waldorf.webp"
+              alt="Ampliación Colegio Waldorf en Aravaca (Madrid) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Aravaca (Madrid)">Aravaca (Madrid)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Ampliación Colegio Waldorf">Ampliación Colegio Waldorf</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 18: Mieres -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Mieres, Mieres (Asturias)"
+          data-slug="mieres"
+          data-name="Mieres"
+          data-location="Mieres (Asturias)"
+          data-region="asturias"
+          data-image="assets/imagenes/proyectos/mieres.webp"
+          data-width="1600"
+          data-height="1200"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/mieres.webp"
+              alt="Mieres en Mieres (Asturias) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1600"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Mieres (Asturias)">Mieres (Asturias)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Mieres">Mieres</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 19: 17 viviendas, Villas de Yague -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: 17 viviendas, Villas de Yague, Barriada Yagüe (Burgos)"
+          data-slug="17-viviendas-villas-de-yague"
+          data-name="17 viviendas, Villas de Yague"
+          data-location="Barriada Yagüe (Burgos)"
+          data-region="cyl"
+          data-image="assets/imagenes/proyectos/17-viviendas-villas-de-yague.webp"
+          data-width="1143"
+          data-height="853"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/17-viviendas-villas-de-yague.webp"
+              alt="17 viviendas, Villas de Yague en Barriada Yagüe (Burgos) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1143"
+              height="853"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Barriada Yagüe (Burgos)">Barriada Yagüe (Burgos)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="17 viviendas, Villas de Yague">17 viviendas, Villas de Yague</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 20: Pedro Romero -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Pedro Romero, Carrión de los Condes (Palencia)"
+          data-slug="pedro-romero"
+          data-name="Pedro Romero"
+          data-location="Carrión de los Condes (Palencia)"
+          data-region="cyl"
+          data-image="assets/imagenes/proyectos/pedro-romero.webp"
+          data-width="820"
+          data-height="615"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/pedro-romero.webp"
+              alt="Pedro Romero en Carrión de los Condes (Palencia) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="820"
+              height="615"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Carrión de los Condes (Palencia)">Carrión de los Condes (Palencia)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Pedro Romero">Pedro Romero</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 21: Carcedo -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Carcedo, Carcedo de Burgos (Burgos)"
+          data-slug="carcedo"
+          data-name="Carcedo"
+          data-location="Carcedo de Burgos (Burgos)"
+          data-region="cyl"
+          data-image="assets/imagenes/proyectos/carcedo.webp"
+          data-width="1600"
+          data-height="1200"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/carcedo.webp"
+              alt="Carcedo en Carcedo de Burgos (Burgos) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1600"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Carcedo de Burgos (Burgos)">Carcedo de Burgos (Burgos)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Carcedo">Carcedo</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 22: Villimar -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Villimar, Villimar (Burgos)"
+          data-slug="villimar"
+          data-name="Villimar"
+          data-location="Villimar (Burgos)"
+          data-region="cyl"
+          data-image="assets/imagenes/proyectos/villimar.webp"
+          data-width="1600"
+          data-height="1200"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/villimar.webp"
+              alt="Villimar en Villimar (Burgos) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1600"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Villimar (Burgos)">Villimar (Burgos)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Villimar">Villimar</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 23: Vivienda en Arroyo -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Vivienda en Arroyo, Arroyo de la Encomienda (Valladolid)"
+          data-slug="vivienda-en-arroyo"
+          data-name="Vivienda en Arroyo"
+          data-location="Arroyo de la Encomienda (Valladolid)"
+          data-region="cyl"
+          data-image="assets/imagenes/proyectos/vivienda-en-arroyo.webp"
+          data-width="1600"
+          data-height="1200"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/vivienda-en-arroyo.webp"
+              alt="Vivienda en Arroyo en Arroyo de la Encomienda (Valladolid) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1600"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Arroyo de la Encomienda (Valladolid)">Arroyo de la Encomienda (Valladolid)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Vivienda en Arroyo">Vivienda en Arroyo</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 24: Ullastre -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Ullastre, Mallorca"
+          data-slug="ullastre"
+          data-name="Ullastre"
+          data-location="Mallorca"
+          data-region="baleares"
+          data-image="assets/imagenes/proyectos/ullastre.webp"
+          data-width="800"
+          data-height="600"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/ullastre.webp"
+              alt="Ullastre en Mallorca · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Mallorca">Mallorca</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Ullastre">Ullastre</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 25: Marratxí -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Marratxí, Mallorca"
+          data-slug="marratxi"
+          data-name="Marratxí"
+          data-location="Mallorca"
+          data-region="baleares"
+          data-image="assets/imagenes/proyectos/marratxi.webp"
+          data-width="1200"
+          data-height="771"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/marratxi.webp"
+              alt="Marratxí en Mallorca · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1200"
+              height="771"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Mallorca">Mallorca</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Marratxí">Marratxí</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 26: Salamanca -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Salamanca, Pelabravo (Salamanca)"
+          data-slug="salamanca"
+          data-name="Salamanca"
+          data-location="Pelabravo (Salamanca)"
+          data-region="cyl"
+          data-image="assets/imagenes/proyectos/salamanca.webp"
+          data-width="800"
+          data-height="600"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/salamanca.webp"
+              alt="Salamanca en Pelabravo (Salamanca) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Pelabravo (Salamanca)">Pelabravo (Salamanca)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Salamanca">Salamanca</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 27: Tagle «Casa Luna» -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Tagle «Casa Luna», Tagle (Cantabria)"
+          data-slug="tagle-casa-luna"
+          data-name="Tagle «Casa Luna»"
+          data-location="Tagle (Cantabria)"
+          data-region="norte-levante"
+          data-image="assets/imagenes/proyectos/tagle-casa-luna.webp"
+          data-width="1024"
+          data-height="768"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/tagle-casa-luna.webp"
+              alt="Tagle «Casa Luna» en Tagle (Cantabria) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1024"
+              height="768"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Tagle (Cantabria)">Tagle (Cantabria)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Tagle «Casa Luna»">Tagle «Casa Luna»</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 28: Zaratán -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Zaratán, Zaratán (Valladolid)"
+          data-slug="zaratan"
+          data-name="Zaratán"
+          data-location="Zaratán (Valladolid)"
+          data-region="cyl"
+          data-image="assets/imagenes/proyectos/zaratan.webp"
+          data-width="2560"
+          data-height="1920"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/zaratan.webp"
+              alt="Zaratán en Zaratán (Valladolid) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="2560"
+              height="1920"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Zaratán (Valladolid)">Zaratán (Valladolid)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Zaratán">Zaratán</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 29: Miñón -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Miñón, Miñón de Santibáñez (Burgos)"
+          data-slug="minon"
+          data-name="Miñón"
+          data-location="Miñón de Santibáñez (Burgos)"
+          data-region="cyl"
+          data-image="assets/imagenes/proyectos/minon.webp"
+          data-width="1024"
+          data-height="768"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/minon.webp"
+              alt="Miñón en Miñón de Santibáñez (Burgos) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1024"
+              height="768"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Miñón de Santibáñez (Burgos)">Miñón de Santibáñez (Burgos)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Miñón">Miñón</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 30: Passivhaus Tudela -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Passivhaus Tudela, Tudela de Duero (Valladolid)"
+          data-slug="passivhaus-tudela"
+          data-name="Passivhaus Tudela"
+          data-location="Tudela de Duero (Valladolid)"
+          data-region="cyl"
+          data-image="assets/imagenes/proyectos/passivhaus-tudela.webp"
+          data-width="1024"
+          data-height="768"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/passivhaus-tudela.webp"
+              alt="Passivhaus Tudela en Tudela de Duero (Valladolid) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1024"
+              height="768"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Tudela de Duero (Valladolid)">Tudela de Duero (Valladolid)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Passivhaus Tudela">Passivhaus Tudela</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 31: Cavero 40 -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Cavero 40, Madrid"
+          data-slug="cavero-40"
+          data-name="Cavero 40"
+          data-location="Madrid"
+          data-region="madrid"
+          data-image="assets/imagenes/proyectos/cavero-40.webp"
+          data-width="1600"
+          data-height="1200"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/cavero-40.webp"
+              alt="Cavero 40 en Madrid · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1600"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Madrid">Madrid</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Cavero 40">Cavero 40</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 32: Cadavedo -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Cadavedo, Cadavedo (Asturias)"
+          data-slug="cadavedo"
+          data-name="Cadavedo"
+          data-location="Cadavedo (Asturias)"
+          data-region="asturias"
+          data-image="assets/imagenes/proyectos/cadavedo.webp"
+          data-width="1600"
+          data-height="1200"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/cadavedo.webp"
+              alt="Cadavedo en Cadavedo (Asturias) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1600"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Cadavedo (Asturias)">Cadavedo (Asturias)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Cadavedo">Cadavedo</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 33: Velatorio San Millán -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Velatorio San Millán, Dueñas (Palencia)"
+          data-slug="velatorio-san-millan"
+          data-name="Velatorio San Millán"
+          data-location="Dueñas (Palencia)"
+          data-region="cyl"
+          data-image="assets/imagenes/proyectos/velatorio-san-millan.webp"
+          data-width="800"
+          data-height="600"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/velatorio-san-millan.webp"
+              alt="Velatorio San Millán en Dueñas (Palencia) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Dueñas (Palencia)">Dueñas (Palencia)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Velatorio San Millán">Velatorio San Millán</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 34: La Atalaya -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: La Atalaya, Cudillero (Asturias)"
+          data-slug="la-atalaya"
+          data-name="La Atalaya"
+          data-location="Cudillero (Asturias)"
+          data-region="asturias"
+          data-image="assets/imagenes/proyectos/la-atalaya.webp"
+          data-width="600"
+          data-height="450"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/la-atalaya.webp"
+              alt="La Atalaya en Cudillero (Asturias) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="600"
+              height="450"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Cudillero (Asturias)">Cudillero (Asturias)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="La Atalaya">La Atalaya</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 35: El Plantío -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: El Plantío, Carrión de los Condes (Palencia)"
+          data-slug="el-plantio"
+          data-name="El Plantío"
+          data-location="Carrión de los Condes (Palencia)"
+          data-region="cyl"
+          data-image="assets/imagenes/proyectos/el-plantio.webp"
+          data-width="1600"
+          data-height="1200"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/el-plantio.webp"
+              alt="El Plantío en Carrión de los Condes (Palencia) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1600"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Carrión de los Condes (Palencia)">Carrión de los Condes (Palencia)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="El Plantío">El Plantío</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 36: Innovafoto -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Innovafoto, Loriguilla (Valencia)"
+          data-slug="innovafoto"
+          data-name="Innovafoto"
+          data-location="Loriguilla (Valencia)"
+          data-region="norte-levante"
+          data-image="assets/imagenes/proyectos/innovafoto.webp"
+          data-width="1600"
+          data-height="1200"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/innovafoto.webp"
+              alt="Innovafoto en Loriguilla (Valencia) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1600"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Loriguilla (Valencia)">Loriguilla (Valencia)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Innovafoto">Innovafoto</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 37: Murguía -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Murguía, Murguía (Álava)"
+          data-slug="murguia"
+          data-name="Murguía"
+          data-location="Murguía (Álava)"
+          data-region="norte-levante"
+          data-image="assets/imagenes/proyectos/murguia.webp"
+          data-width="1600"
+          data-height="1200"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/murguia.webp"
+              alt="Murguía en Murguía (Álava) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1600"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Murguía (Álava)">Murguía (Álava)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Murguía">Murguía</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 38: Sant Quirze -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Sant Quirze, Sant Quirze del Vallès (Barcelona)"
+          data-slug="sant-quirze"
+          data-name="Sant Quirze"
+          data-location="Sant Quirze del Vallès (Barcelona)"
+          data-region="norte-levante"
+          data-image="assets/imagenes/proyectos/sant-quirze.webp"
+          data-width="1600"
+          data-height="1200"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/sant-quirze.webp"
+              alt="Sant Quirze en Sant Quirze del Vallès (Barcelona) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1600"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Sant Quirze del Vallès (Barcelona)">Sant Quirze del Vallès (Barcelona)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Sant Quirze">Sant Quirze</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 39: Laguna Bosque Real -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Laguna Bosque Real, Laguna de Duero (Valladolid)"
+          data-slug="laguna-bosque-real"
+          data-name="Laguna Bosque Real"
+          data-location="Laguna de Duero (Valladolid)"
+          data-region="cyl"
+          data-image="assets/imagenes/proyectos/laguna-bosque-real.webp"
+          data-width="1600"
+          data-height="1200"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/laguna-bosque-real.webp"
+              alt="Laguna Bosque Real en Laguna de Duero (Valladolid) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1600"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Laguna de Duero (Valladolid)">Laguna de Duero (Valladolid)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Laguna Bosque Real">Laguna Bosque Real</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 40: Valdemorillo -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Valdemorillo, Valdemorillo (Madrid)"
+          data-slug="valdemorillo"
+          data-name="Valdemorillo"
+          data-location="Valdemorillo (Madrid)"
+          data-region="madrid"
+          data-image="assets/imagenes/proyectos/valdemorillo.webp"
+          data-width="960"
+          data-height="720"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/valdemorillo.webp"
+              alt="Valdemorillo en Valdemorillo (Madrid) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="960"
+              height="720"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Valdemorillo (Madrid)">Valdemorillo (Madrid)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Valdemorillo">Valdemorillo</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 41: Hotel Casa Sueño -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Hotel Casa Sueño, Salas (Asturias)"
+          data-slug="hotel-casa-sueno"
+          data-name="Hotel Casa Sueño"
+          data-location="Salas (Asturias)"
+          data-region="asturias"
+          data-image="assets/imagenes/proyectos/hotel-casa-sueno.webp"
+          data-width="800"
+          data-height="600"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/hotel-casa-sueno.webp"
+              alt="Hotel Casa Sueño en Salas (Asturias) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Salas (Asturias)">Salas (Asturias)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Hotel Casa Sueño">Hotel Casa Sueño</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 42: Slow León Apartamentos Passivhaus -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Slow León Apartamentos Passivhaus, León"
+          data-slug="slow-leon-apartamentos-pasivhaus"
+          data-name="Slow León Apartamentos Passivhaus"
+          data-location="León"
+          data-region="cyl"
+          data-image="assets/imagenes/proyectos/slow-leon-apartamentos-pasivhaus.webp"
+          data-width="960"
+          data-height="712"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/slow-leon-apartamentos-pasivhaus.webp"
+              alt="Slow León Apartamentos Passivhaus en León · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="960"
+              height="712"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="León">León</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Slow León Apartamentos Passivhaus">Slow León Apartamentos Passivhaus</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 43: Laguna de Duero -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Laguna de Duero, Laguna de Duero (Valladolid)"
+          data-slug="laguna-de-duero"
+          data-name="Laguna de Duero"
+          data-location="Laguna de Duero (Valladolid)"
+          data-region="cyl"
+          data-image="assets/imagenes/proyectos/laguna-de-duero.webp"
+          data-width="1600"
+          data-height="1200"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/laguna-de-duero.webp"
+              alt="Laguna de Duero en Laguna de Duero (Valladolid) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1600"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Laguna de Duero (Valladolid)">Laguna de Duero (Valladolid)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Laguna de Duero">Laguna de Duero</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 44: Casa Moni -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Casa Moni, Laguna de Duero (Valladolid)"
+          data-slug="casa-moni"
+          data-name="Casa Moni"
+          data-location="Laguna de Duero (Valladolid)"
+          data-region="cyl"
+          data-image="assets/imagenes/proyectos/casa-moni.webp"
+          data-width="800"
+          data-height="600"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/casa-moni.webp"
+              alt="Casa Moni en Laguna de Duero (Valladolid) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Laguna de Duero (Valladolid)">Laguna de Duero (Valladolid)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Casa Moni">Casa Moni</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 45: El aula de las abejas -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: El aula de las abejas, Valoria la Buena (Valladolid)"
+          data-slug="el-aula-de-las-abejas"
+          data-name="El aula de las abejas"
+          data-location="Valoria la Buena (Valladolid)"
+          data-region="cyl"
+          data-image="assets/imagenes/proyectos/el-aula-de-las-abejas.webp"
+          data-width="1600"
+          data-height="1200"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/el-aula-de-las-abejas.webp"
+              alt="El aula de las abejas en Valoria la Buena (Valladolid) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1600"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Valoria la Buena (Valladolid)">Valoria la Buena (Valladolid)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="El aula de las abejas">El aula de las abejas</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 46: Claveller -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Claveller, Mallorca"
+          data-slug="claveller"
+          data-name="Claveller"
+          data-location="Mallorca"
+          data-region="baleares"
+          data-image="assets/imagenes/proyectos/claveller.webp"
+          data-width="1200"
+          data-height="771"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/claveller.webp"
+              alt="Claveller en Mallorca · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1200"
+              height="771"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Mallorca">Mallorca</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Claveller">Claveller</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 47: Guillerna -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Guillerna, Guillerna (Álava)"
+          data-slug="guillerna"
+          data-name="Guillerna"
+          data-location="Guillerna (Álava)"
+          data-region="norte-levante"
+          data-image="assets/imagenes/proyectos/guillerna.webp"
+          data-width="1600"
+          data-height="1200"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/guillerna.webp"
+              alt="Guillerna en Guillerna (Álava) · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1600"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Guillerna (Álava)">Guillerna (Álava)</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Guillerna">Guillerna</h3>
+          </div>
+        </button>
+
+        <!-- Proyecto 48: Casa cubo -->
+        <button
+          type="button"
+          class="home-project-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start group text-left bg-white border border-slate-200/80 rounded-2xl overflow-hidden shadow-xs hover:shadow-lg hover:border-[#23bd00]/50 transition-all duration-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00] flex flex-col"
+          aria-label="Ampliar fotografía de proyecto: Casa cubo, Mallorca"
+          data-slug="casa-cubo"
+          data-name="Casa cubo"
+          data-location="Mallorca"
+          data-region="baleares"
+          data-image="assets/imagenes/proyectos/casa-cubo.webp"
+          data-width="1600"
+          data-height="1200"
+        >
+          <div class="aspect-[4/3] w-full shrink-0 overflow-hidden bg-[#EBE7E0] relative" style="aspect-ratio: 4 / 3;">
+            <img
+              src="assets/imagenes/proyectos/casa-cubo.webp"
+              alt="Casa cubo en Mallorca · Proyecto de construcción industrializada en madera técnica Medgón"
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              width="1600"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#16181B]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-end p-3 pointer-events-none">
+              <span class="text-xs font-bold text-white tracking-wide">Ampliar fotografía ↗</span>
+            </div>
+          </div>
+          <div class="px-3.5 py-2.5 w-full flex flex-col justify-start gap-0.5">
+            <p class="text-[13px] font-bold uppercase tracking-wider text-[#23bd00] leading-tight break-words" title="Mallorca">Mallorca</p>
+            <h3 class="text-[10px] font-bold text-[#16181B] group-hover:text-[#23bd00] transition-colors font-display leading-snug break-words" title="Casa cubo">Casa cubo</h3>
+          </div>
+        </button>
+
+        <!-- Tarjeta Final: Galería Completa de 48 Proyectos -->
+        <article class="home-projects-cta-card w-[76vw] max-w-[260px] sm:w-[250px] sm:max-w-none md:w-[calc((100%_-_48px)/3.4)] lg:w-[calc((100%_-_80px)/4.5)] shrink-0 snap-start bg-gradient-to-br from-[#16181B] to-[#222831] text-white rounded-2xl overflow-hidden p-4 flex flex-col justify-between shadow-md">
+          <div class="space-y-1.5">
+            <span class="inline-block px-2 py-0.5 bg-[#23bd00]/20 text-[#23bd00] text-[10px] font-bold rounded-full border border-[#23bd00]/30">
+              48 REFERENCIAS
             </span>
-            <h3 class="text-2xl font-extrabold tracking-tight">
-              ¿Quieres comparar todos los planos y opciones?
+            <h3 class="text-xs font-extrabold tracking-tight leading-snug">
+              Explora todos los proyectos
             </h3>
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Consulta las memorias técnicas, los planos y las opciones de acabados de cada modelo en nuestro catálogo.
+            <p class="text-xs text-slate-300 leading-snug">
+              Filtra por zona o busca por municipio.
             </p>
           </div>
-          <div class="pt-6 space-y-3">
-            <a href="catalogo.html" class="w-full py-3.5 text-base font-bold text-center text-[#16181B] bg-white hover:bg-[#23bd00] hover:text-white rounded-xl transition-colors block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]">
-              Explorar los 8 modelos →
+          <div class="pt-2.5 space-y-1">
+            <a href="proyectos-destacados.html" class="w-full py-2 text-xs font-bold text-center text-[#16181B] bg-white hover:bg-[#23bd00] hover:text-white rounded-xl transition-colors block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]">
+              Ver los 48 proyectos →
             </a>
-            <a href="contacto.html" class="w-full py-2.5 text-xs font-semibold text-center text-slate-300 hover:text-white block rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]">
-              Consultar viabilidad de parcela
+            <a href="contacto.html" class="w-full py-1 text-[11px] font-semibold text-center text-slate-300 hover:text-white block rounded-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#23bd00]">
+              Consultar mi proyecto
             </a>
           </div>
         </article>
 
       </div>
 
-      <p class="text-sm text-[#4A5160] leading-relaxed">
-        Las representaciones arquitectónicas son imágenes orientativas (el modelo MG165 corresponde a una propuesta conceptual adaptable y pendiente de desarrollo técnico). Los importes mostrados tienen carácter orientativo y no constituyen un presupuesto contractual; el precio final dependerá de las calidades, configuración, parcela, normativa y alcance de los trabajos contratados.
-      </p>
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <p class="text-sm text-[#4A5160] leading-relaxed">
+          Fotografías de obra real ejecutada por Medgón en España peninsular y Baleares con estructura de madera técnica fabricada en Carrión de los Condes (Palencia).
+        </p>
+        <a href="proyectos-destacados.html" class="sm:hidden inline-flex items-center gap-1.5 text-sm font-bold text-[#16181B] hover:text-[#23bd00] transition-colors shrink-0">
+          <span>Ver los 48 proyectos con buscador</span>
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <!-- Modal Lightbox de Proyecto en Portada -->
+      <div
+        id="home-project-lightbox"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="home-lightbox-title"
+        class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 sm:p-6 bg-[#16181B]/90 backdrop-blur-sm"
+      >
+        <div class="bg-white rounded-3xl max-w-4xl w-full overflow-hidden shadow-2xl border border-slate-200 flex flex-col max-h-[92vh]">
+          <div class="flex items-center justify-between px-5 sm:px-7 py-4 border-b border-slate-100">
+            <div class="min-w-0 pr-4">
+              <p id="home-lightbox-location" class="text-xs font-bold uppercase tracking-wider text-[#23bd00] truncate"></p>
+              <h3 id="home-lightbox-title" class="text-lg sm:text-2xl font-extrabold text-[#16181B] font-display truncate"></h3>
+            </div>
+            <div class="flex items-center gap-2 shrink-0">
+              <span id="home-lightbox-counter" class="text-xs font-semibold text-slate-500 mr-1 hidden sm:inline"></span>
+              <button type="button" id="home-lightbox-prev" aria-label="Proyecto anterior" class="w-9 h-9 rounded-xl border border-slate-200 text-[#16181B] hover:border-[#23bd00] hover:text-[#23bd00] flex items-center justify-center transition-colors cursor-pointer">
+                ←
+              </button>
+              <button type="button" id="home-lightbox-next" aria-label="Siguiente proyecto" class="w-9 h-9 rounded-xl border border-slate-200 text-[#16181B] hover:border-[#23bd00] hover:text-[#23bd00] flex items-center justify-center transition-colors cursor-pointer">
+                →
+              </button>
+              <button type="button" id="home-lightbox-close" aria-label="Cerrar fotografía ampliada" class="w-9 h-9 rounded-xl bg-[#16181B] text-white hover:bg-[#23bd00] flex items-center justify-center font-bold transition-colors cursor-pointer ml-1">
+                ✕
+              </button>
+            </div>
+          </div>
+          <div class="bg-[#16181B] flex items-center justify-center overflow-hidden flex-1 min-h-[240px]">
+            <img
+              id="home-lightbox-image"
+              src="assets/imagenes/proyectos/castrillo-de-murcia.webp"
+              alt="Proyecto realizado por Medgón Passivhaus"
+              class="max-h-[70vh] w-auto max-w-full object-contain"
+              width="1040"
+              height="780"
+            />
+          </div>
+          <div class="px-5 sm:px-7 py-3.5 bg-[#FAF8F5] border-t border-slate-100 flex flex-wrap items-center justify-between gap-3">
+            <span class="text-xs sm:text-sm text-[#4A5160]">Fabricación en madera técnica · Carrión de los Condes (Palencia)</span>
+            <a href="proyectos-destacados.html" class="text-xs sm:text-sm font-bold text-[#16181B] hover:text-[#23bd00] transition-colors">
+              Ver galería completa de 48 proyectos →
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
         <!-- ================= SECCIONES INFORMATIVAS Y TÉCNICAS MEDGÓN ================= -->
     <!-- 1. PLANIFICA TU VIVIENDA -->
-    <section class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+    <section class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-12 pb-16 sm:pb-24">
       <div class="flex flex-col lg:flex-row justify-between lg:items-end gap-6 mb-12">
         <div class="max-w-2xl space-y-3">
           <span class="text-[0.95rem] font-bold uppercase tracking-widest text-[#23bd00]">SEGURIDAD ANTES DE CONSTRUIR</span>
@@ -1805,7 +3065,7 @@
   
 
   <script src="js/precios.js?v=2" defer></script>
-  <script src="js/principal.js?v=5" defer></script>
+  <script src="js/principal.js?v=6" defer></script>
   
 </body>
 </html>

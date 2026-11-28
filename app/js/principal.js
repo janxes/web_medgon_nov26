@@ -326,6 +326,7 @@
     initDesktopNavDropdowns();
     initMobileMenuScrollControls();
     initBedroomFilters();
+    initHomeProjectsGallery();
   }
 
   onReady(initWeb3FormsAndPage);
@@ -825,4 +826,201 @@ function initMobileMenuScrollControls() {
 
   window.updateMobileMenuScrollButtons();
 }
+
+// 7. Galería horizontal de proyectos realizados en portada (filtros por zona, teclado y lightbox)
+function initHomeProjectsGallery() {
+  var scroller = document.getElementById('galeria-proyectos-scroll');
+  if (!scroller) return;
+
+  var cards = Array.prototype.slice.call(scroller.querySelectorAll('.home-project-card'));
+  if (!cards.length) return;
+
+  var filterContainer = document.getElementById('filtros-proyectos-home');
+  var filterButtons = filterContainer
+    ? Array.prototype.slice.call(filterContainer.querySelectorAll('[data-home-region-filter]'))
+    : [];
+  var counterEl = document.getElementById('home-projects-counter');
+
+  var modal = document.getElementById('home-project-lightbox');
+  var modalImg = document.getElementById('home-lightbox-image');
+  var modalTitle = document.getElementById('home-lightbox-title');
+  var modalLocation = document.getElementById('home-lightbox-location');
+  var modalCounter = document.getElementById('home-lightbox-counter');
+  var modalCloseBtn = document.getElementById('home-lightbox-close');
+  var modalPrevBtn = document.getElementById('home-lightbox-prev');
+  var modalNextBtn = document.getElementById('home-lightbox-next');
+
+  var regionLabels = {
+    todos: 'España',
+    cyl: 'Castilla y León',
+    madrid: 'Madrid',
+    baleares: 'Baleares',
+    asturias: 'Asturias',
+    'norte-levante': 'Norte y Levante'
+  };
+
+  var activeRegion = 'todos';
+  var currentModalIndex = -1;
+  var lastFocusedCard = null;
+
+  function prefersReducedMotion() {
+    return Boolean(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  }
+
+  function getVisibleCards() {
+    return cards.filter(function (card) {
+      return !card.classList.contains('hidden');
+    });
+  }
+
+  function updateFilterUI() {
+    filterButtons.forEach(function (btn) {
+      var isCurrent = (btn.getAttribute('data-home-region-filter') || 'todos') === activeRegion;
+      btn.setAttribute('aria-pressed', isCurrent ? 'true' : 'false');
+      if (isCurrent) {
+        btn.classList.add('bg-[#16181B]', 'text-white', 'border-[#16181B]', 'shadow-xs');
+        btn.classList.remove('bg-white', 'text-[#16181B]', 'border-slate-200', 'hover:border-[#23bd00]', 'hover:text-[#23bd00]');
+      } else {
+        btn.classList.remove('bg-[#16181B]', 'text-white', 'border-[#16181B]', 'shadow-xs');
+        btn.classList.add('bg-white', 'text-[#16181B]', 'border-slate-200', 'hover:border-[#23bd00]', 'hover:text-[#23bd00]');
+      }
+    });
+  }
+
+  function applyRegionFilter(region, resetScroll) {
+    activeRegion = region || 'todos';
+    var visibleCount = 0;
+
+    cards.forEach(function (card) {
+      var cardRegion = card.getAttribute('data-region') || '';
+      var matches = activeRegion === 'todos' || cardRegion === activeRegion;
+      if (matches) {
+        card.classList.remove('hidden');
+        card.removeAttribute('aria-hidden');
+        visibleCount += 1;
+      } else {
+        card.classList.add('hidden');
+        card.setAttribute('aria-hidden', 'true');
+      }
+    });
+
+    updateFilterUI();
+
+    if (counterEl) {
+      var zoneLabel = regionLabels[activeRegion] || 'España';
+      counterEl.textContent = 'Mostrando ' + visibleCount + ' proyecto' + (visibleCount === 1 ? '' : 's') + ' realizados en ' + zoneLabel + ' · Desliza horizontalmente o pulsa una obra para ampliar';
+    }
+
+    if (resetScroll !== false) {
+      var behavior = prefersReducedMotion() ? 'auto' : 'smooth';
+      if (typeof scroller.scrollTo === 'function') {
+        scroller.scrollTo({ left: 0, behavior: behavior });
+      } else {
+        scroller.scrollLeft = 0;
+      }
+    }
+  }
+
+  filterButtons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      applyRegionFilter(btn.getAttribute('data-home-region-filter') || 'todos', true);
+    });
+  });
+
+  scroller.addEventListener('keydown', function (e) {
+    if (e.target !== scroller) return;
+    if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+      e.preventDefault();
+      var delta = e.key === 'ArrowRight' ? 390 : -390;
+      var behavior = prefersReducedMotion() ? 'auto' : 'smooth';
+      if (typeof scroller.scrollBy === 'function') {
+        scroller.scrollBy({ left: delta, behavior: behavior });
+      } else {
+        scroller.scrollLeft += delta;
+      }
+    }
+  });
+
+  function renderModal(index) {
+    var visible = getVisibleCards();
+    if (!visible.length || !modal) return;
+    var safeIndex = ((index % visible.length) + visible.length) % visible.length;
+    currentModalIndex = safeIndex;
+    var card = visible[safeIndex];
+
+    var imgSrc = card.getAttribute('data-image') || '';
+    var title = card.getAttribute('data-name') || '';
+    var location = card.getAttribute('data-location') || '';
+    var width = card.getAttribute('data-width') || '1600';
+    var height = card.getAttribute('data-height') || '1200';
+
+    if (modalImg) {
+      modalImg.src = imgSrc;
+      modalImg.alt = title + ' en ' + location + ' · Medgón Passivhaus';
+      modalImg.setAttribute('width', width);
+      modalImg.setAttribute('height', height);
+    }
+    if (modalTitle) modalTitle.textContent = title;
+    if (modalLocation) modalLocation.textContent = location;
+    if (modalCounter) modalCounter.textContent = (safeIndex + 1) + ' / ' + visible.length;
+  }
+
+  function openModal(card) {
+    if (!modal) return;
+    var visible = getVisibleCards();
+    var idx = visible.indexOf(card);
+    if (idx === -1) return;
+    lastFocusedCard = card;
+    renderModal(idx);
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    if (modalCloseBtn) modalCloseBtn.focus();
+  }
+
+  function closeModal() {
+    if (!modal || modal.classList.contains('hidden')) return;
+    modal.classList.add('hidden');
+    document.body.style.overflow = '';
+    if (lastFocusedCard && typeof lastFocusedCard.focus === 'function') {
+      lastFocusedCard.focus();
+    }
+  }
+
+  cards.forEach(function (card) {
+    card.addEventListener('click', function () {
+      openModal(card);
+    });
+  });
+
+  if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeModal);
+  if (modalPrevBtn) {
+    modalPrevBtn.addEventListener('click', function () {
+      renderModal(currentModalIndex - 1);
+    });
+  }
+  if (modalNextBtn) {
+    modalNextBtn.addEventListener('click', function () {
+      renderModal(currentModalIndex + 1);
+    });
+  }
+  if (modal) {
+    modal.addEventListener('click', function (e) {
+      if (e.target === modal) closeModal();
+    });
+  }
+
+  document.addEventListener('keydown', function (e) {
+    if (!modal || modal.classList.contains('hidden')) return;
+    if (e.key === 'Escape') {
+      closeModal();
+    } else if (e.key === 'ArrowLeft') {
+      renderModal(currentModalIndex - 1);
+    } else if (e.key === 'ArrowRight') {
+      renderModal(currentModalIndex + 1);
+    }
+  });
+
+  applyRegionFilter('todos', false);
+}
+
 
