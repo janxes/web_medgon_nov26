@@ -44,7 +44,23 @@ const serveStaticAssetsPlugin = (): any => ({
       if (relPath.startsWith('/js/') && relPath.endsWith('.js')) {
         const filePath = path.join(__dirname, 'public', relPath);
         if (fs.existsSync(filePath)) {
-          res.setHeader('Content-Type', 'text/javascript');
+          res.setHeader('Content-Type', 'text/javascript; charset=utf-8');
+          res.end(fs.readFileSync(filePath));
+          return;
+        }
+      }
+      if (relPath.endsWith('.txt')) {
+        const filePath = path.join(__dirname, 'public', relPath);
+        if (fs.existsSync(filePath)) {
+          res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+          res.end(fs.readFileSync(filePath));
+          return;
+        }
+      }
+      if (relPath.endsWith('.xml')) {
+        const filePath = path.join(__dirname, 'public', relPath);
+        if (fs.existsSync(filePath)) {
+          res.setHeader('Content-Type', 'application/xml; charset=utf-8');
           res.end(fs.readFileSync(filePath));
           return;
         }
