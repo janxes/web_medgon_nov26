@@ -33,7 +33,31 @@
     var lightboxPrev = document.getElementById('lightbox-prev');
     var lightboxNext = document.getElementById('lightbox-next');
 
-    function updateView(index, smooth) {
+    var fadeTimer = null;
+
+    function scrollThumbHorizontally(thumb, instant) {
+      if (!thumbsContainer || !thumb) return;
+      var maxScrollLeft = thumbsContainer.scrollWidth - thumbsContainer.clientWidth;
+      if (maxScrollLeft <= 0) return;
+      var containerRect = thumbsContainer.getBoundingClientRect();
+      var thumbRect = thumb.getBoundingClientRect();
+      var targetLeft =
+        thumbsContainer.scrollLeft +
+        (thumbRect.left - containerRect.left) -
+        (containerRect.width / 2) +
+        (thumbRect.width / 2);
+      var clampedLeft = Math.max(0, Math.min(targetLeft, maxScrollLeft));
+      if (typeof thumbsContainer.scrollTo === 'function') {
+        thumbsContainer.scrollTo({
+          left: clampedLeft,
+          behavior: instant ? 'auto' : 'smooth'
+        });
+      } else {
+        thumbsContainer.scrollLeft = clampedLeft;
+      }
+    }
+
+    function updateView(index, skipThumbScroll) {
       if (index < 0) index = images.length - 1;
       if (index >= images.length) index = 0;
       currentIndex = index;
@@ -43,12 +67,23 @@
 
       // Update main viewer with smooth transition
       if (mainImg) {
-        mainImg.style.opacity = '0.4';
-        setTimeout(function () {
+        if (fadeTimer) {
+          clearTimeout(fadeTimer);
+          fadeTimer = null;
+        }
+        if (skipThumbScroll) {
           mainImg.src = current.src;
           mainImg.alt = current.title + ' · Medgón Passivhaus';
           mainImg.style.opacity = '1';
-        }, 120);
+        } else {
+          mainImg.style.opacity = '0.4';
+          fadeTimer = setTimeout(function () {
+            mainImg.src = current.src;
+            mainImg.alt = current.title + ' · Medgón Passivhaus';
+            mainImg.style.opacity = '1';
+            fadeTimer = null;
+          }, 120);
+        }
       }
 
       if (captionTitle) captionTitle.textContent = current.title;
@@ -62,7 +97,7 @@
         if (lightboxDesc) lightboxDesc.textContent = current.desc;
       }
 
-      // Update active thumbnail
+      // Update active thumbnail (scroll ONLY horizontally inside thumbsContainer so window never jumps vertically)
       if (thumbsContainer) {
         var thumbs = thumbsContainer.querySelectorAll('[data-gallery-index]');
         thumbs.forEach(function (thumb) {
@@ -70,10 +105,9 @@
           if (tIdx === currentIndex) {
             thumb.classList.add('ring-3', 'ring-[#23bd00]', 'border-transparent', 'opacity-100');
             thumb.classList.remove('opacity-60', 'border-[#16181B]/15');
-            // Scroll thumbnail into view smoothly
-            try {
-              thumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-            } catch (e) {}
+            if (!skipThumbScroll) {
+              scrollThumbHorizontally(thumb, false);
+            }
           } else {
             thumb.classList.remove('ring-3', 'ring-[#23bd00]', 'border-transparent', 'opacity-100');
             thumb.classList.add('opacity-60', 'border-[#16181B]/15');
@@ -209,7 +243,7 @@
       }
     });
 
-    // Initialize first image
-    updateView(0);
+    // Initialize first image without scrolling viewport or thumbnail strip
+    updateView(0, true);
   };
 })();

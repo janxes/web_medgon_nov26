@@ -238,7 +238,7 @@ header nav .nav-hover-bridge {
 /* ==========================================================================
    MEJORA DE ACCESIBILIDAD Y LEGIBILIDAD (SENIORS & WCAG AAA)
    ========================================================================== */
-p:not(#mobile-menu-drawer p):not(.mobile-nav-group-label):not(.mobile-scroll-hint),
+p:not(#mobile-menu-drawer p):not(.mobile-nav-group-label):not(.mobile-scroll-hint):not(#gallery-caption-desc),
 article p,
 .card p,
 section p,
@@ -805,6 +805,49 @@ header nav.medgon-desktop-nav button {
 figure > figcaption.bg-\\[\\#16181B\\] {
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+/* Estabilidad vertical de la galería de modelos MG (sin saltos al pasar fotos en móvil) */
+figure:has(#gallery-main-image),
+#gallery-thumbnails {
+  overflow-anchor: none;
+}
+figure:has(#gallery-main-image) button {
+  touch-action: manipulation;
+}
+#gallery-caption-title {
+  min-height: 1.35em;
+  line-height: 1.35;
+}
+figure figcaption p#gallery-caption-desc.text-xs,
+p#gallery-caption-desc {
+  font-size: 0.75rem !important;
+  line-height: 0.8rem !important;
+  min-height: 1.8rem;
+  margin-top: 0.25rem;
+}
+@media (max-width: 639px) {
+  figure:has(#gallery-main-image) > figcaption.bg-\\[\\#16181B\\] {
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    gap: 12px !important;
+  }
+  #gallery-caption-title {
+    font-size: 0.95rem !important;
+    line-height: 1.3 !important;
+    min-height: 1.3em;
+  }
+  figure figcaption p#gallery-caption-desc.text-xs,
+  p#gallery-caption-desc {
+    font-size: 0.75rem !important;
+    line-height: 0.8rem !important;
+    height: 3.4rem;
+    min-height: 3.4rem;
+    overflow-y: auto;
+    margin-top: 0.2rem;
+  }
 }
 `;
 
